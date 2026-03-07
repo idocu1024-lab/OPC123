@@ -51,6 +51,22 @@
   ],
   "articles": [
     {
+      "id": "art-5e6979fb",
+      "title": "OpenClaw并非人人适用",
+      "url": "https://www.cryptocity.tw/news/openclaw-not-for-most-users",
+      "summary": "文章提醒职场人和中小企业别被工具热度带节奏，先用低门槛云端工具验证流程，再决定是否投入本地多代理系统。这样能减少硬件与调试成本，把时间用在真正能提升效率和产出的环节。对团队而言，这是一套更稳的AI落地路径：先小步试错，再按需求升级。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "AI代理",
+        "自动化落地",
+        "中小企业"
+      ],
+      "source": "Crypto City",
+      "dateAdded": "2026-03-08",
+      "language": "zh"
+    },
+    {
       "id": "art-98e5657d",
       "title": "OpenClaw 完整教程 2026：从安装到实战",
       "url": "https://pub.towardsai.net/openclaw-complete-guide-setup-tutorial-2026",
