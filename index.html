@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenClaw ABC - AI 应用学习指南</title>
+<style>
+  :root {
+    --primary: #1a365d;
+    --primary-light: #2a4a7f;
+    --accent: #e67e22;
+    --accent-light: #f39c12;
+    --bg: #f7f8fc;
+    --card-bg: #ffffff;
+    --text: #2d3748;
+    --text-light: #718096;
+    --border: #e2e8f0;
+    --tag-bg: #edf2f7;
+    --read-bg: #f0fff4;
+    --read-border: #c6f6d5;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --radius: 12px;
+    --sidebar-w: 260px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* === Sidebar === */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-w);
+    height: 100vh;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    overflow-y: auto;
+  }
+
+  .sidebar-header {
+    padding: 1.5rem 1.2rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .sidebar-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .sidebar-header h1 span { color: var(--accent-light); }
+
+  .sidebar-header p {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-top: 0.3rem;
+  }
+
+  .sidebar-search {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .sidebar-search input {
+    width: 100%;
+    padding: 0.55rem 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: background 0.3s;
+  }
+
+  .sidebar-search input::placeholder { color: rgba(255,255,255,0.5); }
+  .sidebar-search input:focus { background: rgba(255,255,255,0.25); }
+
+  .sidebar-stats {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0 1.2rem 0.8rem;
+    font-size: 0.7rem;
+    opacity: 0.7;
+  }
+
+  /* Category list */
+  .cat-list {
+    flex: 1;
+    padding: 0.5rem 0;
+  }
+
+  .cat-list-title {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    padding: 0.5rem 1.2rem 0.3rem;
+  }
+
+  .cat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    border: none;
+    background: none;
+    color: rgba(255,255,255,0.75);
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .cat-item:hover { background: rgba(255,255,255,0.1); color: white; }
+
+  .cat-item.active {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    border-right: 3px solid var(--accent);
+  }
+
+  .cat-item .cat-icon { font-size: 1rem; flex-shrink: 0; }
+
+  .cat-item .cat-count {
+    margin-left: auto;
+    background: rgba(255,255,255,0.15);
+    padding: 0.1rem 0.5rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+  }
+
+  .cat-item.active .cat-count { background: var(--accent); }
+
+  /* === Main content === */
+  .main {
+    margin-left: var(--sidebar-w);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-header {
+    padding: 1.5rem 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .main-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .main-title .count {
+    background: var(--accent);
+    color: white;
+    padding: 0.1rem 0.6rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .active-filter {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.8rem;
+    background: #fff3e0;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    color: var(--accent);
+  }
+
+  .active-filter.show { display: flex; }
+
+  .clear-filter {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  /* Article list */
+  .articles-area {
+    flex: 1;
+    padding: 1.5rem 2rem;
+  }
+
+  .articles {
+    display: grid;
+    gap: 1rem;
+    max-width: 820px;
+  }
+
+  .article-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--accent);
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .article-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-1px);
+  }
+
+  .article-card.read {
+    background: var(--read-bg);
+    border-left-color: var(--read-border);
+    opacity: 0.75;
+  }
+
+  .article-card.read:hover { opacity: 1; }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.4;
+  }
+
+  .card-title a { color: inherit; text-decoration: none; }
+  .card-title a:hover { text-decoration: underline; }
+
+  .read-toggle {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    transition: all 0.2s;
+    color: transparent;
+  }
+
+  .read-toggle:hover { border-color: var(--accent); }
+  .read-toggle.checked { background: #48bb78; border-color: #48bb78; color: white; }
+
+  .card-summary {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .tag {
+    background: var(--tag-bg);
+    padding: 0.15rem 0.6rem;
+    border-radius: 50px;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .tag:hover { background: var(--accent); color: white; }
+  .tag.active { background: var(--accent); color: white; }
+
+  .card-source {
+    margin-left: auto;
+    color: var(--text-light);
+    font-size: 0.75rem;
+  }
+
+  .card-lang {
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #ebf4ff;
+    color: #3182ce;
+  }
+
+  .cat-badge {
+    background: #e8f0fe;
+    color: #1a73e8;
+    cursor: default;
+  }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--text-light);
+  }
+
+  .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-light);
+    font-size: 0.75rem;
+    border-top: 1px solid var(--border);
+    margin-top: auto;
+  }
+
+  /* === Mobile hamburger === */
+  .hamburger {
+    display: none;
+    position: fixed;
+    top: 0.8rem;
+    left: 0.8rem;
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--primary);
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 90;
+  }
+
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .sidebar {
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+    }
+
+    .sidebar.open { transform: translateX(0); }
+
+    .hamburger { display: flex; }
+
+    .overlay.show { display: block; }
+
+    .main {
+      margin-left: 0;
+    }
+
+    .main-header {
+      padding: 1rem 1rem 0.8rem 3.5rem;
+    }
+
+    .articles-area { padding: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Mobile hamburger -->
+<button class="hamburger" id="hamburger">&#9776;</button>
+<div class="overlay" id="overlay"></div>
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h1><span>OpenClaw</span> ABC</h1>
+    <p>AI 应用学习指南</p>
+  </div>
+  <div class="sidebar-search">
+    <input type="text" id="searchInput" placeholder="&#128269; 搜索文章...">
+  </div>
+  <div class="sidebar-stats">
+    <span id="statsTotal">0 篇文章</span>
+    <span>&middot;</span>
+    <span id="statsRead">0 已读</span>
+  </div>
+  <nav class="cat-list" id="categoryNav">
+    <div class="cat-list-title">工作场景分类</div>
+  </nav>
+</aside>
+
+<!-- Main -->
+<div class="main">
+  <div class="main-header">
+    <div class="main-title" id="sectionTitle">
+      <span>全部文章</span>
+      <span class="count" id="articleCount">0</span>
+    </div>
+    <div class="active-filter" id="activeFilter">
+      标签：<strong id="filterTagName"></strong>
+      <span class="clear-filter" id="clearFilter">清除</span>
+    </div>
+  </div>
+
+  <div class="articles-area">
+    <div class="articles" id="articleList"></div>
+    <div class="empty-state" id="emptyState" style="display:none;">
+      <div class="icon">&#128270;</div>
+      <p>没有找到匹配的文章</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    OpenClaw ABC &copy; 2026 | 持续学习，让 AI 成为你的超级助手
+  </footer>
+</div>
+
+<script>
+(function() {
+  let data = { categories: [], articles: [] };
+  let currentCategory = 'all';
+  let currentTag = '';
+  let searchQuery = '';
+  let readArticles = JSON.parse(localStorage.getItem('openclaw-abc-read') || '{}');
+
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+
+  hamburger.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('show');
+  });
+
+  overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('show');
+  });
+
+  async function loadData() {
+    try {
+      const resp = await fetch('data/articles.json');
+      data = await resp.json();
+    } catch (e) {
+      console.error('Failed to load articles.json:', e);
+    }
+    render();
+  }
+
+  function countByCategory(catId) {
+    return data.articles.filter(a => a.category === catId).length;
+  }
+
+  function getFilteredArticles() {
+    return data.articles.filter(a => {
+      if (currentCategory !== 'all' && a.category !== currentCategory) return false;
+      if (currentTag && !(a.tags || []).includes(currentTag)) return false;
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        const inTitle = (a.title || '').toLowerCase().includes(q);
+        const inSummary = (a.summary || '').toLowerCase().includes(q);
+        const inTags = (a.tags || []).some(t => t.toLowerCase().includes(q));
+        if (!inTitle && !inSummary && !inTags) return false;
+      }
+      return true;
+    });
+  }
+
+  function renderCategories() {
+    const nav = document.getElementById('categoryNav');
+    const total = data.articles.length;
+
+    let html = `<div class="cat-list-title">工作场景分类</div>`;
+    html += `<button class="cat-item ${currentCategory === 'all' ? 'active' : ''}" data-cat="all">
+      <span class="cat-icon">&#128218;</span> 全部文章 <span class="cat-count">${total}</span>
+    </button>`;
+
+    data.categories.forEach(cat => {
+      const count = countByCategory(cat.id);
+      html += `<button class="cat-item ${currentCategory === cat.id ? 'active' : ''}" data-cat="${cat.id}">
+        <span class="cat-icon">${cat.icon}</span> ${cat.name} <span class="cat-count">${count}</span>
+      </button>`;
+    });
+
+    nav.innerHTML = html;
+
+    nav.querySelectorAll('.cat-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentCategory = btn.dataset.cat;
+        // Close mobile menu
+        sidebar.classList.remove('open');
+        overlay.classList.remove('show');
+        render();
+      });
+    });
+  }
+
+  function renderArticles() {
+    const list = document.getElementById('articleList');
+    const empty = document.getElementById('emptyState');
+    const articles = getFilteredArticles();
+    const countEl = document.getElementById('articleCount');
+    const titleEl = document.getElementById('sectionTitle');
+
+    countEl.textContent = articles.length;
+
+    if (currentCategory === 'all') {
+      titleEl.querySelector('span:first-child').textContent = '全部文章';
+    } else {
+      const cat = data.categories.find(c => c.id === currentCategory);
+      titleEl.querySelector('span:first-child').textContent = cat ? `${cat.icon} ${cat.name}` : '全部文章';
+    }
+
+    if (articles.length === 0) {
+      list.innerHTML = '';
+      empty.style.display = 'block';
+      return;
+    }
+
+    empty.style.display = 'none';
+
+    list.innerHTML = articles.map(article => {
+      const isRead = readArticles[article.id];
+      const cat = data.categories.find(c => c.id === article.category);
+      const catLabel = cat ? `${cat.icon} ${cat.name}` : '';
+
+      return `<div class="article-card ${isRead ? 'read' : ''}" data-id="${article.id}">
+        <div class="card-header">
+          <div class="card-title">
+            <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
+          </div>
+          <button class="read-toggle ${isRead ? 'checked' : ''}" data-id="${article.id}" title="${isRead ? '标记为未读' : '标记为已读'}">
+            ${isRead ? '&#10003;' : ''}
+          </button>
+        </div>
+        <div class="card-summary">${article.summary}</div>
+        <div class="card-meta">
+          ${(article.tags || []).map(t =>
+            `<span class="tag ${currentTag === t ? 'active' : ''}" data-tag="${t}">${t}</span>`
+          ).join('')}
+          <span class="card-lang">${article.language || 'zh'}</span>
+          ${catLabel && currentCategory === 'all' ? `<span class="tag cat-badge">${catLabel}</span>` : ''}
+          <span class="card-source">${article.source} &middot; ${article.dateAdded}</span>
+        </div>
+      </div>`;
+    }).join('');
+
+    list.querySelectorAll('.tag[data-tag]').forEach(tag => {
+      tag.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentTag = currentTag === tag.dataset.tag ? '' : tag.dataset.tag;
+        render();
+      });
+    });
+
+    list.querySelectorAll('.read-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = btn.dataset.id;
+        if (readArticles[id]) {
+          delete readArticles[id];
+        } else {
+          readArticles[id] = true;
+        }
+        localStorage.setItem('openclaw-abc-read', JSON.stringify(readArticles));
+        render();
+      });
+    });
+  }
+
+  function renderStats() {
+    document.getElementById('statsTotal').textContent = `${data.articles.length} 篇文章`;
+    const readCount = Object.keys(readArticles).filter(id => data.articles.some(a => a.id === id)).length;
+    document.getElementById('statsRead').textContent = `${readCount} 已读`;
+  }
+
+  function renderFilter() {
+    const filterEl = document.getElementById('activeFilter');
+    const nameEl = document.getElementById('filterTagName');
+    if (currentTag) {
+      nameEl.textContent = currentTag;
+      filterEl.classList.add('show');
+    } else {
+      filterEl.classList.remove('show');
+    }
+  }
+
+  function render() {
+    renderCategories();
+    renderArticles();
+    renderStats();
+    renderFilter();
+  }
+
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    searchQuery = e.target.value.trim();
+    renderArticles();
+  });
+
+  document.getElementById('clearFilter').addEventListener('click', () => {
+    currentTag = '';
+    render();
+  });
+
+  loadData();
+})();
+</script>
+</body>
+</html>

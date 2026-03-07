@@ -1,0 +1,116 @@
+{
+  "categories": [
+    {
+      "id": "email-communication",
+      "name": "邮件与沟通",
+      "icon": "📨",
+      "description": "自动处理邮件、消息回复、沟通模板"
+    },
+    {
+      "id": "schedule-tasks",
+      "name": "日程与任务",
+      "icon": "📅",
+      "description": "日历管理、待办事项、自动提醒"
+    },
+    {
+      "id": "docs-writing",
+      "name": "文档与写作",
+      "icon": "✍️",
+      "description": "报告生成、内容创作、翻译润色"
+    },
+    {
+      "id": "data-analysis",
+      "name": "数据与分析",
+      "icon": "📊",
+      "description": "数据整理、报表生成、趋势分析"
+    },
+    {
+      "id": "customer-sales",
+      "name": "客户与销售",
+      "icon": "🤝",
+      "description": "客服自动化、销售跟进、CRM"
+    },
+    {
+      "id": "marketing",
+      "name": "营销与推广",
+      "icon": "📢",
+      "description": "社交媒体、内容营销、SEO"
+    },
+    {
+      "id": "team-management",
+      "name": "团队与管理",
+      "icon": "👥",
+      "description": "项目管理、会议纪要、知识库"
+    },
+    {
+      "id": "getting-started",
+      "name": "入门与技巧",
+      "icon": "💡",
+      "description": "快速上手、效率技巧、常见问题"
+    }
+  ],
+  "articles": [
+    {
+      "id": "art-98e5657d",
+      "title": "OpenClaw 完整教程 2026：从安装到实战",
+      "url": "https://pub.towardsai.net/openclaw-complete-guide-setup-tutorial-2026",
+      "summary": "最全面的 OpenClaw 入门教程，涵盖安装配置、连接消息平台、创建技能、记忆系统和整体架构讲解。适合想快速上手 OpenClaw 的职场人士。",
+      "category": "getting-started",
+      "tags": [
+        "教程",
+        "入门",
+        "安装",
+        "架构"
+      ],
+      "source": "Towards AI",
+      "dateAdded": "2026-03-08",
+      "language": "en"
+    },
+    {
+      "id": "art-001",
+      "title": "OpenClaw 新手入门：10分钟让 AI 帮你工作",
+      "url": "https://example.com/openclaw-quickstart",
+      "summary": "面向零基础用户的快速入门指南。介绍如何安装 OpenClaw、连接你常用的消息平台（微信/Telegram/Slack），并设置第一个自动化任务。无需编程基础，跟着步骤做即可。",
+      "category": "getting-started",
+      "tags": [
+        "入门",
+        "安装",
+        "消息平台"
+      ],
+      "source": "示例文章",
+      "dateAdded": "2026-03-08",
+      "language": "zh"
+    },
+    {
+      "id": "art-002",
+      "title": "用 OpenClaw 自动处理每天100封邮件",
+      "url": "https://example.com/openclaw-email-automation",
+      "summary": "一位市场经理分享如何用 OpenClaw 自动分类邮件、生成回复草稿、提取关键信息到表格。每天节省2小时邮件处理时间，再也不怕漏回重要邮件。",
+      "category": "email-communication",
+      "tags": [
+        "邮件",
+        "自动回复",
+        "效率"
+      ],
+      "source": "示例文章",
+      "dateAdded": "2026-03-08",
+      "language": "zh"
+    },
+    {
+      "id": "art-003",
+      "title": "小企业如何用 OpenClaw 搭建智能客服",
+      "url": "https://example.com/openclaw-customer-service",
+      "summary": "一家20人的电商公司用 OpenClaw 搭建了7×24小时智能客服，自动回答80%的常见问题，复杂问题自动转人工并附上背景摘要。客户满意度提升30%，客服成本降低一半。",
+      "category": "customer-sales",
+      "tags": [
+        "客服",
+        "电商",
+        "中小企业",
+        "降本增效"
+      ],
+      "source": "示例文章",
+      "dateAdded": "2026-03-08",
+      "language": "zh"
+    }
+  ]
+}
