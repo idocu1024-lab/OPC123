@@ -51,6 +51,23 @@
   ],
   "articles": [
     {
+      "id": "art-fe96fcfc",
+      "title": "服务即新软件：AI时代的商业机会",
+      "url": "https://sequoiacap.com/article/services-the-new-software/",
+      "summary": "Sequoia探讨AI时代服务型公司的机会：卖工具的在与模型竞争，但卖工作成果的公司会随模型进步更强。文章提出autopilot模式将替代传统外包，列举保险、会计、医疗、法律等垂直领域的创业机会。对中小企业主和创业者有直接参考价值。",
+      "category": "team-management",
+      "tags": [
+        "AI服务",
+        "商业模式",
+        "自动化",
+        "垂直领域"
+      ],
+      "source": "Sequoia Capital",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://sequoiacap.com/wp-content/uploads/sites/6/2026/03/Screenshot-2026-03-05-at-4.45.46-PM.png"
+    },
+    {
       "id": "art-adfbf6ad",
       "title": "多代理系统如何为企业创造价值",
       "url": "https://www.computerweekly.com/opinion/Unlocking-the-value-of-multi-agent-systems-in-2026",
