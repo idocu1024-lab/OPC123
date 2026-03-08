@@ -51,21 +51,21 @@
   ],
   "articles": [
     {
-      “id”: “art-adfbf6ad”,
-      “title”: “多代理系统如何为企业创造价值”,
-      “url”: “https://www.computerweekly.com/opinion/Unlocking-the-value-of-multi-agent-systems-in-2026”,
-      “summary”: “文章分析了企业从单任务AI转向多代理系统的趋势与挑战。它的价值在于帮决策者看清多代理能带来的效率提升，同时了解信任和协调编排方面的落地难题。对中小企业来说，这是评估要不要上多代理系统的实用参考。”,
-      “category”: “team-management”,
-      “tags”: [
-        “多代理系统”,
-        “企业应用”,
-        “信任问题”,
-        “趋势分析”
+      "id": "art-adfbf6ad",
+      "title": "多代理系统如何为企业创造价值",
+      "url": "https://www.computerweekly.com/opinion/Unlocking-the-value-of-multi-agent-systems-in-2026",
+      "summary": "文章分析了企业从单任务AI转向多代理系统的趋势与挑战。它的价值在于帮决策者看清多代理能带来的效率提升，同时了解信任和协调编排方面的落地难题。对中小企业来说，这是评估要不要上多代理系统的实用参考。",
+      "category": "team-management",
+      "tags": [
+        "多代理系统",
+        "企业应用",
+        "信任问题",
+        "趋势分析"
       ],
-      “source”: “Computer Weekly”,
-      “datePublished”: “2025-12-19”,
-      “language”: “en”,
-      “image”: “https://cdn.ttgtmedia.com/visuals/ComputerWeekly/HeroImages/using-AI-agent-chatbot-Looker-Studio-adobe.jpg”
+      "source": "Computer Weekly",
+      "datePublished": "2025-12-19",
+      "language": "en",
+      "image": "https://cdn.ttgtmedia.com/visuals/ComputerWeekly/HeroImages/using-AI-agent-chatbot-Looker-Studio-adobe.jpg"
     },
     {
       "id": "art-492e1a10",
