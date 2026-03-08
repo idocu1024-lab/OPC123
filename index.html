@@ -160,6 +160,11 @@
     position: relative;
     overflow: hidden;
   }
+  .card-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .card-cover .cover-icon {
     font-size: 3.5rem;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
@@ -473,9 +478,13 @@
       const cat=catOf(a.category);
       const rd=readMap[a.id];
       const gr=gradMap[a.category]||'grad-started';
+      const hasImg=a.image&&a.image.trim();
+      const coverInner=hasImg
+        ? `<img src="${a.image}" alt="" onerror="this.parentElement.classList.add('${gr}');this.outerHTML='<span class=\\'cover-icon\\'>${cat.icon||'💡'}</span>';">`
+        : `<span class="cover-icon">${cat.icon||'💡'}</span>`;
       return `<div class="card ${rd?'read':''}" data-id="${a.id}">
-        <div class="card-cover ${gr}">
-          <span class="cover-icon">${cat.icon||'💡'}</span>
+        <div class="card-cover ${hasImg?'':gr}">
+          ${coverInner}
           <span class="cover-cat">${cat.name||'入门与技巧'}</span>
           <span class="cover-lang">${a.language||'zh'}</span>
           <button class="read-btn ${rd?'checked':''}" data-id="${a.id}" title="${rd?'标记未读':'标记已读'}">${rd?'✓':''}</button>

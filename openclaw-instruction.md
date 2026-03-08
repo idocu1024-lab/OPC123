@@ -37,6 +37,12 @@
 
 **语言**：原文语言，中文填 `zh`，英文填 `en`。
 
+**封面图**：从文章页面提取一张封面图片 URL。按以下优先级查找：
+1. `og:image` meta 标签的内容（最优先）
+2. 文章正文中的第一张图片 `<img>` 的 `src`
+3. 如果以上都找不到，用浏览器截图功能对文章页面截一张图，上传到图床获取 URL
+4. 如果实在无法获取图片，该字段留空即可（网站会用渐变色占位）
+
 ## 第三步：提交到 GitHub（直接更新线上网站）
 
 网站托管在 GitHub Pages，文章数据存在仓库的 `data/articles.json` 文件中。你需要通过 GitHub API 更新这个文件，提交后线上网站会自动更新。
@@ -68,7 +74,8 @@ curl -s -H "Authorization: token YOUR_GITHUB_TOKEN" \
   "tags": ["标签1", "标签2", "标签3"],
   "source": "来源网站名",
   "dateAdded": "今天日期，格式 YYYY-MM-DD",
-  "language": "en 或 zh"
+  "language": "en 或 zh",
+  "image": "封面图URL（可选，没有就不填这个字段）"
 }
 ```
 
