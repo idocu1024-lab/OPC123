@@ -64,7 +64,7 @@ def add_article():
         'category': category,
         'tags': body.get('tags', []),
         'source': body.get('source', ''),
-        'dateAdded': date.today().isoformat(),
+        'datePublished': body.get('datePublished', date.today().isoformat()),
         'language': body.get('language', 'en'),
     }
 

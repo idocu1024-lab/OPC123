@@ -63,7 +63,7 @@
         "企业应用"
       ],
       "source": "Dynamiq",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2025-06-30",
       "language": "en",
       "image": "https://cdn.prod.website-files.com/6633c32f4debce929b72200b/68628da1c723841c5f425862_Blog%20Articles_Multi-Agent%20AI%20Systems.webp"
     },
@@ -80,7 +80,7 @@
         "研究论文"
       ],
       "source": "arXiv",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2023-08-16",
       "language": "en"
     },
     {
@@ -96,7 +96,7 @@
         "生产部署"
       ],
       "source": "Redis",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-01-11",
       "language": "en",
       "image": "https://redis.io/open-graph.png"
     },
@@ -113,7 +113,7 @@
         "落地路径"
       ],
       "source": "Microsoft Learn",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2025-12-01",
       "language": "en"
     },
     {
@@ -129,7 +129,7 @@
         "中小企业"
       ],
       "source": "Crypto City",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-03-07",
       "language": "zh",
       "image": "https://cdn.cryptocity.tw/upload/a8YZxpIGDgC94Ty3TZzWr.webp"
     },
@@ -146,7 +146,7 @@
         "架构"
       ],
       "source": "Towards AI",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-02-20",
       "language": "en"
     },
     {
@@ -161,7 +161,7 @@
         "消息平台"
       ],
       "source": "示例文章",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-03-08",
       "language": "zh"
     },
     {
@@ -176,7 +176,7 @@
         "效率"
       ],
       "source": "示例文章",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-03-08",
       "language": "zh"
     },
     {
@@ -192,7 +192,7 @@
         "降本增效"
       ],
       "source": "示例文章",
-      "dateAdded": "2026-03-08",
+      "datePublished": "2026-03-08",
       "language": "zh"
     }
   ]

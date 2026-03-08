@@ -35,6 +35,13 @@
 
 **来源**：文章所在网站的名称（如 Medium、Towards AI、Reddit 等）。
 
+**发布日期**：从文章页面中查找原文的真实发布日期。按以下优先级查找：
+1. 页面中的 `<time>` 标签或 `datePublished` 结构化数据
+2. 页面中明确显示的发布日期文字（如 "Published on ...", "发布于 ..."）
+3. `<meta>` 标签中的 `article:published_time`
+4. 如果以上都找不到，使用今天日期
+格式为 `YYYY-MM-DD`。
+
 **语言**：原文语言，中文填 `zh`，英文填 `en`。
 
 **封面图**：从文章页面提取一张封面图片 URL。按以下优先级查找：
@@ -73,7 +80,7 @@ curl -s -H "Authorization: token YOUR_GITHUB_TOKEN" \
   "category": "你选的分类ID",
   "tags": ["标签1", "标签2", "标签3"],
   "source": "来源网站名",
-  "dateAdded": "今天日期，格式 YYYY-MM-DD",
+  "datePublished": "文章的真实发布日期，格式 YYYY-MM-DD",
   "language": "en 或 zh",
   "image": "封面图URL（可选，没有就不填这个字段）"
 }

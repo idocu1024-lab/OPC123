@@ -41,7 +41,7 @@ Authorization: token YOUR_GITHUB_TOKEN
   "category": "分类ID",
   "tags": ["标签1", "标签2"],
   "source": "来源网站",
-  "dateAdded": "YYYY-MM-DD",
+  "datePublished": "YYYY-MM-DD",
   "language": "en"
 }
 ```
@@ -107,6 +107,7 @@ Content-Type: application/json
 | `category` | string | 否 | 分类ID，默认 `getting-started` |
 | `tags` | string[] | 否 | 标签数组 |
 | `source` | string | 否 | 来源网站名 |
+| `datePublished` | string | 否 | 文章原始发布日期，格式 `YYYY-MM-DD`，默认今天 |
 | `language` | string | 否 | `zh` 或 `en`，默认 `en` |
 
 | 状态码 | 说明 |
