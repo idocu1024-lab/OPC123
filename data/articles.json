@@ -51,6 +51,70 @@
   ],
   "articles": [
     {
+      "id": "art-adfbf6ad",
+      "title": "多代理的收益与限制",
+      "url": "https://www.getdynamiq.ai/post/multi-agent-ai-systems-definition-benefits-limitations-how-to-build",
+      "summary": "文章同时讲清多代理能带来的效率收益和落地限制，适合老板或项目负责人做投入评估。它的价值在于把“能做什么”和“会踩什么坑”放在一起看，便于制定预算与实施节奏。对中小企业来说，这是避免盲目上马的决策参考。",
+      "category": "team-management",
+      "tags": [
+        "收益评估",
+        "实施风险",
+        "多代理系统",
+        "企业应用"
+      ],
+      "source": "Dynamiq",
+      "dateAdded": "2026-03-08",
+      "language": "en"
+    },
+    {
+      "id": "art-492e1a10",
+      "title": "AutoGen多代理框架",
+      "url": "https://arxiv.org/abs/2308.08155",
+      "summary": "这篇论文展示了多代理协作如何把复杂任务拆分给不同角色执行，提升自动化任务完成度。对企业实践者的价值在于可借鉴其“角色分工+对话协作”思路，设计可复用的AI流程。它更像能力上限参考，适合评估中长期自动化方向。",
+      "category": "getting-started",
+      "tags": [
+        "AutoGen",
+        "多代理协作",
+        "任务拆解",
+        "研究论文"
+      ],
+      "source": "arXiv",
+      "dateAdded": "2026-03-08",
+      "language": "en"
+    },
+    {
+      "id": "art-91f9c146",
+      "title": "多代理怎么选型",
+      "url": "https://redis.io/blog/single-agent-vs-multi-agent-systems/",
+      "summary": "文章从性能、复杂度和可靠性角度比较单代理与多代理，适合要做生产系统的团队。它的实用点在于告诉你不同阶段该用哪种方案，避免“为了先进而过度设计”。对业务方最直接的好处是更快上线并控制运维风险。",
+      "category": "team-management",
+      "tags": [
+        "系统选型",
+        "性能权衡",
+        "可维护性",
+        "生产部署"
+      ],
+      "source": "Redis",
+      "dateAdded": "2026-03-08",
+      "language": "en"
+    },
+    {
+      "id": "art-17828fb5",
+      "title": "单体还是多代理",
+      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents",
+      "summary": "这篇微软指南的核心价值是帮团队在项目早期就选对架构，避免一上来就把系统做复杂。它给出何时用单代理、何时拆多代理的判断框架，能减少返工和维护成本。对中小企业来说，先用可控方案落地，再按业务增长扩展更稳。",
+      "category": "getting-started",
+      "tags": [
+        "单代理",
+        "多代理",
+        "架构决策",
+        "落地路径"
+      ],
+      "source": "Microsoft Learn",
+      "dateAdded": "2026-03-08",
+      "language": "en"
+    },
+    {
       "id": "art-5e6979fb",
       "title": "OpenClaw并非人人适用",
       "url": "https://www.cryptocity.tw/news/openclaw-not-for-most-users",
