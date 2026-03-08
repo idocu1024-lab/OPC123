@@ -37,36 +37,73 @@
 
 **语言**：原文语言，中文填 `zh`，英文填 `en`。
 
-## 第三步：调用 API 提交
+## 第三步：提交到 GitHub（直接更新线上网站）
 
-用 HTTP POST 请求把数据发送到我的网站后端：
+网站托管在 GitHub Pages，文章数据存在仓库的 `data/articles.json` 文件中。你需要通过 GitHub API 更新这个文件，提交后线上网站会自动更新。
 
+### 操作流程
+
+**3.1 读取当前文件**
+
+```bash
+curl -s -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  https://api.github.com/repos/idocu1024-lab/OPC123/contents/data/articles.json
 ```
-POST http://127.0.0.1:8080/api/articles
-Content-Type: application/json
 
+从返回结果中提取：
+- `content`：Base64 编码的文件内容，解码后得到当前 JSON
+- `sha`：文件的 SHA 值（更新时必须带上）
+
+**3.2 修改 JSON**
+
+将当前 JSON 解码后，在 `articles` 数组的**最前面**插入新文章对象：
+
+```json
 {
+  "id": "art-随机8位字符",
   "title": "你生成的中文标题",
   "url": "用户发给你的原始链接",
   "summary": "你写的中文摘要",
   "category": "你选的分类ID",
   "tags": ["标签1", "标签2", "标签3"],
   "source": "来源网站名",
+  "dateAdded": "今天日期，格式 YYYY-MM-DD",
   "language": "en 或 zh"
 }
 ```
 
+**去重**：如果 `articles` 数组中已有相同 `url` 的文章，不要添加，直接告诉我"这篇文章之前已经添加过了"。
+
+**3.3 提交更新**
+
+将修改后的完整 JSON 用 Base64 编码，然后 PUT 回去：
+
+```bash
+curl -s -X PUT \
+  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  -H "Content-Type: application/json" \
+  https://api.github.com/repos/idocu1024-lab/OPC123/contents/data/articles.json \
+  -d '{
+    "message": "Add article: 文章标题",
+    "content": "修改后JSON的Base64编码",
+    "sha": "第一步拿到的SHA值"
+  }'
+```
+
 ## 第四步：确认结果
 
-- 如果返回 `201`，告诉我："已添加到 OpenClaw ABC！分类：xxx，标签：xxx"
-- 如果返回 `409`，告诉我："这篇文章之前已经添加过了。"
-- 如果返回其他错误，告诉我具体错误信息。
+- 如果 PUT 返回 `200`，告诉我："✅ 已添加到 OpenClaw ABC！分类：xxx，标签：xxx。线上已自动更新，约1分钟后可在 https://idocu1024-lab.github.io/OPC123/ 看到。"
+- 如果发现 URL 重复，告诉我："这篇文章之前已经添加过了。"
+- 如果 GitHub API 报错，告诉我具体错误信息。
 
 ## 重要注意
 
-- `title` 和 `url` 是必填的，其他字段都可选但尽量填完整
+- **GitHub Token**：需要有 `repo` 权限的 Personal Access Token，替换上面的 `YOUR_GITHUB_TOKEN`
+- `title` 和 `url` 是必填的，其他字段都尽量填完整
+- `id` 格式为 `art-` 加8位随机字母数字（如 `art-a3f8b2c1`）
 - 摘要要站在"普通职场人/老板"的角度写，不要写成技术文档
 - 每次只处理一个链接
 - 不要修改我发给你的原始 URL
+- 新文章插入到数组最前面（最新的排最前）
 
 ---
