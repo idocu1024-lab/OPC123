@@ -51,6 +51,24 @@
   ],
   "articles": [
     {
+      "id": "art-300af27a",
+      "title": "OpenClaw 在中小学科培教学中的实践探索",
+      "url": "https://cloud.tencent.com/developer/article/2632632",
+      "summary": "一位江苏常州的科培教师分享如何用腾讯云 Lighthouse 部署 OpenClaw，解决教培行业三大痛点：作业批改耗时、备课资料散、答疑重复率高。核心应用包括：自动识别数学物理题目并生成解题步骤、C++/Python 代码审查、智能生成练习题库、家校沟通提醒。适合教育培训机构和一线教师参考。",
+      "category": "getting-started",
+      "tags": [
+        "教育",
+        "教学",
+        "OpenClaw",
+        "科培",
+        "腾讯云",
+        "Lighthouse"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-01",
+      "language": "zh"
+    },
+    {
       "id": "art-2a0d148c",
       "title": "OpenClaw能用不敢用？企业版Claw让AI真正进入企业业务流",
       "url": "https://tech.china.com/articles/20260307/202603071820577.html",
