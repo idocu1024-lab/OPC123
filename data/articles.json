@@ -51,6 +51,23 @@
   ],
   "articles": [
     {
+      "id": "art-de535c5a",
+      "title": "OpenClaw如何让AI替你打工？看完这5个案例再说",
+      "url": "https://www.tencentcloud.com/techpedia/141475",
+      "summary": "通过5个真实案例（闲鱼卖家、独立站、跨境电商、内容创作者、企业HR）展示 OpenClaw 如何让 AI 真正替你打工。核心价值：7×24小时在线、秒级响应、标准化输出、极低成本。适合想了解 AI 自动化实际效果的人。",
+      "category": "getting-started",
+      "tags": [
+        "AI助手",
+        "自动化",
+        "案例",
+        "效率提升",
+        "OpenClaw"
+      ],
+      "source": "腾讯云",
+      "datePublished": "2026-03-06",
+      "language": "zh"
+    },
+    {
       "id": "art-fe96fcfc",
       "title": "服务即新软件：AI时代的商业机会",
       "url": "https://sequoiacap.com/article/services-the-new-software/",
