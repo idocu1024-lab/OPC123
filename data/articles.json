@@ -51,6 +51,23 @@
   ],
   "articles": [
     {
+      "id": "art-2a0d148c",
+      "title": "OpenClaw能用不敢用？企业版Claw让AI真正进入企业业务流",
+      "url": "https://tech.china.com/articles/20260307/202603071820577.html",
+      "summary": "分析 OpenClaw 在企业落地中的安全风险（信任边界模糊、权限控制缺失、审计机制不足），介绍凡泰极客推出的企业版 Claw 如何通过四层安全隔离、工具调用审批、全链路审计、多租户架构、企业技能中心等能力，实现 AI 的可控、可监管、可协作、可审计。适合考虑规模化部署 AI 的企业管理者。",
+      "category": "team-management",
+      "tags": [
+        "企业AI",
+        "安全治理",
+        "OpenClaw",
+        "合规审计",
+        "多租户"
+      ],
+      "source": "中华网科技",
+      "datePublished": "2026-03-07",
+      "language": "zh"
+    },
+    {
       "id": "art-de535c5a",
       "title": "OpenClaw如何让AI替你打工？看完这5个案例再说",
       "url": "https://www.tencentcloud.com/techpedia/141475",
