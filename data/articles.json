@@ -150,50 +150,55 @@
       "language": "en"
     },
     {
-      "id": "art-001",
-      "title": "OpenClaw 新手入门：10分钟让 AI 帮你工作",
-      "url": "https://example.com/openclaw-quickstart",
-      "summary": "面向零基础用户的快速入门指南。介绍如何安装 OpenClaw、连接你常用的消息平台（微信/Telegram/Slack），并设置第一个自动化任务。无需编程基础，跟着步骤做即可。",
+      "id": "art-a1b2c3d4",
+      "title": "OpenClaw十步部署指南",
+      "url": "https://advenboost.com/en/openclaw-setup-10-steps-guide/",
+      "summary": "手把手教你用10步完成 OpenClaw 部署，从环境搭建、API配置、SQLite记忆激活到 Telegram 接入。适合想快速上手自托管 AI 代理的职场人，按步骤做就能让 AI 帮你自动处理重复性工作。",
       "category": "getting-started",
       "tags": [
-        "入门",
-        "安装",
-        "消息平台"
+        "部署教程",
+        "Telegram",
+        "自托管",
+        "快速上手"
       ],
-      "source": "示例文章",
-      "datePublished": "2026-03-08",
-      "language": "zh"
+      "source": "Adven Boost",
+      "datePublished": "2026-02-02",
+      "language": "en",
+      "image": "https://advenboost.com/wp-content/uploads/2026/02/Gemini_Generated_Image_vdhpq0vdhpq0vdhp.png"
     },
     {
-      "id": "art-002",
-      "title": "用 OpenClaw 自动处理每天100封邮件",
-      "url": "https://example.com/openclaw-email-automation",
-      "summary": "一位市场经理分享如何用 OpenClaw 自动分类邮件、生成回复草稿、提取关键信息到表格。每天节省2小时邮件处理时间，再也不怕漏回重要邮件。",
+      "id": "art-e5f6g7h8",
+      "title": "中小企业最好用的7款AI邮件工具",
+      "url": "https://agentaya.com/the-7-best-ai-email-tools-for-smes-in-2026/",
+      "summary": "对比评测2026年最适合中小企业的7款AI邮件工具，涵盖收件箱管理、自动回复、营销邮件等场景。帮你选对工具，让邮件处理效率翻倍，不再被收件箱淹没。",
       "category": "email-communication",
       "tags": [
-        "邮件",
-        "自动回复",
-        "效率"
+        "邮件工具",
+        "效率提升",
+        "中小企业",
+        "工具评测"
       ],
-      "source": "示例文章",
-      "datePublished": "2026-03-08",
-      "language": "zh"
+      "source": "Agent Aya",
+      "datePublished": "2026-01-15",
+      "language": "en",
+      "image": "https://agentaya.com/wp-content/uploads/2026/01/7-Best-AI-Email-Tools-for-SMEs-scaled.avif"
     },
     {
-      "id": "art-003",
-      "title": "小企业如何用 OpenClaw 搭建智能客服",
-      "url": "https://example.com/openclaw-customer-service",
-      "summary": "一家20人的电商公司用 OpenClaw 搭建了7×24小时智能客服，自动回答80%的常见问题，复杂问题自动转人工并附上背景摘要。客户满意度提升30%，客服成本降低一半。",
+      "id": "art-i9j0k1l2",
+      "title": "从聊天机器人到AI代理：中小企业必知的转变",
+      "url": "https://www.bpinnovations.com/from-chatbots-to-agentic-ai-the-2026-shift-every-smb-needs-to-know/",
+      "summary": "2026年AI客服正从被动聊天机器人进化为能独立决策和执行任务的智能代理。这篇文章帮中小企业看清趋势，提前布局下一代客户服务方案，避免在技术迭代中掉队。",
       "category": "customer-sales",
       "tags": [
-        "客服",
-        "电商",
+        "AI客服",
+        "智能代理",
         "中小企业",
-        "降本增效"
+        "趋势洞察"
       ],
-      "source": "示例文章",
-      "datePublished": "2026-03-08",
-      "language": "zh"
+      "source": "BP Innovations",
+      "datePublished": "2026-01-09",
+      "language": "en",
+      "image": "https://www.bpinnovations.com/files/2026/01/blog172026.jpg"
     }
   ]
 }
