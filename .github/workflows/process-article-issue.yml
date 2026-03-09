@@ -100,37 +100,95 @@ jobs:
 
             // ========== 主逻辑 ==========
 
+            // --- 辅助函数：清理 JSON 字符串中的引号问题 ---
+            function sanitizeJsonString(str) {
+              // 替换 smart/curly quotes 为 straight quotes
+              str = str.replace(/[\u201C\u201D]/g, '\\"');
+              // 替换全角引号
+              str = str.replace(/[\uFF02]/g, '\\"');
+
+              // 修复 JSON 值内的未转义双引号：
+              // 逐行处理，在 "key": "value" 格式中，把 value 内的裸双引号替换为中文引号
+              str = str.replace(/"(summary|title)":\s*"((?:[^"\\]|\\.)*)"/g, (match) => {
+                return match; // 如果能正常匹配，说明没问题
+              });
+
+              // 更激进的修复：尝试逐行处理
+              const lines = str.split('\n');
+              const fixed = lines.map(line => {
+                const trimmed = line.trim();
+                // 匹配 "key": "..." 模式
+                const m = trimmed.match(/^"(\w+)":\s*"(.*)"\s*,?\s*$/);
+                if (m && m[1] && m[2]) {
+                  const key = m[1];
+                  let val = m[2];
+                  // 如果 value 中有未转义的双引号，替换为中文引号「」
+                  if (val.includes('"') && !val.includes('\\"')) {
+                    val = val.replace(/"([^"]+)"/g, '「$1」');
+                    const comma = trimmed.endsWith(',') ? ',' : '';
+                    return line.replace(trimmed, `"${key}": "${val}"${comma}`);
+                  }
+                }
+                return line;
+              });
+              return fixed.join('\n');
+            }
+
             // 1. 读取 Issue body（JSON 格式）
-            const issueBody = context.payload.issue.body;
+            let issueBody = context.payload.issue.body;
             console.log('Issue body:', issueBody);
 
             let articleData;
             try {
               articleData = JSON.parse(issueBody);
             } catch (e) {
-              const jsonMatch = issueBody.match(/```(?:json)?\s*([\s\S]*?)```/);
-              if (jsonMatch) {
-                try {
-                  articleData = JSON.parse(jsonMatch[1].trim());
-                } catch (e2) {
-                  console.error('Failed to parse JSON from code block:', e2);
+              console.log('First parse failed, trying to sanitize...');
+              // 尝试清理后再解析
+              try {
+                const sanitized = sanitizeJsonString(issueBody);
+                articleData = JSON.parse(sanitized);
+                console.log('Sanitized parse succeeded');
+              } catch (e1) {
+                // 尝试从 markdown code block 提取
+                const jsonMatch = issueBody.match(/```(?:json)?\s*([\s\S]*?)```/);
+                if (jsonMatch) {
+                  try {
+                    articleData = JSON.parse(jsonMatch[1].trim());
+                  } catch (e2) {
+                    try {
+                      const sanitized = sanitizeJsonString(jsonMatch[1].trim());
+                      articleData = JSON.parse(sanitized);
+                    } catch (e3) {
+                      console.error('All parse attempts failed:', e3);
+                      await github.rest.issues.createComment({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        issue_number: context.issue.number,
+                        body: '❌ 无法解析文章数据，请检查 JSON 格式（可能有未转义的引号）。'
+                      });
+                      return;
+                    }
+                  }
+                } else {
+                  console.error('No JSON found in issue body');
                   await github.rest.issues.createComment({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     issue_number: context.issue.number,
-                    body: '❌ 无法解析文章数据，请检查 JSON 格式。'
+                    body: '❌ Issue body 中未找到 JSON 数据。'
                   });
                   return;
                 }
-              } else {
-                console.error('No JSON found in issue body');
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: context.issue.number,
-                  body: '❌ Issue body 中未找到 JSON 数据。'
-                });
-                return;
+              }
+            }
+
+            // 清理所有文本字段中的残留引号问题
+            for (const key of ['title', 'summary']) {
+              if (articleData[key]) {
+                // 把 ASCII 双引号替换为中文书名号引号
+                articleData[key] = articleData[key].replace(/"([^"]+)"/g, '「$1」');
+                // 替换 smart quotes
+                articleData[key] = articleData[key].replace(/[\u201C]/g, '「').replace(/[\u201D]/g, '」');
               }
             }
 
