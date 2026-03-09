@@ -526,13 +526,17 @@
     const counts=tags.map(([,n])=>n);
     const maxC=Math.max(...counts,1);
     const minC=Math.min(...counts,1);
-    const minFs=0.75, maxFs=1.45; // rem
+    const minFs=0.72, maxFs=1.5; // rem range
     document.getElementById('tagCloud').innerHTML=tags.map(([t,n])=>{
-      const ratio=maxC===minC?0.5:(n-minC)/(maxC-minC);
+      // 用 log 缩放让差异更明显
+      const logMin=Math.log(minC), logMax=Math.log(maxC);
+      const ratio=logMax===logMin?(n>1?1:0.3):(Math.log(n)-logMin)/(logMax-logMin);
       const fs=(minFs+ratio*(maxFs-minFs)).toFixed(2);
-      const fw=ratio>0.6?'600':ratio>0.3?'500':'400';
-      const op=(0.6+ratio*0.4).toFixed(2);
-      return `<span class="stag ${curTag===t?'active':''}" data-t="${t}" style="font-size:${fs}rem;font-weight:${fw};opacity:${op}"># ${t}</span>`;
+      const fw=ratio>0.5?'700':ratio>0.2?'500':'400';
+      const op=(0.55+ratio*0.45).toFixed(2);
+      const isActive=curTag===t;
+      const col=isActive?'':ratio>0.5?';color:var(--accent)':'';
+      return `<span class="stag ${isActive?'active':''}" data-t="${t}" style="font-size:${fs}rem;font-weight:${fw};opacity:${isActive?1:op}${col}"># ${t}</span>`;
     }).join('');
     document.querySelectorAll('.stag').forEach(s=>{
       s.onclick=()=>{ curTag=curTag===s.dataset.t?'':s.dataset.t; render(); };
