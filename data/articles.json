@@ -51,60 +51,6 @@
   ],
   "articles": [
     {
-      "id": "art-67c23172",
-      "title": "AI代理让数据分析提速百倍",
-      "url": "https://8allocate.com/blog/what-are-ai-agents-for-data-analysis/",
-      "summary": "这篇指南详细解释了自主 AI 代理如何持续监控业务数据、自动检测异常并给出可操作建议，彻底改变企业 BI 方式。文章附有真实案例（某企业审计时间从14天压缩到1小时），以及安全合规的部署要点。适合想用 AI 提升数据洞察效率的运营、财务和业务分析团队参考。",
-      "category": "data-analysis",
-      "tags": [
-        "数据分析",
-        "AI代理",
-        "自动化",
-        "商业智能",
-        "数据治理"
-      ],
-      "source": "8allocate",
-      "datePublished": "2026-02-06",
-      "language": "en",
-      "image": "https://8allocate.com/wp-content/uploads/2025/06/AI-Agents-for-Data-Analytics_-A-Strategic-Guide-to-Agentic-AI-in-Enterprise.jpg"
-    },
-    {
-      "id": "art-66b4a60c",
-      "title": "中小企业AI营销工具12强",
-      "url": "https://www.askneedle.com/blog/ai-marketing-tools-for-small-business",
-      "summary": "全面评测12款专为资源有限的中小企业设计的AI营销工具，涵盖邮件营销、内容创作、社交媒体管理和客户互动等场景。文章帮你在「复杂工具矩阵」和「一站式自动化系统」之间做出明智选择，让有限预算发挥最大营销效果。",
-      "category": "marketing",
-      "tags": [
-        "营销工具",
-        "内容创作",
-        "邮件营销",
-        "中小企业",
-        "工具评测"
-      ],
-      "source": "Ask Needle",
-      "datePublished": "2025-12-15",
-      "language": "en",
-      "image": "https://cdn.prod.website-files.com/6687bdce585231f6c477dad7/692452a1e08edb37222eecf1_featured-image-539b66e0-5e40-4624-bb35-db3d14bb4a6d.jpeg"
-    },
-    {
-      "id": "art-e81f6962",
-      "title": "2026年十大AI日程助手测评",
-      "url": "https://www.lindy.ai/blog/ai-scheduling-assistant",
-      "summary": "亲测十款AI日程助手，从多人协调、时间块管理到任务自动化全面对比，帮你找到最适合自己工作流的工具。无论是销售团队的预约管理还是个人的专注时间保护，都能找到对应的解决方案，从此告别繁琐的日历拉锯战。",
-      "category": "schedule-tasks",
-      "tags": [
-        "日程管理",
-        "AI助手",
-        "时间管理",
-        "效率工具",
-        "工具对比"
-      ],
-      "source": "Lindy",
-      "datePublished": "2026-01-08",
-      "language": "en",
-      "image": "https://cdn.prod.website-files.com/6418bbd648ad4081cf60eb29/695f720ac648d8c41fa76054_6839ee212699f4ea072061e4_Lindy_Thumbnail1%2520(7)%2520(1).png"
-    },
-    {
       "id": "art-300af27a",
       "title": "OpenClaw 在中小学科培教学中的实践探索",
       "url": "https://cloud.tencent.com/developer/article/2632632",
@@ -159,89 +105,6 @@
       "language": "zh"
     },
     {
-      "id": "art-fe96fcfc",
-      "title": "服务即新软件：AI时代的商业机会",
-      "url": "https://sequoiacap.com/article/services-the-new-software/",
-      "summary": "Sequoia探讨AI时代服务型公司的机会：卖工具的在与模型竞争，但卖工作成果的公司会随模型进步更强。文章提出autopilot模式将替代传统外包，列举保险、会计、医疗、法律等垂直领域的创业机会。对中小企业主和创业者有直接参考价值。",
-      "category": "team-management",
-      "tags": [
-        "AI服务",
-        "商业模式",
-        "自动化",
-        "垂直领域"
-      ],
-      "source": "Sequoia Capital",
-      "datePublished": "2026-03-06",
-      "language": "en",
-      "image": "https://sequoiacap.com/wp-content/uploads/sites/6/2026/03/Screenshot-2026-03-05-at-4.45.46-PM.png"
-    },
-    {
-      "id": "art-adfbf6ad",
-      "title": "多代理系统如何为企业创造价值",
-      "url": "https://www.computerweekly.com/opinion/Unlocking-the-value-of-multi-agent-systems-in-2026",
-      "summary": "文章分析了企业从单任务AI转向多代理系统的趋势与挑战。它的价值在于帮决策者看清多代理能带来的效率提升，同时了解信任和协调编排方面的落地难题。对中小企业来说，这是评估要不要上多代理系统的实用参考。",
-      "category": "team-management",
-      "tags": [
-        "多代理系统",
-        "企业应用",
-        "信任问题",
-        "趋势分析"
-      ],
-      "source": "Computer Weekly",
-      "datePublished": "2025-12-19",
-      "language": "en",
-      "image": "https://cdn.ttgtmedia.com/visuals/ComputerWeekly/HeroImages/using-AI-agent-chatbot-Looker-Studio-adobe.jpg"
-    },
-    {
-      "id": "art-492e1a10",
-      "title": "AutoGen多代理框架",
-      "url": "https://arxiv.org/abs/2308.08155",
-      "summary": "这篇论文展示了多代理协作如何把复杂任务拆分给不同角色执行，提升自动化任务完成度。对企业实践者的价值在于可借鉴其“角色分工+对话协作”思路，设计可复用的AI流程。它更像能力上限参考，适合评估中长期自动化方向。",
-      "category": "getting-started",
-      "tags": [
-        "AutoGen",
-        "多代理协作",
-        "任务拆解",
-        "研究论文"
-      ],
-      "source": "arXiv",
-      "datePublished": "2023-08-16",
-      "language": "en"
-    },
-    {
-      "id": "art-91f9c146",
-      "title": "多代理怎么选型",
-      "url": "https://redis.io/blog/single-agent-vs-multi-agent-systems/",
-      "summary": "文章从性能、复杂度和可靠性角度比较单代理与多代理，适合要做生产系统的团队。它的实用点在于告诉你不同阶段该用哪种方案，避免“为了先进而过度设计”。对业务方最直接的好处是更快上线并控制运维风险。",
-      "category": "team-management",
-      "tags": [
-        "系统选型",
-        "性能权衡",
-        "可维护性",
-        "生产部署"
-      ],
-      "source": "Redis",
-      "datePublished": "2026-01-11",
-      "language": "en"
-    },
-    {
-      "id": "art-17828fb5",
-      "title": "单体还是多代理",
-      "url": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/single-agent-multiple-agents",
-      "summary": "这篇微软指南的核心价值是帮团队在项目早期就选对架构，避免一上来就把系统做复杂。它给出何时用单代理、何时拆多代理的判断框架，能减少返工和维护成本。对中小企业来说，先用可控方案落地，再按业务增长扩展更稳。",
-      "category": "getting-started",
-      "tags": [
-        "单代理",
-        "多代理",
-        "架构决策",
-        "落地路径"
-      ],
-      "source": "Microsoft Learn",
-      "datePublished": "2025-12-01",
-      "language": "en",
-      "image": "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai-agents/images/ai-agent-decision-tree.svg"
-    },
-    {
       "id": "art-5e6979fb",
       "title": "OpenClaw并非人人适用",
       "url": "https://www.cryptocity.tw/news/openclaw-not-for-most-users",
@@ -291,40 +154,6 @@
       "datePublished": "2026-02-02",
       "language": "en",
       "image": "https://advenboost.com/wp-content/uploads/2026/02/Gemini_Generated_Image_vdhpq0vdhpq0vdhp.png"
-    },
-    {
-      "id": "art-e5f6g7h8",
-      "title": "中小企业最好用的7款AI邮件工具",
-      "url": "https://agentaya.com/the-7-best-ai-email-tools-for-smes-in-2026/",
-      "summary": "对比评测2026年最适合中小企业的7款AI邮件工具，涵盖收件箱管理、自动回复、营销邮件等场景。帮你选对工具，让邮件处理效率翻倍，不再被收件箱淹没。",
-      "category": "email-communication",
-      "tags": [
-        "邮件工具",
-        "效率提升",
-        "中小企业",
-        "工具评测"
-      ],
-      "source": "Agent Aya",
-      "datePublished": "2026-01-15",
-      "language": "en",
-      "image": "https://agentaya.com/wp-content/uploads/2026/01/7-Best-AI-Email-Tools-for-SMEs-scaled.avif"
-    },
-    {
-      "id": "art-i9j0k1l2",
-      "title": "从聊天机器人到AI代理：中小企业必知的转变",
-      "url": "https://www.bpinnovations.com/from-chatbots-to-agentic-ai-the-2026-shift-every-smb-needs-to-know/",
-      "summary": "2026年AI客服正从被动聊天机器人进化为能独立决策和执行任务的智能代理。这篇文章帮中小企业看清趋势，提前布局下一代客户服务方案，避免在技术迭代中掉队。",
-      "category": "customer-sales",
-      "tags": [
-        "AI客服",
-        "智能代理",
-        "中小企业",
-        "趋势洞察"
-      ],
-      "source": "BP Innovations",
-      "datePublished": "2026-01-09",
-      "language": "en",
-      "image": "https://www.bpinnovations.com/files/2026/01/blog172026.jpg"
     }
   ]
 }
