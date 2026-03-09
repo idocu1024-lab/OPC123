@@ -51,6 +51,42 @@
   ],
   "articles": [
     {
+      "id": "art-67c23172",
+      "title": "AI代理让数据分析提速百倍",
+      "url": "https://8allocate.com/blog/what-are-ai-agents-for-data-analysis/",
+      "summary": "这篇指南详细解释了自主 AI 代理如何持续监控业务数据、自动检测异常并给出可操作建议，彻底改变企业 BI 方式。文章附有真实案例（某企业审计时间从14天压缩到1小时），以及安全合规的部署要点。适合想用 AI 提升数据洞察效率的运营、财务和业务分析团队参考。",
+      "category": "data-analysis",
+      "tags": ["数据分析", "AI代理", "自动化", "商业智能", "数据治理"],
+      "source": "8allocate",
+      "datePublished": "2026-02-06",
+      "language": "en",
+      "image": "https://8allocate.com/wp-content/uploads/2025/06/AI-Agents-for-Data-Analytics_-A-Strategic-Guide-to-Agentic-AI-in-Enterprise.jpg"
+    },
+    {
+      "id": "art-66b4a60c",
+      "title": "中小企业AI营销工具12强",
+      "url": "https://www.askneedle.com/blog/ai-marketing-tools-for-small-business",
+      "summary": "全面评测12款专为资源有限的中小企业设计的AI营销工具，涵盖邮件营销、内容创作、社交媒体管理和客户互动等场景。文章帮你在"复杂工具矩阵"和"一站式自动化系统"之间做出明智选择，让有限预算发挥最大营销效果。",
+      "category": "marketing",
+      "tags": ["营销工具", "内容创作", "邮件营销", "中小企业", "工具评测"],
+      "source": "Ask Needle",
+      "datePublished": "2025-12-15",
+      "language": "en",
+      "image": "https://cdn.prod.website-files.com/6687bdce585231f6c477dad7/692452a1e08edb37222eecf1_featured-image-539b66e0-5e40-4624-bb35-db3d14bb4a6d.jpeg"
+    },
+    {
+      "id": "art-e81f6962",
+      "title": "2026年十大AI日程助手测评",
+      "url": "https://www.lindy.ai/blog/ai-scheduling-assistant",
+      "summary": "亲测十款AI日程助手，从多人协调、时间块管理到任务自动化全面对比，帮你找到最适合自己工作流的工具。无论是销售团队的预约管理还是个人的专注时间保护，都能找到对应的解决方案，从此告别繁琐的日历拉锯战。",
+      "category": "schedule-tasks",
+      "tags": ["日程管理", "AI助手", "时间管理", "效率工具", "工具对比"],
+      "source": "Lindy",
+      "datePublished": "2026-01-08",
+      "language": "en",
+      "image": "https://cdn.prod.website-files.com/6418bbd648ad4081cf60eb29/695f720ac648d8c41fa76054_6839ee212699f4ea072061e4_Lindy_Thumbnail1%2520(7)%2520(1).png"
+    },
+    {
       "id": "art-300af27a",
       "title": "OpenClaw 在中小学科培教学中的实践探索",
       "url": "https://cloud.tencent.com/developer/article/2632632",
