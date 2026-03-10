@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-7a3f91bc",
+      "title": "OpenClaw ACP：IDE 接入 AI 代理全攻略",
+      "url": "https://dev.to/czmilo/2026-complete-guide-openclaw-acp-bridge-your-ide-to-ai-agents-3hl8",
+      "summary": "OpenClaw ACP 是实现代理客户端协议的命令行工具，可将 IDE 与 OpenClaw 网关无缝打通，让开发者直接在编辑器中与 AI 代理持续对话。本文涵盖本地与远程网关配置、Zed 编辑器集成、会话管理及凭证安全处理，适合希望在日常编码工作流中引入持久 AI 辅助的开发者参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "ACP",
+        "IDE集成",
+        "开发者工具",
+        "代理协议"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-04",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fb0lffm34p6w6q2n9zodd.png"
+    },
+    {
+      "id": "art-c4e82d56",
+      "title": "OpenClaw 企业级 NAS+Docker 部署实战",
+      "url": "https://www.53ai.com/news/Openclaw/2026030986915.html",
+      "summary": "采用「NAS 硬件承载 + Docker 容器化 + 本地与云端算力协同」模式部署 OpenClaw 的完整方案，逐步解决安装繁琐、数据安全隐患和算力适配成本高三大痛点。文章提供从硬件准备、容器配置、权限设置到数据备份的全流程实操步骤，适合希望在私有化环境中规模化落地 OpenClaw 的企业参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业部署",
+        "Docker",
+        "NAS",
+        "私有化"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-09",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20240311/eb21a9e0409ab946254c64427055a5fa.png"
+    },
+    {
+      "id": "art-b9d3e712",
+      "title": "OpenClaw 25+ 真实应用场景全景图",
+      "url": "https://forwardfuture.ai/p/what-people-are-actually-doing-with-openclaw-25-use-cases",
+      "summary": "收录 50+ 可直接运行的 OpenClaw 自动化方案，涵盖邮件与 CRM 自动化、Telegram 构建应用、视频生产流水线和智能家居控制等多个领域的真实使用案例。提供分步骤对话式教程，无需编码即可在商业运营、开发工作流、内容创作和个人效率等场景中落地 OpenClaw。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用案例",
+        "自动化",
+        "生产力",
+        "实战"
+      ],
+      "source": "Forward Future",
+      "datePublished": "2026-02-09",
+      "language": "en",
+      "image": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f877edc3-1a9d-457f-a0b1-b1d5cdee2d15/Frame_1244831132.png?t=1770684987"
+    },
+    {
       "id": "art-300af27a",
       "title": "OpenClaw 在中小学科培教学中的实践探索",
       "url": "https://cloud.tencent.com/developer/article/2632632",
