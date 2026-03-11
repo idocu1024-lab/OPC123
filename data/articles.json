@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-4f8b2e9a",
+      "title": "OpenClaw赋能中国AI Agent企业落地路径解析",
+      "url": "https://www.mininglamp.com/news/7299/",
+      "summary": "明略科技副总裁李梦麟深度解读OpenClaw对中国AI发展的战略影响，分析国内模型厂商积极拥抱OpenClaw的市场机遇与挑战。文章指出企业应聚焦行业垂直代理能力，推动从「对话到执行」再到「多智能体协同」的战略演进，建议通过试点项目逐步构建可持续的企业AI能力体系。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "AI Agent",
+        "中国市场",
+        "明略科技"
+      ],
+      "source": "明略科技",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://www.mininglamp.com/wp-content/uploads/2026/02/OpenClaw%E5%B0%81%E9%9D%A2%E5%9B%BE_%E5%AE%8C%E6%95%B4%E6%A0%87%E9%A2%98%E4%B8%8A%E7%AF%87.png"
+    },
+    {
+      "id": "art-7c3d5f01",
+      "title": "开发者实战：OpenClaw本地AI代理完全指南",
+      "url": "https://dev.to/mechcloud_academy/unleashing-openclaw-the-ultimate-guide-to-local-ai-agents-for-developers-in-2026-3k0h",
+      "summary": "面向开发者的OpenClaw深度实战指南，系统讲解Gateway/Brain/Sandbox/Skills四层架构，通过Docker Compose完成Telegram接入部署。提供文档研究自动化、代码审查协助、日志分析三个真实落地场景，并介绍用JavaScript/TypeScript编写自定义技能的方法，帮助软件架构师将重复性任务委托给本地AI代理。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "开发者指南",
+        "Docker",
+        "本地部署",
+        "自定义技能"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-01-31",
+      "language": "en",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/22kdxgy7q0xrr7itpka6.png"
+    },
+    {
+      "id": "art-a6e1b834",
+      "title": "OpenClaw架构解析与企业安全部署实践",
+      "url": "https://vallettasoftware.com/blog/post/openclaw-2026-guide",
+      "summary": "深度解析OpenClaw自托管AI代理框架的架构设计，涵盖Gateway控制面、50+消息平台接入、技能扩展体系和安全加固12条清单。重点揭示ClawHub技能市场供应链安全风险（12-20%条目含恶意内容），并提供本地优先部署、最小权限配置与多工作区隔离的企业级安全实践。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "架构设计",
+        "安全部署",
+        "自托管",
+        "企业安全"
+      ],
+      "source": "Valletta Software",
+      "datePublished": "2026-02-26",
+      "language": "en",
+      "image": "https://images.blog.vallettasoftware.com/2026/02/openclaw-setup-security-1600x900.png"
+    },
+    {
       "id": "art-f3a8c1d2",
       "title": "OpenClaw搭配LongCat，效率提升30%实测",
       "url": "https://tech.meituan.com/2026/03/09/longcat-openclaw.html",
