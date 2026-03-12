@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-e5f2a879",
+      "title": "四大厂商企业级OpenClaw方案解析",
+      "url": "https://finance.sina.com.cn/tech/roll/2026-03-10/doc-inhqpaep9999746.shtml",
+      "summary": "新浪科技深度解析阿里云HiClaw、腾讯云ADP Claw、中兴Co-Claw、中关村科金PowerClaw四大企业级OpenClaw方案的技术路径与适配场景。阿里主打Manager/Worker多智能体架构，腾讯提供3分钟极速部署与原生IM接入，中兴聚焦安全合规与遗留系统整合，中关村科金深耕客户经营行业技能，为企业选型提供完整参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业版",
+        "阿里云",
+        "腾讯云",
+        "中兴"
+      ],
+      "source": "新浪科技",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://n.sinaimg.cn/spider20260310/346/w800h346/20260310/4950-94547ae9b8f73e44c31e5ad8067e15b5.png"
+    },
+    {
+      "id": "art-d3c6b104",
+      "title": "OpenClaw十大真实应用场景2026",
+      "url": "https://simplified.com/blog/automation/top-openclaw-use-cases",
+      "summary": "汇总 2026 年 OpenClaw 的十大真实应用场景，涵盖邮件自动化、每日简报、日历管理、知识库构建、内容创作流水线、开发者工作流、财务追踪、智能家居控制、调研比价与餐饮规划。文章同时提示安全风险：早期 2026 年已有 4.2 万套裸露安装被发现，建议本地部署以保护敏感数据。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用场景",
+        "自动化",
+        "邮件管理",
+        "使用案例"
+      ],
+      "source": "Simplified",
+      "datePublished": "2026-02-18",
+      "language": "en",
+      "image": "https://siteimages.simplified.com/blog/top-openclaw-use-cases-and-how-to-use-it.jpg"
+    },
+    {
+      "id": "art-2b7e8a31",
+      "title": "NVIDIA RTX本地运行OpenClaw实战",
+      "url": "https://www.nvidia.com/en-us/geforce/news/open-claw-rtx-gpu-dgx-spark-guide/",
+      "summary": "NVIDIA 官方指南，介绍如何在 RTX GPU 及 DGX Spark 上完全免费本地运行 OpenClaw。通过 LM Studio 或 Ollama 配置本地大模型，彻底消除云端成本并保护数据隐私。提供按 GPU 显存大小推荐不同模型的配置建议，兼顾个人 RTX 工作站与企业级 DGX 平台，适合注重隐私与成本控制的用户参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "NVIDIA",
+        "本地部署",
+        "RTX GPU",
+        "隐私保护"
+      ],
+      "source": "NVIDIA GeForce",
+      "datePublished": "2026-02-13",
+      "language": "en"
+    },
+    {
       "id": "art-4f8b2e9a",
       "title": "OpenClaw赋能中国AI Agent企业落地路径解析",
       "url": "https://www.mininglamp.com/news/7299/",
