@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-8a3f5c91",
+      "title": "华为云Flexus一键部署OpenClaw企业方案",
+      "url": "https://m.sohu.com/a/995830105_362225",
+      "summary": "华为基于华为云 Flexus X 实例正式发布 OpenClaw Agents 部署方案，支持 50+ 主流社交平台接入与主动消息推送，已完成亚太地区千级并发压力测试验证。方案提供「环境搭建→一键部署→功能配置→资源下线」四阶段标准流程，企业可快速构建支持多平台智能化运营的 AI 代理，最低月费约 39 美元，适合注重自主可控的企业客户参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "华为云",
+        "企业部署",
+        "多平台",
+        "云原生"
+      ],
+      "source": "搜狐科技",
+      "datePublished": "2026-03-13",
+      "language": "zh"
+    },
+    {
+      "id": "art-d2b6e047",
+      "title": "OpenClaw集成Gmail实现邮件全自动化",
+      "url": "https://lumadock.com/tutorials/openclaw-gmail-integration-email-automation",
+      "summary": "系统讲解 OpenClaw 与 Gmail 的三种集成方案：IMAP/SMTP 轮询、OAuth API 授权和 Pub/Sub 实时推送，逐步搭建 7×24 小时邮件自动化处理中枢。实现 VIP 邮件即时推送 Telegram、自动起草回复、线程摘要等场景，并提供最小权限凭证管理与 Webhook 加固的安全最佳实践。",
+      "category": "email-communication",
+      "tags": [
+        "OpenClaw",
+        "Gmail",
+        "邮件自动化",
+        "Pub/Sub",
+        "实战教程"
+      ],
+      "source": "LumaDock",
+      "datePublished": "2026-02-07",
+      "language": "en"
+    },
+    {
+      "id": "art-f9e3a104",
+      "title": "2026年OpenClaw十大集成自动化工具",
+      "url": "https://dev.to/chx381/top-10-openclaw-integration-and-automation-tools-in-2026-2cfl",
+      "summary": "盘点 2026 年扩展 OpenClaw 能力的十大生态工具，涵盖 Discord 社区接入（discord-mcp）、Go 高性能实现（goclaw）、边缘 IoT 轻量代理（nanobot）和 ClawHub 技能市场跨区域整合等方向。文章着重介绍安全优先架构设计、企业合规部署方案及各工具适用场景与规模化扩展策略，适合开发者选型参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "集成工具",
+        "生态系统",
+        "自动化",
+        "开发者"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-18",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr8mvfj4zvkhvvq59j6q5.png"
+    },
+    {
       "id": "art-e2f10b67",
       "title": "产品经理用OpenClaw实现全流程自动化",
       "url": "https://hellopm.co/openclaw-for-product-managers/",
