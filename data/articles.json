@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-c8f51d73",
+      "title": "OpenClaw 20大实战部署场景全解析",
+      "url": "https://www.xinyixx.com/index.php/2026/03/12/openclaw-5/",
+      "summary": "系统梳理OpenClaw Skills体系的20个商业实战场景，涵盖AI社交媒体矩阵运营、网页数据采集、RPA流程自动化、SaaS工具开发、行业研究报告生成、知识库构建、DevOps运维、销售漏斗自动化、代码安全审计、多语言内容本地化等方向。文章以「一人公司」架构为蓝图，展示如何用OpenClaw组建AI编辑、作者、运营、分析师、销售顾问的虚拟团队，实现低成本规模化运营。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "实战场景",
+        "自动化",
+        "一人公司",
+        "技能系统"
+      ],
+      "source": "心一信息",
+      "datePublished": "2026-03-12",
+      "language": "zh"
+    },
+    {
+      "id": "art-e1b39f06",
+      "title": "OpenClaw营销自动化：7大场景实战指南",
+      "url": "https://improvado.io/blog/openclaw-marketing-use-cases",
+      "summary": "Improvado深度梳理OpenClaw在营销团队的七大自动化场景：广告平台数据汇总、线索信息扩充、UTM参数审计、竞品广告监控、社媒互动数据抓取、落地页健康检查、CRM数据去重，月运营成本约5至25美元。文章同时提示，当团队需要历史数据治理和7×24小时稳定运行时，OpenClaw在90天内往往会遭遇瓶颈，需要更专业的数据整合方案。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "营销自动化",
+        "广告投放",
+        "数据分析",
+        "CRM"
+      ],
+      "source": "Improvado",
+      "datePublished": "2026-03-02",
+      "language": "en",
+      "image": "https://cdn.prod.website-files.com/5a1eb87c9afe1000014a4c7d/69a5ecdd10d274d60dbc0099_69a5ecd7b5de1151cbd2d61d_blog-openclaw-marketing-use-cases.png"
+    },
+    {
+      "id": "art-4d7a2c85",
+      "title": "OpenClaw爆火60天：中国产业AI集体进化",
+      "url": "https://36kr.com/p/3707034484437385",
+      "summary": "36氪深度报道OpenClaw在中国产业AI落地的60天演变：电商卖家通过OpenClaw绕过传统API限制，在视觉界面层实现跨平台自主操作，推动阿里云、腾讯云、百度、字节跳动等大厂相继推出OpenClaw适配方案。文章系统梳理从「对话工具」到「执行代理」的范式转变，分析国内模型厂商快速布局Agent生态的市场机遇。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "中国AI",
+        "产业应用",
+        "AI Agent"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260303/v2_bd2ced29678449328a16042ef061f45f@000000@ai_oswg303406oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
+    },
+    {
       "id": "art-8a3f5c91",
       "title": "华为云Flexus一键部署OpenClaw企业方案",
       "url": "https://m.sohu.com/a/995830105_362225",
