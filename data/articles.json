@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-2c6f1a09",
+      "title": "OpenClaw销售自动化：替代SDR实战指南",
+      "url": "https://vpn07.com/en/blog/2026-openclaw-sales-automation-outbound-linkedin-crm-guide.html",
+      "summary": "详解如何用OpenClaw自动化完整的出站销售流程：通过LinkedIn浏览挖掘潜在客户、执行个性化多轮外联序列、自动记录HubSpot和Salesforce等CRM数据，并7×24小时监控职位变动和融资公告等购买信号。实测案例显示，一位创始人用OpenClaw替代了20万美元年薪的GTM销售岗，三个月内销售管道增长40%。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "销售自动化",
+        "LinkedIn",
+        "CRM",
+        "出站销售"
+      ],
+      "source": "VPN07",
+      "datePublished": "2026-03-06",
+      "language": "en"
+    },
+    {
+      "id": "art-7d3e8b52",
+      "title": "OpenClaw企业版：客服销售全自动化",
+      "url": "https://openclaws.io/blog/openclaw-enterprise-use-cases/",
+      "summary": "OpenClaws.io详述企业如何部署OpenClaw代理实现多场景自动化：AI客服代理独立解决60至70%的入站咨询，销售开发代理自动完成线索资格认定和个性化外联，每月仅需约40美元API成本即可每周预订3至5个合格会议。还涵盖邮件分类摘要、跨系统状态报告生成、新员工入职自动化等企业核心场景，私有部署方案确保敏感数据留存企业内部。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "企业应用",
+        "客服自动化",
+        "销售开发",
+        "入职自动化"
+      ],
+      "source": "OpenClaws.io",
+      "datePublished": "2026-02-23",
+      "language": "en",
+      "image": "https://cdn.openclaws.io/public/images/blog/openclaw-enterprise-use-cases.jpg"
+    },
+    {
+      "id": "art-f4c2a791",
+      "title": "数商云OpenClaw落地实录",
+      "url": "https://www.shushangyun.com/article-30770.html",
+      "summary": "数商云作为数字化转型服务商，详细记录了企业级OpenClaw AI代理部署实践，通过Jarvis主协调器管理多个专用AI代理，实现跨平台工具协同，无需编程专业知识。部署成果显著：员工每天节省约2.3小时，硬件成本降低75%，响应速度提升3倍，同时保障敏感数据在企业私有环境内运行，满足合规要求。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "数商云",
+        "企业落地",
+        "私有部署",
+        "效率提升"
+      ],
+      "source": "数商云",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://www.shushangyun.com/uploads/2024-10-12/p9UsFcDROSv5.jpg"
+    },
+    {
       "id": "art-c8f51d73",
       "title": "OpenClaw 20大实战部署场景全解析",
       "url": "https://www.xinyixx.com/index.php/2026/03/12/openclaw-5/",
