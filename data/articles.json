@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-3b8e7c5a",
+      "title": "企业微信官方插件3步接入OpenClaw实战",
+      "url": "https://cloud.tencent.com/developer/article/2637067",
+      "summary": "腾讯企业微信官方发布长连接插件，支持3步快速接入OpenClaw智能代理：创建机器人获取Bot ID与Secret、部署OpenClaw并配置渠道凭证、绑定企业微信账号。相比传统URL回调方案，长连接模式彻底消除回调失败问题，无需域名注册和IP白名单配置，让企业快速构建7×24小时响应的AI员工。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业微信",
+        "腾讯云",
+        "IM接入",
+        "企业落地"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-11",
+      "language": "zh"
+    },
+    {
+      "id": "art-f6d2a094",
+      "title": "OpenClaw多智能体架构：全自动化公司实战",
+      "url": "https://dev.to/mfs_corp/how-i-automated-my-entire-business-with-openclaw-multi-agent-architecture-3dd",
+      "summary": "MFS Corp 创始人分享用 OpenClaw 构建零人工员工全自动化公司的完整实践：6个专职 AI 代理（首席参谋、IT、运营、工程、战略、加密）分工协作，通过 Discord 实现日常站会与审计追踪，月均云端 LLM 成本仅约 50 美元，大部分推理在本地 Ollama 处理，7×24小时稳定运行。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "多智能体",
+        "业务自动化",
+        "零人工",
+        "实战案例"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-01",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fp7odt5orze55hdhq44m9.png"
+    },
+    {
+      "id": "art-1c9e4b7f",
+      "title": "OpenClaw自动化股票研究：每周百只全自动分析",
+      "url": "https://dev.to/bhanu_pratapsinghrathor/automating-stock-research-with-openclaw-l1c",
+      "summary": "开发者用 OpenClaw 在 MacBook Pro 本地构建全自动股票研究系统：每20分钟通过 Screener.in 抓取50个新股标的，8个专研代理并行分析基本面、财务健康、竞争优势、管理层质量、风险与估值，每周日自动推送 Telegram 评级与目标价。系统完全本地运行，每周自动分析逾100只股票，无需外部服务器。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "股票研究",
+        "自动化分析",
+        "数据分析",
+        "量化投资"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fn4zcjidcbqymfayt5ycm.png"
+    },
+    {
       "id": "art-2c6f1a09",
       "title": "OpenClaw销售自动化：替代SDR实战指南",
       "url": "https://vpn07.com/en/blog/2026-openclaw-sales-automation-outbound-linkedin-crm-guide.html",
