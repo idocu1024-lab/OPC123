@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-5a2c9f18",
+      "title": "腾讯全面拥抱OpenClaw：市值暴涨3500亿实录",
+      "url": "https://36kr.com/p/3718513542149511",
+      "summary": "36氪深度报道腾讯如何全面部署OpenClaw生态：推出面向个人的QClaw桌面助手、面向开发者的Lighthouse部署平台和面向企业的WorkBuddy解决方案。马化腾亲自转发引发股价单日上涨7%、市值暴涨3500亿港元。腾讯99年入职产品负责人仅用两周完成QClaw开发，并计划年中推出微信AI代理，将智能代理定位为连接用户与服务的新型操作系统界面。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "腾讯",
+        "企业落地",
+        "QClaw",
+        "微信AI"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-12",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260311/v2_94fc3622397d477abaa5936b6a01e25e@000000@ai_oswg437975oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
+    },
+    {
+      "id": "art-e7b4d031",
+      "title": "OpenClaw部署Kubernetes：企业级运维实战",
+      "url": "https://dev.to/thenjdevopsguy/running-openclaw-on-kubernetes-57ki",
+      "summary": "完整讲解在Kubernetes集群上部署OpenClaw的技术方案，通过agentgateway实现可观测性和安全控制。介绍容器化选项对比、Kubernetes Gateway配置、路由至Anthropic API，以及处理2026.3.12版本已知Bug的绕过方法。部署后可通过agentgateway监控流量路由，适合需要在企业Kubernetes基础设施上规模化运行OpenClaw的团队。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Kubernetes",
+        "企业部署",
+        "容器化",
+        "DevOps"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-14",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhl1ou5tle4qd32hitqwa.png"
+    },
+    {
+      "id": "art-8c6a3f72",
+      "title": "OpenClaw助力独立开发者打造一人公司",
+      "url": "https://dev.to/shehzan/openclaw-for-developers-building-solo-dev-companies-2o6g",
+      "summary": "面向独立开发者的OpenClaw实战指南，分析OpenAI收购OpenClaw创始人后自主AI代理正式进入生产环境的背景。介绍如何用OpenClaw的50+集成渠道和100+预置技能自动化PR审查、DevOps监控、文档生成、邮件分类等重复性工作，让单个开发者实现原本需要整支专业团队才能完成的业务规模，专注于战略决策的高价值部分。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "独立开发者",
+        "一人公司",
+        "自动化",
+        "DevOps"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-18",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsg4gbgs1mhq80g59nrmh.png"
+    },
+    {
       "id": "art-3b8e7c5a",
       "title": "企业微信官方插件3步接入OpenClaw实战",
       "url": "https://cloud.tencent.com/developer/article/2637067",
