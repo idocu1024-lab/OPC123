@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-b3e7d5f2",
+      "title": "腾讯字节阿里争推OpenClaw数字员工产品",
+      "url": "https://www.donews.com/news/detail/4/6472362.html",
+      "summary": "DoNews报道腾讯、字节跳动、阿里巴巴、百度、小米等大厂密集推出基于OpenClaw的数字员工产品：腾讯连推QClaw、企业微信机器人和WorkBuddy三款产品，字节发布云原生SaaS版ArkClaw，阿里推出CoPaw和HiClaw主打本地云端协同。各大厂正将OpenClaw定位为人机交互的新型入口，争夺AI数字员工市场的战略高地。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "数字员工",
+        "腾讯",
+        "字节跳动",
+        "企业落地"
+      ],
+      "source": "DoNews",
+      "datePublished": "2026-03-18",
+      "language": "zh"
+    },
+    {
+      "id": "art-c9a4f1e8",
+      "title": "OpenClaw部署AWS：端到端测试实战",
+      "url": "https://dev.to/aws-builders/openclaw-meets-aws-end-to-end-testing-and-deployment-1ig1",
+      "summary": "AWS Builders作者完整记录在AWS EC2上部署OpenClaw的端到端测试过程，涵盖实例配置、WhatsApp渠道集成、多语言模型切换及真实工作流测试。文章验证了OpenClaw在云端自主执行网站开发、内容生成等复杂任务的能力，为企业在AWS基础设施上规模化部署AI代理提供了可操作参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "AWS",
+        "云部署",
+        "WhatsApp集成",
+        "端到端测试"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-10",
+      "language": "en",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5jg6jk9l6lqzhkb5jpcb.png"
+    },
+    {
+      "id": "art-6d2b8a3c",
+      "title": "OpenClaw自定义Skill开发与调试指南",
+      "url": "https://cloud.tencent.com/developer/article/2635331",
+      "summary": "腾讯云开发者社区实战教程，详解OpenClaw自定义Skill开发全流程：以Python编写汇率转换器为例，覆盖目录结构规范、manifest.json元数据配置、BaseSkill继承实现，以及单元测试、日志追踪和rpdb远程调试三种调试方法。帮助企业开发者将私有API和复杂数据处理能力封装为OpenClaw可调用技能，实现业务场景深度定制。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自定义Skill",
+        "Python开发",
+        "腾讯云",
+        "技能开发"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-09",
+      "language": "zh"
+    },
+    {
       "id": "art-5a2c9f18",
       "title": "腾讯全面拥抱OpenClaw：市值暴涨3500亿实录",
       "url": "https://36kr.com/p/3718513542149511",
