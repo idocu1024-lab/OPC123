@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-e7eff015",
+      "title": "OpenClaw私有化部署：数商云企业级落地实践",
+      "url": "https://www.shushangyun.com/article-30531.html",
+      "summary": "数商云基于OpenClaw为中国企业提供私有化AI部署方案，通过三阶段实施帮助企业实现60-80%人工操作减少。方案覆盖网络、应用、数据三层安全保障，深度集成企业现有OA、CRM、ERP系统，保障数据主权。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "私有化部署",
+        "企业级",
+        "数据安全",
+        "数商云"
+      ],
+      "source": "数商云",
+      "datePublished": "2026-03-06",
+      "language": "zh",
+      "image": "https://www.shushangyun.com/uploads/2024-10-12/p9UsFcDROSv5.jpg"
+    },
+    {
+      "id": "art-ec38085f",
+      "title": "OpenClaw智能体部署实战：本地到云端全方案",
+      "url": "https://dev.to/manishmshiva/how-to-deploy-your-own-agent-using-openclaw-1e0c",
+      "summary": "详细介绍OpenClaw三种部署方式：本地安装、云端VPS托管和Docker容器化。作者重点讲解安全配置要点，帮助开发者在生产环境中安全运行自托管AI智能体并避免权限滥用风险。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署",
+        "Docker",
+        "云服务器",
+        "AI智能体"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-09",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fm81tlb7rfrh2sy8zi4ig.webp"
+    },
+    {
+      "id": "art-f00c627e",
+      "title": "OpenClaw开发者实战：GitHub到Slack全场景落地",
+      "url": "https://dev.to/laracopilot/what-is-openclaw-ai-in-2026-a-practical-guide-for-developers-25hj",
+      "summary": "面向开发者的OpenClaw实践指南，覆盖GitHub仓库自动化、Slack文档助手搭建（约20分钟上线）、CI/CD流程集成等真实场景。详解OpenClaw心跳机制和Markdown配置架构，兼顾安全风险说明。",
+      "category": "docs-writing",
+      "tags": [
+        "OpenClaw",
+        "开发者",
+        "GitHub集成",
+        "Slack",
+        "自动化实战"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-24",
+      "language": "en",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pmrcr9b3n8uq0duzecx7.png"
+    },
+    {
       "id": "art-b3e7d5f2",
       "title": "腾讯字节阿里争推OpenClaw数字员工产品",
       "url": "https://www.donews.com/news/detail/4/6472362.html",
