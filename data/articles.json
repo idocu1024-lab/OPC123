@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-e382eb8f",
+      "title": "OpenClaw企业落地实战部署指南",
+      "url": "https://www.sohu.com/a/998095024_120800396",
+      "summary": "本文详细介绍OpenClaw在中国企业场景下的落地方案，涵盖客服自动化、B2B客户管理、内部运营和数据分析四大核心场景。通过Docker部署结合企业微信/飞书/钉钉集成，帮助企业快速实现AI智能体的规模化落地。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "智能客服",
+        "自动化部署",
+        "飞书集成"
+      ],
+      "source": "搜狐",
+      "datePublished": "2026-03-18",
+      "language": "zh",
+      "image": "https://www.sohu.com/favicon.ico"
+    },
+    {
+      "id": "art-c9b40ef5",
+      "title": "30分钟完成OpenClaw部署教程",
+      "url": "https://dev.to/alchemic_technology/how-to-set-up-openclaw-in-30-minutes-complete-2026-guide-32m8",
+      "summary": "本文提供OpenClaw完整的30分钟快速搭建指南，涵盖接入Anthropic/OpenAI等主流LLM和Telegram/Discord等消息平台的配置步骤。通过SOUL.md等上下文文件设置个性化AI助手，并实现7×24小时全天候自动运行。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "快速部署",
+        "AI助手",
+        "Telegram集成"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-10",
+      "language": "en",
+      "image": "https://dev.to/social_previews/article/2291847.png"
+    },
+    {
+      "id": "art-c0421a2b",
+      "title": "OpenClaw硬件选型完整指南2026",
+      "url": "https://dev.to/yankoaleksandrov/the-complete-guide-to-openclaw-hardware-in-2026-19ch",
+      "summary": "本文横向对比树莓派5、Mac Mini M2/M3、云VPS和NVIDIA Jetson Orin Nano四款硬件方案，帮助用户为本地部署OpenClaw选择最合适的设备。从性价比和隐私保护角度分析，两年内本地硬件成本可显著低于ChatGPT Plus等订阅费用。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "硬件选型",
+        "本地部署",
+        "自托管"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-09",
+      "language": "en",
+      "image": "https://dev.to/social_previews/article/2234156.png"
+    },
+    {
       "id": "art-e7eff015",
       "title": "OpenClaw私有化部署：数商云企业级落地实践",
       "url": "https://www.shushangyun.com/article-30531.html",
