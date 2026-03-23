@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-3f91c2a7",
+      "title": "中关村科金PowerClaw：OpenClaw企业落地实战",
+      "url": "https://tech.gmw.cn/2026-03/03/content_38624852.htm",
+      "summary": "中关村科金发布国内首个基于OpenClaw的企业级解决方案PowerClaw，覆盖营销、销售、服务及内部办公全场景。平台将传统流程驱动模式升级为意图驱动操作，已服务180+国家超2000家企业客户，帮助企业实现从信息处理到任务执行的完整闭环。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "PowerClaw",
+        "中关村科金",
+        "智能自动化"
+      ],
+      "source": "光明网",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://imgtech.gmw.cn/attachement/png/site2/20260303/005056b865832b10c23001.png"
+    },
+    {
+      "id": "art-b5d8e04c",
+      "title": "OpenClaw席卷中国：国产AI建立结构性竞争优势",
+      "url": "https://www.36kr.com/p/3715510747410944",
+      "summary": "36氪深度分析OpenClaw在中国的部署态势：腾讯在深圳运营线下安装点、小米将MiclawAgent嵌入全线设备操作系统、阿里通过通义集成实现语音指令驱动的服务交易。文章揭示OpenClaw三周突破25万GitHub星背后的数据飞轮机制，分析国产AI如何通过高频任务执行积累训练数据、建立全球竞争的结构性优势。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国AI",
+        "小米",
+        "阿里",
+        "竞争优势"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-09",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260309/v2_ee2edbda4d664c44bf9b152d07cd5d9f@5888275@ai_oswg1080051oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
+    },
+    {
+      "id": "art-9a2f6c31",
+      "title": "OpenClaw十大新兴项目与AI代理未来趋势",
+      "url": "https://dev.to/chx381/top-10-emerging-openclaw-projects-and-the-future-of-ai-agents-in-2026-144p",
+      "summary": "盘点2026年OpenClaw生态十大新兴项目，涵盖边缘计算轻量代理nanobot、持久记忆系统MemOS、群体智能多代理NagaAgent、企业安全基础设施secure-openclaw及Go语言生产级实现goclaw。文章展望AI代理在医疗、教育、科研和商业四大领域的实际落地场景，为开发者评估OpenClaw扩展能力提供系统参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "开源项目",
+        "AI代理",
+        "生态系统",
+        "未来趋势"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-02-17",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyoam8h1rq1lfkwk6pfci.png"
+    },
+    {
       "id": "art-e382eb8f",
       "title": "OpenClaw企业落地实战部署指南",
       "url": "https://www.sohu.com/a/998095024_120800396",
