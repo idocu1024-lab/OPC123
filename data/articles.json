@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-a2d7b4f9",
+      "title": "OpenClaw接入飞书：20+企业场景落地示例",
+      "url": "https://www.feishu.cn/content/article/7618097619889343446",
+      "summary": "飞书官方文章详解 OpenClaw 接入飞书后的20+实际应用场景，涵盖发票OCR报销自动化、跨平台工单智能分类、实时竞品价格监控及服务器巡检告警等。文章展示 OpenClaw 如何通过 API 直接访问飞书文档、日历与任务，让中小企业和知识工作者无需中间件即可实现完整工作流自动化。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "飞书",
+        "企业自动化",
+        "工作流",
+        "落地示例"
+      ],
+      "source": "飞书官网",
+      "datePublished": "2026-03-17",
+      "language": "zh",
+      "image": "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/541c0692624a4ba1a9aff1726a80857e.png~tplv-jbbdkfciu3-png:0:0.png"
+    },
+    {
+      "id": "art-6e3c8b15",
+      "title": "OpenClaw vs NanoClaw vs NemoClaw企业选型指南",
+      "url": "https://dev.to/mechcloud_academy/architecting-the-agentic-future-openclaw-vs-nanoclaw-vs-nvidias-nemoclaw-9f8",
+      "summary": "MechCloud Academy 深度对比三大 AI Agent 框架：OpenClaw 提供 50+ 原生集成与多模型支持，适合功能需求丰富的团队；NanoClaw 以约500行核心代码实现容器级安全隔离；NVIDIA NemoClaw 专为企业合规部署打造，开箱即用支持数据隐私与审计控制。文章为企业技术团队提供框架选型决策树，兼顾 DevOps 能力与安全合规需求。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业选型",
+        "NemoClaw",
+        "NVIDIA",
+        "部署架构"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-17",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc3rmr9jpg99nrz47q7ag.png"
+    },
+    {
+      "id": "art-d5f1a7c3",
+      "title": "OpenClaw企业落地5大进阶配置实战",
+      "url": "https://www.53ai.com/news/Openclaw/2026031929351.html",
+      "summary": "系统梳理 OpenClaw 企业落地的5个进阶配置方向：飞书知识库自动沉淀、n8n/RPA 智能编排调度、SOP 转技能复用、KPI 监控决策辅助及多智能体协作协议。以跨境电商运营为主要案例，展示如何用 OpenClaw 实现供应商关系管理自动化，帮助中小企业用低成本构建企业级 AI 能力。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "进阶配置",
+        "多智能体",
+        "跨境电商"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-19",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07080c8ea7dff92c.webp"
+    },
+    {
       "id": "art-3f91c2a7",
       "title": "中关村科金PowerClaw：OpenClaw企业落地实战",
       "url": "https://tech.gmw.cn/2026-03/03/content_38624852.htm",
