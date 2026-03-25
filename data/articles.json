@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-56cee21e",
+      "title": "企微里的130个AI员工实战",
+      "url": "https://www.53ai.com/news/Openclaw/2026032190615.html",
+      "summary": "作者在企业微信中使用OpenClaw与The Agency框架成功部署了130个专业AI智能体，构建起完整的「AI员工」体系。文章详细记录了子智能体生成模式、上下文窗口管理等实战技巧，以及用可视化「星图」追踪OpenClaw版本迭代的方法。这是一篇真实的企业团队借助OpenClaw实现智能体规模化落地的全程实录。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "AI员工",
+        "企业微信",
+        "多智能体",
+        "The Agency"
+      ],
+      "source": "53AI知识库",
+      "datePublished": "2026-03-21",
+      "language": "zh",
+      "image": "https://static.53ai.com/assets/static/images/avatar.jpg"
+    },
+    {
+      "id": "art-25c74fa2",
+      "title": "OpenClaw生产化落地实战",
+      "url": "https://trilogyai.substack.com/p/openclaw-in-the-real-world",
+      "summary": "Rahul Subramaniam记录了将OpenClaw从实验性工具升级为生产级基础设施的完整实践路径，涵盖QMD摘要记忆架构、Git+Stow版本控制与确定性脚本等关键模式。文章以「DevBot」为案例，展示了一个父智能体协调五个专业子智能体完成软件开发全流程的真实效果。该指南源自真实生产环境部署经验，对希望规模化运行OpenClaw的团队极具参考价值。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "多智能体",
+        "开发自动化",
+        "智能体架构"
+      ],
+      "source": "Trilogy AI",
+      "datePublished": "2026-03-03",
+      "language": "en",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/826c114c-3958-43ea-ac26-6606f85d4349_1024x559.jpeg"
+    },
+    {
+      "id": "art-990ff8f6",
+      "title": "OpenClaw 15个落地场景解析",
+      "url": "https://kanerika.com/blogs/openclaw-usecases/",
+      "summary": "Kanerika梳理了2026年经过实际验证的15个OpenClaw落地场景，涵盖邮件自动化、开发者工作流、智能家居集成和文档管理等方向。文章以真实组织的部署案例为基础，说明OpenClaw如何通过AI智能体大幅提升各类业务流程的效率。对于正在评估OpenClaw企业落地方案的团队，本文提供了可直接参考的实践依据。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用案例",
+        "自动化",
+        "工作流优化",
+        "效率提升"
+      ],
+      "source": "Kanerika",
+      "datePublished": "2026-02-19",
+      "language": "en",
+      "image": "https://kanerika.com/wp-content/uploads/2026/02/New-Blog-Banner-2026-02-19T122747.883.jpg"
+    },
+    {
       "id": "art-a2d7b4f9",
       "title": "OpenClaw接入飞书：20+企业场景落地示例",
       "url": "https://www.feishu.cn/content/article/7618097619889343446",
