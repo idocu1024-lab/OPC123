@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-f5c4529e",
+      "title": "广州黄埔OpenClaw制造业落地",
+      "url": "https://www.chinanews.com.cn/dwq/2026/03-14/10586679.shtml",
+      "summary": "广州黄埔开发区科学城数科集团推出基于OpenClaw的「安全养虾」企业级方案，将OpenClaw预装于AI桌面工作站，无需专业技术团队即可部署。现场演示了离线条件下自然语言指令驱动计算机操作的完整流程，目标是为制造业中小企业提供可负担的「数字员工」解决方案，内置安全隔离机制防止权限失控风险。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "制造业",
+        "中小企业",
+        "广州黄埔",
+        "数字员工"
+      ],
+      "source": "中国新闻网",
+      "datePublished": "2026-03-14",
+      "language": "zh",
+      "image": "https://www.chinanews.com.cn/tp/hd2011/2026/03-14/1077432.jpg"
+    },
+    {
+      "id": "art-8fc16b80",
+      "title": "OpenClaw自主运营企业4周实录",
+      "url": "https://buildtolaunch.substack.com/p/openclaw-autonomous-agent-live-demo",
+      "summary": "Jenny Ouyang详细记录了让OpenClaw自主管理其业务四周的全程实验，部署了18个定时任务，通过Telegram交互并以GitHub管理技能库，实现社交媒体发帖、SEO分析与内容编排的全流程自动化。最关键的时刻是智能体自主分析两周跨平台互动数据后，建议放弃X平台转向Bluesky，作者采纳了这一策略，验证了OpenClaw在真实业务场景中的自主决策能力。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "自主智能体",
+        "内容营销",
+        "社交媒体自动化",
+        "业务实战"
+      ],
+      "source": "Build to Launch",
+      "datePublished": "2026-03-16",
+      "language": "en",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ac22f24b-432d-44e4-84ea-e66cf59fc091_1536x1024.png"
+    },
+    {
+      "id": "art-f64b2fbd",
+      "title": "OpenClaw 35+真实用户落地案例集",
+      "url": "https://sidsaladi.substack.com/p/openclaw-use-cases-35-real-ways-people",
+      "summary": "Sid Saladi整理了35个以上OpenClaw真实用户的实际使用场景，涵盖每日自动简报、语音转日记、家庭协作清单到企业级工作流自动化等多个维度。文章深入分析了部署过程中遭遇的提示注入漏洞、账户权限风险等实际安全问题，并提供防御性实践建议，是目前最全面的OpenClaw社区使用案例汇编之一。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "使用案例",
+        "自动化",
+        "安全部署",
+        "工作流"
+      ],
+      "source": "Sid Saladi on Substack",
+      "datePublished": "2026-02-22",
+      "language": "en",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ce135ff1-deef-43e3-9e51-0dd202d63a54_1536x1024.png"
+    },
+    {
       "id": "art-56cee21e",
       "title": "企微里的130个AI员工实战",
       "url": "https://www.53ai.com/news/Openclaw/2026032190615.html",
