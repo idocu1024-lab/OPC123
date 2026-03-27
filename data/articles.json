@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-2d7f4e91",
+      "title": "13大厂争相跟进OpenClaw",
+      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-09/doc-inhqmcpn0565386.shtml",
+      "summary": "猎豹移动CEO傅盛用OpenClaw创建8个AI代理，50元以内制作了一条30万+播放量视频，并向611人批量发送新年祝福。阿里云、腾讯云、字节跳动、钉钉等13家互联网大厂相继推出OpenClaw适配方案，覆盖股票分析、外贸邮件、PDF报告等企业落地场景。OpenClaw在四个月内突破25万GitHub星，引发「养虾」现象，推动国内AI从「对话工具」向「执行代理」加速演进。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "互联网大厂",
+        "猎豹移动",
+        "企业跟进",
+        "AI代理"
+      ],
+      "source": "新浪财经",
+      "datePublished": "2026-03-09",
+      "language": "zh"
+    },
+    {
+      "id": "art-7b3c9d15",
+      "title": "EY等巨头的OpenClaw落地挑战",
+      "url": "https://www.semafor.com/article/03/27/2026/openclaw-is-coming-for-businesses",
+      "summary": "英伟达CEO黄仁勋直言「全球每家公司都需要制定OpenClaw战略」，安永（EY）全球副主席Julie Teigland确认正在为顾问团队开发OpenClaw部署计划。文章深入分析企业引入OpenClaw的核心障碍：员工AI接受度不足，以及企业更多聚焦于在现有流程叠加AI而非重塑业务模式，导致技术可用性与实际落地间存在明显落差。这是目前最新的企业OpenClaw战略落地实况报道之一。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业战略",
+        "安永EY",
+        "英伟达",
+        "商业落地"
+      ],
+      "source": "Semafor",
+      "datePublished": "2026-03-27",
+      "language": "en",
+      "image": "https://img.semafor.com/ec0ad09f18414b1b8d8dd9faa326840c353f42c8-6000x4000.jpg?rect=1000,0,4000,4000&w=800&h=800&q=75&auto=format"
+    },
+    {
+      "id": "art-a4e8f302",
+      "title": "OpenClaw补齐生产级落地短板",
+      "url": "https://www.53ai.com/news/Openclaw/2026032429158.html",
+      "summary": "OpenClaw发布v2026.3.22后完成从开源项目到生产级AI平台的架构重塑：ClawHub市场清除1000+恶意插件，新增9000+企业技能；修复Windows SMB凭证泄露、JVM注入等关键安全漏洞；Agent超时时间从600秒延长至48小时，支持GPT-5.4和MiniMax M2.7多模型路由。全面补齐此前制约企业规模化落地的核心短板，并新增飞书结构化卡片、Telegram自动命名等企业协作增强功能。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "安全加固",
+        "企业级",
+        "版本更新"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-24",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20240311/eb21a9e0409ab946254c64427055a5fa.png"
+    },
+    {
       "id": "art-f5c4529e",
       "title": "广州黄埔OpenClaw制造业落地",
       "url": "https://www.chinanews.com.cn/dwq/2026/03-14/10586679.shtml",
