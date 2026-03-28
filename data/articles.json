@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-3a9f2b7e",
+      "title": "10家A股公司争相部署OpenClaw",
+      "url": "https://www.stcn.com/article/detail/3666737.html",
+      "summary": "优刻得率先推出OpenClaw云端部署镜像，龙芯中科在国产3B6000M芯片上完成本地化部署，北信源将OpenClaw集成入「新源密信」产品线，科大讯飞、顺网科技、青云科技等超10家A股上市公司相继宣布入局。各公司部署公告发布后概念股融资买入额显著激增，形成国内首批OpenClaw落地企业梯队，覆盖云计算、网络安全、国产芯片等多个赛道。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "A股",
+        "龙芯中科",
+        "优刻得",
+        "企业部署"
+      ],
+      "source": "证券时报",
+      "datePublished": "2026-03-09",
+      "language": "zh"
+    },
+    {
+      "id": "art-c5d1e804",
+      "title": "用OpenClaw构建的10个生产级实战项目",
+      "url": "https://medium.com/@alexrozdolskiy/10-wild-things-people-actually-built-with-openclaw-e18f487cb3e0",
+      "summary": "开发者Alex Rozdolskyi记录了10个OpenClaw真实生产环境落地案例：包括让AI代理自主构建独立游戏并积累数千名玩家、全天候加密货币套利系统通过Telegram实时推送通知，以及自动化GitHub PR审查和CI/CD流水线。所有案例均为长期运行的生产系统而非演示，文章同时客观记录了将执行权交给AI过程中遭遇的成功与失败教训。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "AI智能体",
+        "实战案例",
+        "自动化",
+        "生产部署"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-12",
+      "language": "en",
+      "image": "https://miro.medium.com/1*GvYKDCnfXgz6-sDPFaoItg.png"
+    },
+    {
+      "id": "art-6b8f3a12",
+      "title": "OpenClaw商业变现：5类用户真实案例",
+      "url": "https://aiblewmymind.substack.com/p/openclaw-ai-agent-use-cases-guide",
+      "summary": "Felix Craft用OpenClaw三周创收超6.2万美元，Kelly Claude每日自动生成并提交12款iOS应用——作者Daria Cupareanu整理了5类典型用户（独立顾问、内容创作者、初创企业、小型组织、副业创业者）通过OpenClaw实现商业变现的真实路径。文章详述如何用OpenClaw构建无需人工干预的跨应用自动化工作流，并分享了作者自己的AI代理「Otto」帮助Newsletter实现持续增长的完整实战经验。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "商业变现",
+        "自主AI代理",
+        "创业实战",
+        "内容创作"
+      ],
+      "source": "AI blew my mind",
+      "datePublished": "2026-03-01",
+      "language": "en",
+      "image": "https://substack-post-media.s3.amazonaws.com/public/images/a5d4cb49-556f-46e1-a27c-b1e83f3a6fc5_1280x720.png"
+    },
+    {
       "id": "art-2d7f4e91",
       "title": "13大厂争相跟进OpenClaw",
       "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-09/doc-inhqmcpn0565386.shtml",
