@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-b2e4f917",
+      "title": "飞致云超聚变联合推出OpenClaw一体机",
+      "url": "https://1panel.cn/openclaw.html",
+      "summary": "飞致云与超聚变联合打造OpenClaw一体机，集成FusionXpark GB10硬件（128GB统一内存、NVIDIA Blackwell GPU、2TB存储）与1Panel管理界面，开箱即用支持10至20个AI助手并行运行，并发容量可达308 TPS。以5.9万元起售面向团队和部门级AI基础设施，内置安全隔离、防火墙与SSL加密，融合本地大模型Qwen3.5-35B，让中国企业实现数据不出域的私有化OpenClaw落地。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "飞致云",
+        "超聚变",
+        "AI一体机",
+        "私有化部署"
+      ],
+      "source": "飞致云1Panel",
+      "datePublished": "2026-03-20",
+      "language": "zh",
+      "image": "https://1panel.cn/img/openclaw-banner.png"
+    },
+    {
+      "id": "art-7d5a3c08",
+      "title": "开发者实测：21个进阶OpenClaw自动化方案",
+      "url": "https://medium.com/@rentierdigital/21-openclaw-automations-nobody-talks-about-because-the-obvious-ones-already-broke-the-internet-3f881b9e0018",
+      "summary": "Phil（Rentier Digital）基于自己真实运行的OpenClaw实例，分享21个鲜为人知的进阶自动化方案，均来自n8n+OpenClaw+Supabase实际生产环境，按节省时间效果排序。这些方案覆盖开发工作流、内容营销和个人效率等场景，回应了347位读者追问「哪些OpenClaw自动化真正在生产环境有效」的问题。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自动化",
+        "开发者",
+        "n8n",
+        "实战方案"
+      ],
+      "source": "Medium - Rentier Digital",
+      "datePublished": "2026-02-14",
+      "language": "en",
+      "image": "https://miro.medium.com/0*1zBRF29ZHl0XB6WA.png"
+    },
+    {
+      "id": "art-4f1e8b62",
+      "title": "OpenClaw 11大应用场景实测拆解",
+      "url": "https://medium.com/the-ai-studio/11-insane-use-cases-of-openclaw-ai-a341e997a57f",
+      "summary": "Ai Studio详解OpenClaw的11个高效应用场景，从个人CRM自动化（扫描Gmail与日历构建完整联系人画像）到内容创作工作流全面梳理。文章以「真正能执行任务而非仅生成文字」为核心，为希望让OpenClaw产生实际生产力价值的用户提供可直接落地的场景指南，发布于OpenClaw全球达33万GitHub星之际。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用场景",
+        "CRM自动化",
+        "生产力",
+        "AI智能体"
+      ],
+      "source": "Medium - The AI Studio",
+      "datePublished": "2026-03-28",
+      "language": "en",
+      "image": "https://miro.medium.com/1*6dBk6xE4vZMV24CJUailEQ.png"
+    },
+    {
       "id": "art-3a9f2b7e",
       "title": "10家A股公司争相部署OpenClaw",
       "url": "https://www.stcn.com/article/detail/3666737.html",
