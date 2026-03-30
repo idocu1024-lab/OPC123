@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-5e3a8b2d",
+      "title": "OpenClaw生产故障五大根因与对策",
+      "url": "https://dev.to/helen_mireille_47b02db70c/why-openclaw-agents-fail-in-production-and-what-i-did-about-it-14ae",
+      "summary": "Helen Mireille记录了OpenClaw在生产环境中失败的五大根因：默认关闭鉴权导致实例暴露、150+安全公告带来持续维护负担（四天内出现九个CVE含9.9分高危漏洞）、指令模糊导致代理执行破坏性操作、ClawHub中约12%技能含恶意代码，以及自托管缺乏审计追踪。作者最终从自托管迁移至RunLobster托管平台，以每月49美元换取补丁自动化、集成管控与内置安全合规，为生产落地团队提供真实决策参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "安全加固",
+        "故障排查",
+        "托管平台"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-30",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fa6hcffdbodw1l8j6d1hf.png"
+    },
+    {
+      "id": "art-9c7d1f56",
+      "title": "OpenClaw企业工作流落地案例精选",
+      "url": "https://www.codebridge.tech/articles/openclaw-case-studies-for-business-workflows-that-show-where-autonomous-ai-creates-value-and-where-enterprises-need-guardrails",
+      "summary": "Codebridge整理了OpenClaw在真实企业中的5大落地工作流：Slack智能支持自动响应内部文档问题、财务发票AI解析自动入账、GitHub PR审查通过Telegram推送反馈、本地CRM自动抓取邮件与日历数据，以及多智能体协作层支持分布式任务执行。文章核心结论：「最有价值的智能体系统，取决于边界设定的精准程度」，成功落地需跨系统集成与明确任务约束，而非孤立的单点替换。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "工作流",
+        "多智能体",
+        "案例研究"
+      ],
+      "source": "Codebridge",
+      "datePublished": "2026-03-19",
+      "language": "en"
+    },
+    {
+      "id": "art-2f8a4b3e",
+      "title": "阿里云剖析OpenClaw企业级落地路径",
+      "url": "https://developer.aliyun.com/article/1720566",
+      "summary": "阿里云开发者社区深度分析OpenClaw在255K GitHub星背后的企业级落地价值：知识工作者借助OpenClaw自动化日常信息汇总与邮件摘要，技术团队通过多智能体工作流实现代码审查与Slack通知联动，系统管理员利用SSH技能远程修复服务器故障。文章总结OpenClaw的Skills生态如何填补ERP与CRM等核心系统间的自动化空白，并指出提示注入、供应链攻击等关键安全挑战需要隔离部署与人工审批门控加以应对。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "阿里云",
+        "企业应用",
+        "Skills生态",
+        "安全治理"
+      ],
+      "source": "阿里云开发者社区",
+      "datePublished": "2026-03-27",
+      "language": "zh",
+      "image": "https://ucc.alicdn.com/pic/developer-ecology/nh7l33f4e7c56_6485957b97f54ba1be6ab32e7600f3f6.png?x-oss-process=image/resize,w_1400/format,webp"
+    },
+    {
       "id": "art-b2e4f917",
       "title": "飞致云超聚变联合推出OpenClaw一体机",
       "url": "https://1panel.cn/openclaw.html",
