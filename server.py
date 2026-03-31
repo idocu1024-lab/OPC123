@@ -65,8 +65,11 @@ def add_article():
         'tags': body.get('tags', []),
         'source': body.get('source', ''),
         'datePublished': body.get('datePublished', date.today().isoformat()),
-        'language': body.get('language', 'en'),
+        'language': body.get('language', 'zh'),
     }
+
+    if body.get('image'):
+        article['image'] = body['image']
 
     data['articles'].insert(0, article)
     save_data(data)

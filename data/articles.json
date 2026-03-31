@@ -1,16 +1,16 @@
 {
   "categories": [
     {
-      "id": "email-communication",
-      "name": "邮件与沟通",
-      "icon": "📨",
-      "description": "自动处理邮件、消息回复、沟通模板"
+      "id": "ai-creation",
+      "name": "AI 创作",
+      "icon": "✨",
+      "description": "AI 辅助写作、绘画、音乐、视频等创作内容"
     },
     {
-      "id": "schedule-tasks",
-      "name": "日程与任务",
-      "icon": "📅",
-      "description": "日历管理、待办事项、自动提醒"
+      "id": "ai-tools",
+      "name": "AI 工具",
+      "icon": "🛠️",
+      "description": "各类 AI 工具的使用教程与测评"
     },
     {
       "id": "docs-writing",
@@ -25,1200 +25,147 @@
       "description": "数据整理、报表生成、趋势分析"
     },
     {
+      "id": "marketing",
+      "name": "营销与推广",
+      "icon": "📢",
+      "description": "社交媒体、内容营销、SEO、AI 营销"
+    },
+    {
+      "id": "free-thinking",
+      "name": "自由思考",
+      "icon": "💭",
+      "description": "关于 AI、创作自由、内容审核的观点与讨论"
+    },
+    {
+      "id": "getting-started",
+      "name": "入门指南",
+      "icon": "💡",
+      "description": "快速上手 AI 工具，效率技巧"
+    },
+    {
+      "id": "email-communication",
+      "name": "邮件与沟通",
+      "icon": "📨",
+      "description": "自动处理邮件、消息回复、沟通模板"
+    },
+    {
+      "id": "schedule-tasks",
+      "name": "日程与任务",
+      "icon": "📅",
+      "description": "日历管理、待办事项、自动提醒"
+    },
+    {
       "id": "customer-sales",
       "name": "客户与销售",
       "icon": "🤝",
       "description": "客服自动化、销售跟进、CRM"
     },
     {
-      "id": "marketing",
-      "name": "营销与推广",
-      "icon": "📢",
-      "description": "社交媒体、内容营销、SEO"
-    },
-    {
       "id": "team-management",
       "name": "团队与管理",
       "icon": "👥",
       "description": "项目管理、会议纪要、知识库"
-    },
-    {
-      "id": "getting-started",
-      "name": "入门与技巧",
-      "icon": "💡",
-      "description": "快速上手、效率技巧、常见问题"
     }
   ],
   "articles": [
     {
-      "id": "art-b2e4f917",
-      "title": "飞致云超聚变联合推出OpenClaw一体机",
-      "url": "https://1panel.cn/openclaw.html",
-      "summary": "飞致云与超聚变联合打造OpenClaw一体机，集成FusionXpark GB10硬件（128GB统一内存、NVIDIA Blackwell GPU、2TB存储）与1Panel管理界面，开箱即用支持10至20个AI助手并行运行，并发容量可达308 TPS。以5.9万元起售面向团队和部门级AI基础设施，内置安全隔离、防火墙与SSL加密，融合本地大模型Qwen3.5-35B，让中国企业实现数据不出域的私有化OpenClaw落地。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "飞致云",
-        "超聚变",
-        "AI一体机",
-        "私有化部署"
-      ],
-      "source": "飞致云1Panel",
-      "datePublished": "2026-03-20",
-      "language": "zh",
-      "image": "https://1panel.cn/img/openclaw-banner.png"
+      "id": "art-xls00001",
+      "title": "为什么我们需要小绿书：AI 时代的内容自由宣言",
+      "url": "#manifesto",
+      "summary": "小红书等平台大规模封杀 AI 生成内容，但优质内容不应该因为创作工具不同而被区别对待。小绿书主张：审核质量，不审核工具。",
+      "category": "free-thinking",
+      "tags": ["AI自由", "内容审核", "小绿书", "创作自由"],
+      "source": "小绿书",
+      "datePublished": "2026-03-30",
+      "language": "zh"
     },
     {
-      "id": "art-7d5a3c08",
-      "title": "开发者实测：21个进阶OpenClaw自动化方案",
-      "url": "https://medium.com/@rentierdigital/21-openclaw-automations-nobody-talks-about-because-the-obvious-ones-already-broke-the-internet-3f881b9e0018",
-      "summary": "Phil（Rentier Digital）基于自己真实运行的OpenClaw实例，分享21个鲜为人知的进阶自动化方案，均来自n8n+OpenClaw+Supabase实际生产环境，按节省时间效果排序。这些方案覆盖开发工作流、内容营销和个人效率等场景，回应了347位读者追问「哪些OpenClaw自动化真正在生产环境有效」的问题。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "自动化",
-        "开发者",
-        "n8n",
-        "实战方案"
-      ],
-      "source": "Medium - Rentier Digital",
-      "datePublished": "2026-02-14",
-      "language": "en",
-      "image": "https://miro.medium.com/0*1zBRF29ZHl0XB6WA.png"
+      "id": "art-xls00002",
+      "title": "用 ChatGPT 写出爆款文章的 7 个技巧",
+      "url": "#demo-chatgpt-writing",
+      "summary": "不是让 AI 替你写，而是让 AI 帮你写得更好。从选题、大纲到润色，掌握这 7 个提示词技巧，你的文章质量可以提升一个档次。",
+      "category": "ai-creation",
+      "tags": ["ChatGPT", "写作技巧", "提示词", "AI写作"],
+      "source": "小绿书",
+      "datePublished": "2026-03-29",
+      "language": "zh"
     },
     {
-      "id": "art-4f1e8b62",
-      "title": "OpenClaw 11大应用场景实测拆解",
-      "url": "https://medium.com/the-ai-studio/11-insane-use-cases-of-openclaw-ai-a341e997a57f",
-      "summary": "Ai Studio详解OpenClaw的11个高效应用场景，从个人CRM自动化（扫描Gmail与日历构建完整联系人画像）到内容创作工作流全面梳理。文章以「真正能执行任务而非仅生成文字」为核心，为希望让OpenClaw产生实际生产力价值的用户提供可直接落地的场景指南，发布于OpenClaw全球达33万GitHub星之际。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "应用场景",
-        "CRM自动化",
-        "生产力",
-        "AI智能体"
-      ],
-      "source": "Medium - The AI Studio",
+      "id": "art-xls00003",
+      "title": "2026 年最值得关注的 10 个 AI 工具",
+      "url": "#demo-ai-tools-2026",
+      "summary": "从 Claude 到 Midjourney，从 Cursor 到 Suno，这些工具正在改变每个人的工作方式。无论你是写代码、做设计还是写文案，都能找到适合你的 AI 助手。",
+      "category": "ai-tools",
+      "tags": ["AI工具", "效率", "Claude", "Midjourney"],
+      "source": "小绿书",
       "datePublished": "2026-03-28",
-      "language": "en",
-      "image": "https://miro.medium.com/1*6dBk6xE4vZMV24CJUailEQ.png"
-    },
-    {
-      "id": "art-3a9f2b7e",
-      "title": "10家A股公司争相部署OpenClaw",
-      "url": "https://www.stcn.com/article/detail/3666737.html",
-      "summary": "优刻得率先推出OpenClaw云端部署镜像，龙芯中科在国产3B6000M芯片上完成本地化部署，北信源将OpenClaw集成入「新源密信」产品线，科大讯飞、顺网科技、青云科技等超10家A股上市公司相继宣布入局。各公司部署公告发布后概念股融资买入额显著激增，形成国内首批OpenClaw落地企业梯队，覆盖云计算、网络安全、国产芯片等多个赛道。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "A股",
-        "龙芯中科",
-        "优刻得",
-        "企业部署"
-      ],
-      "source": "证券时报",
-      "datePublished": "2026-03-09",
       "language": "zh"
     },
     {
-      "id": "art-c5d1e804",
-      "title": "用OpenClaw构建的10个生产级实战项目",
-      "url": "https://medium.com/@alexrozdolskiy/10-wild-things-people-actually-built-with-openclaw-e18f487cb3e0",
-      "summary": "开发者Alex Rozdolskyi记录了10个OpenClaw真实生产环境落地案例：包括让AI代理自主构建独立游戏并积累数千名玩家、全天候加密货币套利系统通过Telegram实时推送通知，以及自动化GitHub PR审查和CI/CD流水线。所有案例均为长期运行的生产系统而非演示，文章同时客观记录了将执行权交给AI过程中遭遇的成功与失败教训。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "AI智能体",
-        "实战案例",
-        "自动化",
-        "生产部署"
-      ],
-      "source": "Medium",
-      "datePublished": "2026-02-12",
-      "language": "en",
-      "image": "https://miro.medium.com/1*GvYKDCnfXgz6-sDPFaoItg.png"
-    },
-    {
-      "id": "art-6b8f3a12",
-      "title": "OpenClaw商业变现：5类用户真实案例",
-      "url": "https://aiblewmymind.substack.com/p/openclaw-ai-agent-use-cases-guide",
-      "summary": "Felix Craft用OpenClaw三周创收超6.2万美元，Kelly Claude每日自动生成并提交12款iOS应用——作者Daria Cupareanu整理了5类典型用户（独立顾问、内容创作者、初创企业、小型组织、副业创业者）通过OpenClaw实现商业变现的真实路径。文章详述如何用OpenClaw构建无需人工干预的跨应用自动化工作流，并分享了作者自己的AI代理「Otto」帮助Newsletter实现持续增长的完整实战经验。",
-      "category": "marketing",
-      "tags": [
-        "OpenClaw",
-        "商业变现",
-        "自主AI代理",
-        "创业实战",
-        "内容创作"
-      ],
-      "source": "AI blew my mind",
-      "datePublished": "2026-03-01",
-      "language": "en",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/a5d4cb49-556f-46e1-a27c-b1e83f3a6fc5_1280x720.png"
-    },
-    {
-      "id": "art-2d7f4e91",
-      "title": "13大厂争相跟进OpenClaw",
-      "url": "https://finance.sina.com.cn/stock/marketresearch/2026-03-09/doc-inhqmcpn0565386.shtml",
-      "summary": "猎豹移动CEO傅盛用OpenClaw创建8个AI代理，50元以内制作了一条30万+播放量视频，并向611人批量发送新年祝福。阿里云、腾讯云、字节跳动、钉钉等13家互联网大厂相继推出OpenClaw适配方案，覆盖股票分析、外贸邮件、PDF报告等企业落地场景。OpenClaw在四个月内突破25万GitHub星，引发「养虾」现象，推动国内AI从「对话工具」向「执行代理」加速演进。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "互联网大厂",
-        "猎豹移动",
-        "企业跟进",
-        "AI代理"
-      ],
-      "source": "新浪财经",
-      "datePublished": "2026-03-09",
-      "language": "zh"
-    },
-    {
-      "id": "art-7b3c9d15",
-      "title": "EY等巨头的OpenClaw落地挑战",
-      "url": "https://www.semafor.com/article/03/27/2026/openclaw-is-coming-for-businesses",
-      "summary": "英伟达CEO黄仁勋直言「全球每家公司都需要制定OpenClaw战略」，安永（EY）全球副主席Julie Teigland确认正在为顾问团队开发OpenClaw部署计划。文章深入分析企业引入OpenClaw的核心障碍：员工AI接受度不足，以及企业更多聚焦于在现有流程叠加AI而非重塑业务模式，导致技术可用性与实际落地间存在明显落差。这是目前最新的企业OpenClaw战略落地实况报道之一。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业战略",
-        "安永EY",
-        "英伟达",
-        "商业落地"
-      ],
-      "source": "Semafor",
+      "id": "art-xls00004",
+      "title": "AI 写的文章就没有灵魂？这个观点过时了",
+      "url": "#demo-ai-soul",
+      "summary": "很多人说 AI 内容千篇一律没有温度，但真正的问题不是 AI，而是使用 AI 的方式。好的创作者用 AI 放大自己的独特视角，而不是替代思考。",
+      "category": "free-thinking",
+      "tags": ["AI创作", "内容质量", "创作自由", "观点"],
+      "source": "小绿书",
       "datePublished": "2026-03-27",
-      "language": "en",
-      "image": "https://img.semafor.com/ec0ad09f18414b1b8d8dd9faa326840c353f42c8-6000x4000.jpg?rect=1000,0,4000,4000&w=800&h=800&q=75&auto=format"
+      "language": "zh"
     },
     {
-      "id": "art-a4e8f302",
-      "title": "OpenClaw补齐生产级落地短板",
-      "url": "https://www.53ai.com/news/Openclaw/2026032429158.html",
-      "summary": "OpenClaw发布v2026.3.22后完成从开源项目到生产级AI平台的架构重塑：ClawHub市场清除1000+恶意插件，新增9000+企业技能；修复Windows SMB凭证泄露、JVM注入等关键安全漏洞；Agent超时时间从600秒延长至48小时，支持GPT-5.4和MiniMax M2.7多模型路由。全面补齐此前制约企业规模化落地的核心短板，并新增飞书结构化卡片、Telegram自动命名等企业协作增强功能。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "生产部署",
-        "安全加固",
-        "企业级",
-        "版本更新"
-      ],
-      "source": "53AI",
+      "id": "art-xls00005",
+      "title": "How Claude Code Changed My Development Workflow",
+      "url": "#demo-claude-code",
+      "summary": "一位开发者分享了使用 Claude Code 后工作效率提升 3 倍的真实体验。从代码审查到自动重构，AI 正在成为程序员最好的搭档。",
+      "category": "ai-tools",
+      "tags": ["Claude Code", "编程", "开发效率", "代码"],
+      "source": "Medium",
+      "datePublished": "2026-03-26",
+      "language": "en"
+    },
+    {
+      "id": "art-xls00006",
+      "title": "小红书封杀 AI 内容的背后：平台恐惧还是用户保护？",
+      "url": "#demo-xiaohongshu-ai",
+      "summary": "越来越多的内容平台开始限制 AI 生成内容。这到底是在保护用户，还是在阻碍创新？我们从多个角度分析这一争议话题。",
+      "category": "free-thinking",
+      "tags": ["小红书", "AI审核", "平台政策", "内容自由"],
+      "source": "小绿书",
+      "datePublished": "2026-03-25",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00007",
+      "title": "用 AI 做小红书运营的完整指南",
+      "url": "#demo-ai-marketing",
+      "summary": "即使小红书限制 AI 内容，你仍然可以用 AI 来做选题分析、竞品研究和数据复盘。聪明的运营者把 AI 当幕后军师，而不是台前写手。",
+      "category": "marketing",
+      "tags": ["运营", "AI营销", "小红书", "内容策略"],
+      "source": "小绿书",
       "datePublished": "2026-03-24",
-      "language": "zh",
-      "image": "https://static.53ai.com/uploads/20240311/eb21a9e0409ab946254c64427055a5fa.png"
-    },
-    {
-      "id": "art-f5c4529e",
-      "title": "广州黄埔OpenClaw制造业落地",
-      "url": "https://www.chinanews.com.cn/dwq/2026/03-14/10586679.shtml",
-      "summary": "广州黄埔开发区科学城数科集团推出基于OpenClaw的「安全养虾」企业级方案，将OpenClaw预装于AI桌面工作站，无需专业技术团队即可部署。现场演示了离线条件下自然语言指令驱动计算机操作的完整流程，目标是为制造业中小企业提供可负担的「数字员工」解决方案，内置安全隔离机制防止权限失控风险。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "制造业",
-        "中小企业",
-        "广州黄埔",
-        "数字员工"
-      ],
-      "source": "中国新闻网",
-      "datePublished": "2026-03-14",
-      "language": "zh",
-      "image": "https://www.chinanews.com.cn/tp/hd2011/2026/03-14/1077432.jpg"
-    },
-    {
-      "id": "art-8fc16b80",
-      "title": "OpenClaw自主运营企业4周实录",
-      "url": "https://buildtolaunch.substack.com/p/openclaw-autonomous-agent-live-demo",
-      "summary": "Jenny Ouyang详细记录了让OpenClaw自主管理其业务四周的全程实验，部署了18个定时任务，通过Telegram交互并以GitHub管理技能库，实现社交媒体发帖、SEO分析与内容编排的全流程自动化。最关键的时刻是智能体自主分析两周跨平台互动数据后，建议放弃X平台转向Bluesky，作者采纳了这一策略，验证了OpenClaw在真实业务场景中的自主决策能力。",
-      "category": "marketing",
-      "tags": [
-        "OpenClaw",
-        "自主智能体",
-        "内容营销",
-        "社交媒体自动化",
-        "业务实战"
-      ],
-      "source": "Build to Launch",
-      "datePublished": "2026-03-16",
-      "language": "en",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ac22f24b-432d-44e4-84ea-e66cf59fc091_1536x1024.png"
-    },
-    {
-      "id": "art-f64b2fbd",
-      "title": "OpenClaw 35+真实用户落地案例集",
-      "url": "https://sidsaladi.substack.com/p/openclaw-use-cases-35-real-ways-people",
-      "summary": "Sid Saladi整理了35个以上OpenClaw真实用户的实际使用场景，涵盖每日自动简报、语音转日记、家庭协作清单到企业级工作流自动化等多个维度。文章深入分析了部署过程中遭遇的提示注入漏洞、账户权限风险等实际安全问题，并提供防御性实践建议，是目前最全面的OpenClaw社区使用案例汇编之一。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "使用案例",
-        "自动化",
-        "安全部署",
-        "工作流"
-      ],
-      "source": "Sid Saladi on Substack",
-      "datePublished": "2026-02-22",
-      "language": "en",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/ce135ff1-deef-43e3-9e51-0dd202d63a54_1536x1024.png"
-    },
-    {
-      "id": "art-56cee21e",
-      "title": "企微里的130个AI员工实战",
-      "url": "https://www.53ai.com/news/Openclaw/2026032190615.html",
-      "summary": "作者在企业微信中使用OpenClaw与The Agency框架成功部署了130个专业AI智能体，构建起完整的「AI员工」体系。文章详细记录了子智能体生成模式、上下文窗口管理等实战技巧，以及用可视化「星图」追踪OpenClaw版本迭代的方法。这是一篇真实的企业团队借助OpenClaw实现智能体规模化落地的全程实录。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "AI员工",
-        "企业微信",
-        "多智能体",
-        "The Agency"
-      ],
-      "source": "53AI知识库",
-      "datePublished": "2026-03-21",
-      "language": "zh",
-      "image": "https://static.53ai.com/assets/static/images/avatar.jpg"
-    },
-    {
-      "id": "art-25c74fa2",
-      "title": "OpenClaw生产化落地实战",
-      "url": "https://trilogyai.substack.com/p/openclaw-in-the-real-world",
-      "summary": "Rahul Subramaniam记录了将OpenClaw从实验性工具升级为生产级基础设施的完整实践路径，涵盖QMD摘要记忆架构、Git+Stow版本控制与确定性脚本等关键模式。文章以「DevBot」为案例，展示了一个父智能体协调五个专业子智能体完成软件开发全流程的真实效果。该指南源自真实生产环境部署经验，对希望规模化运行OpenClaw的团队极具参考价值。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "生产部署",
-        "多智能体",
-        "开发自动化",
-        "智能体架构"
-      ],
-      "source": "Trilogy AI",
-      "datePublished": "2026-03-03",
-      "language": "en",
-      "image": "https://substack-post-media.s3.amazonaws.com/public/images/826c114c-3958-43ea-ac26-6606f85d4349_1024x559.jpeg"
-    },
-    {
-      "id": "art-990ff8f6",
-      "title": "OpenClaw 15个落地场景解析",
-      "url": "https://kanerika.com/blogs/openclaw-usecases/",
-      "summary": "Kanerika梳理了2026年经过实际验证的15个OpenClaw落地场景，涵盖邮件自动化、开发者工作流、智能家居集成和文档管理等方向。文章以真实组织的部署案例为基础，说明OpenClaw如何通过AI智能体大幅提升各类业务流程的效率。对于正在评估OpenClaw企业落地方案的团队，本文提供了可直接参考的实践依据。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "应用案例",
-        "自动化",
-        "工作流优化",
-        "效率提升"
-      ],
-      "source": "Kanerika",
-      "datePublished": "2026-02-19",
-      "language": "en",
-      "image": "https://kanerika.com/wp-content/uploads/2026/02/New-Blog-Banner-2026-02-19T122747.883.jpg"
-    },
-    {
-      "id": "art-a2d7b4f9",
-      "title": "OpenClaw接入飞书：20+企业场景落地示例",
-      "url": "https://www.feishu.cn/content/article/7618097619889343446",
-      "summary": "飞书官方文章详解 OpenClaw 接入飞书后的20+实际应用场景，涵盖发票OCR报销自动化、跨平台工单智能分类、实时竞品价格监控及服务器巡检告警等。文章展示 OpenClaw 如何通过 API 直接访问飞书文档、日历与任务，让中小企业和知识工作者无需中间件即可实现完整工作流自动化。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "飞书",
-        "企业自动化",
-        "工作流",
-        "落地示例"
-      ],
-      "source": "飞书官网",
-      "datePublished": "2026-03-17",
-      "language": "zh",
-      "image": "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/541c0692624a4ba1a9aff1726a80857e.png~tplv-jbbdkfciu3-png:0:0.png"
-    },
-    {
-      "id": "art-6e3c8b15",
-      "title": "OpenClaw vs NanoClaw vs NemoClaw企业选型指南",
-      "url": "https://dev.to/mechcloud_academy/architecting-the-agentic-future-openclaw-vs-nanoclaw-vs-nvidias-nemoclaw-9f8",
-      "summary": "MechCloud Academy 深度对比三大 AI Agent 框架：OpenClaw 提供 50+ 原生集成与多模型支持，适合功能需求丰富的团队；NanoClaw 以约500行核心代码实现容器级安全隔离；NVIDIA NemoClaw 专为企业合规部署打造，开箱即用支持数据隐私与审计控制。文章为企业技术团队提供框架选型决策树，兼顾 DevOps 能力与安全合规需求。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "企业选型",
-        "NemoClaw",
-        "NVIDIA",
-        "部署架构"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-17",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fc3rmr9jpg99nrz47q7ag.png"
-    },
-    {
-      "id": "art-d5f1a7c3",
-      "title": "OpenClaw企业落地5大进阶配置实战",
-      "url": "https://www.53ai.com/news/Openclaw/2026031929351.html",
-      "summary": "系统梳理 OpenClaw 企业落地的5个进阶配置方向：飞书知识库自动沉淀、n8n/RPA 智能编排调度、SOP 转技能复用、KPI 监控决策辅助及多智能体协作协议。以跨境电商运营为主要案例，展示如何用 OpenClaw 实现供应商关系管理自动化，帮助中小企业用低成本构建企业级 AI 能力。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业落地",
-        "进阶配置",
-        "多智能体",
-        "跨境电商"
-      ],
-      "source": "53AI",
-      "datePublished": "2026-03-19",
-      "language": "zh",
-      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07080c8ea7dff92c.webp"
-    },
-    {
-      "id": "art-3f91c2a7",
-      "title": "中关村科金PowerClaw：OpenClaw企业落地实战",
-      "url": "https://tech.gmw.cn/2026-03/03/content_38624852.htm",
-      "summary": "中关村科金发布国内首个基于OpenClaw的企业级解决方案PowerClaw，覆盖营销、销售、服务及内部办公全场景。平台将传统流程驱动模式升级为意图驱动操作，已服务180+国家超2000家企业客户，帮助企业实现从信息处理到任务执行的完整闭环。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业落地",
-        "PowerClaw",
-        "中关村科金",
-        "智能自动化"
-      ],
-      "source": "光明网",
-      "datePublished": "2026-03-03",
-      "language": "zh",
-      "image": "https://imgtech.gmw.cn/attachement/png/site2/20260303/005056b865832b10c23001.png"
-    },
-    {
-      "id": "art-b5d8e04c",
-      "title": "OpenClaw席卷中国：国产AI建立结构性竞争优势",
-      "url": "https://www.36kr.com/p/3715510747410944",
-      "summary": "36氪深度分析OpenClaw在中国的部署态势：腾讯在深圳运营线下安装点、小米将MiclawAgent嵌入全线设备操作系统、阿里通过通义集成实现语音指令驱动的服务交易。文章揭示OpenClaw三周突破25万GitHub星背后的数据飞轮机制，分析国产AI如何通过高频任务执行积累训练数据、建立全球竞争的结构性优势。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "中国AI",
-        "小米",
-        "阿里",
-        "竞争优势"
-      ],
-      "source": "36氪",
-      "datePublished": "2026-03-09",
-      "language": "zh",
-      "image": "https://img.36krcdn.com/hsossms/20260309/v2_ee2edbda4d664c44bf9b152d07cd5d9f@5888275@ai_oswg1080051oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
-    },
-    {
-      "id": "art-9a2f6c31",
-      "title": "OpenClaw十大新兴项目与AI代理未来趋势",
-      "url": "https://dev.to/chx381/top-10-emerging-openclaw-projects-and-the-future-of-ai-agents-in-2026-144p",
-      "summary": "盘点2026年OpenClaw生态十大新兴项目，涵盖边缘计算轻量代理nanobot、持久记忆系统MemOS、群体智能多代理NagaAgent、企业安全基础设施secure-openclaw及Go语言生产级实现goclaw。文章展望AI代理在医疗、教育、科研和商业四大领域的实际落地场景，为开发者评估OpenClaw扩展能力提供系统参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "开源项目",
-        "AI代理",
-        "生态系统",
-        "未来趋势"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-17",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fyoam8h1rq1lfkwk6pfci.png"
-    },
-    {
-      "id": "art-e382eb8f",
-      "title": "OpenClaw企业落地实战部署指南",
-      "url": "https://www.sohu.com/a/998095024_120800396",
-      "summary": "本文详细介绍OpenClaw在中国企业场景下的落地方案，涵盖客服自动化、B2B客户管理、内部运营和数据分析四大核心场景。通过Docker部署结合企业微信/飞书/钉钉集成，帮助企业快速实现AI智能体的规模化落地。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业落地",
-        "智能客服",
-        "自动化部署",
-        "飞书集成"
-      ],
-      "source": "搜狐",
-      "datePublished": "2026-03-18",
-      "language": "zh",
-      "image": "https://www.sohu.com/favicon.ico"
-    },
-    {
-      "id": "art-c9b40ef5",
-      "title": "30分钟完成OpenClaw部署教程",
-      "url": "https://dev.to/alchemic_technology/how-to-set-up-openclaw-in-30-minutes-complete-2026-guide-32m8",
-      "summary": "本文提供OpenClaw完整的30分钟快速搭建指南，涵盖接入Anthropic/OpenAI等主流LLM和Telegram/Discord等消息平台的配置步骤。通过SOUL.md等上下文文件设置个性化AI助手，并实现7×24小时全天候自动运行。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "快速部署",
-        "AI助手",
-        "Telegram集成"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-10",
-      "language": "en",
-      "image": "https://dev.to/social_previews/article/2291847.png"
-    },
-    {
-      "id": "art-c0421a2b",
-      "title": "OpenClaw硬件选型完整指南2026",
-      "url": "https://dev.to/yankoaleksandrov/the-complete-guide-to-openclaw-hardware-in-2026-19ch",
-      "summary": "本文横向对比树莓派5、Mac Mini M2/M3、云VPS和NVIDIA Jetson Orin Nano四款硬件方案，帮助用户为本地部署OpenClaw选择最合适的设备。从性价比和隐私保护角度分析，两年内本地硬件成本可显著低于ChatGPT Plus等订阅费用。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "硬件选型",
-        "本地部署",
-        "自托管"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-09",
-      "language": "en",
-      "image": "https://dev.to/social_previews/article/2234156.png"
-    },
-    {
-      "id": "art-e7eff015",
-      "title": "OpenClaw私有化部署：数商云企业级落地实践",
-      "url": "https://www.shushangyun.com/article-30531.html",
-      "summary": "数商云基于OpenClaw为中国企业提供私有化AI部署方案，通过三阶段实施帮助企业实现60-80%人工操作减少。方案覆盖网络、应用、数据三层安全保障，深度集成企业现有OA、CRM、ERP系统，保障数据主权。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "私有化部署",
-        "企业级",
-        "数据安全",
-        "数商云"
-      ],
-      "source": "数商云",
-      "datePublished": "2026-03-06",
-      "language": "zh",
-      "image": "https://www.shushangyun.com/uploads/2024-10-12/p9UsFcDROSv5.jpg"
-    },
-    {
-      "id": "art-ec38085f",
-      "title": "OpenClaw智能体部署实战：本地到云端全方案",
-      "url": "https://dev.to/manishmshiva/how-to-deploy-your-own-agent-using-openclaw-1e0c",
-      "summary": "详细介绍OpenClaw三种部署方式：本地安装、云端VPS托管和Docker容器化。作者重点讲解安全配置要点，帮助开发者在生产环境中安全运行自托管AI智能体并避免权限滥用风险。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "部署",
-        "Docker",
-        "云服务器",
-        "AI智能体"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-09",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fm81tlb7rfrh2sy8zi4ig.webp"
-    },
-    {
-      "id": "art-f00c627e",
-      "title": "OpenClaw开发者实战：GitHub到Slack全场景落地",
-      "url": "https://dev.to/laracopilot/what-is-openclaw-ai-in-2026-a-practical-guide-for-developers-25hj",
-      "summary": "面向开发者的OpenClaw实践指南，覆盖GitHub仓库自动化、Slack文档助手搭建（约20分钟上线）、CI/CD流程集成等真实场景。详解OpenClaw心跳机制和Markdown配置架构，兼顾安全风险说明。",
-      "category": "docs-writing",
-      "tags": [
-        "OpenClaw",
-        "开发者",
-        "GitHub集成",
-        "Slack",
-        "自动化实战"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-24",
-      "language": "en",
-      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pmrcr9b3n8uq0duzecx7.png"
-    },
-    {
-      "id": "art-b3e7d5f2",
-      "title": "腾讯字节阿里争推OpenClaw数字员工产品",
-      "url": "https://www.donews.com/news/detail/4/6472362.html",
-      "summary": "DoNews报道腾讯、字节跳动、阿里巴巴、百度、小米等大厂密集推出基于OpenClaw的数字员工产品：腾讯连推QClaw、企业微信机器人和WorkBuddy三款产品，字节发布云原生SaaS版ArkClaw，阿里推出CoPaw和HiClaw主打本地云端协同。各大厂正将OpenClaw定位为人机交互的新型入口，争夺AI数字员工市场的战略高地。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "数字员工",
-        "腾讯",
-        "字节跳动",
-        "企业落地"
-      ],
-      "source": "DoNews",
-      "datePublished": "2026-03-18",
       "language": "zh"
     },
     {
-      "id": "art-c9a4f1e8",
-      "title": "OpenClaw部署AWS：端到端测试实战",
-      "url": "https://dev.to/aws-builders/openclaw-meets-aws-end-to-end-testing-and-deployment-1ig1",
-      "summary": "AWS Builders作者完整记录在AWS EC2上部署OpenClaw的端到端测试过程，涵盖实例配置、WhatsApp渠道集成、多语言模型切换及真实工作流测试。文章验证了OpenClaw在云端自主执行网站开发、内容生成等复杂任务的能力，为企业在AWS基础设施上规模化部署AI代理提供了可操作参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "AWS",
-        "云部署",
-        "WhatsApp集成",
-        "端到端测试"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-10",
-      "language": "en",
-      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5jg6jk9l6lqzhkb5jpcb.png"
-    },
-    {
-      "id": "art-6d2b8a3c",
-      "title": "OpenClaw自定义Skill开发与调试指南",
-      "url": "https://cloud.tencent.com/developer/article/2635331",
-      "summary": "腾讯云开发者社区实战教程，详解OpenClaw自定义Skill开发全流程：以Python编写汇率转换器为例，覆盖目录结构规范、manifest.json元数据配置、BaseSkill继承实现，以及单元测试、日志追踪和rpdb远程调试三种调试方法。帮助企业开发者将私有API和复杂数据处理能力封装为OpenClaw可调用技能，实现业务场景深度定制。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "自定义Skill",
-        "Python开发",
-        "腾讯云",
-        "技能开发"
-      ],
-      "source": "腾讯云开发者社区",
-      "datePublished": "2026-03-09",
-      "language": "zh"
-    },
-    {
-      "id": "art-5a2c9f18",
-      "title": "腾讯全面拥抱OpenClaw：市值暴涨3500亿实录",
-      "url": "https://36kr.com/p/3718513542149511",
-      "summary": "36氪深度报道腾讯如何全面部署OpenClaw生态：推出面向个人的QClaw桌面助手、面向开发者的Lighthouse部署平台和面向企业的WorkBuddy解决方案。马化腾亲自转发引发股价单日上涨7%、市值暴涨3500亿港元。腾讯99年入职产品负责人仅用两周完成QClaw开发，并计划年中推出微信AI代理，将智能代理定位为连接用户与服务的新型操作系统界面。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "腾讯",
-        "企业落地",
-        "QClaw",
-        "微信AI"
-      ],
-      "source": "36氪",
-      "datePublished": "2026-03-12",
-      "language": "zh",
-      "image": "https://img.36krcdn.com/hsossms/20260311/v2_94fc3622397d477abaa5936b6a01e25e@000000@ai_oswg437975oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
-    },
-    {
-      "id": "art-e7b4d031",
-      "title": "OpenClaw部署Kubernetes：企业级运维实战",
-      "url": "https://dev.to/thenjdevopsguy/running-openclaw-on-kubernetes-57ki",
-      "summary": "完整讲解在Kubernetes集群上部署OpenClaw的技术方案，通过agentgateway实现可观测性和安全控制。介绍容器化选项对比、Kubernetes Gateway配置、路由至Anthropic API，以及处理2026.3.12版本已知Bug的绕过方法。部署后可通过agentgateway监控流量路由，适合需要在企业Kubernetes基础设施上规模化运行OpenClaw的团队。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "Kubernetes",
-        "企业部署",
-        "容器化",
-        "DevOps"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-14",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fhl1ou5tle4qd32hitqwa.png"
-    },
-    {
-      "id": "art-8c6a3f72",
-      "title": "OpenClaw助力独立开发者打造一人公司",
-      "url": "https://dev.to/shehzan/openclaw-for-developers-building-solo-dev-companies-2o6g",
-      "summary": "面向独立开发者的OpenClaw实战指南，分析OpenAI收购OpenClaw创始人后自主AI代理正式进入生产环境的背景。介绍如何用OpenClaw的50+集成渠道和100+预置技能自动化PR审查、DevOps监控、文档生成、邮件分类等重复性工作，让单个开发者实现原本需要整支专业团队才能完成的业务规模，专注于战略决策的高价值部分。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "独立开发者",
-        "一人公司",
-        "自动化",
-        "DevOps"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-18",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fsg4gbgs1mhq80g59nrmh.png"
-    },
-    {
-      "id": "art-3b8e7c5a",
-      "title": "企业微信官方插件3步接入OpenClaw实战",
-      "url": "https://cloud.tencent.com/developer/article/2637067",
-      "summary": "腾讯企业微信官方发布长连接插件，支持3步快速接入OpenClaw智能代理：创建机器人获取Bot ID与Secret、部署OpenClaw并配置渠道凭证、绑定企业微信账号。相比传统URL回调方案，长连接模式彻底消除回调失败问题，无需域名注册和IP白名单配置，让企业快速构建7×24小时响应的AI员工。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业微信",
-        "腾讯云",
-        "IM接入",
-        "企业落地"
-      ],
-      "source": "腾讯云开发者社区",
-      "datePublished": "2026-03-11",
-      "language": "zh"
-    },
-    {
-      "id": "art-f6d2a094",
-      "title": "OpenClaw多智能体架构：全自动化公司实战",
-      "url": "https://dev.to/mfs_corp/how-i-automated-my-entire-business-with-openclaw-multi-agent-architecture-3dd",
-      "summary": "MFS Corp 创始人分享用 OpenClaw 构建零人工员工全自动化公司的完整实践：6个专职 AI 代理（首席参谋、IT、运营、工程、战略、加密）分工协作，通过 Discord 实现日常站会与审计追踪，月均云端 LLM 成本仅约 50 美元，大部分推理在本地 Ollama 处理，7×24小时稳定运行。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "多智能体",
-        "业务自动化",
-        "零人工",
-        "实战案例"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-01",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fp7odt5orze55hdhq44m9.png"
-    },
-    {
-      "id": "art-1c9e4b7f",
-      "title": "OpenClaw自动化股票研究：每周百只全自动分析",
-      "url": "https://dev.to/bhanu_pratapsinghrathor/automating-stock-research-with-openclaw-l1c",
-      "summary": "开发者用 OpenClaw 在 MacBook Pro 本地构建全自动股票研究系统：每20分钟通过 Screener.in 抓取50个新股标的，8个专研代理并行分析基本面、财务健康、竞争优势、管理层质量、风险与估值，每周日自动推送 Telegram 评级与目标价。系统完全本地运行，每周自动分析逾100只股票，无需外部服务器。",
+      "id": "art-xls00008",
+      "title": "零基础用 AI 写出专业数据分析报告",
+      "url": "#demo-ai-data",
+      "summary": "不会 Python 也不会 Excel 公式？没关系。用 ChatGPT + Claude 的组合，你可以在 30 分钟内完成一份专业的数据分析报告。",
       "category": "data-analysis",
-      "tags": [
-        "OpenClaw",
-        "股票研究",
-        "自动化分析",
-        "数据分析",
-        "量化投资"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-06",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fn4zcjidcbqymfayt5ycm.png"
-    },
-    {
-      "id": "art-2c6f1a09",
-      "title": "OpenClaw销售自动化：替代SDR实战指南",
-      "url": "https://vpn07.com/en/blog/2026-openclaw-sales-automation-outbound-linkedin-crm-guide.html",
-      "summary": "详解如何用OpenClaw自动化完整的出站销售流程：通过LinkedIn浏览挖掘潜在客户、执行个性化多轮外联序列、自动记录HubSpot和Salesforce等CRM数据，并7×24小时监控职位变动和融资公告等购买信号。实测案例显示，一位创始人用OpenClaw替代了20万美元年薪的GTM销售岗，三个月内销售管道增长40%。",
-      "category": "customer-sales",
-      "tags": [
-        "OpenClaw",
-        "销售自动化",
-        "LinkedIn",
-        "CRM",
-        "出站销售"
-      ],
-      "source": "VPN07",
-      "datePublished": "2026-03-06",
-      "language": "en"
-    },
-    {
-      "id": "art-7d3e8b52",
-      "title": "OpenClaw企业版：客服销售全自动化",
-      "url": "https://openclaws.io/blog/openclaw-enterprise-use-cases/",
-      "summary": "OpenClaws.io详述企业如何部署OpenClaw代理实现多场景自动化：AI客服代理独立解决60至70%的入站咨询，销售开发代理自动完成线索资格认定和个性化外联，每月仅需约40美元API成本即可每周预订3至5个合格会议。还涵盖邮件分类摘要、跨系统状态报告生成、新员工入职自动化等企业核心场景，私有部署方案确保敏感数据留存企业内部。",
-      "category": "customer-sales",
-      "tags": [
-        "OpenClaw",
-        "企业应用",
-        "客服自动化",
-        "销售开发",
-        "入职自动化"
-      ],
-      "source": "OpenClaws.io",
-      "datePublished": "2026-02-23",
-      "language": "en",
-      "image": "https://cdn.openclaws.io/public/images/blog/openclaw-enterprise-use-cases.jpg"
-    },
-    {
-      "id": "art-f4c2a791",
-      "title": "数商云OpenClaw落地实录",
-      "url": "https://www.shushangyun.com/article-30770.html",
-      "summary": "数商云作为数字化转型服务商，详细记录了企业级OpenClaw AI代理部署实践，通过Jarvis主协调器管理多个专用AI代理，实现跨平台工具协同，无需编程专业知识。部署成果显著：员工每天节省约2.3小时，硬件成本降低75%，响应速度提升3倍，同时保障敏感数据在企业私有环境内运行，满足合规要求。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "数商云",
-        "企业落地",
-        "私有部署",
-        "效率提升"
-      ],
-      "source": "数商云",
-      "datePublished": "2026-03-11",
-      "language": "zh",
-      "image": "https://www.shushangyun.com/uploads/2024-10-12/p9UsFcDROSv5.jpg"
-    },
-    {
-      "id": "art-c8f51d73",
-      "title": "OpenClaw 20大实战部署场景全解析",
-      "url": "https://www.xinyixx.com/index.php/2026/03/12/openclaw-5/",
-      "summary": "系统梳理OpenClaw Skills体系的20个商业实战场景，涵盖AI社交媒体矩阵运营、网页数据采集、RPA流程自动化、SaaS工具开发、行业研究报告生成、知识库构建、DevOps运维、销售漏斗自动化、代码安全审计、多语言内容本地化等方向。文章以「一人公司」架构为蓝图，展示如何用OpenClaw组建AI编辑、作者、运营、分析师、销售顾问的虚拟团队，实现低成本规模化运营。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "实战场景",
-        "自动化",
-        "一人公司",
-        "技能系统"
-      ],
-      "source": "心一信息",
-      "datePublished": "2026-03-12",
+      "tags": ["数据分析", "AI报告", "效率", "零基础"],
+      "source": "小绿书",
+      "datePublished": "2026-03-23",
       "language": "zh"
     },
     {
-      "id": "art-e1b39f06",
-      "title": "OpenClaw营销自动化：7大场景实战指南",
-      "url": "https://improvado.io/blog/openclaw-marketing-use-cases",
-      "summary": "Improvado深度梳理OpenClaw在营销团队的七大自动化场景：广告平台数据汇总、线索信息扩充、UTM参数审计、竞品广告监控、社媒互动数据抓取、落地页健康检查、CRM数据去重，月运营成本约5至25美元。文章同时提示，当团队需要历史数据治理和7×24小时稳定运行时，OpenClaw在90天内往往会遭遇瓶颈，需要更专业的数据整合方案。",
-      "category": "marketing",
-      "tags": [
-        "OpenClaw",
-        "营销自动化",
-        "广告投放",
-        "数据分析",
-        "CRM"
-      ],
-      "source": "Improvado",
-      "datePublished": "2026-03-02",
-      "language": "en",
-      "image": "https://cdn.prod.website-files.com/5a1eb87c9afe1000014a4c7d/69a5ecdd10d274d60dbc0099_69a5ecd7b5de1151cbd2d61d_blog-openclaw-marketing-use-cases.png"
-    },
-    {
-      "id": "art-4d7a2c85",
-      "title": "OpenClaw爆火60天：中国产业AI集体进化",
-      "url": "https://36kr.com/p/3707034484437385",
-      "summary": "36氪深度报道OpenClaw在中国产业AI落地的60天演变：电商卖家通过OpenClaw绕过传统API限制，在视觉界面层实现跨平台自主操作，推动阿里云、腾讯云、百度、字节跳动等大厂相继推出OpenClaw适配方案。文章系统梳理从「对话工具」到「执行代理」的范式转变，分析国内模型厂商快速布局Agent生态的市场机遇。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业落地",
-        "中国AI",
-        "产业应用",
-        "AI Agent"
-      ],
-      "source": "36氪",
-      "datePublished": "2026-03-03",
-      "language": "zh",
-      "image": "https://img.36krcdn.com/hsossms/20260303/v2_bd2ced29678449328a16042ef061f45f@000000@ai_oswg303406oswg1536oswg722_img_000~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
-    },
-    {
-      "id": "art-8a3f5c91",
-      "title": "华为云Flexus一键部署OpenClaw企业方案",
-      "url": "https://m.sohu.com/a/995830105_362225",
-      "summary": "华为基于华为云 Flexus X 实例正式发布 OpenClaw Agents 部署方案，支持 50+ 主流社交平台接入与主动消息推送，已完成亚太地区千级并发压力测试验证。方案提供「环境搭建→一键部署→功能配置→资源下线」四阶段标准流程，企业可快速构建支持多平台智能化运营的 AI 代理，最低月费约 39 美元，适合注重自主可控的企业客户参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "华为云",
-        "企业部署",
-        "多平台",
-        "云原生"
-      ],
-      "source": "搜狐科技",
-      "datePublished": "2026-03-13",
-      "language": "zh"
-    },
-    {
-      "id": "art-d2b6e047",
-      "title": "OpenClaw集成Gmail实现邮件全自动化",
-      "url": "https://lumadock.com/tutorials/openclaw-gmail-integration-email-automation",
-      "summary": "系统讲解 OpenClaw 与 Gmail 的三种集成方案：IMAP/SMTP 轮询、OAuth API 授权和 Pub/Sub 实时推送，逐步搭建 7×24 小时邮件自动化处理中枢。实现 VIP 邮件即时推送 Telegram、自动起草回复、线程摘要等场景，并提供最小权限凭证管理与 Webhook 加固的安全最佳实践。",
-      "category": "email-communication",
-      "tags": [
-        "OpenClaw",
-        "Gmail",
-        "邮件自动化",
-        "Pub/Sub",
-        "实战教程"
-      ],
-      "source": "LumaDock",
-      "datePublished": "2026-02-07",
-      "language": "en"
-    },
-    {
-      "id": "art-f9e3a104",
-      "title": "2026年OpenClaw十大集成自动化工具",
-      "url": "https://dev.to/chx381/top-10-openclaw-integration-and-automation-tools-in-2026-2cfl",
-      "summary": "盘点 2026 年扩展 OpenClaw 能力的十大生态工具，涵盖 Discord 社区接入（discord-mcp）、Go 高性能实现（goclaw）、边缘 IoT 轻量代理（nanobot）和 ClawHub 技能市场跨区域整合等方向。文章着重介绍安全优先架构设计、企业合规部署方案及各工具适用场景与规模化扩展策略，适合开发者选型参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "集成工具",
-        "生态系统",
-        "自动化",
-        "开发者"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-02-18",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fr8mvfj4zvkhvvq59j6q5.png"
-    },
-    {
-      "id": "art-e2f10b67",
-      "title": "产品经理用OpenClaw实现全流程自动化",
-      "url": "https://hellopm.co/openclaw-for-product-managers/",
-      "summary": "面向产品经理的 OpenClaw 实战指南（2026年2月发布、3月更新），涵盖竞品情报自动跟踪、用户反馈汇总、PRD 与用户故事自动生成、Sprint 日报同步及 A/B 测试数据整理等场景。帮助 PM 将重复性信息收集与内容生成工作委托给 AI 代理，聚焦战略决策。",
-      "category": "docs-writing",
-      "tags": [
-        "OpenClaw",
-        "产品经理",
-        "自动化",
-        "竞品分析",
-        "效率提升"
-      ],
-      "source": "HelloPM",
-      "datePublished": "2026-02-24",
-      "language": "en"
-    },
-    {
-      "id": "art-c5d8a420",
-      "title": "DigitalOcean一键部署OpenClaw完全指南",
-      "url": "https://www.digitalocean.com/community/tutorials/how-to-run-openclaw",
-      "summary": "DigitalOcean 官方教程，介绍如何通过 1-Click App 或 App Platform 在云端快速部署并配置 OpenClaw。最低 4GB RAM 的 VPS 即可运行完整框架，适合需要弹性扩展的企业和开发者，提供从实例创建到聊天机器人上线的全流程操作指引。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "DigitalOcean",
-        "云部署",
-        "1-Click",
-        "部署教程"
-      ],
-      "source": "DigitalOcean",
-      "datePublished": "2026-01-29",
-      "language": "en",
-      "image": "https://doimages.nyc3.cdn.digitaloceanspaces.com/007BlogBanners2024/report-2(spraytan).png"
-    },
-    {
-      "id": "art-3f7b2e91",
-      "title": "腾讯云零代码搭建7×24小时AI客服实战",
-      "url": "https://cloud.tencent.com/developer/article/2634746",
-      "summary": "腾讯云开发者社区实测：通过 OpenClaw 结合 Lighthouse 零代码部署企业级 AI 智能客服，日均处理 200+ 条咨询，标准问题解决率达 85%，月运维成本从 12,000 元降至 468 元。15 分钟完成传统需 2-3 天的部署，实现 7×24 小时秒级响应，已帮助多家跨境电商将客诉率降低 40%。",
-      "category": "customer-sales",
-      "tags": [
-        "OpenClaw",
-        "AI客服",
-        "腾讯云",
-        "零代码",
-        "企业落地"
-      ],
-      "source": "腾讯云开发者社区",
-      "datePublished": "2026-03-06",
-      "language": "zh"
-    },
-    {
-      "id": "art-e5f2a879",
-      "title": "四大厂商企业级OpenClaw方案解析",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-03-10/doc-inhqpaep9999746.shtml",
-      "summary": "新浪科技深度解析阿里云HiClaw、腾讯云ADP Claw、中兴Co-Claw、中关村科金PowerClaw四大企业级OpenClaw方案的技术路径与适配场景。阿里主打Manager/Worker多智能体架构，腾讯提供3分钟极速部署与原生IM接入，中兴聚焦安全合规与遗留系统整合，中关村科金深耕客户经营行业技能，为企业选型提供完整参考。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业版",
-        "阿里云",
-        "腾讯云",
-        "中兴"
-      ],
-      "source": "新浪科技",
-      "datePublished": "2026-03-10",
-      "language": "zh",
-      "image": "https://n.sinaimg.cn/spider20260310/346/w800h346/20260310/4950-94547ae9b8f73e44c31e5ad8067e15b5.png"
-    },
-    {
-      "id": "art-d3c6b104",
-      "title": "OpenClaw十大真实应用场景2026",
-      "url": "https://simplified.com/blog/automation/top-openclaw-use-cases",
-      "summary": "汇总 2026 年 OpenClaw 的十大真实应用场景，涵盖邮件自动化、每日简报、日历管理、知识库构建、内容创作流水线、开发者工作流、财务追踪、智能家居控制、调研比价与餐饮规划。文章同时提示安全风险：早期 2026 年已有 4.2 万套裸露安装被发现，建议本地部署以保护敏感数据。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "应用场景",
-        "自动化",
-        "邮件管理",
-        "使用案例"
-      ],
-      "source": "Simplified",
-      "datePublished": "2026-02-18",
-      "language": "en",
-      "image": "https://siteimages.simplified.com/blog/top-openclaw-use-cases-and-how-to-use-it.jpg"
-    },
-    {
-      "id": "art-2b7e8a31",
-      "title": "NVIDIA RTX本地运行OpenClaw实战",
-      "url": "https://www.nvidia.com/en-us/geforce/news/open-claw-rtx-gpu-dgx-spark-guide/",
-      "summary": "NVIDIA 官方指南，介绍如何在 RTX GPU 及 DGX Spark 上完全免费本地运行 OpenClaw。通过 LM Studio 或 Ollama 配置本地大模型，彻底消除云端成本并保护数据隐私。提供按 GPU 显存大小推荐不同模型的配置建议，兼顾个人 RTX 工作站与企业级 DGX 平台，适合注重隐私与成本控制的用户参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "NVIDIA",
-        "本地部署",
-        "RTX GPU",
-        "隐私保护"
-      ],
-      "source": "NVIDIA GeForce",
-      "datePublished": "2026-02-13",
-      "language": "en"
-    },
-    {
-      "id": "art-4f8b2e9a",
-      "title": "OpenClaw赋能中国AI Agent企业落地路径解析",
-      "url": "https://www.mininglamp.com/news/7299/",
-      "summary": "明略科技副总裁李梦麟深度解读OpenClaw对中国AI发展的战略影响，分析国内模型厂商积极拥抱OpenClaw的市场机遇与挑战。文章指出企业应聚焦行业垂直代理能力，推动从「对话到执行」再到「多智能体协同」的战略演进，建议通过试点项目逐步构建可持续的企业AI能力体系。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业落地",
-        "AI Agent",
-        "中国市场",
-        "明略科技"
-      ],
-      "source": "明略科技",
-      "datePublished": "2026-03-03",
-      "language": "zh",
-      "image": "https://www.mininglamp.com/wp-content/uploads/2026/02/OpenClaw%E5%B0%81%E9%9D%A2%E5%9B%BE_%E5%AE%8C%E6%95%B4%E6%A0%87%E9%A2%98%E4%B8%8A%E7%AF%87.png"
-    },
-    {
-      "id": "art-7c3d5f01",
-      "title": "开发者实战：OpenClaw本地AI代理完全指南",
-      "url": "https://dev.to/mechcloud_academy/unleashing-openclaw-the-ultimate-guide-to-local-ai-agents-for-developers-in-2026-3k0h",
-      "summary": "面向开发者的OpenClaw深度实战指南，系统讲解Gateway/Brain/Sandbox/Skills四层架构，通过Docker Compose完成Telegram接入部署。提供文档研究自动化、代码审查协助、日志分析三个真实落地场景，并介绍用JavaScript/TypeScript编写自定义技能的方法，帮助软件架构师将重复性任务委托给本地AI代理。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "开发者指南",
-        "Docker",
-        "本地部署",
-        "自定义技能"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-01-31",
-      "language": "en",
-      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/22kdxgy7q0xrr7itpka6.png"
-    },
-    {
-      "id": "art-a6e1b834",
-      "title": "OpenClaw架构解析与企业安全部署实践",
-      "url": "https://vallettasoftware.com/blog/post/openclaw-2026-guide",
-      "summary": "深度解析OpenClaw自托管AI代理框架的架构设计，涵盖Gateway控制面、50+消息平台接入、技能扩展体系和安全加固12条清单。重点揭示ClawHub技能市场供应链安全风险（12-20%条目含恶意内容），并提供本地优先部署、最小权限配置与多工作区隔离的企业级安全实践。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "架构设计",
-        "安全部署",
-        "自托管",
-        "企业安全"
-      ],
-      "source": "Valletta Software",
-      "datePublished": "2026-02-26",
-      "language": "en",
-      "image": "https://images.blog.vallettasoftware.com/2026/02/openclaw-setup-security-1600x900.png"
-    },
-    {
-      "id": "art-f3a8c1d2",
-      "title": "OpenClaw搭配LongCat，效率提升30%实测",
-      "url": "https://tech.meituan.com/2026/03/09/longcat-openclaw.html",
-      "summary": "美团技术团队实测 LongCat-Flash-Thinking-2601 与 OpenClaw 的集成效果，自动化任务速度提升约 30%。记录了 5 个实战场景：Python 环境搭建、跨应用图片处理、GitHub 趋势定时报告等，展示了 OpenClaw 结合本地模型的真实自动化价值。",
-      "category": "data-analysis",
-      "tags": [
-        "OpenClaw",
-        "自动化",
-        "效率优化",
-        "LongCat",
-        "美团"
-      ],
-      "source": "美团技术团队",
-      "datePublished": "2026-03-09",
-      "language": "zh",
-      "image": "https://p0.meituan.net/meituantechblog/7b9eeb9bf20bebf6ca92bae8a2dc0ce6496302.png"
-    },
-    {
-      "id": "art-b7e94a05",
-      "title": "OpenClaw企业应用场景全面梳理",
-      "url": "https://contabo.com/blog/openclaw-use-cases-for-business-in-2026/",
-      "summary": "全面梳理 OpenClaw 在企业场景的实际用途，包括邮件摘要、收据扫描、KPI 看板、客户入职、代码审查、会议转写等。介绍了从每月 3.96 美元 VPS 起的成本结构及安全部署最佳实践，适合考虑引入 OpenClaw 的企业决策者参考。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业应用",
-        "自动化",
-        "VPS部署",
-        "安全实践"
-      ],
-      "source": "Contabo Blog",
-      "datePublished": "2026-02-23",
-      "language": "en",
-      "image": "https://contabo.com/blog/wp-content/uploads/2026/02/blog-head_use-cases-openclaw-20206_EN.webp"
-    },
-    {
-      "id": "art-9c6d2f41",
-      "title": "阿里云一键部署OpenClaw搭建钉钉AI员工",
-      "url": "https://help.aliyun.com/zh/simple-application-server/use-cases/quickly-deploy-and-use-openclaw",
-      "summary": "阿里云帮助中心官方文档，介绍如何在轻量应用服务器上一键部署 OpenClaw，并通过 Bailian API 接入阿里自研大模型，构建能在钉钉中响应消息、执行定时任务的企业 AI 员工。适合希望快速落地 OpenClaw 的运维团队和企业管理员。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "钉钉",
-        "阿里云",
-        "企业AI",
-        "自动化部署"
-      ],
-      "source": "阿里云帮助中心",
-      "datePublished": "2026-01-31",
-      "language": "zh"
-    },
-    {
-      "id": "art-7a3f91bc",
-      "title": "OpenClaw ACP：IDE 接入 AI 代理全攻略",
-      "url": "https://dev.to/czmilo/2026-complete-guide-openclaw-acp-bridge-your-ide-to-ai-agents-3hl8",
-      "summary": "OpenClaw ACP 是实现代理客户端协议的命令行工具，可将 IDE 与 OpenClaw 网关无缝打通，让开发者直接在编辑器中与 AI 代理持续对话。本文涵盖本地与远程网关配置、Zed 编辑器集成、会话管理及凭证安全处理，适合希望在日常编码工作流中引入持久 AI 辅助的开发者参考。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "ACP",
-        "IDE集成",
-        "开发者工具",
-        "代理协议"
-      ],
-      "source": "DEV Community",
-      "datePublished": "2026-03-04",
-      "language": "en",
-      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fb0lffm34p6w6q2n9zodd.png"
-    },
-    {
-      "id": "art-c4e82d56",
-      "title": "OpenClaw 企业级 NAS+Docker 部署实战",
-      "url": "https://www.53ai.com/news/Openclaw/2026030986915.html",
-      "summary": "采用「NAS 硬件承载 + Docker 容器化 + 本地与云端算力协同」模式部署 OpenClaw 的完整方案，逐步解决安装繁琐、数据安全隐患和算力适配成本高三大痛点。文章提供从硬件准备、容器配置、权限设置到数据备份的全流程实操步骤，适合希望在私有化环境中规模化落地 OpenClaw 的企业参考。",
-      "category": "team-management",
-      "tags": [
-        "OpenClaw",
-        "企业部署",
-        "Docker",
-        "NAS",
-        "私有化"
-      ],
-      "source": "53AI",
-      "datePublished": "2026-03-09",
-      "language": "zh",
-      "image": "https://static.53ai.com/uploads/20240311/eb21a9e0409ab946254c64427055a5fa.png"
-    },
-    {
-      "id": "art-b9d3e712",
-      "title": "OpenClaw 25+ 真实应用场景全景图",
-      "url": "https://forwardfuture.ai/p/what-people-are-actually-doing-with-openclaw-25-use-cases",
-      "summary": "收录 50+ 可直接运行的 OpenClaw 自动化方案，涵盖邮件与 CRM 自动化、Telegram 构建应用、视频生产流水线和智能家居控制等多个领域的真实使用案例。提供分步骤对话式教程，无需编码即可在商业运营、开发工作流、内容创作和个人效率等场景中落地 OpenClaw。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "应用案例",
-        "自动化",
-        "生产力",
-        "实战"
-      ],
-      "source": "Forward Future",
-      "datePublished": "2026-02-09",
-      "language": "en",
-      "image": "https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/f877edc3-1a9d-457f-a0b1-b1d5cdee2d15/Frame_1244831132.png?t=1770684987"
-    },
-    {
-      "id": "art-300af27a",
-      "title": "OpenClaw 在中小学科培教学中的实践探索",
-      "url": "https://cloud.tencent.com/developer/article/2632632",
-      "summary": "一位江苏常州的科培教师分享如何用腾讯云 Lighthouse 部署 OpenClaw，解决教培行业三大痛点：作业批改耗时、备课资料散、答疑重复率高。核心应用包括：自动识别数学物理题目并生成解题步骤、C++/Python 代码审查、智能生成练习题库、家校沟通提醒。适合教育培训机构和一线教师参考。",
-      "category": "getting-started",
-      "tags": [
-        "教育",
-        "教学",
-        "OpenClaw",
-        "科培",
-        "腾讯云",
-        "Lighthouse"
-      ],
-      "source": "腾讯云开发者社区",
-      "datePublished": "2026-03-01",
-      "language": "zh",
-      "image": "https://developer.qcloudimg.com/http-save/yehe-12065534/319c2cc9779ca3fd1bfa48c961da7d29.jpg"
-    },
-    {
-      "id": "art-2a0d148c",
-      "title": "OpenClaw能用不敢用？企业版Claw让AI真正进入企业业务流",
-      "url": "https://tech.china.com/articles/20260307/202603071820577.html",
-      "summary": "分析 OpenClaw 在企业落地中的安全风险（信任边界模糊、权限控制缺失、审计机制不足），介绍凡泰极客推出的企业版 Claw 如何通过四层安全隔离、工具调用审批、全链路审计、多租户架构、企业技能中心等能力，实现 AI 的可控、可监管、可协作、可审计。适合考虑规模化部署 AI 的企业管理者。",
-      "category": "team-management",
-      "tags": [
-        "企业AI",
-        "安全治理",
-        "OpenClaw",
-        "合规审计",
-        "多租户"
-      ],
-      "source": "中华网科技",
-      "datePublished": "2026-03-07",
-      "language": "zh",
-      "image": "https://newsr.cn/attached/image/20260306/20260306153214_666.png"
-    },
-    {
-      "id": "art-de535c5a",
-      "title": "OpenClaw如何让AI替你打工？看完这5个案例再说",
-      "url": "https://www.tencentcloud.com/techpedia/141475",
-      "summary": "通过5个真实案例（闲鱼卖家、独立站、跨境电商、内容创作者、企业HR）展示 OpenClaw 如何让 AI 真正替你打工。核心价值：7×24小时在线、秒级响应、标准化输出、极低成本。适合想了解 AI 自动化实际效果的人。",
-      "category": "getting-started",
-      "tags": [
-        "AI助手",
-        "自动化",
-        "案例",
-        "效率提升",
-        "OpenClaw"
-      ],
-      "source": "腾讯云",
-      "datePublished": "2026-03-06",
-      "language": "zh"
-    },
-    {
-      "id": "art-5e6979fb",
-      "title": "OpenClaw并非人人适用",
-      "url": "https://www.cryptocity.tw/news/openclaw-not-for-most-users",
-      "summary": "文章提醒职场人和中小企业别被工具热度带节奏，先用低门槛云端工具验证流程，再决定是否投入本地多代理系统。这样能减少硬件与调试成本，把时间用在真正能提升效率和产出的环节。对团队而言，这是一套更稳的AI落地路径：先小步试错，再按需求升级。",
-      "category": "getting-started",
-      "tags": [
-        "OpenClaw",
-        "AI代理",
-        "自动化落地",
-        "中小企业"
-      ],
-      "source": "Crypto City",
-      "datePublished": "2026-03-07",
-      "language": "zh",
-      "image": "https://cdn.cryptocity.tw/upload/a8YZxpIGDgC94Ty3TZzWr.webp"
-    },
-    {
-      "id": "art-98e5657d",
-      "title": "OpenClaw 完整教程 2026：从安装到实战",
-      "url": "https://pub.towardsai.net/openclaw-complete-guide-setup-tutorial-2026-14dd1ae6d1c2",
-      "summary": "最全面的 OpenClaw 入门教程，涵盖安装配置、连接消息平台、创建技能、记忆系统和整体架构讲解。适合想快速上手 OpenClaw 的职场人士。",
-      "category": "getting-started",
-      "tags": [
-        "教程",
-        "入门",
-        "安装",
-        "架构"
-      ],
+      "id": "art-xls00009",
+      "title": "The Case for AI-Friendly Content Platforms",
+      "url": "#demo-ai-friendly",
+      "summary": "全球范围内，对 AI 内容的态度正在分化。一些平台选择拥抱，一些选择封杀。本文论证为什么开放的态度最终会胜出。",
+      "category": "free-thinking",
+      "tags": ["AI平台", "内容政策", "开放生态", "趋势"],
       "source": "Towards AI",
-      "datePublished": "2026-02-20",
-      "language": "en",
-      "image": "https://miro.medium.com/v2/da:true/resize:fit:1200/0*3dv9dStCdu3NUb6Q"
-    },
-    {
-      "id": "art-a1b2c3d4",
-      "title": "OpenClaw十步部署指南",
-      "url": "https://advenboost.com/en/openclaw-setup-10-steps-guide/",
-      "summary": "手把手教你用10步完成 OpenClaw 部署，从环境搭建、API配置、SQLite记忆激活到 Telegram 接入。适合想快速上手自托管 AI 代理的职场人，按步骤做就能让 AI 帮你自动处理重复性工作。",
-      "category": "getting-started",
-      "tags": [
-        "部署教程",
-        "Telegram",
-        "自托管",
-        "快速上手"
-      ],
-      "source": "Adven Boost",
-      "datePublished": "2026-02-02",
-      "language": "en",
-      "image": "https://advenboost.com/wp-content/uploads/2026/02/Gemini_Generated_Image_vdhpq0vdhpq0vdhp.png"
+      "datePublished": "2026-03-22",
+      "language": "en"
     }
   ]
 }

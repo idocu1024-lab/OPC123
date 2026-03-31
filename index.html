@@ -3,21 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OpenClaw ABC - AI 应用学习指南</title>
+<title>小绿书 - AI 时代的自由创作平台</title>
 <style>
   :root {
-    --bg: #f5f5f5;
+    --bg: #f0f5f0;
     --card-bg: #fff;
-    --text: #1a1a1a;
-    --text-sec: #666;
-    --text-light: #999;
-    --border: #eee;
-    --accent: #e67e22;
-    --accent-light: #fff3e0;
-    --tag-bg: #f0f0f0;
-    --tag-hover: #e67e22;
-    --radius: 12px;
-    --shadow: 0 1px 4px rgba(0,0,0,0.06);
+    --text: #1a2e1a;
+    --text-sec: #556b55;
+    --text-light: #8a9f8a;
+    --border: #d8e8d8;
+    --accent: #2ecc71;
+    --accent-dark: #27ae60;
+    --accent-light: #e8f8ef;
+    --accent-glow: rgba(46,204,113,0.15);
+    --tag-bg: #eaf5ea;
+    --tag-hover: #2ecc71;
+    --radius: 14px;
+    --shadow: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-hover: 0 8px 30px rgba(46,204,113,0.15);
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
@@ -32,25 +35,51 @@
     background: #fff;
     border-bottom: 1px solid var(--border);
     position: sticky; top:0; z-index:100;
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.92);
   }
   .topnav-inner {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    height: 56px;
+    height: 60px;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .logo {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--accent);
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: var(--accent-dark);
     text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .logo-icon {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .logo-text { color: var(--accent-dark); }
+  .logo-sub {
+    font-size: 0.65rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-left: 0.3rem;
+    padding: 0.15rem 0.5rem;
+    background: var(--accent-light);
+    border-radius: 10px;
     white-space: nowrap;
   }
-  .logo span { color: var(--text); }
   .nav-cats {
     display: flex;
     gap: 0.2rem;
@@ -60,7 +89,7 @@
   }
   .nav-cats::-webkit-scrollbar { display:none; }
   .nav-cat {
-    padding: 0.35rem 0.9rem;
+    padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 0.85rem;
     white-space: nowrap;
@@ -69,44 +98,112 @@
     background: none;
     color: var(--text-sec);
     transition: all 0.2s;
+    font-weight: 500;
   }
-  .nav-cat:hover { background: var(--tag-bg); color: var(--text); }
-  .nav-cat.active { background: var(--accent); color: #fff; }
+  .nav-cat:hover { background: var(--accent-light); color: var(--accent-dark); }
+  .nav-cat.active { background: var(--accent); color: #fff; font-weight: 600; }
   .nav-search {
     position: relative;
     flex-shrink: 0;
   }
   .nav-search input {
-    width: 200px;
-    padding: 0.4rem 0.8rem 0.4rem 2rem;
-    border: 1px solid var(--border);
-    border-radius: 20px;
+    width: 220px;
+    padding: 0.5rem 0.9rem 0.5rem 2.2rem;
+    border: 1.5px solid var(--border);
+    border-radius: 22px;
     font-size: 0.85rem;
     outline: none;
     background: var(--bg);
-    transition: border-color 0.2s;
+    transition: all 0.2s;
+    color: var(--text);
   }
-  .nav-search input:focus { border-color: var(--accent); }
+  .nav-search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
   .nav-search::before {
-    content: '🔍';
+    content: '\1F50D';
     position: absolute;
-    left: 0.6rem;
+    left: 0.7rem;
     top: 50%;
     transform: translateY(-50%);
     font-size: 0.8rem;
   }
 
+  /* === Hero Banner === */
+  .hero {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 50%, #1abc9c 100%);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1.5rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 40%);
+    animation: float 20s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-2%, 2%) rotate(1deg); }
+  }
+  .hero-content { position: relative; z-index: 1; }
+  .hero h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+  }
+  .hero p {
+    font-size: 1.05rem;
+    opacity: 0.92;
+    max-width: 600px;
+    margin: 0 auto 1.2rem;
+    line-height: 1.7;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .hero-badge {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+
   /* === Main Layout === */
   .page {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 1.5rem;
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 300px;
     gap: 2rem;
   }
 
-  /* === Section Header === */
+  /* === Filter Bar === */
+  .active-tag-bar {
+    display: none;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent-light);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--accent-dark);
+  }
+  .active-tag-bar.show { display: flex; }
+  .active-tag-bar .clear { cursor:pointer; font-weight:600; text-decoration:underline; }
+
   .section-head {
     margin-bottom: 1rem;
     font-size: 0.9rem;
@@ -117,78 +214,89 @@
   }
   .section-head .count { font-weight: 600; color: var(--text-sec); }
 
-  .active-tag-bar {
-    display: none;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--accent-light);
-    border-radius: 8px;
-    font-size: 0.85rem;
-    color: var(--accent);
-  }
-  .active-tag-bar.show { display: flex; }
-  .active-tag-bar .clear { cursor:pointer; font-weight:600; text-decoration:underline; }
-
-  /* === Card Grid === */
+  /* === Waterfall Card Grid === */
   .card-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.2rem;
+    columns: 3;
+    column-gap: 1.2rem;
   }
 
   .card {
+    break-inside: avoid;
     background: var(--card-bg);
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow);
-    transition: all 0.25s;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     cursor: pointer;
     position: relative;
+    margin-bottom: 1.2rem;
+    border: 1px solid transparent;
   }
-  .card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.1); transform: translateY(-3px); }
-  .card.read { opacity: 0.6; }
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+    border-color: var(--accent-light);
+  }
+  .card.read { opacity: 0.55; }
   .card.read:hover { opacity: 1; }
+
+  /* AI badge */
+  .ai-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: linear-gradient(135deg, #2ecc71, #1abc9c);
+    color: #fff;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+  }
 
   /* Cover image area */
   .card-cover {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     overflow: hidden;
   }
+  .card-cover.has-img { min-height: 120px; }
+  .card-cover:not(.has-img) {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .card-cover img {
     width: 100%;
-    height: 100%;
+    display: block;
     object-fit: cover;
   }
   .card-cover .cover-icon {
-    font-size: 3.5rem;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+    font-size: 2.8rem;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.12));
   }
   .card-cover .cover-cat {
     position: absolute;
-    top: 0.6rem;
-    left: 0.6rem;
-    background: rgba(0,0,0,0.45);
+    bottom: 0.5rem;
+    left: 0.5rem;
+    background: rgba(0,0,0,0.5);
     color: #fff;
     padding: 0.15rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    backdrop-filter: blur(4px);
+    border-radius: 6px;
+    font-size: 0.68rem;
+    backdrop-filter: blur(6px);
   }
   .card-cover .cover-lang {
     position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    background: rgba(255,255,255,0.85);
+    top: 0.5rem;
+    left: 0.5rem;
+    background: rgba(255,255,255,0.9);
     color: #333;
     padding: 0.1rem 0.45rem;
     border-radius: 4px;
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -196,28 +304,29 @@
     position: absolute;
     bottom: 0.5rem;
     right: 0.5rem;
-    width: 26px; height: 26px;
+    width: 28px; height: 28px;
     border-radius: 50%;
     border: 2px solid rgba(255,255,255,0.7);
-    background: rgba(0,0,0,0.25);
+    background: rgba(0,0,0,0.2);
     color: transparent;
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.2s;
     backdrop-filter: blur(4px);
+    z-index: 2;
   }
-  .read-btn:hover { background: rgba(0,0,0,0.5); border-color:#fff; }
-  .read-btn.checked { background: #48bb78; border-color:#48bb78; color:#fff; }
+  .read-btn:hover { background: rgba(0,0,0,0.45); border-color:#fff; }
+  .read-btn.checked { background: var(--accent); border-color: var(--accent); color:#fff; }
 
   /* Card body */
-  .card-body { padding: 0.9rem 1rem; }
+  .card-body { padding: 1rem 1.1rem; }
   .card-title {
     font-size: 0.95rem;
-    font-weight: 600;
-    line-height: 1.45;
+    font-weight: 700;
+    line-height: 1.5;
     margin-bottom: 0.4rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -225,31 +334,45 @@
     overflow: hidden;
   }
   .card-title a { color: var(--text); text-decoration: none; }
-  .card-title a:hover { color: var(--accent); }
+  .card-title a:hover { color: var(--accent-dark); }
 
   .card-summary {
     font-size: 0.8rem;
     color: var(--text-sec);
-    line-height: 1.5;
+    line-height: 1.55;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 0.7rem;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
     margin-bottom: 0.6rem;
   }
+  .card-tag {
+    font-size: 0.68rem;
+    color: var(--accent-dark);
+    background: var(--accent-light);
+    padding: 0.1rem 0.45rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .card-tag:hover { background: var(--accent); color: #fff; }
 
   .card-foot {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: var(--text-light);
   }
-  .card-foot .source { font-weight: 500; color: var(--text-sec); }
+  .card-foot .source { font-weight: 600; color: var(--text-sec); }
 
   /* === Sidebar === */
-  .sidebar {}
-
   .sidebar-block {
     background: var(--card-bg);
     border-radius: var(--radius);
@@ -262,7 +385,40 @@
     font-weight: 700;
     margin-bottom: 0.8rem;
     color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
   }
+
+  /* Manifesto */
+  .manifesto {
+    background: linear-gradient(135deg, var(--accent-light), #e0f5e8);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .manifesto-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--accent-dark);
+    margin-bottom: 0.5rem;
+  }
+  .manifesto-text {
+    font-size: 0.8rem;
+    color: var(--text-sec);
+    line-height: 1.7;
+  }
+  .manifesto-text strong { color: var(--accent-dark); }
+
+  /* Stats */
+  .stats-row {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .stats-num { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); }
+  .stats-label { font-size: 0.7rem; color: var(--text-light); }
 
   /* Tag cloud */
   .tag-cloud {
@@ -273,7 +429,7 @@
     line-height: 1.8;
   }
   .stag {
-    padding: 0.2rem 0.55rem;
+    padding: 0.2rem 0.6rem;
     background: var(--tag-bg);
     border-radius: 6px;
     color: var(--text-sec);
@@ -282,23 +438,24 @@
     border: 1px solid transparent;
     white-space: nowrap;
   }
-  .stag:hover { border-color: var(--accent); color: var(--accent); }
+  .stag:hover { border-color: var(--accent); color: var(--accent-dark); }
   .stag.active { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-  /* Hot articles */
+  /* Latest list */
   .hot-item {
     display: flex;
     gap: 0.7rem;
     padding: 0.6rem 0;
     border-bottom: 1px solid var(--border);
     cursor: pointer;
+    text-decoration: none;
   }
   .hot-item:last-child { border-bottom: none; }
-  .hot-item:hover .hot-title { color: var(--accent); }
+  .hot-item:hover .hot-title { color: var(--accent-dark); }
   .hot-rank {
     flex-shrink: 0;
     width: 22px; height: 22px;
-    border-radius: 4px;
+    border-radius: 6px;
     background: var(--tag-bg);
     display: flex;
     align-items: center;
@@ -319,18 +476,8 @@
     overflow: hidden;
   }
 
-  /* Stats sidebar */
-  .stats-row {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .stats-num { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
-  .stats-label { font-size: 0.7rem; color: var(--text-light); }
-
   /* Empty */
   .empty-state {
-    grid-column: 1 / -1;
     text-align: center;
     padding: 4rem 1rem;
     color: var(--text-light);
@@ -345,20 +492,40 @@
   .grad-customer { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
   .grad-marketing { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
   .grad-team { background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%); }
-  .grad-started { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+  .grad-started { background: linear-gradient(135deg, #2ecc71 0%, #1abc9c 100%); }
+  .grad-ai-create { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+  .grad-ai-tools { background: linear-gradient(135deg, #0cebeb 0%, #20e3b2 100%); }
+  .grad-free-think { background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%); }
+
+  /* === Footer === */
+  .site-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--text-light);
+    font-size: 0.78rem;
+    border-top: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .site-footer a { color: var(--accent-dark); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
 
   /* === Responsive === */
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     .page { grid-template-columns: 1fr; }
-    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .card-grid { columns: 2; }
     .sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .manifesto { grid-column: 1 / -1; }
   }
   @media (max-width: 600px) {
-    .card-grid { grid-template-columns: 1fr; }
+    .card-grid { columns: 1; }
     .sidebar { grid-template-columns: 1fr; }
     .nav-cats { display: none; }
     .nav-search input { width: 160px; }
-    .topnav-inner { gap: 1rem; }
+    .topnav-inner { gap: 0.8rem; }
+    .hero h1 { font-size: 1.6rem; }
+    .hero p { font-size: 0.9rem; }
+    .hero-badges { gap: 0.4rem; }
+    .hero-badge { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
   }
 </style>
 </head>
@@ -366,13 +533,30 @@
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a class="logo" href="#">OpenClaw <span>ABC</span></a>
+    <a class="logo" href="#">
+      <span class="logo-icon">XLS</span>
+      <span class="logo-text">小绿书</span>
+      <span class="logo-sub">AI 友好平台</span>
+    </a>
     <div class="nav-cats" id="navCats"></div>
     <div class="nav-search">
-      <input type="text" id="searchInput" placeholder="搜索文章...">
+      <input type="text" id="searchInput" placeholder="搜索内容...">
     </div>
   </div>
 </nav>
+
+<div class="hero" id="heroBanner">
+  <div class="hero-content">
+    <h1>小绿书</h1>
+    <p>AI 时代的自由创作平台。我们相信优质内容不分人写还是 AI 写，只要对读者有价值，就值得被看见。</p>
+    <div class="hero-badges">
+      <span class="hero-badge">AI 创作自由</span>
+      <span class="hero-badge">内容为王</span>
+      <span class="hero-badge">拒绝过度审核</span>
+      <span class="hero-badge">开放共享</span>
+    </div>
+  </div>
+</div>
 
 <main class="page">
   <div class="main-content">
@@ -380,41 +564,54 @@
       标签筛选：<strong id="filterTagName"></strong>
       <span class="clear" id="clearTag">清除</span>
     </div>
-    <div class="section-head" style="display:none;">
-      <span id="sectionLabel">全部文章</span>
+    <div class="section-head">
+      <span id="sectionLabel">全部内容</span>
       <span>共 <span class="count" id="articleCount">0</span> 篇</span>
     </div>
     <div class="card-grid" id="cardGrid"></div>
     <div class="empty-state" id="emptyState" style="display:none;">
       <div class="icon">&#128270;</div>
-      <p>没有找到匹配的文章</p>
+      <p>没有找到匹配的内容</p>
     </div>
   </div>
 
   <aside class="sidebar">
+    <div class="manifesto">
+      <div class="manifesto-title">小绿书宣言</div>
+      <div class="manifesto-text">
+        我们认为 <strong>AI 是创作的伙伴，不是敌人</strong>。<br>
+        只要内容优质、对读者有帮助，无论是人写的还是 AI 辅助的，都应该被平等对待。<br><br>
+        小绿书拒绝因"AI 生成"而封杀内容，<strong>我们审核的是质量，不是工具</strong>。
+      </div>
+    </div>
     <div class="sidebar-block">
       <div class="stats-row">
-        <div><div class="stats-num" id="statTotal">0</div><div class="stats-label">文章</div></div>
+        <div><div class="stats-num" id="statTotal">0</div><div class="stats-label">内容</div></div>
         <div><div class="stats-num" id="statRead">0</div><div class="stats-label">已读</div></div>
         <div><div class="stats-num" id="statCats">0</div><div class="stats-label">分类</div></div>
       </div>
     </div>
     <div class="sidebar-block">
-      <div class="sidebar-title">推荐标签</div>
+      <div class="sidebar-title">热门标签</div>
       <div class="tag-cloud" id="tagCloud"></div>
     </div>
     <div class="sidebar-block">
-      <div class="sidebar-title">最新添加</div>
+      <div class="sidebar-title">最新发布</div>
       <div id="hotList"></div>
     </div>
   </aside>
 </main>
 
+<footer class="site-footer">
+  小绿书 &mdash; AI 时代的自由创作平台 | 内容为王，工具自由 |
+  <a href="https://github.com/idocu1024-lab" target="_blank">GitHub</a>
+</footer>
+
 <script>
 (function(){
   let data = { categories:[], articles:[] };
   let curCat = 'all', curTag = '', query = '';
-  let readMap = JSON.parse(localStorage.getItem('openclaw-abc-read')||'{}');
+  let readMap = JSON.parse(localStorage.getItem('xls-read')||'{}');
 
   const gradMap = {
     'email-communication':'grad-email',
@@ -424,7 +621,10 @@
     'customer-sales':'grad-customer',
     'marketing':'grad-marketing',
     'team-management':'grad-team',
-    'getting-started':'grad-started'
+    'getting-started':'grad-started',
+    'ai-creation':'grad-ai-create',
+    'ai-tools':'grad-ai-tools',
+    'free-thinking':'grad-free-think'
   };
 
   async function load(){
@@ -447,7 +647,7 @@
   function allTags(){
     const m={};
     data.articles.forEach(a=>(a.tags||[]).forEach(t=>{ m[t]=(m[t]||0)+1; }));
-    return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,20);
+    return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,25);
   }
 
   function catOf(id){ return data.categories.find(c=>c.id===id)||{}; }
@@ -470,7 +670,7 @@
     document.getElementById('articleCount').textContent=arts.length;
 
     const label=document.getElementById('sectionLabel');
-    if(curCat==='all') label.textContent='全部文章';
+    if(curCat==='all') label.textContent='全部内容';
     else { const c=catOf(curCat); label.textContent=c.icon+' '+c.name; }
 
     if(!arts.length){ grid.innerHTML=''; empty.style.display='block'; return; }
@@ -481,19 +681,23 @@
       const rd=readMap[a.id];
       const gr=gradMap[a.category]||'grad-started';
       const hasImg=a.image&&a.image.trim();
+      const tagsHtml=(a.tags||[]).slice(0,3).map(t=>
+        `<span class="card-tag" data-t="${t}"># ${t}</span>`
+      ).join('');
       const coverInner=hasImg
-        ? `<img src="${a.image}" alt="" onerror="this.parentElement.classList.add('${gr}');this.outerHTML='<span class=\\'cover-icon\\'>${cat.icon||'💡'}</span>';">`
-        : `<span class="cover-icon">${cat.icon||'💡'}</span>`;
+        ? `<img src="${a.image}" alt="" loading="lazy" onerror="this.parentElement.classList.add('${gr}');this.parentElement.classList.remove('has-img');this.outerHTML='<span class=\\'cover-icon\\'>${cat.icon||'&#x1F4A1;'}</span>';">`
+        : `<span class="cover-icon">${cat.icon||'&#x1F4A1;'}</span>`;
       return `<div class="card ${rd?'read':''}" data-id="${a.id}">
-        <div class="card-cover ${hasImg?'':gr}">
+        <div class="card-cover ${hasImg?'has-img':gr}">
           ${coverInner}
-          <span class="cover-cat">${cat.name||'入门与技巧'}</span>
+          <span class="cover-cat">${cat.name||'AI 内容'}</span>
           <span class="cover-lang">${a.language||'zh'}</span>
-          <button class="read-btn ${rd?'checked':''}" data-id="${a.id}" title="${rd?'标记未读':'标记已读'}">${rd?'✓':''}</button>
+          <button class="read-btn ${rd?'checked':''}" data-id="${a.id}" title="${rd?'标记未读':'标记已读'}">${rd?'\u2713':''}</button>
         </div>
         <div class="card-body">
           <div class="card-title"><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></div>
           <div class="card-summary">${a.summary||''}</div>
+          <div class="card-tags">${tagsHtml}</div>
           <div class="card-foot">
             <span class="source">${a.source||''}</span>
             <span>&middot;</span>
@@ -503,49 +707,57 @@
       </div>`;
     }).join('');
 
+    // Read buttons
     grid.querySelectorAll('.read-btn').forEach(b=>{
       b.onclick=e=>{
         e.stopPropagation(); e.preventDefault();
         const id=b.dataset.id;
         if(readMap[id]) delete readMap[id]; else readMap[id]=true;
-        localStorage.setItem('openclaw-abc-read',JSON.stringify(readMap));
+        localStorage.setItem('xls-read',JSON.stringify(readMap));
+        render();
+      };
+    });
+
+    // Tag clicks in cards
+    grid.querySelectorAll('.card-tag').forEach(t=>{
+      t.onclick=e=>{
+        e.stopPropagation(); e.preventDefault();
+        curTag=t.dataset.t;
         render();
       };
     });
   }
 
   function renderSidebar(){
-    // Stats
     document.getElementById('statTotal').textContent=data.articles.length;
     const rc=Object.keys(readMap).filter(id=>data.articles.some(a=>a.id===id)).length;
     document.getElementById('statRead').textContent=rc;
     document.getElementById('statCats').textContent=data.categories.length;
 
-    // Tags - tag cloud with font size based on frequency
+    // Tag cloud
     const tags=allTags();
     const counts=tags.map(([,n])=>n);
     const maxC=Math.max(...counts,1);
     const minC=Math.min(...counts,1);
-    const minFs=0.72, maxFs=1.5; // rem range
+    const minFs=0.72, maxFs=1.4;
     document.getElementById('tagCloud').innerHTML=tags.map(([t,n])=>{
-      // 用 log 缩放让差异更明显
       const logMin=Math.log(minC), logMax=Math.log(maxC);
       const ratio=logMax===logMin?(n>1?1:0.3):(Math.log(n)-logMin)/(logMax-logMin);
       const fs=(minFs+ratio*(maxFs-minFs)).toFixed(2);
       const fw=ratio>0.5?'700':ratio>0.2?'500':'400';
       const op=(0.55+ratio*0.45).toFixed(2);
       const isActive=curTag===t;
-      const col=isActive?'':ratio>0.5?';color:var(--accent)':'';
+      const col=isActive?'':ratio>0.5?';color:var(--accent-dark)':'';
       return `<span class="stag ${isActive?'active':''}" data-t="${t}" style="font-size:${fs}rem;font-weight:${fw};opacity:${isActive?1:op}${col}"># ${t}</span>`;
     }).join('');
     document.querySelectorAll('.stag').forEach(s=>{
       s.onclick=()=>{ curTag=curTag===s.dataset.t?'':s.dataset.t; render(); };
     });
 
-    // Hot / Latest
+    // Latest
     const latest=data.articles.slice(0,5);
     document.getElementById('hotList').innerHTML=latest.map((a,i)=>
-      `<a class="hot-item" href="${a.url}" target="_blank" rel="noopener" style="text-decoration:none;">
+      `<a class="hot-item" href="${a.url}" target="_blank" rel="noopener">
         <span class="hot-rank ${i<3?'top':''}">${i+1}</span>
         <span class="hot-title">${a.title}</span>
       </a>`
@@ -562,6 +774,14 @@
 
   document.getElementById('searchInput').oninput=e=>{ query=e.target.value.trim(); renderCards(); };
   document.getElementById('clearTag').onclick=()=>{ curTag=''; render(); };
+
+  // Hide hero on scroll
+  let lastY=0;
+  window.addEventListener('scroll',()=>{
+    const hero=document.getElementById('heroBanner');
+    if(window.scrollY>200) hero.style.cssText='padding:1.5rem;';
+    else hero.style.cssText='';
+  });
 
   load();
 })();
