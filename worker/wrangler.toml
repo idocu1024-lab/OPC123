@@ -8,4 +8,4 @@ routes = [
 
 [[kv_namespaces]]
 binding = "VOTE_KV"
-id = ""
+id = "e3379190a20d477baeede225c8479817"
