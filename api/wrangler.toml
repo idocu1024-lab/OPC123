@@ -8,4 +8,4 @@ JWT_SECRET = "change-this-to-a-random-secret-in-production"
 [[d1_databases]]
 binding = "DB"
 database_name = "xls-db"
-database_id = ""
+database_id = "7c55dddc-7807-4598-9e7c-d6ba9e0214a4"
