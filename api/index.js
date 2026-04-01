@@ -70,12 +70,62 @@ async function getUser(request, env) {
   return payload;
 }
 
+// === Auto-init DB ===
+async function ensureDB(env) {
+  try {
+    await env.DB.prepare('SELECT 1 FROM posts LIMIT 1').first();
+  } catch {
+    // Create tables
+    await env.DB.exec(`
+      CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, username TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL, display_name TEXT DEFAULT '', bio TEXT DEFAULT '', avatar_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')));
+      CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, title TEXT NOT NULL, content TEXT DEFAULT '', tags TEXT DEFAULT '[]', image_url TEXT DEFAULT '', green_energy INTEGER DEFAULT 50, likes_count INTEGER DEFAULT 0, media_type TEXT DEFAULT 'text', media_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')), FOREIGN KEY (user_id) REFERENCES users(id));
+      CREATE TABLE IF NOT EXISTS likes (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, post_id INTEGER NOT NULL, created_at TEXT DEFAULT (datetime('now')), UNIQUE(user_id, post_id), FOREIGN KEY (user_id) REFERENCES users(id), FOREIGN KEY (post_id) REFERENCES posts(id));
+    `);
+    await seedData(env);
+  }
+}
+
+async function seedData(env) {
+  const count = await env.DB.prepare('SELECT COUNT(*) as c FROM posts').first();
+  if (count && count.c > 0) return;
+
+  // Create demo users
+  await env.DB.exec(`
+    INSERT OR IGNORE INTO users (id,email,username,password_hash,display_name,bio) VALUES
+    (1,'official@xiaolvshu.org','xiaolvshu','seed-no-login','小绿书官方','AI 时代的自由创作平台'),
+    (2,'creator@xiaolvshu.org','ai_creator','seed-no-login','AI创作者小林','全职内容创作者，拥抱AI'),
+    (3,'dev@xiaolvshu.org','dev_wang','seed-no-login','开发者老王','独立开发者，用AI写代码'),
+    (4,'designer@xiaolvshu.org','design_mia','seed-no-login','设计师Mia','UI设计师，AI绘图爱好者');
+  `);
+
+  const articles = [
+    [1,'小绿书宣言：AI 创作不是作弊，是进化','小红书最近的做法让很多创作者寒心——只要系统判定你在发布过程中使用了 AI，直接封号。不看内容质量，不看用户反馈。\n\n小绿书的立场很明确：\n1. AI 是工具，不是原罪\n2. 我们审核的是内容质量，不是创作方式\n3. 好内容就该被看见\n\n欢迎每一个被小红书伤害过的创作者。','["AI自由","创作宣言","小绿书"]',75,'text','',42],
+    [2,'我用 ChatGPT 写了 30 天小红书，涨粉 5000 后被封号了','上个月我用 ChatGPT 辅助写小红书笔记。30 天涨了 5000 粉丝，多篇笔记过万赞。\n\n然后某天早上，账号被封了。理由：疑似使用 AI 生成内容。没有警告，没有申诉机会。\n\n讽刺的是，那些内容是真的帮到了读者。被封的不是低质量内容，而是"用了 AI"这个行为本身。\n\n所以我来了小绿书。','["小红书","封号","ChatGPT","真实经历"]',70,'text','',88],
+    [3,'程序员的 AI 工作流：Claude Code 让我效率翻了 3 倍','作为独立开发者，我现在的工作流已经离不开 AI：\n\n写代码：Claude Code\n写文档：ChatGPT\n做设计：Midjourney\n\n以前一个人干的活，现在相当于三人团队。有人说这是偷懒，但能用更少时间做出更好产品，这叫效率革命。','["Claude Code","效率","编程","AI工作流"]',80,'text','',56],
+    [4,'给新手的 AI 绘图入门指南：从 0 到出图只需 10 分钟','推荐工具：\n1. Midjourney — 效果最好\n2. DALL-E 3 — ChatGPT Plus 自带，最方便\n3. Stable Diffusion — 免费开源\n4. 即梦AI — 中文友好\n\nAI 绘图最大的门槛不是技术，而是你的想象力。','["AI绘图","Midjourney","入门教程"]',65,'text','',34],
+    [4,'AI 生成的风景插画，你能看出是 AI 画的吗？','用 Midjourney v6 生成的一组东方水墨风景画。\n\n现在的 AI 绘画质量已经达到了商用水平。与其恐惧它，不如学会驾驭它。','["Midjourney","AI绘画","水墨画"]',95,'image','https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',73],
+    [2,'用 AI 做了一组品牌设计，甲方居然通过了','接了一个咖啡品牌设计需求。用 Midjourney 出了 20 多个 Logo 方案，客户当场拍板。\n\n全程用时：2 小时（传统方式至少要 2 天）\n\nAI 不是来抢设计师饭碗的，是来帮你提效的。','["品牌设计","Logo","AI设计"]',85,'image','https://images.unsplash.com/photo-1634942537034-2531766767d1?w=800',45],
+    [1,'全球 AI 内容政策对比：哪些平台欢迎 AI 创作？','主流平台态度：\n\n🟢 友好：小绿书、Medium、Substack\n🟡 中立：Twitter/X、LinkedIn\n🔴 限制：小红书（封号）\n\n趋势很明显：封杀 AI 的平台越来越被创作者抛弃。','["平台政策","AI内容","行业趋势"]',60,'image','https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800',67],
+    [3,'我的 AI 编程桌面：2026 年程序员的工作环境','左屏：VS Code + Cursor AI\n右屏：Claude Code 终端\n外接屏：ChatGPT 做调研\n\n三个 AI 同时在线，感觉自己是个 AI 乐队指挥。效率确实高了很多。','["开发环境","程序员","AI编程"]',70,'image','https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800',29],
+    [2,'5 分钟学会用 AI 写爆款标题｜实操教程','万能公式：数字 + 痛点 + 解决方案 + 情绪词\n\n❌ 如何用 AI 写文章\n✅ 3 个 ChatGPT 提示词，让你的文章阅读量翻 10 倍','["标题技巧","ChatGPT","提示词"]',80,'video','https://www.youtube.com/embed/dQw4w9WgXcQ',91],
+    [3,'Claude Code 实战：10 分钟从零搭建一个完整网站','全程只用自然语言描述需求，AI 自动写代码、建数据库、部署上线。10 分钟，一行代码都没手写。\n\n没错，小绿书这个网站也是这样做出来的。','["Claude Code","建站","实战"]',90,'video','https://www.youtube.com/embed/dQw4w9WgXcQ',78],
+    [4,'Midjourney v6 vs DALL-E 3：AI 绘图终极对比','50 组图片对比结论：\n写实：Midjourney 胜\n插画：DALL-E 3 胜\n文字：DALL-E 3 完胜\n细节：Midjourney 胜\n易用：DALL-E 3 胜','["Midjourney","DALL-E","对比测评"]',75,'video','https://www.youtube.com/embed/dQw4w9WgXcQ',52],
+    [1,'AI 时代的内容创作者应该具备什么能力？','四大核心能力：\n1. 审美判断力 — 从 100 个 AI 方案中挑出最好的\n2. 提问能力 — 提示词就是提问的艺术\n3. 整合能力 — 把 AI 输出加工成有温度的内容\n4. 持续学习 — AI 工具每月更新\n\n最值钱的不是执行力，而是品味和判断力。','["创作者能力","AI时代","思考"]',55,'video','https://www.youtube.com/embed/dQw4w9WgXcQ',63],
+  ];
+
+  for (const a of articles) {
+    await env.DB.prepare('INSERT INTO posts (user_id,title,content,tags,green_energy,media_type,media_url,likes_count,created_at) VALUES (?,?,?,?,?,?,?,?,datetime(\'now\',\'-\' || ? || \' hours\'))').bind(a[0],a[1],a[2],a[3],a[4],a[5],a[6],a[7], Math.floor(Math.random()*48)+1).run();
+  }
+}
+
 // === Router ===
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') {
       return new Response(null, { status: 204, headers: cors() });
     }
+
+    await ensureDB(env);
 
     const url = new URL(request.url);
     const path = url.pathname;
