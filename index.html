@@ -782,39 +782,38 @@
   document.getElementById('searchInput').oninput=e=>{ query=e.target.value.trim(); renderCards(); };
   document.getElementById('clearTag').onclick=()=>{ curTag=''; render(); };
 
-  // === Free AI Publish vote ===
+  // === Free AI Publish vote (cloud) ===
   (function initVote(){
-    const KEY = 'xls-free-ai-voted';
-    const COUNT_KEY = 'xls-free-ai-count';
+    const API = '/api/vote';
     const btn = document.getElementById('freeAiBtn');
     const countEl = document.getElementById('freeAiCount');
-    let voted = localStorage.getItem(KEY) === '1';
-    let count = parseInt(localStorage.getItem(COUNT_KEY) || '0', 10);
-    // Base count to make it feel alive from day one
-    const BASE = 128;
+    let voted = localStorage.getItem('xls-voted') === '1';
 
-    function updateUI(){
-      const total = BASE + count;
-      countEl.textContent = '\u2709\uFE0F \u5DF2\u6709 ' + total + ' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
-      if(voted){
-        btn.textContent = '\u2713 \u5DF2\u652F\u6301';
-        btn.classList.add('voted');
-      }
+    function showCount(n){
+      countEl.textContent = '\u5DF2\u6709 ' + n + ' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
     }
+    function showVoted(){
+      btn.textContent = '\u2713 \u5DF2\u652F\u6301';
+      btn.classList.add('voted');
+    }
+
+    // Load current count
+    fetch(API).then(r=>r.json()).then(d=>{
+      showCount(d.count);
+      if(voted) showVoted();
+    }).catch(()=>{ showCount(0); });
 
     btn.onclick = function(){
       if(voted) return;
-      voted = true;
-      count++;
-      localStorage.setItem(KEY, '1');
-      localStorage.setItem(COUNT_KEY, String(count));
-      updateUI();
-      // Little celebration animation
-      btn.style.transform = 'scale(1.15)';
-      setTimeout(()=>{ btn.style.transform = ''; }, 300);
+      fetch(API,{method:'POST'}).then(r=>r.json()).then(d=>{
+        voted = true;
+        localStorage.setItem('xls-voted','1');
+        showCount(d.count);
+        showVoted();
+        btn.style.transform = 'scale(1.15)';
+        setTimeout(()=>{ btn.style.transform = ''; }, 300);
+      }).catch(()=>{});
     };
-
-    updateUI();
   })();
 
   load();

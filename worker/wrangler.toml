@@ -1,0 +1,11 @@
+name = "xls-vote-counter"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+routes = [
+  { pattern = "xiaolvshu.org/api/*", zone_name = "xiaolvshu.org" }
+]
+
+[[kv_namespaces]]
+binding = "VOTE_KV"
+id = ""
