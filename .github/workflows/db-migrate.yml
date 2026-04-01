@@ -1,0 +1,36 @@
+name: DB Migrate & Seed
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'What to run'
+        required: true
+        type: choice
+        options:
+          - migrate-only
+          - seed-only
+          - migrate-and-seed
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install wrangler
+        run: npm install -g wrangler
+
+      - name: Run migration
+        if: contains(inputs.action, 'migrate')
+        run: wrangler d1 execute xls-db --remote --file=api/migrate-media.sql
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: f4bae72836f82c0e6f1fbc2b7baeb9c1
+
+      - name: Run seed
+        if: contains(inputs.action, 'seed')
+        run: wrangler d1 execute xls-db --remote --file=api/seed.sql
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: f4bae72836f82c0e6f1fbc2b7baeb9c1
