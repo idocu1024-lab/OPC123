@@ -167,12 +167,14 @@ export default {
         const payload = await getUser(request, env);
         if (!payload) return err('请先登录', 401);
 
-        const { title, content, tags, image_url, green_energy } = await request.json();
+        const { title, content, tags, image_url, green_energy, media_type, media_url } = await request.json();
         if (!title || title.trim().length === 0) return err('标题不能为空');
 
         const tagsJson = JSON.stringify(tags || []);
         const ge = Math.max(0, Math.min(100, parseInt(green_energy) || 50));
-        const result = await env.DB.prepare('INSERT INTO posts (user_id, title, content, tags, image_url, green_energy) VALUES (?, ?, ?, ?, ?, ?)').bind(payload.id, title.trim(), content || '', tagsJson, image_url || '', ge).run();
+        const mtype = ['text','image','video'].includes(media_type) ? media_type : 'text';
+        const murl = (media_url || image_url || '').trim();
+        const result = await env.DB.prepare('INSERT INTO posts (user_id, title, content, tags, image_url, green_energy, media_type, media_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)').bind(payload.id, title.trim(), content || '', tagsJson, murl, ge, mtype, murl).run();
 
         return json({ id: result.meta.last_row_id, message: '发布成功' }, 201);
       }

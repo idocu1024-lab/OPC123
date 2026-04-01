@@ -158,22 +158,47 @@
   .stag.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
   /* Modal */
-  .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:200; align-items:center; justify-content:center; }
+  .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:200; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
   .modal-overlay.show { display:flex; }
-  .modal { background:#fff; border-radius:16px; padding:2rem; width:90%; max-width:480px; max-height:90vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,0.2); }
+  .modal { background:#fff; border-radius:20px; padding:0; width:90%; max-width:420px; max-height:90vh; overflow-y:auto; box-shadow:0 25px 80px rgba(0,0,0,0.25); }
   .modal h2 { font-size:1.3rem; margin-bottom:1rem; color:var(--text); }
-  .modal-close { float:right; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-light); }
+  .modal-close { position:absolute; top:1rem; right:1rem; background:var(--bg); border:none; width:32px; height:32px; border-radius:50%; font-size:1.2rem; cursor:pointer; color:var(--text-light); display:flex; align-items:center; justify-content:center; z-index:1; }
+  .modal-close:hover { background:var(--border); }
+
+  /* Auth Modal Pro */
+  .auth-header { background:linear-gradient(135deg,#2ecc71,#1abc9c); padding:2.5rem 2rem 1.5rem; text-align:center; position:relative; border-radius:20px 20px 0 0; }
+  .auth-header-logo { width:56px; height:56px; background:#fff; border-radius:14px; display:flex; align-items:center; justify-content:center; margin:0 auto 0.8rem; box-shadow:0 4px 12px rgba(0,0,0,0.1); overflow:hidden; }
+  .auth-header-logo img { width:100%; height:100%; object-fit:cover; }
+  .auth-header h2 { color:#fff; font-size:1.4rem; font-weight:800; margin:0 0 0.3rem; }
+  .auth-header p { color:rgba(255,255,255,0.85); font-size:0.82rem; margin:0; }
+  .auth-body { padding:1.5rem 2rem 2rem; }
+  .form-tabs { display:flex; gap:0; margin-bottom:1.5rem; background:var(--bg); border-radius:10px; padding:3px; }
+  .form-tab { flex:1; padding:0.55rem; cursor:pointer; font-weight:600; font-size:0.88rem; color:var(--text-light); border:none; border-radius:8px; text-align:center; transition:all 0.2s; }
+  .form-tab.active { color:var(--accent-dark); background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
   .form-group { margin-bottom:1rem; }
-  .form-group label { display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.3rem; color:var(--text-sec); }
-  .form-group input, .form-group textarea { width:100%; padding:0.6rem 0.8rem; border:1.5px solid var(--border); border-radius:10px; font-size:0.9rem; outline:none; font-family:inherit; }
-  .form-group input:focus, .form-group textarea:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
+  .form-group label { display:block; font-size:0.82rem; font-weight:600; margin-bottom:0.35rem; color:var(--text-sec); }
+  .form-group input, .form-group textarea { width:100%; padding:0.7rem 1rem; border:1.5px solid var(--border); border-radius:12px; font-size:0.9rem; outline:none; font-family:inherit; background:var(--bg); transition:all 0.2s; }
+  .form-group input:focus, .form-group textarea:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); background:#fff; }
   .form-group textarea { min-height:120px; resize:vertical; }
-  .form-msg { font-size:0.8rem; margin-top:0.5rem; }
+  .form-msg { font-size:0.8rem; margin-top:0.5rem; text-align:center; }
   .form-msg.error { color:var(--danger); }
   .form-msg.success { color:var(--accent-dark); }
-  .form-tabs { display:flex; gap:0; margin-bottom:1.2rem; border-bottom:2px solid var(--border); }
-  .form-tab { padding:0.5rem 1.2rem; cursor:pointer; font-weight:600; font-size:0.9rem; color:var(--text-light); border-bottom:2px solid transparent; margin-bottom:-2px; }
-  .form-tab.active { color:var(--accent-dark); border-bottom-color:var(--accent); }
+  .auth-btn { width:100%; padding:0.75rem; border:none; border-radius:12px; font-size:0.95rem; font-weight:700; cursor:pointer; background:linear-gradient(135deg,#2ecc71,#27ae60); color:#fff; margin-top:0.5rem; transition:all 0.2s; box-shadow:0 4px 12px rgba(46,204,113,0.3); }
+  .auth-btn:hover { transform:translateY(-1px); box-shadow:0 6px 16px rgba(46,204,113,0.4); }
+  .auth-btn:active { transform:translateY(0); }
+  .auth-terms { text-align:center; font-size:0.7rem; color:var(--text-light); margin-top:1rem; line-height:1.5; }
+
+  /* Post Modal */
+  .post-modal-body { padding:1.5rem 2rem 2rem; }
+  .media-type-select { display:flex; gap:0.5rem; margin-bottom:1rem; }
+  .media-type-btn { flex:1; padding:0.5rem; border:1.5px solid var(--border); border-radius:10px; background:none; cursor:pointer; text-align:center; font-size:0.8rem; font-weight:600; color:var(--text-sec); transition:all 0.2s; }
+  .media-type-btn.active { border-color:var(--accent); background:var(--accent-light); color:var(--accent-dark); }
+
+  /* Card media */
+  .card-media { position:relative; overflow:hidden; }
+  .card-media img { width:100%; display:block; }
+  .card-media iframe { width:100%; aspect-ratio:16/9; border:none; display:block; }
+  .card-media-badge { position:absolute; top:0.5rem; right:0.5rem; background:rgba(0,0,0,0.6); color:#fff; padding:0.15rem 0.5rem; border-radius:6px; font-size:0.65rem; font-weight:600; backdrop-filter:blur(4px); }
 
   /* Empty */
   .empty-state { text-align:center; padding:4rem 1rem; color:var(--text-light); }
@@ -247,45 +272,64 @@
   <p style="margin-top:0.5rem;">xiaolvshu.org &copy; 2026</p>
 </footer>
 
-<!-- Auth Modal -->
+<!-- Auth Modal (小红书 Pro 风格) -->
 <div class="modal-overlay" id="authModal">
-  <div class="modal">
+  <div class="modal" style="position:relative;">
     <button class="modal-close" onclick="closeModal('authModal')">&times;</button>
-    <div class="form-tabs">
-      <div class="form-tab active" data-tab="login" onclick="switchTab('login')">登录</div>
-      <div class="form-tab" data-tab="register" onclick="switchTab('register')">注册</div>
+    <div class="auth-header">
+      <div class="auth-header-logo"><img src="logo.jpeg" alt="小绿书"></div>
+      <h2>欢迎来到小绿书</h2>
+      <p>AI 时代的自由创作平台</p>
     </div>
-    <div id="loginForm">
-      <div class="form-group"><label>邮箱</label><input type="email" id="loginEmail"></div>
-      <div class="form-group"><label>密码</label><input type="password" id="loginPwd"></div>
-      <div class="form-msg" id="loginMsg"></div>
-      <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doLogin()">登录</button>
-    </div>
-    <div id="registerForm" style="display:none;">
-      <div class="form-group"><label>邮箱</label><input type="email" id="regEmail"></div>
-      <div class="form-group"><label>用户名</label><input type="text" id="regUsername" maxlength="20"></div>
-      <div class="form-group"><label>密码（至少6位）</label><input type="password" id="regPwd"></div>
-      <div class="form-msg" id="regMsg"></div>
-      <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doRegister()">注册</button>
+    <div class="auth-body">
+      <div class="form-tabs">
+        <div class="form-tab active" data-tab="login" onclick="switchTab('login')">登录</div>
+        <div class="form-tab" data-tab="register" onclick="switchTab('register')">注册</div>
+      </div>
+      <div id="loginForm">
+        <div class="form-group"><label>邮箱</label><input type="email" id="loginEmail" placeholder="请输入邮箱"></div>
+        <div class="form-group"><label>密码</label><input type="password" id="loginPwd" placeholder="请输入密码"></div>
+        <div class="form-msg" id="loginMsg"></div>
+        <button class="auth-btn" onclick="doLogin()">登录</button>
+      </div>
+      <div id="registerForm" style="display:none;">
+        <div class="form-group"><label>邮箱</label><input type="email" id="regEmail" placeholder="请输入邮箱"></div>
+        <div class="form-group"><label>用户名</label><input type="text" id="regUsername" maxlength="20" placeholder="给自己起个名字"></div>
+        <div class="form-group"><label>密码</label><input type="password" id="regPwd" placeholder="至少 6 位"></div>
+        <div class="form-msg" id="regMsg"></div>
+        <button class="auth-btn" onclick="doRegister()">注册</button>
+      </div>
+      <div class="auth-terms">注册即表示同意<strong>小绿书用户协议</strong>和<strong>隐私政策</strong></div>
     </div>
   </div>
 </div>
 
 <!-- Post Modal -->
 <div class="modal-overlay" id="postModal">
-  <div class="modal">
+  <div class="modal" style="position:relative;max-width:520px;">
     <button class="modal-close" onclick="closeModal('postModal')">&times;</button>
-    <h2>发布内容</h2>
-    <div class="form-group"><label>标题</label><input type="text" id="postTitle" maxlength="100" placeholder="起个好标题"></div>
-    <div class="form-group"><label>正文</label><textarea id="postContent" placeholder="写点什么... 尽管用 AI 辅助创作！"></textarea></div>
-    <div class="form-group"><label>标签（逗号分隔）</label><input type="text" id="postTags" placeholder="AI写作, 效率, ChatGPT"></div>
-    <div class="form-group">
-      <label>绿能值 — 这篇内容的 AI 参与度</label>
-      <input type="range" class="green-slider" id="postGreenEnergy" min="0" max="100" value="50" oninput="document.getElementById('geDisplay').textContent=this.value+'%'">
-      <div class="green-slider-label"><span>纯人类</span><span id="geDisplay">50%</span><span>纯 AI</span></div>
+    <div class="post-modal-body">
+      <h2 style="margin-bottom:1.2rem;">发布内容</h2>
+      <div class="media-type-select">
+        <div class="media-type-btn active" data-mt="text" onclick="selectMediaType('text')">&#128221; 文字</div>
+        <div class="media-type-btn" data-mt="image" onclick="selectMediaType('image')">&#128247; 图文</div>
+        <div class="media-type-btn" data-mt="video" onclick="selectMediaType('video')">&#127916; 视频</div>
+      </div>
+      <div class="form-group" id="mediaUrlGroup" style="display:none;">
+        <label id="mediaUrlLabel">图片链接</label>
+        <input type="text" id="postMediaUrl" placeholder="https://...">
+      </div>
+      <div class="form-group"><label>标题</label><input type="text" id="postTitle" maxlength="100" placeholder="起个好标题"></div>
+      <div class="form-group"><label>正文</label><textarea id="postContent" placeholder="写点什么... 尽管用 AI 辅助创作！"></textarea></div>
+      <div class="form-group"><label>标签（逗号分隔）</label><input type="text" id="postTags" placeholder="AI写作, 效率, ChatGPT"></div>
+      <div class="form-group">
+        <label>绿能值 — AI 参与度</label>
+        <input type="range" class="green-slider" id="postGreenEnergy" min="0" max="100" value="50" oninput="document.getElementById('geDisplay').textContent=this.value+'%'">
+        <div class="green-slider-label"><span>纯人类 0%</span><span id="geDisplay">50%</span><span>纯 AI 100%</span></div>
+      </div>
+      <div class="form-msg" id="postMsg"></div>
+      <button class="auth-btn" onclick="doPost()">发布</button>
     </div>
-    <div class="form-msg" id="postMsg"></div>
-    <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doPost()">发布</button>
   </div>
 </div>
 
@@ -392,9 +436,11 @@
     const tagsStr = document.getElementById('postTags').value.trim();
     const tags = tagsStr ? tagsStr.split(/[,，]/).map(t => t.trim()).filter(Boolean) : [];
     const green_energy = parseInt(document.getElementById('postGreenEnergy').value);
+    const media_type = document.querySelector('.media-type-btn.active')?.dataset.mt || 'text';
+    const media_url = document.getElementById('postMediaUrl').value.trim();
     if (!title) { msgEl.textContent = '标题不能为空'; msgEl.className = 'form-msg error'; return; }
     try {
-      const d = await api('/posts', { method: 'POST', body: JSON.stringify({ title, content, tags, green_energy }) });
+      const d = await api('/posts', { method: 'POST', body: JSON.stringify({ title, content, tags, green_energy, media_type, media_url }) });
       if (d.error) { msgEl.textContent = d.error; msgEl.className = 'form-msg error'; return; }
       closeModal('postModal');
       document.getElementById('postTitle').value = '';
@@ -402,6 +448,8 @@
       document.getElementById('postTags').value = '';
       document.getElementById('postGreenEnergy').value = 50;
       document.getElementById('geDisplay').textContent = '50%';
+      document.getElementById('postMediaUrl').value = '';
+      selectMediaType('text');
       loadPosts();
     } catch(e) { msgEl.textContent = '网络错误'; msgEl.className = 'form-msg error'; }
   };
@@ -445,8 +493,16 @@
       const ge = p.green_energy != null ? p.green_energy : 50;
       const geClass = ge <= 25 ? 'ge-low' : ge <= 50 ? 'ge-mid' : ge <= 75 ? 'ge-high' : 'ge-max';
       const geLabel = ge <= 10 ? '纯手工' : ge <= 30 ? '微AI' : ge <= 60 ? 'AI协作' : ge <= 85 ? 'AI主力' : '全AI驱动';
+      const mtype = p.media_type || 'text';
+      const murl = p.media_url || p.image_url || '';
+      let mediaHtml = '';
+      if (mtype === 'image' && murl) {
+        mediaHtml = `<div class="card-media"><img src="${murl}" alt="" loading="lazy"><span class="card-media-badge">&#128247; 图文</span></div>`;
+      } else if (mtype === 'video' && murl) {
+        mediaHtml = `<div class="card-media"><iframe src="${murl}" allowfullscreen loading="lazy"></iframe><span class="card-media-badge">&#127916; 视频</span></div>`;
+      }
       return `<div class="card">
-        <div style="height:6px;background:${grad};"></div>
+        ${mediaHtml || `<div style="height:6px;background:${grad};"></div>`}
         <div class="card-body">
           <div class="card-author"><div class="a-avatar">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
           <div class="card-title">${esc(p.title)}</div>
@@ -495,6 +551,15 @@
   };
   document.getElementById('clearTag').onclick = () => { window.filterTag(''); };
   document.getElementById('searchInput').oninput = e => { searchQuery = e.target.value.trim(); renderPosts(); };
+
+  // ===== Media type select =====
+  window.selectMediaType = function(type) {
+    document.querySelectorAll('.media-type-btn').forEach(b => b.classList.toggle('active', b.dataset.mt === type));
+    const group = document.getElementById('mediaUrlGroup');
+    const label = document.getElementById('mediaUrlLabel');
+    if (type === 'text') { group.style.display = 'none'; }
+    else { group.style.display = ''; label.textContent = type === 'image' ? '图片链接' : '视频链接（YouTube Embed URL）'; }
+  };
 
   // ===== Modals =====
   window.openModal = function(id) { document.getElementById(id).classList.add('show'); };
