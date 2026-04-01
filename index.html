@@ -6,817 +6,455 @@
 <title>小绿书 - AI 时代的自由创作平台</title>
 <style>
   :root {
-    --bg: #f0f5f0;
-    --card-bg: #fff;
-    --text: #1a2e1a;
-    --text-sec: #556b55;
-    --text-light: #8a9f8a;
-    --border: #d8e8d8;
-    --accent: #2ecc71;
-    --accent-dark: #27ae60;
-    --accent-light: #e8f8ef;
-    --accent-glow: rgba(46,204,113,0.15);
-    --tag-bg: #eaf5ea;
-    --tag-hover: #2ecc71;
-    --radius: 14px;
-    --shadow: 0 2px 8px rgba(0,0,0,0.05);
+    --bg: #f0f5f0; --card-bg: #fff; --text: #1a2e1a; --text-sec: #556b55;
+    --text-light: #8a9f8a; --border: #d8e8d8; --accent: #2ecc71;
+    --accent-dark: #27ae60; --accent-light: #e8f8ef; --accent-glow: rgba(46,204,113,0.15);
+    --tag-bg: #eaf5ea; --radius: 14px; --shadow: 0 2px 8px rgba(0,0,0,0.05);
     --shadow-hover: 0 8px 30px rgba(46,204,113,0.15);
+    --danger: #e74c3c;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height:1.6; }
 
-  /* === Top Nav === */
-  .topnav {
-    background: rgba(255,255,255,0.92);
-    border-bottom: 1px solid var(--border);
-    position: sticky; top:0; z-index:100;
-    backdrop-filter: blur(12px);
-  }
-  .topnav-inner {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  .logo {
-    font-size: 1.4rem;
-    font-weight: 900;
-    color: var(--accent-dark);
-    text-decoration: none;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-  }
-  .logo-icon {
-    width: 32px; height: 32px;
-    background: linear-gradient(135deg, #2ecc71, #27ae60);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 900;
-  }
-  .logo-text { color: var(--accent-dark); }
-  .logo-sub {
-    font-size: 0.65rem;
-    font-weight: 400;
-    color: var(--text-light);
-    margin-left: 0.3rem;
-    padding: 0.15rem 0.5rem;
-    background: var(--accent-light);
-    border-radius: 10px;
-    white-space: nowrap;
-  }
-  .nav-cats {
-    display: flex;
-    gap: 0.2rem;
-    overflow-x: auto;
-    flex: 1;
-    scrollbar-width: none;
-  }
-  .nav-cats::-webkit-scrollbar { display:none; }
-  .nav-cat {
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    white-space: nowrap;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: var(--text-sec);
-    transition: all 0.2s;
-    font-weight: 500;
-  }
-  .nav-cat:hover { background: var(--accent-light); color: var(--accent-dark); }
-  .nav-cat.active { background: var(--accent); color: #fff; font-weight: 600; }
-  .nav-search {
-    position: relative;
-    flex-shrink: 0;
-  }
-  .nav-search input {
-    width: 220px;
-    padding: 0.5rem 0.9rem 0.5rem 2.2rem;
-    border: 1.5px solid var(--border);
-    border-radius: 22px;
-    font-size: 0.85rem;
-    outline: none;
-    background: var(--bg);
-    transition: all 0.2s;
-    color: var(--text);
-  }
-  .nav-search input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
-  .nav-search::before {
-    content: '\1F50D';
-    position: absolute;
-    left: 0.7rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 0.8rem;
-  }
+  /* Nav */
+  .topnav { background: rgba(255,255,255,0.92); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; backdrop-filter:blur(12px); }
+  .topnav-inner { max-width:1280px; margin:0 auto; padding:0 1.5rem; height:60px; display:flex; align-items:center; gap:1rem; }
+  .logo { font-size:1.4rem; font-weight:900; color:var(--accent-dark); text-decoration:none; display:flex; align-items:center; gap:0.4rem; white-space:nowrap; }
+  .logo-icon { width:32px; height:32px; background:linear-gradient(135deg,#2ecc71,#27ae60); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.1rem; font-weight:900; }
+  .logo-sub { font-size:0.65rem; font-weight:400; color:var(--text-light); padding:0.15rem 0.5rem; background:var(--accent-light); border-radius:10px; }
+  .nav-spacer { flex:1; }
+  .nav-search input { width:200px; padding:0.45rem 0.9rem; border:1.5px solid var(--border); border-radius:22px; font-size:0.85rem; outline:none; background:var(--bg); }
+  .nav-search input:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
+  .nav-auth { display:flex; gap:0.5rem; align-items:center; }
+  .btn { padding:0.45rem 1rem; border-radius:20px; font-size:0.85rem; font-weight:600; cursor:pointer; border:none; transition:all 0.2s; }
+  .btn-primary { background:var(--accent); color:#fff; }
+  .btn-primary:hover { background:var(--accent-dark); }
+  .btn-outline { background:none; border:1.5px solid var(--accent); color:var(--accent-dark); }
+  .btn-outline:hover { background:var(--accent-light); }
+  .btn-sm { padding:0.3rem 0.7rem; font-size:0.78rem; }
+  .btn-danger { background:var(--danger); color:#fff; }
+  .btn-danger:hover { opacity:0.9; }
+  .user-chip { display:flex; align-items:center; gap:0.4rem; font-size:0.85rem; font-weight:600; color:var(--accent-dark); }
+  .user-avatar { width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; }
 
-  /* === Hero Banner === */
-  .hero {
-    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 50%, #1abc9c 100%);
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1.5rem 2.5rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%; left: -50%;
-    width: 200%; height: 200%;
-    background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 40%);
-    animation: float 20s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    50% { transform: translate(-2%, 2%) rotate(1deg); }
-  }
-  .hero-content { position: relative; z-index: 1; }
-  .hero h1 {
-    font-size: 2.2rem;
-    font-weight: 900;
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-  }
-  .hero p {
-    font-size: 1.05rem;
-    opacity: 0.92;
-    max-width: 600px;
-    margin: 0 auto 1.2rem;
-    line-height: 1.7;
-  }
-  .hero-badges {
-    display: flex;
-    gap: 0.8rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .hero-badge {
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    border: 1px solid rgba(255,255,255,0.3);
-  }
+  /* Hero */
+  .hero { background:linear-gradient(135deg,#2ecc71,#27ae60 50%,#1abc9c); color:#fff; text-align:center; padding:2.5rem 1.5rem 2rem; position:relative; overflow:hidden; }
+  .hero h1 { font-size:2rem; font-weight:900; margin-bottom:0.4rem; letter-spacing:2px; }
+  .hero p { font-size:1rem; opacity:0.92; max-width:600px; margin:0 auto 1rem; }
+  .hero-badges { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; }
+  .hero-badge { background:rgba(255,255,255,0.2); padding:0.35rem 0.9rem; border-radius:20px; font-size:0.8rem; font-weight:600; border:1px solid rgba(255,255,255,0.3); }
+  .free-ai-section { margin-top:1.2rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; }
+  .free-ai-btn { background:#fff; color:var(--accent-dark); border:none; padding:0.6rem 1.8rem; border-radius:25px; font-size:1rem; font-weight:800; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
+  .free-ai-btn:hover { transform:scale(1.05); }
+  .free-ai-btn.voted { background:rgba(255,255,255,0.25); color:#fff; cursor:default; border:2px solid rgba(255,255,255,0.5); }
+  .free-ai-btn.voted:hover { transform:none; }
+  .free-ai-count { font-size:0.85rem; opacity:0.9; }
 
-  /* === Free AI Publish Button === */
-  .free-ai-section {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.6rem;
-  }
-  .free-ai-btn {
-    background: #fff;
-    color: var(--accent-dark);
-    border: none;
-    padding: 0.7rem 2rem;
-    border-radius: 25px;
-    font-size: 1.05rem;
-    font-weight: 800;
-    cursor: pointer;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    letter-spacing: 1px;
-  }
-  .free-ai-btn:hover { transform: scale(1.05); box-shadow: 0 6px 25px rgba(0,0,0,0.2); }
-  .free-ai-btn:active { transform: scale(0.97); }
-  .free-ai-btn.voted {
-    background: rgba(255,255,255,0.25);
-    color: #fff;
-    cursor: default;
-    border: 2px solid rgba(255,255,255,0.5);
-  }
-  .free-ai-btn.voted:hover { transform: none; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
-  .free-ai-count {
-    font-size: 0.88rem;
-    opacity: 0.9;
-    font-weight: 500;
-  }
+  /* Layout */
+  .page { max-width:1280px; margin:0 auto; padding:1.5rem; display:grid; grid-template-columns:1fr 300px; gap:2rem; }
+  .section-head { margin-bottom:1rem; font-size:0.9rem; color:var(--text-light); display:flex; align-items:center; justify-content:space-between; }
+  .section-head .count { font-weight:600; color:var(--text-sec); }
 
-  /* === Main Layout === */
-  .page {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 2rem;
-  }
-
-  /* === Filter Bar === */
-  .active-tag-bar {
-    display: none;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--accent-light);
-    border-radius: 8px;
-    font-size: 0.85rem;
-    color: var(--accent-dark);
-  }
-  .active-tag-bar.show { display: flex; }
+  /* Tag filter */
+  .active-tag-bar { display:none; align-items:center; gap:0.5rem; margin-bottom:1rem; padding:0.5rem 1rem; background:var(--accent-light); border-radius:8px; font-size:0.85rem; color:var(--accent-dark); }
+  .active-tag-bar.show { display:flex; }
   .active-tag-bar .clear { cursor:pointer; font-weight:600; text-decoration:underline; }
 
-  .section-head {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: var(--text-light);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .section-head .count { font-weight: 600; color: var(--text-sec); }
+  /* Card grid */
+  .card-grid { columns:3; column-gap:1.2rem; }
+  .card { break-inside:avoid; background:var(--card-bg); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:all 0.3s; margin-bottom:1.2rem; border:1px solid transparent; }
+  .card:hover { box-shadow:var(--shadow-hover); transform:translateY(-3px); border-color:var(--accent-light); }
+  .card-body { padding:1rem 1.1rem; }
+  .card-author { display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.78rem; color:var(--text-light); }
+  .card-author .a-avatar { width:22px; height:22px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.6rem; font-weight:700; flex-shrink:0; }
+  .card-author .a-name { font-weight:600; color:var(--text-sec); }
+  .card-title { font-size:0.95rem; font-weight:700; line-height:1.5; margin-bottom:0.4rem; }
+  .card-content { font-size:0.82rem; color:var(--text-sec); line-height:1.6; margin-bottom:0.7rem; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; white-space:pre-wrap; }
+  .card-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:0.6rem; }
+  .card-tag { font-size:0.68rem; color:var(--accent-dark); background:var(--accent-light); padding:0.1rem 0.45rem; border-radius:4px; cursor:pointer; }
+  .card-tag:hover { background:var(--accent); color:#fff; }
+  .card-foot { display:flex; align-items:center; justify-content:space-between; font-size:0.75rem; color:var(--text-light); }
+  .like-btn { background:none; border:1px solid var(--border); border-radius:15px; padding:0.2rem 0.6rem; font-size:0.75rem; cursor:pointer; color:var(--text-sec); transition:all 0.2s; display:flex; align-items:center; gap:0.3rem; }
+  .like-btn:hover { border-color:var(--accent); color:var(--accent-dark); }
+  .like-btn.liked { background:var(--accent-light); border-color:var(--accent); color:var(--accent-dark); font-weight:600; }
 
-  /* === Waterfall Card Grid === */
-  .card-grid {
-    columns: 3;
-    column-gap: 1.2rem;
-  }
+  /* Sidebar */
+  .sidebar-block { background:var(--card-bg); border-radius:var(--radius); padding:1.2rem; margin-bottom:1rem; box-shadow:var(--shadow); }
+  .sidebar-title { font-size:0.95rem; font-weight:700; margin-bottom:0.8rem; }
+  .manifesto { background:linear-gradient(135deg,var(--accent-light),#e0f5e8); border:1px solid var(--accent); border-radius:var(--radius); padding:1.2rem; margin-bottom:1rem; }
+  .manifesto-title { font-size:0.95rem; font-weight:800; color:var(--accent-dark); margin-bottom:0.5rem; }
+  .manifesto-text { font-size:0.8rem; color:var(--text-sec); line-height:1.7; }
+  .manifesto-text strong { color:var(--accent-dark); }
+  .stats-row { display:flex; justify-content:space-around; text-align:center; }
+  .stats-num { font-size:1.5rem; font-weight:800; color:var(--accent-dark); }
+  .stats-label { font-size:0.7rem; color:var(--text-light); }
+  .tag-cloud { display:flex; flex-wrap:wrap; gap:0.35rem; }
+  .stag { padding:0.2rem 0.6rem; background:var(--tag-bg); border-radius:6px; color:var(--text-sec); cursor:pointer; transition:all 0.2s; border:1px solid transparent; font-size:0.8rem; }
+  .stag:hover { border-color:var(--accent); color:var(--accent-dark); }
+  .stag.active { background:var(--accent); color:#fff; border-color:var(--accent); }
 
-  .card {
-    break-inside: avoid;
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 1.2rem;
-    border: 1px solid transparent;
-  }
-  .card:hover {
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-4px);
-    border-color: var(--accent-light);
-  }
-  .card.read { opacity: 0.55; }
-  .card.read:hover { opacity: 1; }
-
-  /* Cover image area */
-  .card-cover {
-    position: relative;
-    overflow: hidden;
-  }
-  .card-cover.has-img { min-height: 120px; }
-  .card-cover:not(.has-img) {
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .card-cover img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
-  .card-cover .cover-icon {
-    font-size: 2.8rem;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.12));
-  }
-  .card-cover .cover-cat {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 0.5rem;
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    padding: 0.15rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.68rem;
-    backdrop-filter: blur(6px);
-  }
-  .card-cover .cover-lang {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    background: rgba(255,255,255,0.9);
-    color: #333;
-    padding: 0.1rem 0.45rem;
-    border-radius: 4px;
-    font-size: 0.62rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-  .read-btn {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    width: 28px; height: 28px;
-    border-radius: 50%;
-    border: 2px solid rgba(255,255,255,0.7);
-    background: rgba(0,0,0,0.2);
-    color: transparent;
-    font-size: 0.72rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.2s;
-    backdrop-filter: blur(4px);
-    z-index: 2;
-  }
-  .read-btn:hover { background: rgba(0,0,0,0.45); border-color:#fff; }
-  .read-btn.checked { background: var(--accent); border-color: var(--accent); color:#fff; }
-
-  /* Card body */
-  .card-body { padding: 1rem 1.1rem; }
-  .card-title {
-    font-size: 0.95rem;
-    font-weight: 700;
-    line-height: 1.5;
-    margin-bottom: 0.4rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-  .card-title a { color: var(--text); text-decoration: none; }
-  .card-title a:hover { color: var(--accent-dark); }
-
-  .card-summary {
-    font-size: 0.8rem;
-    color: var(--text-sec);
-    line-height: 1.55;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    margin-bottom: 0.7rem;
-  }
-
-  .card-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3rem;
-    margin-bottom: 0.6rem;
-  }
-  .card-tag {
-    font-size: 0.68rem;
-    color: var(--accent-dark);
-    background: var(--accent-light);
-    padding: 0.1rem 0.45rem;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .card-tag:hover { background: var(--accent); color: #fff; }
-
-  .card-foot {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.72rem;
-    color: var(--text-light);
-  }
-  .card-foot .source { font-weight: 600; color: var(--text-sec); }
-
-  /* === Sidebar === */
-  .sidebar-block {
-    background: var(--card-bg);
-    border-radius: var(--radius);
-    padding: 1.2rem;
-    margin-bottom: 1rem;
-    box-shadow: var(--shadow);
-  }
-  .sidebar-title {
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-    color: var(--text);
-  }
-
-  /* Manifesto */
-  .manifesto {
-    background: linear-gradient(135deg, var(--accent-light), #e0f5e8);
-    border: 1px solid var(--accent);
-    border-radius: var(--radius);
-    padding: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  .manifesto-title {
-    font-size: 0.95rem;
-    font-weight: 800;
-    color: var(--accent-dark);
-    margin-bottom: 0.5rem;
-  }
-  .manifesto-text {
-    font-size: 0.8rem;
-    color: var(--text-sec);
-    line-height: 1.7;
-  }
-  .manifesto-text strong { color: var(--accent-dark); }
-
-  /* Stats */
-  .stats-row {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .stats-num { font-size: 1.5rem; font-weight: 800; color: var(--accent-dark); }
-  .stats-label { font-size: 0.7rem; color: var(--text-light); }
-
-  /* Tag cloud */
-  .tag-cloud {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem;
-    align-items: center;
-    line-height: 1.8;
-  }
-  .stag {
-    padding: 0.2rem 0.6rem;
-    background: var(--tag-bg);
-    border-radius: 6px;
-    color: var(--text-sec);
-    cursor: pointer;
-    transition: all 0.2s;
-    border: 1px solid transparent;
-    white-space: nowrap;
-  }
-  .stag:hover { border-color: var(--accent); color: var(--accent-dark); }
-  .stag.active { background: var(--accent); color: #fff; border-color: var(--accent); }
-
-  /* Latest list */
-  .hot-item {
-    display: flex;
-    gap: 0.7rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid var(--border);
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .hot-item:last-child { border-bottom: none; }
-  .hot-item:hover .hot-title { color: var(--accent-dark); }
-  .hot-rank {
-    flex-shrink: 0;
-    width: 22px; height: 22px;
-    border-radius: 6px;
-    background: var(--tag-bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--text-light);
-  }
-  .hot-rank.top { background: var(--accent); color: #fff; }
-  .hot-title {
-    font-size: 0.82rem;
-    line-height: 1.4;
-    color: var(--text-sec);
-    transition: color 0.2s;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+  /* Modal */
+  .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:200; align-items:center; justify-content:center; }
+  .modal-overlay.show { display:flex; }
+  .modal { background:#fff; border-radius:16px; padding:2rem; width:90%; max-width:480px; max-height:90vh; overflow-y:auto; box-shadow:0 20px 60px rgba(0,0,0,0.2); }
+  .modal h2 { font-size:1.3rem; margin-bottom:1rem; color:var(--text); }
+  .modal-close { float:right; background:none; border:none; font-size:1.5rem; cursor:pointer; color:var(--text-light); }
+  .form-group { margin-bottom:1rem; }
+  .form-group label { display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.3rem; color:var(--text-sec); }
+  .form-group input, .form-group textarea { width:100%; padding:0.6rem 0.8rem; border:1.5px solid var(--border); border-radius:10px; font-size:0.9rem; outline:none; font-family:inherit; }
+  .form-group input:focus, .form-group textarea:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
+  .form-group textarea { min-height:120px; resize:vertical; }
+  .form-msg { font-size:0.8rem; margin-top:0.5rem; }
+  .form-msg.error { color:var(--danger); }
+  .form-msg.success { color:var(--accent-dark); }
+  .form-tabs { display:flex; gap:0; margin-bottom:1.2rem; border-bottom:2px solid var(--border); }
+  .form-tab { padding:0.5rem 1.2rem; cursor:pointer; font-weight:600; font-size:0.9rem; color:var(--text-light); border-bottom:2px solid transparent; margin-bottom:-2px; }
+  .form-tab.active { color:var(--accent-dark); border-bottom-color:var(--accent); }
 
   /* Empty */
-  .empty-state {
-    text-align: center;
-    padding: 4rem 1rem;
-    color: var(--text-light);
-  }
-  .empty-state .icon { font-size: 3rem; margin-bottom: 1rem; }
+  .empty-state { text-align:center; padding:4rem 1rem; color:var(--text-light); }
+  .empty-state .icon { font-size:3rem; margin-bottom:1rem; }
 
-  /* === Gradients per category === */
-  .grad-ai-create { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
-  .grad-ai-tools { background: linear-gradient(135deg, #0cebeb 0%, #20e3b2 100%); }
-  .grad-free-think { background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%); }
-  .grad-docs { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-  .grad-data { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
-  .grad-marketing { background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); }
-  .grad-started { background: linear-gradient(135deg, #2ecc71 0%, #1abc9c 100%); }
+  /* Footer */
+  .site-footer { text-align:center; padding:2rem 1rem; color:var(--text-light); font-size:0.78rem; border-top:1px solid var(--border); margin-top:2rem; }
 
-  /* === Footer === */
-  .site-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    color: var(--text-light);
-    font-size: 0.78rem;
-    border-top: 1px solid var(--border);
-    margin-top: 2rem;
-  }
-  .site-footer a { color: var(--accent-dark); text-decoration: none; }
-  .site-footer a:hover { text-decoration: underline; }
-
-  /* === Responsive === */
-  @media (max-width: 1000px) {
-    .page { grid-template-columns: 1fr; }
-    .card-grid { columns: 2; }
-    .sidebar { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .manifesto { grid-column: 1 / -1; }
-  }
-  @media (max-width: 600px) {
-    .card-grid { columns: 1; }
-    .sidebar { grid-template-columns: 1fr; }
-    .nav-cats { display: none; }
-    .nav-search input { width: 160px; }
-    .topnav-inner { gap: 0.8rem; }
-    .hero h1 { font-size: 1.6rem; }
-    .hero p { font-size: 0.9rem; }
-    .hero-badges { gap: 0.4rem; }
-    .hero-badge { font-size: 0.72rem; padding: 0.3rem 0.7rem; }
-  }
+  /* Responsive */
+  @media (max-width:1000px) { .page{grid-template-columns:1fr;} .card-grid{columns:2;} }
+  @media (max-width:600px) { .card-grid{columns:1;} .nav-search{display:none;} .hero h1{font-size:1.5rem;} }
 </style>
 </head>
 <body>
 
 <nav class="topnav">
   <div class="topnav-inner">
-    <a class="logo" href="xls.html">
-      <span class="logo-icon">XLS</span>
-      <span class="logo-text">小绿书</span>
-      <span class="logo-sub">AI 友好平台</span>
-    </a>
-    <div class="nav-cats" id="navCats"></div>
-    <div class="nav-search">
-      <input type="text" id="searchInput" placeholder="搜索内容...">
-    </div>
+    <a class="logo" href="/"><span class="logo-icon">XLS</span><span>小绿书</span><span class="logo-sub">AI 友好平台</span></a>
+    <div class="nav-spacer"></div>
+    <div class="nav-search"><input type="text" id="searchInput" placeholder="搜索内容..."></div>
+    <div class="nav-auth" id="navAuth"></div>
   </div>
 </nav>
 
-<div class="hero" id="heroBanner">
-  <div class="hero-content">
-    <h1>小绿书</h1>
-    <p>AI 时代的自由创作平台。我们相信优质内容不分人写还是 AI 写，只要对读者有价值，就值得被看见。</p>
-    <div class="hero-badges">
-      <span class="hero-badge">AI 创作自由</span>
-      <span class="hero-badge">内容为王</span>
-      <span class="hero-badge">拒绝过度审核</span>
-      <span class="hero-badge">开放共享</span>
-    </div>
-    <div class="free-ai-section">
-      <button class="free-ai-btn" id="freeAiBtn">自由 AI 发布</button>
-      <div class="free-ai-count" id="freeAiCount"></div>
-    </div>
+<div class="hero">
+  <h1>小绿书</h1>
+  <p>AI 时代的自由创作平台。优质内容不分人写还是 AI 写，只要有价值，就值得被看见。</p>
+  <div class="hero-badges">
+    <span class="hero-badge">AI 创作自由</span>
+    <span class="hero-badge">内容为王</span>
+    <span class="hero-badge">拒绝过度审核</span>
+    <span class="hero-badge">开放共享</span>
+  </div>
+  <div class="free-ai-section">
+    <button class="free-ai-btn" id="freeAiBtn">自由 AI 发布</button>
+    <div class="free-ai-count" id="freeAiCount"></div>
   </div>
 </div>
 
 <main class="page">
   <div class="main-content">
-    <div class="active-tag-bar" id="activeTagBar">
-      标签筛选：<strong id="filterTagName"></strong>
-      <span class="clear" id="clearTag">清除</span>
-    </div>
+    <div class="active-tag-bar" id="activeTagBar">标签筛选：<strong id="filterTagName"></strong> <span class="clear" id="clearTag">清除</span></div>
     <div class="section-head">
       <span id="sectionLabel">全部内容</span>
       <span>共 <span class="count" id="articleCount">0</span> 篇</span>
     </div>
     <div class="card-grid" id="cardGrid"></div>
-    <div class="empty-state" id="emptyState" style="display:none;">
-      <div class="icon">&#128270;</div>
-      <p>没有找到匹配的内容</p>
-    </div>
+    <div class="empty-state" id="emptyState" style="display:none;"><div class="icon">&#128270;</div><p>还没有内容，来发第一篇吧！</p></div>
   </div>
-
   <aside class="sidebar">
     <div class="manifesto">
       <div class="manifesto-title">小绿书宣言</div>
-      <div class="manifesto-text">
-        我们认为 <strong>AI 是创作的伙伴，不是敌人</strong>。<br>
-        只要内容优质、对读者有帮助，无论是人写的还是 AI 辅助的，都应该被平等对待。<br><br>
-        小绿书拒绝因"AI 生成"而封杀内容，<strong>我们审核的是质量，不是工具</strong>。
-      </div>
+      <div class="manifesto-text">我们认为 <strong>AI 是创作的伙伴，不是敌人</strong>。<br>只要内容优质、对读者有帮助，无论是人写的还是 AI 辅助的，都应该被平等对待。<br><br>小绿书拒绝因"AI 生成"而封杀内容，<strong>我们审核的是质量，不是工具</strong>。</div>
     </div>
     <div class="sidebar-block">
       <div class="stats-row">
-        <div><div class="stats-num" id="statTotal">0</div><div class="stats-label">内容</div></div>
-        <div><div class="stats-num" id="statRead">0</div><div class="stats-label">已读</div></div>
-        <div><div class="stats-num" id="statCats">0</div><div class="stats-label">分类</div></div>
+        <div><div class="stats-num" id="statPosts">0</div><div class="stats-label">帖子</div></div>
+        <div><div class="stats-num" id="statUsers">0</div><div class="stats-label">创作者</div></div>
       </div>
     </div>
     <div class="sidebar-block">
       <div class="sidebar-title">热门标签</div>
       <div class="tag-cloud" id="tagCloud"></div>
     </div>
-    <div class="sidebar-block">
-      <div class="sidebar-title">最新发布</div>
-      <div id="hotList"></div>
-    </div>
   </aside>
 </main>
 
-<footer class="site-footer">
-  小绿书 &mdash; AI 时代的自由创作平台 | 内容为王，工具自由
-</footer>
+<footer class="site-footer">小绿书 &mdash; AI 时代的自由创作平台 | 内容为王，工具自由</footer>
+
+<!-- Auth Modal -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('authModal')">&times;</button>
+    <div class="form-tabs">
+      <div class="form-tab active" data-tab="login" onclick="switchTab('login')">登录</div>
+      <div class="form-tab" data-tab="register" onclick="switchTab('register')">注册</div>
+    </div>
+    <div id="loginForm">
+      <div class="form-group"><label>邮箱</label><input type="email" id="loginEmail"></div>
+      <div class="form-group"><label>密码</label><input type="password" id="loginPwd"></div>
+      <div class="form-msg" id="loginMsg"></div>
+      <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doLogin()">登录</button>
+    </div>
+    <div id="registerForm" style="display:none;">
+      <div class="form-group"><label>邮箱</label><input type="email" id="regEmail"></div>
+      <div class="form-group"><label>用户名</label><input type="text" id="regUsername" maxlength="20"></div>
+      <div class="form-group"><label>密码（至少6位）</label><input type="password" id="regPwd"></div>
+      <div class="form-msg" id="regMsg"></div>
+      <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doRegister()">注册</button>
+    </div>
+  </div>
+</div>
+
+<!-- Post Modal -->
+<div class="modal-overlay" id="postModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('postModal')">&times;</button>
+    <h2>发布内容</h2>
+    <div class="form-group"><label>标题</label><input type="text" id="postTitle" maxlength="100" placeholder="起个好标题"></div>
+    <div class="form-group"><label>正文</label><textarea id="postContent" placeholder="写点什么... 尽管用 AI 辅助创作！"></textarea></div>
+    <div class="form-group"><label>标签（逗号分隔）</label><input type="text" id="postTags" placeholder="AI写作, 效率, ChatGPT"></div>
+    <div class="form-msg" id="postMsg"></div>
+    <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doPost()">发布</button>
+  </div>
+</div>
 
 <script>
 (function(){
-  let data = { categories:[], articles:[] };
-  let curCat = 'all', curTag = '', query = '';
-  let readMap = JSON.parse(localStorage.getItem('xls-read')||'{}');
+  // ===== Config =====
+  const API_BASE = ''; // Will be set after deployment, e.g. https://xls-api.beebeeai666.workers.dev
+  const VOTE_API = 'https://xls-vote-counter.beebeeai666.workers.dev/vote';
 
-  const gradMap = {
-    'ai-creation':'grad-ai-create',
-    'ai-tools':'grad-ai-tools',
-    'free-thinking':'grad-free-think',
-    'docs-writing':'grad-docs',
-    'data-analysis':'grad-data',
-    'marketing':'grad-marketing',
-    'getting-started':'grad-started'
+  let token = localStorage.getItem('xls-token') || '';
+  let currentUser = JSON.parse(localStorage.getItem('xls-user') || 'null');
+  let posts = [];
+  let curTag = '';
+  let searchQuery = '';
+
+  // ===== API helpers =====
+  async function api(path, opts = {}) {
+    const headers = { 'Content-Type': 'application/json' };
+    if (token) headers['Authorization'] = 'Bearer ' + token;
+    const res = await fetch(API_BASE + path, { ...opts, headers: { ...headers, ...opts.headers } });
+    return res.json();
+  }
+
+  // ===== Auth =====
+  function renderAuth() {
+    const el = document.getElementById('navAuth');
+    if (currentUser) {
+      el.innerHTML = `
+        <div class="user-chip"><div class="user-avatar">${currentUser.username[0].toUpperCase()}</div>${currentUser.display_name || currentUser.username}</div>
+        <button class="btn btn-primary btn-sm" onclick="openModal('postModal')">+ 发布</button>
+        <button class="btn btn-outline btn-sm" onclick="doLogout()">退出</button>`;
+    } else {
+      el.innerHTML = `<button class="btn btn-outline btn-sm" onclick="openModal('authModal')">登录</button>
+        <button class="btn btn-primary btn-sm" onclick="openModal('authModal');switchTab('register')">注册</button>`;
+    }
+  }
+
+  window.switchTab = function(tab) {
+    document.querySelectorAll('.form-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    document.getElementById('loginForm').style.display = tab === 'login' ? '' : 'none';
+    document.getElementById('registerForm').style.display = tab === 'register' ? '' : 'none';
+    document.getElementById('loginMsg').textContent = '';
+    document.getElementById('regMsg').textContent = '';
   };
 
-  async function load(){
-    try { data = await (await fetch('data/xls-articles.json')).json(); } catch(e){}
-    render();
+  window.doLogin = async function() {
+    const msgEl = document.getElementById('loginMsg');
+    msgEl.textContent = '';
+    const email = document.getElementById('loginEmail').value.trim();
+    const password = document.getElementById('loginPwd').value;
+    if (!email || !password) { msgEl.textContent = '请填写邮箱和密码'; msgEl.className = 'form-msg error'; return; }
+    try {
+      const d = await api('/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) });
+      if (d.error) { msgEl.textContent = d.error; msgEl.className = 'form-msg error'; return; }
+      token = d.token; currentUser = d.user;
+      localStorage.setItem('xls-token', token);
+      localStorage.setItem('xls-user', JSON.stringify(currentUser));
+      closeModal('authModal');
+      renderAuth();
+      loadPosts();
+    } catch(e) { msgEl.textContent = '网络错误'; msgEl.className = 'form-msg error'; }
+  };
+
+  window.doRegister = async function() {
+    const msgEl = document.getElementById('regMsg');
+    msgEl.textContent = '';
+    const email = document.getElementById('regEmail').value.trim();
+    const username = document.getElementById('regUsername').value.trim();
+    const password = document.getElementById('regPwd').value;
+    if (!email || !username || !password) { msgEl.textContent = '请填写所有字段'; msgEl.className = 'form-msg error'; return; }
+    try {
+      const d = await api('/auth/register', { method: 'POST', body: JSON.stringify({ email, username, password }) });
+      if (d.error) { msgEl.textContent = d.error; msgEl.className = 'form-msg error'; return; }
+      token = d.token; currentUser = d.user;
+      localStorage.setItem('xls-token', token);
+      localStorage.setItem('xls-user', JSON.stringify(currentUser));
+      closeModal('authModal');
+      renderAuth();
+      loadPosts();
+    } catch(e) { msgEl.textContent = '网络错误'; msgEl.className = 'form-msg error'; }
+  };
+
+  window.doLogout = function() {
+    token = ''; currentUser = null;
+    localStorage.removeItem('xls-token');
+    localStorage.removeItem('xls-user');
+    renderAuth();
+  };
+
+  // ===== Posts =====
+  async function loadPosts() {
+    try {
+      const params = new URLSearchParams();
+      if (curTag) params.set('tag', curTag);
+      const d = await api('/posts?' + params.toString());
+      if (d.posts) { posts = d.posts; renderPosts(); }
+    } catch(e) { /* API not ready yet */ renderPosts(); }
   }
 
-  function filtered(){
-    return data.articles.filter(a=>{
-      if(curCat!=='all' && a.category!==curCat) return false;
-      if(curTag && !(a.tags||[]).includes(curTag)) return false;
-      if(query){
-        const q=query.toLowerCase();
-        if(!(a.title||'').toLowerCase().includes(q)&&!(a.summary||'').toLowerCase().includes(q)&&!(a.tags||[]).some(t=>t.toLowerCase().includes(q))) return false;
+  window.doPost = async function() {
+    const msgEl = document.getElementById('postMsg');
+    const title = document.getElementById('postTitle').value.trim();
+    const content = document.getElementById('postContent').value.trim();
+    const tagsStr = document.getElementById('postTags').value.trim();
+    const tags = tagsStr ? tagsStr.split(/[,，]/).map(t => t.trim()).filter(Boolean) : [];
+    if (!title) { msgEl.textContent = '标题不能为空'; msgEl.className = 'form-msg error'; return; }
+    try {
+      const d = await api('/posts', { method: 'POST', body: JSON.stringify({ title, content, tags }) });
+      if (d.error) { msgEl.textContent = d.error; msgEl.className = 'form-msg error'; return; }
+      closeModal('postModal');
+      document.getElementById('postTitle').value = '';
+      document.getElementById('postContent').value = '';
+      document.getElementById('postTags').value = '';
+      loadPosts();
+    } catch(e) { msgEl.textContent = '网络错误'; msgEl.className = 'form-msg error'; }
+  };
+
+  window.toggleLike = async function(postId) {
+    if (!currentUser) { openModal('authModal'); return; }
+    try {
+      const d = await api('/posts/' + postId + '/like', { method: 'POST' });
+      if (!d.error) {
+        const p = posts.find(x => x.id === postId);
+        if (p) { p.liked = d.liked; p.likes_count = d.likes_count; renderPosts(); }
       }
-      return true;
-    });
-  }
+    } catch(e) {}
+  };
 
-  function allTags(){
-    const m={};
-    data.articles.forEach(a=>(a.tags||[]).forEach(t=>{ m[t]=(m[t]||0)+1; }));
-    return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,25);
-  }
+  function renderPosts() {
+    const grid = document.getElementById('cardGrid');
+    const empty = document.getElementById('emptyState');
 
-  function catOf(id){ return data.categories.find(c=>c.id===id)||{}; }
+    let filtered = posts;
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(p =>
+        (p.title||'').toLowerCase().includes(q) || (p.content||'').toLowerCase().includes(q) ||
+        (p.tags||[]).some(t => t.toLowerCase().includes(q))
+      );
+    }
 
-  function renderNav(){
-    const el=document.getElementById('navCats');
-    let h=`<button class="nav-cat ${curCat==='all'?'active':''}" data-c="all">全部</button>`;
-    data.categories.forEach(c=>{
-      const n=data.articles.filter(a=>a.category===c.id).length;
-      if(n>0) h+=`<button class="nav-cat ${curCat===c.id?'active':''}" data-c="${c.id}">${c.icon} ${c.name}</button>`;
-    });
-    el.innerHTML=h;
-    el.querySelectorAll('.nav-cat').forEach(b=>b.onclick=()=>{ curCat=b.dataset.c; render(); });
-  }
+    document.getElementById('articleCount').textContent = filtered.length;
 
-  function renderCards(){
-    const grid=document.getElementById('cardGrid');
-    const empty=document.getElementById('emptyState');
-    const arts=filtered();
-    document.getElementById('articleCount').textContent=arts.length;
+    if (!filtered.length) { grid.innerHTML = ''; empty.style.display = 'block'; return; }
+    empty.style.display = 'none';
 
-    const label=document.getElementById('sectionLabel');
-    if(curCat==='all') label.textContent='全部内容';
-    else { const c=catOf(curCat); label.textContent=c.icon+' '+c.name; }
+    const gradients = ['linear-gradient(135deg,#11998e,#38ef7d)','linear-gradient(135deg,#667eea,#764ba2)','linear-gradient(135deg,#f093fb,#f5576c)','linear-gradient(135deg,#4facfe,#00f2fe)','linear-gradient(135deg,#43e97b,#38f9d7)','linear-gradient(135deg,#a18cd1,#fbc2eb)','linear-gradient(135deg,#fccb90,#d57eeb)','linear-gradient(135deg,#56ab2f,#a8e063)'];
 
-    if(!arts.length){ grid.innerHTML=''; empty.style.display='block'; return; }
-    empty.style.display='none';
-
-    grid.innerHTML=arts.map(a=>{
-      const cat=catOf(a.category);
-      const rd=readMap[a.id];
-      const gr=gradMap[a.category]||'grad-started';
-      const hasImg=a.image&&a.image.trim();
-      const tagsHtml=(a.tags||[]).slice(0,3).map(t=>
-        `<span class="card-tag" data-t="${t}"># ${t}</span>`
-      ).join('');
-      const coverInner=hasImg
-        ? `<img src="${a.image}" alt="" loading="lazy" onerror="this.parentElement.classList.add('${gr}');this.parentElement.classList.remove('has-img');this.outerHTML='<span class=\\'cover-icon\\'>${cat.icon||'&#x1F4A1;'}</span>';">`
-        : `<span class="cover-icon">${cat.icon||'&#x1F4A1;'}</span>`;
-      return `<div class="card ${rd?'read':''}" data-id="${a.id}">
-        <div class="card-cover ${hasImg?'has-img':gr}">
-          ${coverInner}
-          <span class="cover-cat">${cat.name||'AI 内容'}</span>
-          <span class="cover-lang">${a.language||'zh'}</span>
-          <button class="read-btn ${rd?'checked':''}" data-id="${a.id}" title="${rd?'标记未读':'标记已读'}">${rd?'\u2713':''}</button>
-        </div>
+    grid.innerHTML = filtered.map(p => {
+      const initial = (p.display_name || p.username || '?')[0].toUpperCase();
+      const tagsHtml = (p.tags||[]).slice(0,4).map(t => `<span class="card-tag" onclick="filterTag('${t}')"># ${t}</span>`).join('');
+      const timeAgo = formatTime(p.created_at);
+      const grad = gradients[p.id % gradients.length];
+      return `<div class="card">
+        <div style="height:6px;background:${grad};"></div>
         <div class="card-body">
-          <div class="card-title"><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></div>
-          <div class="card-summary">${a.summary||''}</div>
+          <div class="card-author"><div class="a-avatar">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
+          <div class="card-title">${esc(p.title)}</div>
+          ${p.content ? `<div class="card-content">${esc(p.content)}</div>` : ''}
           <div class="card-tags">${tagsHtml}</div>
           <div class="card-foot">
-            <span class="source">${a.source||''}</span>
-            <span>&middot;</span>
-            <span>${a.datePublished||''}</span>
+            <button class="like-btn ${p.liked?'liked':''}" onclick="toggleLike(${p.id})">
+              ${p.liked?'&#10084;':'&#9825;'} ${p.likes_count||0}
+            </button>
           </div>
         </div>
       </div>`;
     }).join('');
-
-    grid.querySelectorAll('.read-btn').forEach(b=>{
-      b.onclick=e=>{
-        e.stopPropagation(); e.preventDefault();
-        const id=b.dataset.id;
-        if(readMap[id]) delete readMap[id]; else readMap[id]=true;
-        localStorage.setItem('xls-read',JSON.stringify(readMap));
-        render();
-      };
-    });
-
-    grid.querySelectorAll('.card-tag').forEach(t=>{
-      t.onclick=e=>{
-        e.stopPropagation(); e.preventDefault();
-        curTag=t.dataset.t;
-        render();
-      };
-    });
   }
 
-  function renderSidebar(){
-    document.getElementById('statTotal').textContent=data.articles.length;
-    const rc=Object.keys(readMap).filter(id=>data.articles.some(a=>a.id===id)).length;
-    document.getElementById('statRead').textContent=rc;
-    document.getElementById('statCats').textContent=data.categories.length;
+  function renderSidebar() {
+    // Stats
+    document.getElementById('statPosts').textContent = posts.length;
+    const uniqueUsers = new Set(posts.map(p => p.user_id)).size;
+    document.getElementById('statUsers').textContent = uniqueUsers;
 
-    const tags=allTags();
-    const counts=tags.map(([,n])=>n);
-    const maxC=Math.max(...counts,1);
-    const minC=Math.min(...counts,1);
-    const minFs=0.72, maxFs=1.4;
-    document.getElementById('tagCloud').innerHTML=tags.map(([t,n])=>{
-      const logMin=Math.log(minC), logMax=Math.log(maxC);
-      const ratio=logMax===logMin?(n>1?1:0.3):(Math.log(n)-logMin)/(logMax-logMin);
-      const fs=(minFs+ratio*(maxFs-minFs)).toFixed(2);
-      const fw=ratio>0.5?'700':ratio>0.2?'500':'400';
-      const op=(0.55+ratio*0.45).toFixed(2);
-      const isActive=curTag===t;
-      const col=isActive?'':ratio>0.5?';color:var(--accent-dark)':'';
-      return `<span class="stag ${isActive?'active':''}" data-t="${t}" style="font-size:${fs}rem;font-weight:${fw};opacity:${isActive?1:op}${col}"># ${t}</span>`;
-    }).join('');
-    document.querySelectorAll('.stag').forEach(s=>{
-      s.onclick=()=>{ curTag=curTag===s.dataset.t?'':s.dataset.t; render(); };
-    });
-
-    const latest=data.articles.slice(0,5);
-    document.getElementById('hotList').innerHTML=latest.map((a,i)=>
-      `<a class="hot-item" href="${a.url}" target="_blank" rel="noopener">
-        <span class="hot-rank ${i<3?'top':''}">${i+1}</span>
-        <span class="hot-title">${a.title}</span>
-      </a>`
+    // Tags
+    const tagMap = {};
+    posts.forEach(p => (p.tags||[]).forEach(t => tagMap[t] = (tagMap[t]||0)+1));
+    const tags = Object.entries(tagMap).sort((a,b) => b[1]-a[1]).slice(0,20);
+    document.getElementById('tagCloud').innerHTML = tags.map(([t]) =>
+      `<span class="stag ${curTag===t?'active':''}" onclick="filterTag('${t}')"># ${t}</span>`
     ).join('');
   }
 
-  function renderFilter(){
-    const bar=document.getElementById('activeTagBar');
-    if(curTag){ document.getElementById('filterTagName').textContent=curTag; bar.classList.add('show'); }
-    else bar.classList.remove('show');
-  }
+  window.filterTag = function(tag) {
+    curTag = curTag === tag ? '' : tag;
+    const bar = document.getElementById('activeTagBar');
+    if (curTag) {
+      document.getElementById('filterTagName').textContent = curTag;
+      bar.classList.add('show');
+    } else {
+      bar.classList.remove('show');
+    }
+    loadPosts();
+  };
+  document.getElementById('clearTag').onclick = () => { window.filterTag(''); };
+  document.getElementById('searchInput').oninput = e => { searchQuery = e.target.value.trim(); renderPosts(); };
 
-  function render(){ renderNav(); renderCards(); renderSidebar(); renderFilter(); }
+  // ===== Modals =====
+  window.openModal = function(id) { document.getElementById(id).classList.add('show'); };
+  window.closeModal = function(id) { document.getElementById(id).classList.remove('show'); };
+  document.querySelectorAll('.modal-overlay').forEach(m => {
+    m.addEventListener('click', e => { if (e.target === m) m.classList.remove('show'); });
+  });
 
-  document.getElementById('searchInput').oninput=e=>{ query=e.target.value.trim(); renderCards(); };
-  document.getElementById('clearTag').onclick=()=>{ curTag=''; render(); };
-
-  // === Free AI Publish vote (cloud) ===
-  (function initVote(){
-    const API = 'https://xls-vote-counter.beebeeai666.workers.dev/vote';
+  // ===== Vote button =====
+  (function(){
     const btn = document.getElementById('freeAiBtn');
     const countEl = document.getElementById('freeAiCount');
     let voted = localStorage.getItem('xls-voted') === '1';
-
-    function showCount(n){
-      countEl.textContent = '\u5DF2\u6709 ' + n + ' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
-    }
-    function showVoted(){
-      btn.textContent = '\u2713 \u5DF2\u652F\u6301';
-      btn.classList.add('voted');
-    }
-
-    // Load current count
-    fetch(API).then(r=>r.json()).then(d=>{
-      showCount(d.count);
-      if(voted) showVoted();
-    }).catch(()=>{ showCount(0); });
-
+    fetch(VOTE_API).then(r=>r.json()).then(d=>{
+      countEl.textContent = '\u5DF2\u6709 ' + d.count + ' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
+      if(voted){ btn.textContent='\u2713 \u5DF2\u652F\u6301'; btn.classList.add('voted'); }
+    }).catch(()=>{});
     btn.onclick = function(){
       if(voted) return;
-      fetch(API,{method:'POST'}).then(r=>r.json()).then(d=>{
-        voted = true;
-        localStorage.setItem('xls-voted','1');
-        showCount(d.count);
-        showVoted();
-        btn.style.transform = 'scale(1.15)';
-        setTimeout(()=>{ btn.style.transform = ''; }, 300);
+      fetch(VOTE_API,{method:'POST'}).then(r=>r.json()).then(d=>{
+        voted=true; localStorage.setItem('xls-voted','1');
+        countEl.textContent='\u5DF2\u6709 '+d.count+' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
+        btn.textContent='\u2713 \u5DF2\u652F\u6301'; btn.classList.add('voted');
       }).catch(()=>{});
     };
   })();
 
-  load();
+  // ===== Utils =====
+  function esc(s) { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+  function formatTime(t) {
+    if (!t) return '';
+    const d = new Date(t + 'Z');
+    const now = new Date();
+    const diff = (now - d) / 1000;
+    if (diff < 60) return '刚刚';
+    if (diff < 3600) return Math.floor(diff/60) + '分钟前';
+    if (diff < 86400) return Math.floor(diff/3600) + '小时前';
+    if (diff < 604800) return Math.floor(diff/86400) + '天前';
+    return d.toLocaleDateString('zh-CN');
+  }
+
+  // ===== Init =====
+  renderAuth();
+  loadPosts().then(renderSidebar);
 })();
 </script>
 </body>
