@@ -2,8 +2,7 @@ name = "xls-api"
 main = "index.js"
 compatibility_date = "2024-01-01"
 
-[vars]
-JWT_SECRET = "36e65fd3ca37a2ab06d196c13e7cc8e6ed880e969848d2fd90bb048869157de8"
+# JWT_SECRET is stored as encrypted secret via `wrangler secret put JWT_SECRET`
 
 [[d1_databases]]
 binding = "DB"
