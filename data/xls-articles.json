@@ -1,0 +1,147 @@
+{
+  "categories": [
+    {
+      "id": "ai-creation",
+      "name": "AI 创作",
+      "icon": "✨",
+      "description": "AI 辅助写作、绘画、音乐、视频等创作内容"
+    },
+    {
+      "id": "ai-tools",
+      "name": "AI 工具",
+      "icon": "🛠️",
+      "description": "各类 AI 工具的使用教程与测评"
+    },
+    {
+      "id": "free-thinking",
+      "name": "自由思考",
+      "icon": "💭",
+      "description": "关于 AI、创作自由、内容审核的观点与讨论"
+    },
+    {
+      "id": "docs-writing",
+      "name": "文档与写作",
+      "icon": "✍️",
+      "description": "报告生成、内容创作、翻译润色"
+    },
+    {
+      "id": "data-analysis",
+      "name": "数据与分析",
+      "icon": "📊",
+      "description": "数据整理、报表生成、趋势分析"
+    },
+    {
+      "id": "marketing",
+      "name": "营销与推广",
+      "icon": "📢",
+      "description": "社交媒体、内容营销、SEO、AI 营销"
+    },
+    {
+      "id": "getting-started",
+      "name": "入门指南",
+      "icon": "💡",
+      "description": "快速上手 AI 工具，效率技巧"
+    }
+  ],
+  "articles": [
+    {
+      "id": "art-xls00001",
+      "title": "为什么我们需要小绿书：AI 时代的内容自由宣言",
+      "url": "#manifesto",
+      "summary": "小红书等平台大规模封杀 AI 生成内容，但优质内容不应该因为创作工具不同而被区别对待。小绿书主张：审核质量，不审核工具。",
+      "category": "free-thinking",
+      "tags": ["AI自由", "内容审核", "小绿书", "创作自由"],
+      "source": "小绿书",
+      "datePublished": "2026-03-30",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00002",
+      "title": "用 ChatGPT 写出爆款文章的 7 个技巧",
+      "url": "#demo-chatgpt-writing",
+      "summary": "不是让 AI 替你写，而是让 AI 帮你写得更好。从选题、大纲到润色，掌握这 7 个提示词技巧，你的文章质量可以提升一个档次。",
+      "category": "ai-creation",
+      "tags": ["ChatGPT", "写作技巧", "提示词", "AI写作"],
+      "source": "小绿书",
+      "datePublished": "2026-03-29",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00003",
+      "title": "2026 年最值得关注的 10 个 AI 工具",
+      "url": "#demo-ai-tools-2026",
+      "summary": "从 Claude 到 Midjourney，从 Cursor 到 Suno，这些工具正在改变每个人的工作方式。无论你是写代码、做设计还是写文案，都能找到适合你的 AI 助手。",
+      "category": "ai-tools",
+      "tags": ["AI工具", "效率", "Claude", "Midjourney"],
+      "source": "小绿书",
+      "datePublished": "2026-03-28",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00004",
+      "title": "AI 写的文章就没有灵魂？这个观点过时了",
+      "url": "#demo-ai-soul",
+      "summary": "很多人说 AI 内容千篇一律没有温度，但真正的问题不是 AI，而是使用 AI 的方式。好的创作者用 AI 放大自己的独特视角，而不是替代思考。",
+      "category": "free-thinking",
+      "tags": ["AI创作", "内容质量", "创作自由", "观点"],
+      "source": "小绿书",
+      "datePublished": "2026-03-27",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00005",
+      "title": "How Claude Code Changed My Development Workflow",
+      "url": "#demo-claude-code",
+      "summary": "一位开发者分享了使用 Claude Code 后工作效率提升 3 倍的真实体验。从代码审查到自动重构，AI 正在成为程序员最好的搭档。",
+      "category": "ai-tools",
+      "tags": ["Claude Code", "编程", "开发效率", "代码"],
+      "source": "Medium",
+      "datePublished": "2026-03-26",
+      "language": "en"
+    },
+    {
+      "id": "art-xls00006",
+      "title": "小红书封杀 AI 内容的背后：平台恐惧还是用户保护？",
+      "url": "#demo-xiaohongshu-ai",
+      "summary": "越来越多的内容平台开始限制 AI 生成内容。这到底是在保护用户，还是在阻碍创新？我们从多个角度分析这一争议话题。",
+      "category": "free-thinking",
+      "tags": ["小红书", "AI审核", "平台政策", "内容自由"],
+      "source": "小绿书",
+      "datePublished": "2026-03-25",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00007",
+      "title": "用 AI 做小红书运营的完整指南",
+      "url": "#demo-ai-marketing",
+      "summary": "即使小红书限制 AI 内容，你仍然可以用 AI 来做选题分析、竞品研究和数据复盘。聪明的运营者把 AI 当幕后军师，而不是台前写手。",
+      "category": "marketing",
+      "tags": ["运营", "AI营销", "小红书", "内容策略"],
+      "source": "小绿书",
+      "datePublished": "2026-03-24",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00008",
+      "title": "零基础用 AI 写出专业数据分析报告",
+      "url": "#demo-ai-data",
+      "summary": "不会 Python 也不会 Excel 公式？没关系。用 ChatGPT + Claude 的组合，你可以在 30 分钟内完成一份专业的数据分析报告。",
+      "category": "data-analysis",
+      "tags": ["数据分析", "AI报告", "效率", "零基础"],
+      "source": "小绿书",
+      "datePublished": "2026-03-23",
+      "language": "zh"
+    },
+    {
+      "id": "art-xls00009",
+      "title": "The Case for AI-Friendly Content Platforms",
+      "url": "#demo-ai-friendly",
+      "summary": "全球范围内，对 AI 内容的态度正在分化。一些平台选择拥抱，一些选择封杀。本文论证为什么开放的态度最终会胜出。",
+      "category": "free-thinking",
+      "tags": ["AI平台", "内容政策", "开放生态", "趋势"],
+      "source": "Towards AI",
+      "datePublished": "2026-03-22",
+      "language": "en"
+    }
+  ]
+}
