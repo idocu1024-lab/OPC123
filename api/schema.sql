@@ -18,6 +18,7 @@ CREATE TABLE IF NOT EXISTS posts (
   content TEXT DEFAULT '',
   tags TEXT DEFAULT '[]',
   image_url TEXT DEFAULT '',
+  green_energy INTEGER DEFAULT 50,
   likes_count INTEGER DEFAULT 0,
   created_at TEXT DEFAULT (datetime('now')),
   FOREIGN KEY (user_id) REFERENCES users(id)

@@ -123,6 +123,22 @@
   .like-btn:hover { border-color:var(--accent); color:var(--accent-dark); }
   .like-btn.liked { background:var(--accent-light); border-color:var(--accent); color:var(--accent-dark); font-weight:600; }
 
+  /* Green Energy Bar */
+  .green-energy { display:flex; align-items:center; gap:0.4rem; margin:0.5rem 0; font-size:0.72rem; }
+  .green-energy-label { color:var(--accent-dark); font-weight:700; white-space:nowrap; }
+  .green-energy-bar { flex:1; height:6px; background:var(--tag-bg); border-radius:3px; overflow:hidden; }
+  .green-energy-fill { height:100%; border-radius:3px; transition:width 0.5s; }
+  .green-energy-val { font-weight:700; min-width:32px; text-align:right; }
+  .ge-low { background:linear-gradient(90deg,#b8e6c8,#8fd4a4); color:#6dbb85; }
+  .ge-mid { background:linear-gradient(90deg,#5dd47a,#2ecc71); color:#27ae60; }
+  .ge-high { background:linear-gradient(90deg,#2ecc71,#1abc9c); color:#1a9c6c; }
+  .ge-max { background:linear-gradient(90deg,#1abc9c,#0d8a6f); color:#0d8a6f; }
+
+  /* Slider */
+  .green-slider { width:100%; -webkit-appearance:none; height:8px; border-radius:4px; background:linear-gradient(90deg,var(--tag-bg),var(--accent)); outline:none; margin:0.3rem 0; }
+  .green-slider::-webkit-slider-thumb { -webkit-appearance:none; width:20px; height:20px; border-radius:50%; background:var(--accent); cursor:pointer; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+  .green-slider-label { display:flex; justify-content:space-between; font-size:0.72rem; color:var(--text-light); }
+
   /* Sidebar */
   .sidebar-block { background:var(--card-bg); border-radius:var(--radius); padding:1.2rem; margin-bottom:1rem; box-shadow:var(--shadow); }
   .sidebar-title { font-size:0.95rem; font-weight:700; margin-bottom:0.8rem; }
@@ -260,6 +276,11 @@
     <div class="form-group"><label>标题</label><input type="text" id="postTitle" maxlength="100" placeholder="起个好标题"></div>
     <div class="form-group"><label>正文</label><textarea id="postContent" placeholder="写点什么... 尽管用 AI 辅助创作！"></textarea></div>
     <div class="form-group"><label>标签（逗号分隔）</label><input type="text" id="postTags" placeholder="AI写作, 效率, ChatGPT"></div>
+    <div class="form-group">
+      <label>绿能值 — 这篇内容的 AI 参与度</label>
+      <input type="range" class="green-slider" id="postGreenEnergy" min="0" max="100" value="50" oninput="document.getElementById('geDisplay').textContent=this.value+'%'">
+      <div class="green-slider-label"><span>纯人类</span><span id="geDisplay">50%</span><span>纯 AI</span></div>
+    </div>
     <div class="form-msg" id="postMsg"></div>
     <button class="btn btn-primary" style="width:100%;margin-top:0.5rem;" onclick="doPost()">发布</button>
   </div>
@@ -367,14 +388,17 @@
     const content = document.getElementById('postContent').value.trim();
     const tagsStr = document.getElementById('postTags').value.trim();
     const tags = tagsStr ? tagsStr.split(/[,，]/).map(t => t.trim()).filter(Boolean) : [];
+    const green_energy = parseInt(document.getElementById('postGreenEnergy').value);
     if (!title) { msgEl.textContent = '标题不能为空'; msgEl.className = 'form-msg error'; return; }
     try {
-      const d = await api('/posts', { method: 'POST', body: JSON.stringify({ title, content, tags }) });
+      const d = await api('/posts', { method: 'POST', body: JSON.stringify({ title, content, tags, green_energy }) });
       if (d.error) { msgEl.textContent = d.error; msgEl.className = 'form-msg error'; return; }
       closeModal('postModal');
       document.getElementById('postTitle').value = '';
       document.getElementById('postContent').value = '';
       document.getElementById('postTags').value = '';
+      document.getElementById('postGreenEnergy').value = 50;
+      document.getElementById('geDisplay').textContent = '50%';
       loadPosts();
     } catch(e) { msgEl.textContent = '网络错误'; msgEl.className = 'form-msg error'; }
   };
@@ -415,12 +439,20 @@
       const tagsHtml = (p.tags||[]).slice(0,4).map(t => `<span class="card-tag" onclick="filterTag('${t}')"># ${t}</span>`).join('');
       const timeAgo = formatTime(p.created_at);
       const grad = gradients[p.id % gradients.length];
+      const ge = p.green_energy != null ? p.green_energy : 50;
+      const geClass = ge <= 25 ? 'ge-low' : ge <= 50 ? 'ge-mid' : ge <= 75 ? 'ge-high' : 'ge-max';
+      const geLabel = ge <= 10 ? '纯手工' : ge <= 30 ? '微AI' : ge <= 60 ? 'AI协作' : ge <= 85 ? 'AI主力' : '全AI驱动';
       return `<div class="card">
         <div style="height:6px;background:${grad};"></div>
         <div class="card-body">
           <div class="card-author"><div class="a-avatar">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
           <div class="card-title">${esc(p.title)}</div>
           ${p.content ? `<div class="card-content">${esc(p.content)}</div>` : ''}
+          <div class="green-energy">
+            <span class="green-energy-label">${geLabel}</span>
+            <div class="green-energy-bar"><div class="green-energy-fill ${geClass}" style="width:${ge}%"></div></div>
+            <span class="green-energy-val ${geClass}">${ge}%</span>
+          </div>
           <div class="card-tags">${tagsHtml}</div>
           <div class="card-foot">
             <button class="like-btn ${p.liked?'liked':''}" onclick="toggleLike(${p.id})">
