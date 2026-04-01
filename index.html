@@ -178,6 +178,42 @@
     border: 1px solid rgba(255,255,255,0.3);
   }
 
+  /* === Free AI Publish Button === */
+  .free-ai-section {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .free-ai-btn {
+    background: #fff;
+    color: var(--accent-dark);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 25px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    letter-spacing: 1px;
+  }
+  .free-ai-btn:hover { transform: scale(1.05); box-shadow: 0 6px 25px rgba(0,0,0,0.2); }
+  .free-ai-btn:active { transform: scale(0.97); }
+  .free-ai-btn.voted {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    cursor: default;
+    border: 2px solid rgba(255,255,255,0.5);
+  }
+  .free-ai-btn.voted:hover { transform: none; box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+  .free-ai-count {
+    font-size: 0.88rem;
+    opacity: 0.9;
+    font-weight: 500;
+  }
+
   /* === Main Layout === */
   .page {
     max-width: 1280px;
@@ -531,6 +567,10 @@
       <span class="hero-badge">拒绝过度审核</span>
       <span class="hero-badge">开放共享</span>
     </div>
+    <div class="free-ai-section">
+      <button class="free-ai-btn" id="freeAiBtn">自由 AI 发布</button>
+      <div class="free-ai-count" id="freeAiCount"></div>
+    </div>
   </div>
 </div>
 
@@ -741,6 +781,41 @@
 
   document.getElementById('searchInput').oninput=e=>{ query=e.target.value.trim(); renderCards(); };
   document.getElementById('clearTag').onclick=()=>{ curTag=''; render(); };
+
+  // === Free AI Publish vote ===
+  (function initVote(){
+    const KEY = 'xls-free-ai-voted';
+    const COUNT_KEY = 'xls-free-ai-count';
+    const btn = document.getElementById('freeAiBtn');
+    const countEl = document.getElementById('freeAiCount');
+    let voted = localStorage.getItem(KEY) === '1';
+    let count = parseInt(localStorage.getItem(COUNT_KEY) || '0', 10);
+    // Base count to make it feel alive from day one
+    const BASE = 128;
+
+    function updateUI(){
+      const total = BASE + count;
+      countEl.textContent = '\u2709\uFE0F \u5DF2\u6709 ' + total + ' \u4EBA\u8981\u6C42\u81EA\u7531\u53D1\u5E03';
+      if(voted){
+        btn.textContent = '\u2713 \u5DF2\u652F\u6301';
+        btn.classList.add('voted');
+      }
+    }
+
+    btn.onclick = function(){
+      if(voted) return;
+      voted = true;
+      count++;
+      localStorage.setItem(KEY, '1');
+      localStorage.setItem(COUNT_KEY, String(count));
+      updateUI();
+      // Little celebration animation
+      btn.style.transform = 'scale(1.15)';
+      setTimeout(()=>{ btn.style.transform = ''; }, 300);
+    };
+
+    updateUI();
+  })();
 
   load();
 })();
