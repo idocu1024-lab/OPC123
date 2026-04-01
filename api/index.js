@@ -72,17 +72,14 @@ async function getUser(request, env) {
 
 // === Auto-init DB ===
 async function ensureDB(env) {
-  // Ensure tables exist
-  await env.DB.exec(`
-    CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, username TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL, display_name TEXT DEFAULT '', bio TEXT DEFAULT '', avatar_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')));
-    CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, title TEXT NOT NULL, content TEXT DEFAULT '', tags TEXT DEFAULT '[]', image_url TEXT DEFAULT '', green_energy INTEGER DEFAULT 50, likes_count INTEGER DEFAULT 0, media_type TEXT DEFAULT 'text', media_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')), FOREIGN KEY (user_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS likes (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, post_id INTEGER NOT NULL, created_at TEXT DEFAULT (datetime('now')), UNIQUE(user_id, post_id), FOREIGN KEY (user_id) REFERENCES users(id), FOREIGN KEY (post_id) REFERENCES posts(id));
-  `);
-  // Add columns if missing (safe to fail)
-  try { await env.DB.exec('ALTER TABLE posts ADD COLUMN media_type TEXT DEFAULT \'text\''); } catch {}
-  try { await env.DB.exec('ALTER TABLE posts ADD COLUMN media_url TEXT DEFAULT \'\''); } catch {}
-  // Seed if empty
-  await seedData(env);
+  try {
+    await env.DB.prepare("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, email TEXT UNIQUE NOT NULL, username TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL, display_name TEXT DEFAULT '', bio TEXT DEFAULT '', avatar_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')))").run();
+    await env.DB.prepare("CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, title TEXT NOT NULL, content TEXT DEFAULT '', tags TEXT DEFAULT '[]', image_url TEXT DEFAULT '', green_energy INTEGER DEFAULT 50, likes_count INTEGER DEFAULT 0, media_type TEXT DEFAULT 'text', media_url TEXT DEFAULT '', created_at TEXT DEFAULT (datetime('now')), FOREIGN KEY (user_id) REFERENCES users(id))").run();
+    await env.DB.prepare("CREATE TABLE IF NOT EXISTS likes (id INTEGER PRIMARY KEY AUTOINCREMENT, user_id INTEGER NOT NULL, post_id INTEGER NOT NULL, created_at TEXT DEFAULT (datetime('now')), UNIQUE(user_id, post_id), FOREIGN KEY (user_id) REFERENCES users(id), FOREIGN KEY (post_id) REFERENCES posts(id))").run();
+  } catch {}
+  try { await env.DB.prepare("ALTER TABLE posts ADD COLUMN media_type TEXT DEFAULT 'text'").run(); } catch {}
+  try { await env.DB.prepare("ALTER TABLE posts ADD COLUMN media_url TEXT DEFAULT ''").run(); } catch {}
+  try { await seedData(env); } catch {}
 }
 
 async function seedData(env) {
@@ -125,13 +122,12 @@ export default {
       return new Response(null, { status: 204, headers: cors() });
     }
 
-    await ensureDB(env);
-
     const url = new URL(request.url);
     const path = url.pathname;
     const method = request.method;
 
     try {
+      await ensureDB(env);
       // --- Auth ---
       if (path === '/auth/register' && method === 'POST') {
         const { email, username, password } = await request.json();
