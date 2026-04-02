@@ -54,11 +54,11 @@
 </script>
 <style>
   :root {
-    --bg: #f0f5f0; --card-bg: #fff; --text: #1a2e1a; --text-sec: #556b55;
+    --bg: #fafafa; --card-bg: #fff; --text: #1a2e1a; --text-sec: #556b55;
     --text-light: #8a9f8a; --border: #d8e8d8; --accent: #2ecc71;
     --accent-dark: #27ae60; --accent-light: #e8f8ef; --accent-glow: rgba(46,204,113,0.15);
-    --tag-bg: #eaf5ea; --radius: 14px; --shadow: 0 2px 8px rgba(0,0,0,0.05);
-    --shadow-hover: 0 8px 30px rgba(46,204,113,0.15);
+    --tag-bg: #eaf5ea; --radius: 16px; --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-hover: 0 12px 40px rgba(0,0,0,0.08);
     --danger: #e74c3c;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -71,7 +71,7 @@
   .logo-icon { width:32px; height:32px; background:linear-gradient(135deg,#2ecc71,#27ae60); border-radius:8px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:1.1rem; font-weight:900; }
   .logo-sub { font-size:0.65rem; font-weight:400; color:var(--text-light); padding:0.15rem 0.5rem; background:var(--accent-light); border-radius:10px; }
   .nav-spacer { flex:1; }
-  .nav-search input { width:200px; padding:0.45rem 0.9rem; border:1.5px solid var(--border); border-radius:22px; font-size:0.85rem; outline:none; background:var(--bg); }
+  .nav-search input { width:280px; padding:0.45rem 0.9rem 0.45rem 2.2rem; border:1.5px solid var(--border); border-radius:22px; font-size:0.85rem; outline:none; background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238a9f8a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") no-repeat 0.7rem center; }
   .nav-search input:focus { border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-glow); }
   .nav-auth { display:flex; gap:0.5rem; align-items:center; }
   .btn { padding:0.45rem 1rem; border-radius:20px; font-size:0.85rem; font-weight:600; cursor:pointer; border:none; transition:all 0.2s; }
@@ -86,7 +86,8 @@
   .user-avatar { width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem; font-weight:700; }
 
   /* Hero */
-  .hero { background:linear-gradient(135deg,#2ecc71,#27ae60 50%,#1abc9c); color:#fff; text-align:center; padding:2.5rem 1.5rem 2rem; position:relative; overflow:hidden; }
+  .hero { background:linear-gradient(135deg,#2ecc71,#27ae60 50%,#1abc9c); color:#fff; text-align:center; padding:2rem 1.5rem 1.8rem; position:relative; overflow:hidden; }
+  .hero::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events:none; }
   .hero h1 { font-size:2rem; font-weight:900; margin-bottom:0.4rem; letter-spacing:2px; }
   .hero p { font-size:1rem; opacity:0.92; max-width:600px; margin:0 auto 1rem; }
   .hero-badges { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; }
@@ -109,22 +110,23 @@
   .active-tag-bar .clear { cursor:pointer; font-weight:600; text-decoration:underline; }
 
   /* Card grid */
-  .card-grid { columns:3; column-gap:1.2rem; }
-  .card { break-inside:avoid; background:var(--card-bg); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:all 0.3s; margin-bottom:1.2rem; border:1px solid transparent; }
+  .card-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:1.2rem; }
+  .card { background:var(--card-bg); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); transition:all 0.3s; border:1px solid transparent; }
   .card:hover { box-shadow:var(--shadow-hover); transform:translateY(-3px); border-color:var(--accent-light); }
-  .card-body { padding:1rem 1.1rem; }
+  .card-body { padding:1.2rem 1.3rem; }
   .card-author { display:flex; align-items:center; gap:0.5rem; margin-bottom:0.6rem; font-size:0.78rem; color:var(--text-light); }
-  .card-author .a-avatar { width:22px; height:22px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.6rem; font-weight:700; flex-shrink:0; }
+  .card-author .a-avatar { width:28px; height:28px; border-radius:50%; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.7rem; font-weight:700; flex-shrink:0; }
   .card-author .a-name { font-weight:600; color:var(--text-sec); }
-  .card-title { font-size:0.95rem; font-weight:700; line-height:1.5; margin-bottom:0.4rem; }
+  .card-title { font-size:1rem; font-weight:700; line-height:1.55; margin-bottom:0.4rem; }
   .card-content { font-size:0.82rem; color:var(--text-sec); line-height:1.6; margin-bottom:0.7rem; white-space:pre-wrap; }
-  .card-content.collapsed { display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
+  .card-content-fade { position:relative; max-height:5em; overflow:hidden; }
+  .card-content-fade::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2.5em; background:linear-gradient(transparent, white); pointer-events:none; }
   .card-expand { font-size:0.78rem; color:var(--accent-dark); cursor:pointer; font-weight:600; margin-bottom:0.5rem; display:inline-block; }
   .card-expand:hover { text-decoration:underline; }
-  .card-login-hint { font-size:0.75rem; color:var(--accent); background:var(--accent-light); padding:0.4rem 0.7rem; border-radius:8px; margin-bottom:0.5rem; cursor:pointer; text-align:center; }
-  .card-login-hint:hover { background:var(--accent); color:#fff; }
+  .card-login-hint { font-size:0.82rem; color:#fff; background:linear-gradient(135deg,#2ecc71,#27ae60); padding:0.5rem 1.2rem; border-radius:20px; margin:0.3rem auto 0.5rem; cursor:pointer; text-align:center; font-weight:600; display:block; width:fit-content; transition:all 0.2s; box-shadow:0 2px 8px rgba(46,204,113,0.3); }
+  .card-login-hint:hover { transform:translateY(-1px); box-shadow:0 4px 12px rgba(46,204,113,0.4); }
   .card-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:0.6rem; }
-  .card-tag { font-size:0.68rem; color:var(--accent-dark); background:var(--accent-light); padding:0.1rem 0.45rem; border-radius:4px; cursor:pointer; }
+  .card-tag { font-size:0.7rem; color:var(--accent-dark); background:var(--tag-bg); padding:0.15rem 0.55rem; border-radius:6px; cursor:pointer; }
   .card-tag:hover { background:var(--accent); color:#fff; }
   .card-foot { display:flex; align-items:center; justify-content:space-between; font-size:0.75rem; color:var(--text-light); }
   .like-btn { background:none; border:1px solid var(--border); border-radius:15px; padding:0.2rem 0.6rem; font-size:0.75rem; cursor:pointer; color:var(--text-sec); transition:all 0.2s; display:flex; align-items:center; gap:0.3rem; }
@@ -134,7 +136,7 @@
   /* Green Energy Bar */
   .green-energy { display:flex; align-items:center; gap:0.4rem; margin:0.5rem 0; font-size:0.72rem; }
   .green-energy-label { color:var(--accent-dark); font-weight:700; white-space:nowrap; }
-  .green-energy-bar { flex:1; height:6px; background:var(--tag-bg); border-radius:3px; overflow:hidden; }
+  .green-energy-bar { flex:1; height:4px; background:var(--tag-bg); border-radius:2px; overflow:hidden; }
   .green-energy-fill { height:100%; border-radius:3px; transition:width 0.5s; }
   .green-energy-val { font-weight:700; min-width:32px; text-align:right; }
   .ge-low { background:linear-gradient(90deg,#b8e6c8,#8fd4a4); color:#6dbb85; }
@@ -210,11 +212,12 @@
   .empty-state .icon { font-size:3rem; margin-bottom:1rem; }
 
   /* Footer */
-  .site-footer { text-align:center; padding:2rem 1rem; color:var(--text-light); font-size:0.78rem; border-top:1px solid var(--border); margin-top:2rem; }
+  .site-footer { text-align:center; padding:3rem 1rem; color:var(--text-light); font-size:0.78rem; border-top:3px solid transparent; border-image:linear-gradient(90deg, transparent, var(--accent), transparent) 1; margin-top:2rem; }
 
   /* Responsive */
-  @media (max-width:1000px) { .page{grid-template-columns:1fr;} .card-grid{columns:2;} }
-  @media (max-width:600px) { .card-grid{columns:1;} .nav-search{display:none;} .hero h1{font-size:1.5rem;} }
+  @media (max-width:1000px) { .page{grid-template-columns:1fr;} .card-grid{grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));} }
+  @media (max-width:768px) { .card-grid{grid-template-columns:repeat(auto-fill, minmax(240px, 1fr));} .nav-search input{width:180px;} }
+  @media (max-width:600px) { .card-grid{grid-template-columns:1fr;} .nav-search{display:none;} .hero h1{font-size:1.5rem;} }
 </style>
 </head>
 <body>
@@ -514,13 +517,13 @@
       return `<div class="card">
         ${mediaHtml || `<div style="height:6px;background:${grad};"></div>`}
         <div class="card-body">
-          <div class="card-author"><div class="a-avatar">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
+          <div class="card-author"><div class="a-avatar" style="background:${grad}">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
           <div class="card-title">${esc(p.title)}</div>
           ${p.content ? (() => {
-            const isLong = p.content.length > 150;
+            const isLong = p.content.length > 100;
             if (!isLong) return `<div class="card-content">${esc(p.content)}</div>`;
-            if (currentUser) return `<div class="card-content collapsed" id="cc-${p.id}">${esc(p.content)}</div><span class="card-expand" onclick="toggleExpand(${p.id})">展开全文 ▼</span>`;
-            return `<div class="card-content collapsed">${esc(p.content)}</div><div class="card-login-hint" onclick="openModal('authModal')">登录后查看全文</div>`;
+            if (currentUser) return `<div class="card-content card-content-fade" id="cc-${p.id}">${esc(p.content)}</div><span class="card-expand" onclick="toggleExpand(${p.id})">展开全文</span>`;
+            return `<div class="card-content card-content-fade">${esc(p.content.slice(0,100))}...</div><div class="card-login-hint" onclick="openModal('authModal')">&#128274; 登录查看全文</div>`;
           })() : ''}
           <div class="green-energy">
             <span class="green-energy-label">${geLabel}</span>
@@ -571,12 +574,14 @@
   window.toggleExpand = function(id) {
     const el = document.getElementById('cc-' + id);
     const btn = el.nextElementSibling;
-    if (el.classList.contains('collapsed')) {
-      el.classList.remove('collapsed');
-      btn.textContent = '收起 ▲';
+    if (el.classList.contains('card-content-fade')) {
+      el.classList.remove('card-content-fade');
+      el.style.maxHeight = 'none';
+      btn.textContent = '收起';
     } else {
-      el.classList.add('collapsed');
-      btn.textContent = '展开全文 ▼';
+      el.classList.add('card-content-fade');
+      el.style.maxHeight = '';
+      btn.textContent = '展开全文';
     }
   };
 
