@@ -123,8 +123,8 @@
   .card-content-fade::after { content:''; position:absolute; bottom:0; left:0; right:0; height:2.5em; background:linear-gradient(transparent, white); pointer-events:none; }
   .card-expand { font-size:0.78rem; color:var(--accent-dark); cursor:pointer; font-weight:600; margin-bottom:0.5rem; display:inline-block; }
   .card-expand:hover { text-decoration:underline; }
-  .card-login-hint { font-size:0.82rem; color:#fff; background:linear-gradient(135deg,#2ecc71,#27ae60); padding:0.5rem 1.2rem; border-radius:20px; margin:0.3rem auto 0.5rem; cursor:pointer; text-align:center; font-weight:600; display:block; width:fit-content; transition:all 0.2s; box-shadow:0 2px 8px rgba(46,204,113,0.3); }
-  .card-login-hint:hover { transform:translateY(-1px); box-shadow:0 4px 12px rgba(46,204,113,0.4); }
+  .card-login-hint { font-size:0.72rem; color:var(--text-light); cursor:pointer; text-align:center; margin:0.2rem 0 0.4rem; transition:color 0.2s; }
+  .card-login-hint:hover { color:var(--accent-dark); }
   .card-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:0.6rem; }
   .card-tag { font-size:0.7rem; color:var(--accent-dark); background:var(--tag-bg); padding:0.15rem 0.55rem; border-radius:6px; cursor:pointer; }
   .card-tag:hover { background:var(--accent); color:#fff; }
@@ -523,7 +523,7 @@
             const isLong = p.content.length > 100;
             if (!isLong) return `<div class="card-content">${esc(p.content)}</div>`;
             if (currentUser) return `<div class="card-content card-content-fade" id="cc-${p.id}">${esc(p.content)}</div><span class="card-expand" onclick="toggleExpand(${p.id})">展开全文</span>`;
-            return `<div class="card-content card-content-fade">${esc(p.content.slice(0,100))}...</div><div class="card-login-hint" onclick="openModal('authModal')">&#128274; 登录查看全文</div>`;
+            return `<div class="card-content card-content-fade">${esc(p.content.slice(0,100))}...</div><div class="card-login-hint" onclick="openModal('authModal')">登录查看全文 &rsaquo;</div>`;
           })() : ''}
           <div class="green-energy">
             <span class="green-energy-label">${geLabel}</span>
