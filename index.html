@@ -88,16 +88,17 @@
   /* Hero */
   .hero { background:linear-gradient(135deg,#2ecc71,#27ae60 50%,#1abc9c); color:#fff; text-align:center; padding:2rem 1.5rem 1.8rem; position:relative; overflow:hidden; }
   .hero::before { content:''; position:absolute; inset:0; background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); pointer-events:none; }
-  .hero h1 { font-size:2rem; font-weight:900; margin-bottom:0.4rem; letter-spacing:2px; }
-  .hero p { font-size:1rem; opacity:0.92; max-width:600px; margin:0 auto 1rem; }
-  .hero-badges { display:flex; gap:0.6rem; justify-content:center; flex-wrap:wrap; }
-  .hero-badge { background:rgba(255,255,255,0.2); padding:0.35rem 0.9rem; border-radius:20px; font-size:0.8rem; font-weight:600; border:1px solid rgba(255,255,255,0.3); }
-  .free-ai-section { margin-top:1.2rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; }
-  .free-ai-btn { background:#fff; color:var(--accent-dark); border:none; padding:0.6rem 1.8rem; border-radius:25px; font-size:1rem; font-weight:800; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 15px rgba(0,0,0,0.15); }
-  .free-ai-btn:hover { transform:scale(1.05); }
-  .free-ai-btn.voted { background:rgba(255,255,255,0.25); color:#fff; cursor:default; border:2px solid rgba(255,255,255,0.5); }
-  .free-ai-btn.voted:hover { transform:none; }
-  .free-ai-count { font-size:0.85rem; opacity:0.9; }
+  .hero h1 { font-size:1.8rem; font-weight:900; margin-bottom:0.6rem; letter-spacing:2px; }
+  .hero p { font-size:0.92rem; opacity:0.85; max-width:480px; margin:0 auto 0.8rem; line-height:1.7; }
+  .hero-tags { display:flex; gap:0.5rem; justify-content:center; flex-wrap:wrap; margin-bottom:0.8rem; }
+  .hero-tag { color:rgba(255,255,255,0.7); font-size:0.72rem; font-weight:400; }
+  .hero-tag::before { content:''; }
+  .free-ai-section { display:flex; align-items:center; justify-content:center; gap:0.8rem; }
+  .free-ai-btn { background:rgba(255,255,255,0.15); color:rgba(255,255,255,0.9); border:1px solid rgba(255,255,255,0.25); padding:0.4rem 1.2rem; border-radius:20px; font-size:0.8rem; font-weight:500; cursor:pointer; transition:all 0.2s; backdrop-filter:blur(4px); }
+  .free-ai-btn:hover { background:rgba(255,255,255,0.25); }
+  .free-ai-btn.voted { background:rgba(255,255,255,0.1); cursor:default; }
+  .free-ai-btn.voted:hover { background:rgba(255,255,255,0.1); }
+  .free-ai-count { font-size:0.72rem; opacity:0.6; }
 
   /* Layout */
   .page { max-width:1280px; margin:0 auto; padding:1.5rem; display:grid; grid-template-columns:1fr 300px; gap:2rem; }
@@ -233,12 +234,15 @@
 
 <div class="hero">
   <h1>小绿书</h1>
-  <p>AI 时代的自由创作平台。优质内容不分人写还是 AI 写，只要有价值，就值得被看见。</p>
-  <div class="hero-badges">
-    <span class="hero-badge">AI 创作自由</span>
-    <span class="hero-badge">内容为王</span>
-    <span class="hero-badge">拒绝过度审核</span>
-    <span class="hero-badge">开放共享</span>
+  <p>AI 时代的自由创作平台<br>优质内容不分人写还是 AI 写，只要有价值，就值得被看见</p>
+  <div class="hero-tags">
+    <span class="hero-tag">AI 创作自由</span>
+    <span class="hero-tag">&middot;</span>
+    <span class="hero-tag">内容为王</span>
+    <span class="hero-tag">&middot;</span>
+    <span class="hero-tag">拒绝过度审核</span>
+    <span class="hero-tag">&middot;</span>
+    <span class="hero-tag">开放共享</span>
   </div>
   <div class="free-ai-section">
     <button class="free-ai-btn" id="freeAiBtn">自由 AI 发布</button>
