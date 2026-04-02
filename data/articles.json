@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-6b1a4e37",
+      "title": "OpenClaw重塑企业工作流：五大行业落地解析",
+      "url": "https://www.baytechconsulting.com/blog/openclaw-unleashed-autonomous-agents-enterprise-workflows",
+      "summary": "Baytech Consulting梳理OpenClaw在五大企业场景的实际部署：销售团队400+线索60秒内完成评分、医疗机构用OpenClaw自动导航遗留系统完成预授权审批、电信公司实现跨渠道情感分析与主动通知、开发团队通过AI自主部署智能合约。文章同时提示企业需重视提示注入、RAG文档投毒、权限越权等新型安全威胁，为CTO和技术决策者提供落地参考框架。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业工作流",
+        "医疗自动化",
+        "销售自动化",
+        "多行业落地"
+      ],
+      "source": "Baytech Consulting",
+      "datePublished": "2026-03-01",
+      "language": "en",
+      "image": "https://dzrge5zzbsh6q.cloudfront.net/executives-guide-openclaw-autonomous-ai-agents-overview.jpg"
+    },
+    {
+      "id": "art-c49e8d02",
+      "title": "OpenClaw生产实测：成本控制与安全配置月度报告",
+      "url": "https://dev.to/virtualunc/openclaw-in-production-real-costs-security-setup-and-what-a-month-of-daily-use-actually-looks-10dg",
+      "summary": "作者分享生产环境运行OpenClaw一个月的真实记录：默认配置暴露端口导致3万实例被扫描发现，单任务产生5-10次API调用，某用户24小时内消耗70美元，需按任务复杂度分级调用模型（Haiku/Sonnet/Opus）。ClawHub市场2026年1月已检测出341个恶意技能，含AWS凭证钓鱼攻击。作者建议新用户先在隔离硬件上测试单一工作流一周后再深化部署。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "安全配置",
+        "成本优化",
+        "实测报告"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-30",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fh480sf8n815aw36ncckj.png"
+    },
+    {
+      "id": "art-7f3b21ac",
+      "title": "OpenClaw 70个真实用户落地案例全解析",
+      "url": "https://www.53ai.com/news/Openclaw/2026030561907.html",
+      "summary": "53AI整理了OpenClaw在中国用户中的70个真实落地案例，覆盖内容创作、知识管理、财务监控、数据分析、安全合规、日常助手、开发工具等8大类。医生用OpenClaw将医疗资讯自动转为播客、程序员用7个子智能体夜间并行执行基础设施巡检，金融从业者监控链上鲸鱼钱包动向，展示了中国真实用户在各行业的实际落地效果与创意用法。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "真实案例",
+        "自动化",
+        "落地场景",
+        "内容创作"
+      ],
+      "source": "53AI知识库",
+      "datePublished": "2026-03-05",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07078c8ea7dff92c.webp"
+    },
+    {
       "id": "art-3e7b91a2",
       "title": "OpenClaw三大行业落地ROI超300%实录",
       "url": "https://gitcode.csdn.net/69bbb8b10a2f6a37c5989701.html",
