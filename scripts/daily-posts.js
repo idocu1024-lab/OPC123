@@ -85,8 +85,10 @@ async function main() {
 
     try {
       const raw = await callGemini(prompt);
-      const match = raw.match(/\{[\s\S]*\}/);
-      if (!match) { console.log('  Failed to parse'); continue; }
+      // Strip markdown code fences if present
+      const cleaned = raw.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+      const match = cleaned.match(/\{[\s\S]*\}/);
+      if (!match) { console.log('  Failed to parse, raw:', raw.slice(0, 200)); continue; }
 
       const post = JSON.parse(match[0]);
       if (isImage) {
