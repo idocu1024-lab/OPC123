@@ -3,6 +3,7 @@
 
 const API_BASE = process.env.API_BASE || 'https://xls-api.beebeeai666.workers.dev';
 const GEMINI_KEY = process.env.GEMINI_API_KEY;
+const BOT_KEY = process.env.BOT_KEY;
 
 const TOPICS = [
   'AI 写作技巧和提示词分享',
@@ -48,41 +49,21 @@ function getUnsplashImage(tags) {
   return `https://source.unsplash.com/800x500/?${q}`;
 }
 
-async function registerBot() {
-  const uniq = Date.now().toString(36);
-  try {
-    const res = await fetch(`${API_BASE}/auth/register`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: 'daily-ai@xiaolvshu.org', username: 'ai_daily', password: 'xls-daily-bot-2026' }),
-    });
-    const data = await res.json();
-    if (data.token) return data.token;
-  } catch {}
-  const res = await fetch(`${API_BASE}/auth/register`, {
+async function publishPost(post) {
+  const res = await fetch(`${API_BASE}/bot/post`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email: `daily-${uniq}@xiaolvshu.org`, username: `ai_daily_${uniq}`, password: `bot-${uniq}` }),
-  });
-  const data = await res.json();
-  return data.token;
-}
-
-async function publishPost(token, post) {
-  const res = await fetch(`${API_BASE}/posts`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+    headers: { 'Content-Type': 'application/json', 'X-Bot-Key': BOT_KEY },
     body: JSON.stringify(post),
   });
-  return res.json();
+  const data = await res.json();
+  if (data.error) throw new Error(data.error);
+  return data;
 }
 
 async function main() {
   if (!GEMINI_KEY) { console.error('GEMINI_API_KEY not set'); process.exit(1); }
-
-  const token = await registerBot();
-  if (!token) { console.error('Failed to get bot token'); process.exit(1); }
-  console.log('Bot authenticated');
+  if (!BOT_KEY) { console.error('BOT_KEY not set'); process.exit(1); }
+  console.log('Starting daily posts...');
 
   const shuffled = TOPICS.sort(() => Math.random() - 0.5).slice(0, 3);
 
@@ -115,7 +96,7 @@ async function main() {
         post.media_type = 'text';
       }
 
-      const result = await publishPost(token, post);
+      const result = await publishPost(post);
       console.log(`  Published: ${post.title} (id: ${result.id})`);
     } catch (e) {
       console.error(`  Error: ${e.message}`);

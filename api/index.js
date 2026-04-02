@@ -186,6 +186,26 @@ export default {
         return Response.redirect(`${frontendUrl}?token=${jwt}&user=${userData}`, 302);
       }
 
+      // --- Bot post (API key auth) ---
+      if (path === '/bot/post' && method === 'POST') {
+        const botKey = request.headers.get('X-Bot-Key');
+        if (botKey !== (env.BOT_KEY || env.JWT_SECRET)) return err('Unauthorized', 401);
+        // Find or create bot user
+        let bot = await env.DB.prepare("SELECT * FROM users WHERE email = 'bot@xiaolvshu.org'").first();
+        if (!bot) {
+          await env.DB.prepare("INSERT INTO users (email, username, password_hash, display_name) VALUES ('bot@xiaolvshu.org', 'xls_ai', 'bot-internal', 'AI 小助手')").run();
+          bot = await env.DB.prepare("SELECT * FROM users WHERE email = 'bot@xiaolvshu.org'").first();
+        }
+        const { title, content, tags, green_energy, media_type, media_url } = await request.json();
+        if (!title) return err('title required');
+        const tagsJson = JSON.stringify(tags || []);
+        const ge = Math.max(0, Math.min(100, parseInt(green_energy) || 70));
+        const mtype = ['text','image','video'].includes(media_type) ? media_type : 'text';
+        const murl = (media_url || '').trim();
+        const result = await env.DB.prepare('INSERT INTO posts (user_id, title, content, tags, green_energy, media_type, media_url, image_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)').bind(bot.id, title.trim(), content || '', tagsJson, ge, mtype, murl, murl).run();
+        return json({ id: result.meta.last_row_id, ok: true }, 201);
+      }
+
       // --- Auth ---
       if (path === '/auth/register' && method === 'POST') {
         const { email, username, password } = await request.json();

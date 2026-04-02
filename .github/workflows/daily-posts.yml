@@ -22,3 +22,4 @@ jobs:
         env:
           API_BASE: https://xls-api.beebeeai666.workers.dev
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          BOT_KEY: ${{ secrets.BOT_KEY }}
