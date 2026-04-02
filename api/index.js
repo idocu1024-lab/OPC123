@@ -128,6 +128,64 @@ export default {
 
     try {
       await ensureDB(env);
+
+      // --- Google OAuth ---
+      if (path === '/auth/google' && method === 'GET') {
+        const redirect_uri = new URL('/auth/google/callback', url.origin).toString();
+        const params = new URLSearchParams({
+          client_id: env.GOOGLE_CLIENT_ID,
+          redirect_uri,
+          response_type: 'code',
+          scope: 'openid email profile',
+          access_type: 'offline',
+          prompt: 'select_account',
+        });
+        return Response.redirect('https://accounts.google.com/o/oauth2/v2/auth?' + params.toString(), 302);
+      }
+
+      if (path === '/auth/google/callback' && method === 'GET') {
+        const code = url.searchParams.get('code');
+        if (!code) return err('Missing code');
+
+        const redirect_uri = new URL('/auth/google/callback', url.origin).toString();
+        // Exchange code for tokens
+        const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams({
+            code,
+            client_id: env.GOOGLE_CLIENT_ID,
+            client_secret: env.GOOGLE_CLIENT_SECRET,
+            redirect_uri,
+            grant_type: 'authorization_code',
+          }),
+        });
+        const tokens = await tokenRes.json();
+        if (!tokens.access_token) return err('Google auth failed');
+
+        // Get user info
+        const userRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+          headers: { Authorization: 'Bearer ' + tokens.access_token },
+        });
+        const gUser = await userRes.json();
+        if (!gUser.email) return err('Cannot get email from Google');
+
+        // Find or create user
+        let user = await env.DB.prepare('SELECT * FROM users WHERE email = ?').bind(gUser.email).first();
+        if (!user) {
+          const username = gUser.email.split('@')[0].replace(/[^a-zA-Z0-9_]/g, '') + '_' + Math.random().toString(36).slice(2, 6);
+          await env.DB.prepare('INSERT INTO users (email, username, password_hash, display_name, avatar_url) VALUES (?, ?, ?, ?, ?)').bind(gUser.email, username, 'google-oauth', gUser.name || username, gUser.picture || '').run();
+          user = await env.DB.prepare('SELECT * FROM users WHERE email = ?').bind(gUser.email).first();
+        }
+
+        const jwt = await createJWT({ id: user.id, username: user.username }, env.JWT_SECRET);
+        const userData = encodeURIComponent(JSON.stringify({ id: user.id, username: user.username, email: user.email, display_name: user.display_name, avatar_url: user.avatar_url }));
+
+        // Redirect back to frontend with token
+        const frontendUrl = env.FRONTEND_URL || 'https://xiaolvshu.org';
+        return Response.redirect(`${frontendUrl}?token=${jwt}&user=${userData}`, 302);
+      }
+
       // --- Auth ---
       if (path === '/auth/register' && method === 'POST') {
         const { email, username, password } = await request.json();

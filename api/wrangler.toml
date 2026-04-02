@@ -2,7 +2,11 @@ name = "xls-api"
 main = "index.js"
 compatibility_date = "2024-01-01"
 
-# JWT_SECRET is stored as encrypted secret via `wrangler secret put JWT_SECRET`
+# JWT_SECRET, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET are stored as encrypted secrets
+# via `wrangler secret put <NAME>`
+
+[vars]
+FRONTEND_URL = "https://xiaolvshu.org"
 
 [[d1_databases]]
 binding = "DB"
