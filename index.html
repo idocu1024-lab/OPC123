@@ -117,7 +117,12 @@
   .card-author .a-avatar { width:22px; height:22px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.6rem; font-weight:700; flex-shrink:0; }
   .card-author .a-name { font-weight:600; color:var(--text-sec); }
   .card-title { font-size:0.95rem; font-weight:700; line-height:1.5; margin-bottom:0.4rem; }
-  .card-content { font-size:0.82rem; color:var(--text-sec); line-height:1.6; margin-bottom:0.7rem; display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; white-space:pre-wrap; }
+  .card-content { font-size:0.82rem; color:var(--text-sec); line-height:1.6; margin-bottom:0.7rem; white-space:pre-wrap; }
+  .card-content.collapsed { display:-webkit-box; -webkit-line-clamp:4; -webkit-box-orient:vertical; overflow:hidden; }
+  .card-expand { font-size:0.78rem; color:var(--accent-dark); cursor:pointer; font-weight:600; margin-bottom:0.5rem; display:inline-block; }
+  .card-expand:hover { text-decoration:underline; }
+  .card-login-hint { font-size:0.75rem; color:var(--accent); background:var(--accent-light); padding:0.4rem 0.7rem; border-radius:8px; margin-bottom:0.5rem; cursor:pointer; text-align:center; }
+  .card-login-hint:hover { background:var(--accent); color:#fff; }
   .card-tags { display:flex; flex-wrap:wrap; gap:0.3rem; margin-bottom:0.6rem; }
   .card-tag { font-size:0.68rem; color:var(--accent-dark); background:var(--accent-light); padding:0.1rem 0.45rem; border-radius:4px; cursor:pointer; }
   .card-tag:hover { background:var(--accent); color:#fff; }
@@ -511,7 +516,12 @@
         <div class="card-body">
           <div class="card-author"><div class="a-avatar">${initial}</div><span class="a-name">${p.display_name||p.username}</span><span>${timeAgo}</span></div>
           <div class="card-title">${esc(p.title)}</div>
-          ${p.content ? `<div class="card-content">${esc(p.content)}</div>` : ''}
+          ${p.content ? (() => {
+            const isLong = p.content.length > 150;
+            if (!isLong) return `<div class="card-content">${esc(p.content)}</div>`;
+            if (currentUser) return `<div class="card-content collapsed" id="cc-${p.id}">${esc(p.content)}</div><span class="card-expand" onclick="toggleExpand(${p.id})">展开全文 ▼</span>`;
+            return `<div class="card-content collapsed">${esc(p.content)}</div><div class="card-login-hint" onclick="openModal('authModal')">登录后查看全文</div>`;
+          })() : ''}
           <div class="green-energy">
             <span class="green-energy-label">${geLabel}</span>
             <div class="green-energy-bar"><div class="green-energy-fill ${geClass}" style="width:${ge}%"></div></div>
@@ -556,6 +566,19 @@
   };
   document.getElementById('clearTag').onclick = () => { window.filterTag(''); };
   document.getElementById('searchInput').oninput = e => { searchQuery = e.target.value.trim(); renderPosts(); };
+
+  // ===== Expand content =====
+  window.toggleExpand = function(id) {
+    const el = document.getElementById('cc-' + id);
+    const btn = el.nextElementSibling;
+    if (el.classList.contains('collapsed')) {
+      el.classList.remove('collapsed');
+      btn.textContent = '收起 ▲';
+    } else {
+      el.classList.add('collapsed');
+      btn.textContent = '展开全文 ▼';
+    }
+  };
 
   // ===== Media type select =====
   window.selectMediaType = function(type) {
