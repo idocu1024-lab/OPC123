@@ -19,4 +19,4 @@ jobs:
         run: node scripts/daily-posts.js
         env:
           API_BASE: https://xls-api.beebeeai666.workers.dev
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
