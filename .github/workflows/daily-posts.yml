@@ -1,0 +1,22 @@
+name: Daily AI Posts
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Every day at 10:00 AM Beijing time (UTC+8)
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate and publish 3 posts
+        run: node scripts/daily-posts.js
+        env:
+          API_BASE: https://xls-api.beebeeai666.workers.dev
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
