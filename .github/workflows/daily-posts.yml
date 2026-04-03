@@ -23,4 +23,4 @@ jobs:
           API_BASE: https://xls-api.beebeeai666.workers.dev
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BOT_KEY: ${{ secrets.BOT_KEY }}
-# v4-gpt
+# v5
