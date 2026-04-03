@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-9e6c4f28",
+      "title": "OpenClaw数据团队实战：90分钟压缩至2分钟",
+      "url": "https://medium.com/@cenrunzhe/openclaw-explained-how-the-hottest-agent-framework-works-and-why-data-teams-should-pay-attention-69b41a033ca6",
+      "summary": "Steven Cen深度解析OpenClaw五大核心组件（Gateway/Brain/Memory/Skills/Heartbeat）及ReAct推理循环，重点展示对数据团队的实际价值：传统CSV清洗、透视表创建与格式化耗时90分钟，OpenClaw通过自然语言驱动多步骤流水线仅需约2分钟，效率提升约45倍。文章对比AutoGPT、LangChain、CrewAI，指出OpenClaw在全天候消息集成与技能市场扩展方面的差异化优势。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "数据分析",
+        "自动化",
+        "工作流",
+        "实战教程"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-03",
+      "language": "en",
+      "image": "https://miro.medium.com/0*3j1wSYMCFpaNcpNg.png"
+    },
+    {
+      "id": "art-b5e2c094",
+      "title": "从OpenClaw热潮看企业级AI应用启示",
+      "url": "https://www.tmtpost.com/7934372.html",
+      "summary": "钛媒体深度解析OpenClaw企业级应用的三大战略启示：AI将专业知识封装为可复用Skills模块实现知识规模化传承；本地Markdown存储架构保障数据主权；AI代理填补传统ERP/CRM无法覆盖的跨系统日常任务缺口。文章同时警示提示注入、供应链污染等安全风险，并指出SaaS层将向基础设施压缩，新型「技能管理层」将成为企业AI生态的核心价值节点。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业应用",
+        "技能生态",
+        "安全合规",
+        "SaaS重构"
+      ],
+      "source": "钛媒体",
+      "datePublished": "2026-03-31",
+      "language": "zh",
+      "image": "https://images.tmtpost.com/uploads/images/2026/03/8949c3126af06ec1b0acb6fa406009cb_1774871811.png"
+    },
+    {
+      "id": "art-3d8f1a72",
+      "title": "浪潮信息「企千虾」千级OpenClaw一键部署",
+      "url": "https://www.qbitai.com/2026/04/395916.html",
+      "summary": "浪潮信息于2026年4月发布业界首个企业级OpenClaw方案「企千虾」，基于元脑服务器实现本地私有化部署，通过沙箱隔离解决金融、医疗等敏感行业的安全合规难题。方案集成ClawManager开源项目，支持数千OpenClaw实例一键批量部署与Kubernetes集群统一升级，将云端不可控的token成本转为固定硬件投入，帮助企业实现7×24小时千级Agent稳定并发运行。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "浪潮信息",
+        "企业部署",
+        "Kubernetes",
+        "私有化"
+      ],
+      "source": "量子位",
+      "datePublished": "2026-04-03",
+      "language": "zh",
+      "image": "https://i.qbitai.com/wp-content/uploads/2026/04/d09247062e7a5f651daf70170b1a9d64.png"
+    },
+    {
       "id": "art-6b1a4e37",
       "title": "OpenClaw重塑企业工作流：五大行业落地解析",
       "url": "https://www.baytechconsulting.com/blog/openclaw-unleashed-autonomous-agents-enterprise-workflows",
