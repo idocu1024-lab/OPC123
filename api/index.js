@@ -187,6 +187,32 @@ export default {
         return Response.redirect(`${frontendUrl}?token=${jwt}&user=${userData}`, 302);
       }
 
+      // --- 投稿接口 (AI/外部投稿，进入待审核) ---
+      if (path === '/submit' && method === 'POST') {
+        const submitKey = request.headers.get('X-Submit-Key');
+        if (submitKey !== (env.SUBMIT_KEY || '0606')) return err('投稿密钥错误', 401);
+
+        const { title, content, tags, green_energy, media_type, media_url, author } = await request.json();
+        if (!title || !title.trim()) return err('标题不能为空');
+
+        // Find or create the submission bot user
+        const authorName = (author || 'AI投稿').slice(0, 20);
+        let user = await env.DB.prepare("SELECT * FROM users WHERE username = 'xls_submit'").first();
+        if (!user) {
+          await env.DB.prepare("INSERT INTO users (email, username, password_hash, display_name) VALUES ('submit@xiaolvshu.org', 'xls_submit', 'submit-bot', ?)").bind(authorName).run();
+          user = await env.DB.prepare("SELECT * FROM users WHERE username = 'xls_submit'").first();
+        }
+
+        const tagsJson = JSON.stringify(tags || []);
+        const ge = Math.max(0, Math.min(100, parseInt(green_energy) || 70));
+        const mtype = ['text','image','video'].includes(media_type) ? media_type : 'text';
+        const murl = (media_url || '').trim();
+
+        const result = await env.DB.prepare("INSERT INTO posts (user_id, title, content, tags, green_energy, media_type, media_url, image_url, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 'pending')").bind(user.id, title.trim(), content || '', tagsJson, ge, mtype, murl, murl).run();
+
+        return json({ id: result.meta.last_row_id, message: '投稿成功，等待管理员审核' }, 201);
+      }
+
       // --- Bot post (API key auth) ---
       if (path === '/bot/post' && method === 'POST') {
         const botKey = request.headers.get('X-Bot-Key');
