@@ -46,7 +46,7 @@ function cors() {
   return {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Admin-Key',
   };
 }
 
@@ -79,6 +79,7 @@ async function ensureDB(env) {
   } catch {}
   try { await env.DB.prepare("ALTER TABLE posts ADD COLUMN media_type TEXT DEFAULT 'text'").run(); } catch {}
   try { await env.DB.prepare("ALTER TABLE posts ADD COLUMN media_url TEXT DEFAULT ''").run(); } catch {}
+  try { await env.DB.prepare("ALTER TABLE posts ADD COLUMN status TEXT DEFAULT 'approved'").run(); } catch {}
   try { await seedData(env); } catch {}
 }
 
@@ -253,6 +254,7 @@ export default {
         let query = `SELECT p.*, u.username, u.display_name, u.avatar_url FROM posts p JOIN users u ON p.user_id = u.id`;
         const conditions = [];
         const params = [];
+        conditions.push("p.status = 'approved'");
 
         if (tag) {
           conditions.push(`p.tags LIKE ?`);
@@ -298,9 +300,9 @@ export default {
         const ge = Math.max(0, Math.min(100, parseInt(green_energy) || 50));
         const mtype = ['text','image','video'].includes(media_type) ? media_type : 'text';
         const murl = (media_url || image_url || '').trim();
-        const result = await env.DB.prepare('INSERT INTO posts (user_id, title, content, tags, image_url, green_energy, media_type, media_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?)').bind(payload.id, title.trim(), content || '', tagsJson, murl, ge, mtype, murl).run();
+        const result = await env.DB.prepare('INSERT INTO posts (user_id, title, content, tags, image_url, green_energy, media_type, media_url, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, \'pending\')').bind(payload.id, title.trim(), content || '', tagsJson, murl, ge, mtype, murl).run();
 
-        return json({ id: result.meta.last_row_id, message: '发布成功' }, 201);
+        return json({ id: result.meta.last_row_id, message: '已提交，等待管理员审核' }, 201);
       }
 
       // Single post
@@ -358,6 +360,36 @@ export default {
       if (path === '/vote' && method === 'GET') {
         const count = await env.DB.prepare('SELECT COUNT(*) as count FROM users').first();
         return json({ count: count.count });
+      }
+
+      // --- Admin ---
+      const ADMIN_PASS = '0606';
+      if (path.startsWith('/admin/')) {
+        const adminKey = request.headers.get('X-Admin-Key');
+        if (adminKey !== ADMIN_PASS) return err('需要管理员权限', 401);
+
+        if (path === '/admin/posts' && method === 'GET') {
+          const status = url.searchParams.get('status') || 'pending';
+          const posts = await env.DB.prepare("SELECT p.*, u.username, u.display_name FROM posts p JOIN users u ON p.user_id = u.id WHERE p.status = ? ORDER BY p.created_at DESC LIMIT 50").bind(status).all();
+          const data = posts.results.map(p => ({ ...p, tags: JSON.parse(p.tags || '[]') }));
+          return json({ posts: data });
+        }
+
+        const adminPostMatch = path.match(/^\/admin\/posts\/(\d+)$/);
+        if (adminPostMatch && method === 'PUT') {
+          const postId = parseInt(adminPostMatch[1]);
+          const { status } = await request.json();
+          if (!['approved', 'rejected'].includes(status)) return err('status must be approved or rejected');
+          await env.DB.prepare('UPDATE posts SET status = ? WHERE id = ?').bind(status, postId).run();
+          return json({ ok: true });
+        }
+
+        if (adminPostMatch && method === 'DELETE') {
+          const postId = parseInt(adminPostMatch[1]);
+          await env.DB.prepare('DELETE FROM likes WHERE post_id = ?').bind(postId).run();
+          await env.DB.prepare('DELETE FROM posts WHERE id = ?').bind(postId).run();
+          return json({ ok: true });
+        }
       }
 
       return err('Not found', 404);
