@@ -269,6 +269,14 @@ export default {
         return json({ user });
       }
 
+      // --- My posts (show own posts with status) ---
+      if (path === '/my/posts' && method === 'GET') {
+        const payload = await getUser(request, env);
+        if (!payload) return err('未登录', 401);
+        const posts = await env.DB.prepare("SELECT id, title, status, created_at, likes_count FROM posts WHERE user_id = ? ORDER BY created_at DESC LIMIT 50").bind(payload.id).all();
+        return json({ posts: posts.results });
+      }
+
       // --- Posts ---
       if (path === '/posts' && method === 'GET') {
         const page = parseInt(url.searchParams.get('page') || '1');

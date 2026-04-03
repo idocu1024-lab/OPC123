@@ -348,6 +348,17 @@
   </div>
 </div>
 
+<!-- My Posts Modal -->
+<div class="modal-overlay" id="myPostsModal">
+  <div class="modal" style="position:relative;max-width:480px;">
+    <button class="modal-close" onclick="closeModal('myPostsModal')">&times;</button>
+    <div style="padding:1.2rem 1.5rem;">
+      <h2 style="margin-bottom:1rem;">我的投稿</h2>
+      <div id="myPostsList" style="max-height:60vh;overflow-y:auto;"></div>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   // ===== Config =====
@@ -375,6 +386,7 @@
       el.innerHTML = `
         <div class="user-chip"><div class="user-avatar">${currentUser.username[0].toUpperCase()}</div>${currentUser.display_name || currentUser.username}</div>
         <button class="btn btn-primary btn-sm" onclick="openModal('postModal')">+ 发布</button>
+        <button class="btn btn-outline btn-sm" onclick="showMyPosts()">我的</button>
         <button class="btn btn-outline btn-sm" onclick="doLogout()">退出</button>`;
     } else {
       el.innerHTML = `<button class="btn btn-outline btn-sm" onclick="openModal('authModal')">登录</button>
@@ -571,6 +583,28 @@
   };
   document.getElementById('clearTag').onclick = () => { window.filterTag(''); };
   document.getElementById('searchInput').oninput = e => { searchQuery = e.target.value.trim(); renderPosts(); };
+
+  // ===== My Posts =====
+  window.showMyPosts = async function() {
+    openModal('myPostsModal');
+    const el = document.getElementById('myPostsList');
+    el.innerHTML = '<p style="text-align:center;color:var(--text-light);">加载中...</p>';
+    try {
+      const d = await api('/my/posts');
+      if (!d.posts || !d.posts.length) { el.innerHTML = '<p style="text-align:center;color:var(--text-light);">还没有投稿</p>'; return; }
+      const statusMap = { pending: ['待审核', '#f39c12'], approved: ['已通过', '#2ecc71'], rejected: ['已拒绝', '#e74c3c'] };
+      el.innerHTML = d.posts.map(p => {
+        const [label, color] = statusMap[p.status] || ['未知', '#999'];
+        return `<div style="padding:0.7rem 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:0.88rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${esc(p.title)}</div>
+            <div style="font-size:0.7rem;color:var(--text-light);margin-top:0.15rem;">${formatTime(p.created_at)}</div>
+          </div>
+          <span style="font-size:0.7rem;font-weight:600;color:${color};background:${color}15;padding:0.2rem 0.5rem;border-radius:6px;white-space:nowrap;margin-left:0.5rem;">${label}</span>
+        </div>`;
+      }).join('');
+    } catch { el.innerHTML = '<p style="text-align:center;color:var(--danger);">加载失败</p>'; }
+  };
 
   // ===== Expand content =====
   window.toggleExpand = function(id) {
