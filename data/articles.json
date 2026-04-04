@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-b1f3e40a",
+      "title": "OpenClaw企业上岗：阿里云四层落地框架",
+      "url": "https://www.53ai.com/news/Openclaw/2026033141973.html",
+      "summary": "53AI深度分析中国企业部署OpenClaw的真实痛点：企业真正缺的不是更聪明的AI，而是一套完整的「上岗体系」。以阿里云方案为核心案例，展示其「基础设施层→执行引擎层→业务技能层→商业化交付层」四层企业级Agent部署框架，以及AI网关、Agent安全中心、模型工作室三大治理组件如何覆盖权限管理、成本管控与安全合规，为中国企业将OpenClaw从「demo」升级为真正运转的「数字员工」提供系统参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "阿里云",
+        "数字员工",
+        "上岗体系"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-31",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07078c8ea7dff92c.webp"
+    },
+    {
+      "id": "art-c8d2f507",
+      "title": "OpenClaw重塑企业AI安全与授权边界",
+      "url": "https://technode.global/2026/04/01/why-openclaw-is-forcing-a-rethink-of-ai-security-trust-and-authority/",
+      "summary": "TechNode Global深度分析OpenClaw引发的企业AI安全范式转变：随着代理开始在文件、邮件、浏览器中自主执行操作，安全焦点已从「模型输出」转向「代理授权」——谁在行动、持有哪些权限、在何种信任边界内运行。东北大学记录了代理操纵漏洞与提示注入风险，亚洲市场尤其关注代理授权治理框架的构建，中国已就OpenClaw安全风险发出专项预警，为企业落地提供了深层安全治理视角。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "AI安全",
+        "权限治理",
+        "企业部署",
+        "信任边界"
+      ],
+      "source": "TechNode Global",
+      "datePublished": "2026-04-01",
+      "language": "en",
+      "image": "https://technode.global/wp-content/uploads/2026/04/Why-OpenClaw-is-forcing-a-rethink-of-AI-security-trust-and-authority.png"
+    },
+    {
+      "id": "art-7e5a1b63",
+      "title": "25个实战OpenClaw自动化场景全攻略",
+      "url": "https://remoteopenclaw.com/blog/openclaw-use-cases-complete-guide",
+      "summary": "Remote OpenClaw整理了25个真正值得部署的OpenClaw自动化场景，覆盖个人效率（晨报、邮件管理、个人CRM）、内容与研究（知识库RAG、视频流水线、竞品监控）、商业智能（顾问委员会、安全代码审查）、自动化DevOps（隔夜任务批处理、服务器健康监控）及高级多模型路由五大类别。文章于2026年4月更新，强调成功部署的关键在于正确组织Telegram工作区、子代理委派与计划自动化，而非盲目堆叠功能。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自动化",
+        "使用场景",
+        "DevOps",
+        "实战指南"
+      ],
+      "source": "Remote OpenClaw",
+      "datePublished": "2026-03-23",
+      "language": "en",
+      "image": "https://remoteopenclaw.com/social-proof-1.png"
+    },
+    {
       "id": "art-9e6c4f28",
       "title": "OpenClaw数据团队实战：90分钟压缩至2分钟",
       "url": "https://medium.com/@cenrunzhe/openclaw-explained-how-the-hottest-agent-framework-works-and-why-data-teams-should-pay-attention-69b41a033ca6",
