@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-3b7c8d9e",
+      "title": "ClawManager开源：企业级OpenClaw管理平台",
+      "url": "https://www.53ai.com/news/Openclaw/2026032930672.html",
+      "summary": "53AI报道首个专为OpenClaw设计的企业级部署管理平台ClawManager正式开源，支持批量用户开通、细粒度资源配额、统一访问控制与完整审计追踪八大核心模块。内置AI Gateway实现模型路由、成本核算与风控全链路管理，面向科研机构、大型企业IT运营和教育机构三大场景，为企业大规模推进AI Agent落地提供标准化运营底座。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "ClawManager",
+        "企业部署",
+        "AI Gateway",
+        "开源项目"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-29",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07078c8ea7dff92c.webp"
+    },
+    {
+      "id": "art-9e2f5a14",
+      "title": "OpenClaw驱动闲鱼店铺7x24小时自动回复",
+      "url": "https://cloud.tencent.com/developer/article/2635982",
+      "summary": "腾讯云开发者实测教程：通过Docker在腾讯云服务器上30秒完成OpenClaw闲鱼自动回复系统部署，集成正则匹配与AI动态回复，自动应对「发货时间、砍价询价」等高频咨询。中国电商卖家借助OpenClaw实现店铺7x24小时无人值守运营，将OpenClaw定位为低成本智能客服解决方案。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "闲鱼",
+        "自动回复",
+        "Docker部署",
+        "电商自动化"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-10",
+      "language": "zh"
+    },
+    {
+      "id": "art-f6c1b3d8",
+      "title": "OpenClaw v3.0企业级Agent工作流架构实战",
+      "url": "https://kollox.com/openclaw-2026-architecting-agentic-workflows-for-enterprise-scale-3/",
+      "summary": "Kollox深度解析OpenClaw v3.0将传统节点型自动化升级为自主代理执行架构的技术路径：引入Redis/PostgreSQL实现持久化对话状态管理，配套OpenTelemetry分布式追踪与OAuth2.1策略执行。文章提供Laravel/Vue实战集成示例与WebSocket实时代理进度监控方案，为企业技术团队构建可审计、可观测的生产级OpenClaw工作流提供架构参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业架构",
+        "Agent工作流",
+        "生产部署",
+        "v3.0"
+      ],
+      "source": "Kollox",
+      "datePublished": "2026-04-02",
+      "language": "en"
+    },
+    {
       "id": "art-b1f3e40a",
       "title": "OpenClaw企业上岗：阿里云四层落地框架",
       "url": "https://www.53ai.com/news/Openclaw/2026033141973.html",
