@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-7f1c3e84",
+      "title": "OpenClaw多智能体架构：单代理到团队部署全路径",
+      "url": "https://medium.com/h7w/openclaw-multi-agent-deployment-from-single-agent-to-team-architecture-the-complete-path-353906414fca",
+      "summary": "JIN详解OpenClaw从单代理向多智能体团队架构演进的完整路径：当单一代理出现记忆污染（技术文档上下文混入日常对话历史）时，需将不同职能代理隔离，各自维护独立记忆与工作区。文章提供在个人或企业服务器上部署多智能体团队的实战架构方案，是OpenClaw生产环境规模化落地的核心参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "多智能体",
+        "团队架构",
+        "生产部署",
+        "实战指南"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-08",
+      "language": "en",
+      "image": "https://miro.medium.com/0*Z6LlsMhK8H_oaodH.jpg"
+    },
+    {
+      "id": "art-d8b3a50f",
+      "title": "上交大发布企业级可信版OpenClaw安全方案",
+      "url": "https://finance.sina.com.cn/stock/t/2026-03-24/doc-inhsamhs0435037.shtml",
+      "summary": "上海交通大学副教授王烁团队发布OpenClaw可信化改造方案，通过能力按需激活、权限前置治理、风险分级执行三大机制，将安全防护从模型层「软约束」升级为系统层「硬能力」。方案系统解决提示词注入、模型幻觉、默认端口暴露三类系统性风险，并通过大小模型协同降低企业部署成本，为金融、医疗等高安全合规要求行业落地OpenClaw提供学术背书。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "上交大",
+        "安全合规",
+        "可信AI",
+        "企业落地"
+      ],
+      "source": "新浪财经",
+      "datePublished": "2026-03-24",
+      "language": "zh",
+      "image": "https://n.sinaimg.cn/spider20260324/234/w660h374/20260324/1eb2-33387c121deae7a50c186db5079e1b52.jpg"
+    },
+    {
+      "id": "art-4e2c7f91",
+      "title": "腾讯云ClawPro接入微信：企业AI对话秒级落地",
+      "url": "https://cloud.tencent.com/developer/article/2643875",
+      "summary": "腾讯云ClawPro企业版正式支持微信chatbot扫码绑定，iOS用户升级微信至8.0.70版本后无需命令行操作，仅需三步完成配置。企业员工可在微信生态中直接与专属AI助手对话，实现零学习成本的企业级AI能力接入，腾讯云将该方案定位为企业规模化部署OpenClaw的最低门槛入口。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "腾讯云ClawPro",
+        "微信",
+        "企业落地",
+        "AI助手"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-22",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/yehe-9915543/5cf5fe3a3a91d6c9cc44497db0eb4981.png"
+    },
+    {
       "id": "art-3b7c8d9e",
       "title": "ClawManager开源：企业级OpenClaw管理平台",
       "url": "https://www.53ai.com/news/Openclaw/2026032930672.html",
