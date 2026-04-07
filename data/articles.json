@@ -51,6 +51,41 @@
   ],
   "articles": [
     {
+      "id": "art-a3f7d891",
+      "title": "OpenClaw生产环境审批门控落地实战指南",
+      "url": "https://www.clawly.org/news/production-approval-gates-for-openclaw-agents-a-practical-rollout-guide-april-2026",
+      "summary": "Clawly发布2026年4月企业级OpenClaw生产部署实战指南，围绕v2026.3.28新增的人工审批工作流功能，构建从风险分级到回退策略的分阶段上线框架。方案在开发、预发、生产三个环境逐步推进，对外部通信、破坏性操作、财务动作等高风险行为强制设置审批门控，帮助企业在保障安全的前提下提升AI代理团队的自动化效率。",
+      "category": "team-management",
+      "tags": ["OpenClaw", "生产部署", "审批门控", "企业安全", "风险管控"],
+      "source": "Clawly",
+      "datePublished": "2026-04-03",
+      "language": "en"
+    },
+    {
+      "id": "art-b2e6c304",
+      "title": "字节腾讯阿里争分OpenClaw生态入口",
+      "url": "https://www.36kr.com/p/3720862759973382",
+      "summary": "36氪深度报道字节跳动、腾讯、阿里巴巴、百度等中国科技大厂围绕OpenClaw展开激烈竞争：字节专注场景控制、腾讯争夺流量入口，阿里和百度则分别从云端和移动端切入。文章揭示OpenClaw正在成为重塑中国AI生态格局的战略支点，各大厂通过云部署、职场协作工具和即时通讯系统的差异化整合，争夺AI代理时代的先发优势。",
+      "category": "team-management",
+      "tags": ["OpenClaw", "字节跳动", "腾讯", "中国大厂", "AI竞争"],
+      "source": "36氪",
+      "datePublished": "2026-03-13",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260313/v2_5fc69ebfbb144d0ea6b4b4d507cb5f82@5888275@ai_oswg1034459oswg1053oswg495_img_png~tplv-1marlgjv7f-ai-v3:600:400:600:400:q70.jpg"
+    },
+    {
+      "id": "art-c9d1f527",
+      "title": "OpenClaw企业自动化：从邮件到多步API实战",
+      "url": "https://contabo.com/blog/openclaw-use-cases-for-business-in-2026/",
+      "summary": "Contabo梳理OpenClaw在企业业务自动化中的实战应用，从邮件摘要等简单场景到涉及API调用、Shell命令、浏览器操作的复杂多步工作流全面覆盖。文章深入探讨实施策略、成本控制与安全最佳实践，并介绍通过Ollama本地运行模型以规避云端API费用的部署方案，帮助企业以最低成本实现OpenClaw的规模化落地。",
+      "category": "getting-started",
+      "tags": ["OpenClaw", "业务自动化", "API集成", "成本优化", "部署策略"],
+      "source": "Contabo",
+      "datePublished": "2026-02-23",
+      "language": "en",
+      "image": "https://contabo.com/blog/wp-content/uploads/2026/02/blog-head_use-cases-openclaw-20206_EN.webp"
+    },
+    {
       "id": "art-7f1c3e84",
       "title": "OpenClaw多智能体架构：单代理到团队部署全路径",
       "url": "https://medium.com/h7w/openclaw-multi-agent-deployment-from-single-agent-to-team-architecture-the-complete-path-353906414fca",
