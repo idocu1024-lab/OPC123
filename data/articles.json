@@ -51,12 +51,72 @@
   ],
   "articles": [
     {
+      "id": "art-e4a72b6c",
+      "title": "OpenClaw接入企业微信办公自动化实战",
+      "url": "https://developer.aliyun.com/article/1711514",
+      "summary": "阿里云开发者社区发布详细实战教程，介绍如何将OpenClaw部署到阿里云并与企业微信深度整合，无需编程基础即可在40-60分钟内完成全流程配置。教程覆盖从API密钥申请、服务器安全加固到企业微信渠道接入的完整步骤，帮助企业快速实现文档生成、文件解析和智能团队协作等核心办公自动化场景。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业微信",
+        "阿里云",
+        "办公自动化",
+        "部署实战"
+      ],
+      "source": "阿里云开发者社区",
+      "datePublished": "2026-02-10",
+      "language": "zh",
+      "image": "https://ucc.alicdn.com/pic/developer-ecology/nlif4noopnhig_469f031927ef49c2a53172bdaeec1d7c.png?x-oss-process=image/resize,w_1400/format,webp"
+    },
+    {
+      "id": "art-3d9f1c85",
+      "title": "OpenClaw企业实战：五大核心业务场景",
+      "url": "https://greennode.ai/blog/openclaw-use-cases-for-business",
+      "summary": "GreenNode详解OpenClaw在2026年企业实战中的五大核心应用场景：支持与沟通自动化、知识管理、DevOps运维、营收运营和团队日常任务自动化。文章以销售团队将4小时日常审查压缩至15分钟为典型案例，指出企业部署需配合角色权限控制和网络隔离等安全措施，才能在自动化效率和合规要求之间实现平衡。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "企业应用",
+        "业务自动化",
+        "运维",
+        "销售运营"
+      ],
+      "source": "GreenNode",
+      "datePublished": "2026-04-01",
+      "language": "en",
+      "image": "https://statics-green-node.vcdn.com.vn/Identity_1_feb5cdb689.png"
+    },
+    {
+      "id": "art-7b2e95a1",
+      "title": "微软安全博客：企业OpenClaw安全部署指南",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/02/19/running-openclaw-safely-identity-isolation-runtime-risk/",
+      "summary": "微软安全团队深入分析企业部署OpenClaw面临的核心风险，涵盖身份认证、运行时隔离和凭证安全三大维度。文章针对自托管代理处理不可信输入时的持久凭证暴露问题，提出完整治理框架和访问控制方案，并指出随着企业加速采用OpenClaw，开箱即用安全能力与受监管环境实际需求之间的差距日益显著，为企业级安全落地提供权威参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业安全",
+        "微软",
+        "运行时隔离",
+        "身份认证"
+      ],
+      "source": "Microsoft Security Blog",
+      "datePublished": "2026-02-19",
+      "language": "en",
+      "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2026/02/Running-OpenClaw-safely-identity-isolation-and-runtime-risk.webp"
+    },
+    {
       "id": "art-a3f7d891",
       "title": "OpenClaw生产环境审批门控落地实战指南",
       "url": "https://www.clawly.org/news/production-approval-gates-for-openclaw-agents-a-practical-rollout-guide-april-2026",
       "summary": "Clawly发布2026年4月企业级OpenClaw生产部署实战指南，围绕v2026.3.28新增的人工审批工作流功能，构建从风险分级到回退策略的分阶段上线框架。方案在开发、预发、生产三个环境逐步推进，对外部通信、破坏性操作、财务动作等高风险行为强制设置审批门控，帮助企业在保障安全的前提下提升AI代理团队的自动化效率。",
       "category": "team-management",
-      "tags": ["OpenClaw", "生产部署", "审批门控", "企业安全", "风险管控"],
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "审批门控",
+        "企业安全",
+        "风险管控"
+      ],
       "source": "Clawly",
       "datePublished": "2026-04-03",
       "language": "en"
@@ -67,7 +127,13 @@
       "url": "https://www.36kr.com/p/3720862759973382",
       "summary": "36氪深度报道字节跳动、腾讯、阿里巴巴、百度等中国科技大厂围绕OpenClaw展开激烈竞争：字节专注场景控制、腾讯争夺流量入口，阿里和百度则分别从云端和移动端切入。文章揭示OpenClaw正在成为重塑中国AI生态格局的战略支点，各大厂通过云部署、职场协作工具和即时通讯系统的差异化整合，争夺AI代理时代的先发优势。",
       "category": "team-management",
-      "tags": ["OpenClaw", "字节跳动", "腾讯", "中国大厂", "AI竞争"],
+      "tags": [
+        "OpenClaw",
+        "字节跳动",
+        "腾讯",
+        "中国大厂",
+        "AI竞争"
+      ],
       "source": "36氪",
       "datePublished": "2026-03-13",
       "language": "zh",
@@ -79,7 +145,13 @@
       "url": "https://contabo.com/blog/openclaw-use-cases-for-business-in-2026/",
       "summary": "Contabo梳理OpenClaw在企业业务自动化中的实战应用，从邮件摘要等简单场景到涉及API调用、Shell命令、浏览器操作的复杂多步工作流全面覆盖。文章深入探讨实施策略、成本控制与安全最佳实践，并介绍通过Ollama本地运行模型以规避云端API费用的部署方案，帮助企业以最低成本实现OpenClaw的规模化落地。",
       "category": "getting-started",
-      "tags": ["OpenClaw", "业务自动化", "API集成", "成本优化", "部署策略"],
+      "tags": [
+        "OpenClaw",
+        "业务自动化",
+        "API集成",
+        "成本优化",
+        "部署策略"
+      ],
       "source": "Contabo",
       "datePublished": "2026-02-23",
       "language": "en",
