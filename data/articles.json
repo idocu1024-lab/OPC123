@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-7b12e9a6",
+      "title": "用OpenClaw自动化整个业务运营",
+      "url": "https://alirezarezvani.medium.com/openclaw-the-practical-guide-to-building-an-ai-that-actually-can-run-your-work-and-business-3587dd4aa22b",
+      "summary": "初创公司CTO Reza Rezvani分享了用OpenClaw构建AI自动化工作流的实战经验，以替代传统行政职能。通过整合日历、邮件和项目管理工具，实现领导层自主汇报和信息聚合，为资源有限的团队提供了可复用的全行业自动化框架。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "业务自动化",
+        "工作流",
+        "创业公司",
+        "实战指南"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://miro.medium.com/1*1FfCFvneuzv3OiJ68IuOkg.png"
+    },
+    {
+      "id": "art-c8d93f05",
+      "title": "OpenClaw改变工作流实战分享",
+      "url": "https://safeti.medium.com/how-openclaw-changed-my-workflow-e27b4a03e432",
+      "summary": "开发者Safe将OpenClaw部署在VPS上，通过Telegram机器人连接Notion和GitHub，实现了37条销售线索自动同步与内容日历生成。文章详细记录了集成过程中的实际效果与浏览器自动化的局限性，对希望用OpenClaw改造工作流的团队极具参考价值。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "工作流自动化",
+        "Notion集成",
+        "Telegram",
+        "实战案例"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-13",
+      "language": "en",
+      "image": "https://miro.medium.com/1*IwaXxttH7-2uHrW-w_GkXA.png"
+    },
+    {
+      "id": "art-4a7f2e1b",
+      "title": "Mac M2本地部署OpenClaw踩坑实录",
+      "url": "https://www.53ai.com/news/Openclaw/2026040412603.html",
+      "summary": "中国开发者CodeJames在Mac M2 24G设备上实战部署OpenClaw与Ollama的完整记录。遭遇Homebrew安装失败、Gateway配置错误、API认证异常等六大难题，逐一攻克并详细记录解决方案。为国内用户本地部署OpenClaw提供了宝贵的避坑指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "本地部署",
+        "Ollama",
+        "Mac部署",
+        "踩坑实录"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-04-04",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07078c8ea7dff92c.webp"
+    },
+    {
       "id": "art-e4a72b6c",
       "title": "OpenClaw接入企业微信办公自动化实战",
       "url": "https://developer.aliyun.com/article/1711514",
