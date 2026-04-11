@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-5c02d9eb",
+      "title": "OpenClaw全平台安装部署完整指南",
+      "url": "https://blog.laozhang.ai/en/posts/openclaw-installation-deployment-guide",
+      "summary": "老张AI博客提供OpenClaw跨平台完整安装部署指南，覆盖macOS、Linux、Windows WSL2及Docker等所有主流环境。文章对比不同硬件方案、配置说明与长期维护策略，是OpenClaw入门部署的权威参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安装教程",
+        "Docker部署",
+        "跨平台",
+        "AI助手"
+      ],
+      "source": "LaoZhang AI Blog",
+      "datePublished": "2026-02-08",
+      "language": "en",
+      "image": "https://blog.laozhang.ai/posts/en/openclaw-installation-deployment-guide/img/cover.png"
+    },
+    {
+      "id": "art-f2fe8f62",
+      "title": "OpenClaw自托管部署实战指南",
+      "url": "https://aipure.ai/articles/openclaw-deployment-guide-how-to-self-host-a-real-ai-agent",
+      "summary": "AIPURE详细讲解如何在本地或云服务器上自托管部署OpenClaw开源AI助手，涵盖本地安装与DigitalOcean两种部署方案。文章包含安全配置实践、故障排查技巧及自动化配置示例，帮助用户可靠运行AI Agent。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自托管",
+        "部署指南",
+        "Docker",
+        "AI Agent"
+      ],
+      "source": "AIPURE",
+      "datePublished": "2026-03-10",
+      "language": "en",
+      "image": "https://static-sg.winudf.com/xy/aprojectadmin/wupload/xy/aprojectadmin/ZOj4fNsP.png?imageMogr2/thumbnail/x400/format/webp"
+    },
+    {
+      "id": "art-bfe885b0",
+      "title": "OpenClaw 30个真实场景全解析",
+      "url": "https://www.53ai.com/news/Openclaw/2026040864510.html",
+      "summary": "53AI全面梳理OpenClaw在日常运营、信息管理、内容创作等领域的30个真实应用场景，展示AI Agent如何让一人完成小团队的工作效率。文章通过互联模块构建数据工作流飞轮效应，揭示OpenClaw企业落地的核心价值。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "AI Agent",
+        "应用场景",
+        "企业效率",
+        "自动化"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-04-08",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20250210/aec076a60258b0cc07078c8ea7dff92c.webp"
+    },
+    {
       "id": "art-7b12e9a6",
       "title": "用OpenClaw自动化整个业务运营",
       "url": "https://alirezarezvani.medium.com/openclaw-the-practical-guide-to-building-an-ai-that-actually-can-run-your-work-and-business-3587dd4aa22b",
