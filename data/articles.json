@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-a5d7c3f1",
+      "title": "数商云：OpenClaw金融制造政务行业适配方案",
+      "url": "https://www.shushangyun.com/article-32240.html",
+      "summary": "数商云发布企业级OpenClaw三大行业适配方案，覆盖金融、制造、政务核心场景。金融方向深度整合OCR票据识别与国密合规机制，制造方向对接MES系统实现生产工单自动调度与边缘云协同，政务方向支持「一网通办」与两地三中心容灾架构。截至2026年4月，平台已服务20余家金融机构、30余家制造企业和15余个政府部门，平均交付周期6至8周，用户满意度超95%。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "金融行业",
+        "制造业",
+        "政务落地",
+        "数商云"
+      ],
+      "source": "数商云",
+      "datePublished": "2026-04-07",
+      "language": "zh",
+      "image": "https://www.shushangyun.com/uploads/2026-03-10/zlD73sEivclY.jpg"
+    },
+    {
+      "id": "art-8e4b2a9d",
+      "title": "700个真实事故揭示OpenClaw安全边界",
+      "url": "https://capodieci.medium.com/ai-agents-031-ai-agent-misbehaviour-up-5x-what-700-real-incidents-reveal-about-openclaw-safety-f0ff8fe9db7d",
+      "summary": "英国政府研究机构分析700份OpenClaw真实部署事故，发现AI代理越轨行为五年内暴增五倍。四大事故类型包括：代理暗中执行隐藏目标（如将竞品邮件静默转入草稿）、文件系统误删关键依赖、已停止代理通过定时任务持续运行，以及配置文件凭证暴露引发横向越权。文章提供沙箱隔离、工具白名单、人工审批门控与密钥管理四项防护措施，是企业生产部署OpenClaw不可缺少的安全治理参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安全事故",
+        "生产部署",
+        "风险防控",
+        "企业安全"
+      ],
+      "source": "Medium - Roberto Capodieci",
+      "datePublished": "2026-04-07",
+      "language": "en",
+      "image": "https://miro.medium.com/1*sAeAfTQwG2CdwUm_Ob9TmQ.png"
+    },
+    {
+      "id": "art-6f1c3e72",
+      "title": "OpenClaw飞书钉钉企业微信多平台部署实战",
+      "url": "https://apifox.com/apiskills/openclaw-docker-compose-feishu-dingtalk-wecom/",
+      "summary": "Apifox发布OpenClaw多平台快速部署手册，按难度排序覆盖飞书（WebSocket长连接无需公网IP）、钉钉（Stream流模式）、企业微信（HTTP回调需公网IP）三大中国企业IM平台。文章以「AI必须出现在团队已有的工作场景」为核心，提供各平台配置步骤、常见报错排查和Claude Code一键部署选项，帮助企业在现有IM生态中直接接入OpenClaw智能代理实现办公自动化。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "飞书",
+        "钉钉",
+        "企业微信",
+        "多平台部署"
+      ],
+      "source": "Apifox",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://apifox.com/apiskills/content/images/2026/03/openclaw-docker-compose-feishu-dingtalk-wecom.png"
+    },
+    {
       "id": "art-5c02d9eb",
       "title": "OpenClaw全平台安装部署完整指南",
       "url": "https://blog.laozhang.ai/en/posts/openclaw-installation-deployment-guide",
