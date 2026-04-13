@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-59b3dc61",
+      "title": "OpenClaw企业自动化CSDN落地实践",
+      "url": "https://damodev.csdn.net/69821f19a16c6648a98718f3.html",
+      "summary": "本文深度介绍OpenClaw作为2026年GitHub最火开源项目的企业级落地实践，涵盖邮件自动化、文件管理、代码生成和业务流程自动化等多个场景。早期采用企业反馈显著，部分团队将行政开销降低60%，销售人员日常工作时长从10小时压缩至3小时。文章介绍了自托管部署方式与跨平台集成能力，适合希望快速落地AI智能体的中国企业参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业自动化",
+        "AI Agent",
+        "效率提升",
+        "落地实践"
+      ],
+      "source": "CSDN DAMO开发者矩阵",
+      "datePublished": "2026-02-04",
+      "language": "zh",
+      "image": "https://i-blog.csdnimg.cn/direct/a6e72ae2c0ae4dd29cd0706911cd1226.png"
+    },
+    {
+      "id": "art-cdab4015",
+      "title": "OpenClaw革命：2026自主AI元年",
+      "url": "https://medium.com/@rameshkannanyt0078/the-openclaw-revolution-why-2026-is-the-year-of-the-autonomous-ai-agent-5e711a35bc4f",
+      "summary": "OpenClaw是一款开源自主AI智能体，能真正执行复杂数字任务而非仅生成文字回复。它通过模型上下文协议（MCP）与文件系统、API和浏览器交互，以持续执行循环运行，支持服务器监控和社交媒体管理等无人值守场景。作者分析了OpenClaw爆红背后的技术架构，认为2026年将是自主AI智能体真正落地的元年。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "AI智能体",
+        "自主代理",
+        "开源",
+        "自动化"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-25",
+      "language": "en",
+      "image": "https://miro.medium.com/v2/resize:fit:500/7*V1_7XP4snlmqrc_0Njontw.png"
+    },
+    {
+      "id": "art-a0c7ddd6",
+      "title": "OpenClaw五种安装方法实测",
+      "url": "https://medium.com/@krupeshraut/how-to-install-openclaw-in-2026-5-different-ways-and-which-one-you-should-actually-pick-40a078819320",
+      "summary": "作者Krupesh Raut系统测试了OpenClaw的五种安装方式，涵盖从本地到云端的各类部署场景。文章针对2026年初Anthropic封锁Claude Pro OAuth访问导致大量旧教程失效的问题，提供了最新可用的安装指引。通过实测对比，帮助读者根据自身需求选择最合适的OpenClaw部署方案。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安装教程",
+        "部署方案",
+        "实测对比"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://miro.medium.com/1*D0tbZ3pLqge-DWC-AcBo6g.jpeg"
+    },
+    {
       "id": "art-a5d7c3f1",
       "title": "数商云：OpenClaw金融制造政务行业适配方案",
       "url": "https://www.shushangyun.com/article-32240.html",
