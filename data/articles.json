@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-c667a1d5",
+      "title": "智诊科技WiseClaw：OpenClaw医疗Agent OS落地实战",
+      "url": "https://finance.sina.com.cn/stock/t/2026-03-14/doc-inhqxryn0449933.shtml",
+      "summary": "智诊科技发布全球首个基于OpenClaw架构的企业级医疗健康智能体平台WiseClaw，集成模型推理、知识系统、工具系统、流程编排、权限合规、评测审计、运营监控七大核心模块。平台支持多智能体协作完成病历质控、病案编目、用药审查等临床工作流，并深度对接HIS/EMR/LIS/PACS等医院核心系统，通过医学证据链追溯和医疗级安全治理机制，率先将OpenClaw带入可监管、可合规的中国医疗AI企业落地场景。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "智诊科技",
+        "医疗AI",
+        "WiseClaw",
+        "企业落地"
+      ],
+      "source": "新浪财经",
+      "datePublished": "2026-03-14",
+      "language": "zh",
+      "image": "https://n.sinaimg.cn/spider20260314/142/w660h282/20260314/1aba-a35b70ce89eb3fbb76a87a04375e4148.jpg"
+    },
+    {
+      "id": "art-b3b0a764",
+      "title": "OpenClaw 25种真实自动化场景与VPS安全部署指南",
+      "url": "https://www.hostinger.com/tutorials/openclaw-use-cases",
+      "summary": "Hostinger整理OpenClaw在工作和生活中的25个真实自动化场景，涵盖个人效率（每日简报、餐饮规划）、内容创作（起草写作、图片生成）、DevOps工作流（CI/CD监控、依赖扫描）和智能家居控制等多个维度。文章重点介绍如何在VPS上实现OpenClaw 7×24小时稳定运行，并提供最小权限执行、命令白名单、容器化隔离、SSH加固和详细日志审计等完整安全配置指南，帮助用户在降低成本的同时规避安全风险。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "使用场景",
+        "VPS部署",
+        "安全配置",
+        "自动化"
+      ],
+      "source": "Hostinger",
+      "datePublished": "2026-02-20",
+      "language": "en",
+      "image": "https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/wp-content/uploads/sites/2/2023/06/VPS-alt-1.jpg/public"
+    },
+    {
+      "id": "art-4ae896dd",
+      "title": "OpenClaw完整实战教程：安装配置与真实自动化案例",
+      "url": "https://aimlapi.com/blog/openclaw-full-tutorial-installation-setup-real-automation-use-step-by-step",
+      "summary": "AIML API详解OpenClaw作为开源自主AI代理的完整部署教程，涵盖VPS硬件规格选择（双核CPU、8GB RAM）、LLM提供商配置、Telegram/WhatsApp/Slack等多渠道接入，以及持久记忆和多平台控制能力的实战演练。文章对比OpenClaw与n8n等固定流程工具的差异，强调其基于自然语言的对话式自动化优势，并提供访问令牌管理和安全自托管最佳实践，适合开发者和企业团队快速上手OpenClaw。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安装教程",
+        "VPS部署",
+        "多渠道接入",
+        "实战案例"
+      ],
+      "source": "AIML API",
+      "datePublished": "2026-02-01",
+      "language": "en",
+      "image": "https://cdn.prod.website-files.com/65b8f370a600366bc7cf9b20/69dbcee9c6755d4d426eda02_6998334709ab35240f049c82_ml%20api.webp"
+    },
+    {
       "id": "art-59b3dc61",
       "title": "OpenClaw企业自动化CSDN落地实践",
       "url": "https://damodev.csdn.net/69821f19a16c6648a98718f3.html",
