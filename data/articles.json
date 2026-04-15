@@ -51,6 +51,59 @@
   ],
   "articles": [
     {
+      "id": "art-3c8e1a5f",
+      "title": "旭榮紡織省千工時、李長榮2.4億效益",
+      "url": "https://money.udn.com/money/story/5612/9374121",
+      "summary": "台灣企業搶先佈局OpenClaw（俗稱「龍虾」）：旭榮紡織歷經逾一年AI代理實作，累計為團隊節省超過1,000個工時；李長榮化工透過AI代理實作，累積效益高達新台幣2.4億元。這篇2026年3月的深度報導揭示了台灣頭部製造與化工企業如何將OpenClaw導入實際生產與管理流程，並分析「代理式AI」如何讓一人指揮多個AI員工、完成跨系統自主任務，成為中文企業界最具說服力的落地成效範本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "旭榮紡織",
+        "李長榮化工",
+        "製造業",
+        "台灣企業"
+      ],
+      "source": "經濟日報",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://uc.udn.com.tw/photo/t3/2026/03/11/34753523.jpg"
+    },
+    {
+      "id": "art-b7d2f9a4",
+      "title": "OpenClaw企业权限隔离与安全加固完全指南",
+      "url": "https://eastondev.com/blog/en/posts/ai/20260205-openclaw-enterprise-deploy/",
+      "summary": "作者记录了一个30人团队将OpenClaw从个人工具升级为企业托管系统的完整实践路径，涵盖多实例与多租户架构对比、基于RBAC的三角色权限设计（管理员/开发者/审计员）、JWT令牌认证中间件以及CVE-2026-25253命令注入漏洞修复（CVSS 8.8）。方案包括AES-256会话记录加密、90天审计日志保留满足ISO 27001合规要求，以及GitLab CI/CD自动化部署的生产就绪配置，是目前最完整的OpenClaw企业级权限与安全治理实战参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业部署",
+        "权限管理",
+        "安全加固",
+        "RBAC"
+      ],
+      "source": "BetterLink Blog",
+      "datePublished": "2026-02-05",
+      "language": "en",
+      "image": "https://eastondev.com/images/ai/openclaw-enterprise-deploy.jpg"
+    },
+    {
+      "id": "art-a5e3c72b",
+      "title": "OpenClaw 2026.4：安全硬化与多模态落地实效",
+      "url": "https://gitcode.csdn.net/69dcb8870a2f6a37c59f4fbc.html",
+      "summary": "AtomGit开源社区深度解析OpenClaw 2026.4密集迭代版本：安全方面清除340+恶意技能、建立权限分级与沙箱三层防护；记忆方面Active Memory插件将长对话召回准确率从92%提升至98%；多模态方面原生集成HappyHorse视频生成（150B参数、1080P输出）。更重要的是，文章收录了真实企业落地效果：跨境电商客服响应从5分钟降至1分钟、团队从5人缩减为2人，制造业通过MES系统集成效率提升25%，另一家企业借助5个OpenClaw代理将一周工作量压缩至1小时，年节省成本逾千万元。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "2026.4版本",
+        "安全加固",
+        "多模态",
+        "企业落地"
+      ],
+      "source": "AtomGit开源社区",
+      "datePublished": "2026-04-13",
+      "language": "zh"
+    },
+    {
       "id": "art-c667a1d5",
       "title": "智诊科技WiseClaw：OpenClaw医疗Agent OS落地实战",
       "url": "https://finance.sina.com.cn/stock/t/2026-03-14/doc-inhqxryn0449933.shtml",
