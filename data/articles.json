@@ -51,6 +51,42 @@
   ],
   "articles": [
     {
+      "id": "art-9d3a71bc",
+      "title": "深圳政务DinTal Claw：调研从2周压缩至分钟",
+      "url": "https://www.donews.com/news/detail/4/6457019.html",
+      "summary": "深圳福田区部署国产OpenClaw系统DinTal Claw，实现政务AI从被动辅助向自主进化的跨越。民意调研原本耗时2周至1个月，现在数分钟内自动完成数据清洗、分类打标、原因分析与报告生成，并主动提出优化建议；公共场所卫生许可预审也实现「当日提交、当日预审」，支持7类材料多线程并发审核，成为国产OpenClaw政务服务场景落地的标杆案例。",
+      "category": "team-management",
+      "tags": ["OpenClaw", "深圳政务", "DinTal Claw", "政府落地", "数字政府"],
+      "source": "DoNews",
+      "datePublished": "2026-03-08",
+      "language": "zh",
+      "image": "https://img6.donews.com/img/2026/03/08/img_pic_1772957178726.png"
+    },
+    {
+      "id": "art-f5e2a847",
+      "title": "Linux Journal：OpenClaw企业选型完整指南",
+      "url": "https://www.linuxjournal.com/content/openclaw-2026-what-it-whos-using-it-and-whether-your-business-should-adopt-it",
+      "summary": "Linux Journal梳理2026年企业采用OpenClaw的真实图景：早期企业用户将OpenClaw部署于潜在客户挖掘、CRM自动化、DevOps流程和业务报表生成，从个人销售自动化到工程团队CI/CD管道均有落地案例。文章强调权限管控与人工审批门控是企业规模化落地的关键，并为技术决策者提供清晰的采购选型框架。",
+      "category": "getting-started",
+      "tags": ["OpenClaw", "企业选型", "CRM自动化", "DevOps", "业务落地"],
+      "source": "Linux Journal",
+      "datePublished": "2026-04-14",
+      "language": "en",
+      "image": "https://www.linuxjournal.com/sites/default/files/styles/360_250/public/nodeimage/story/openclaw-in-2026-what-it-is-whos-using-it-and-whether-your-business-should-adopt-it.jpg?itok=TfZdBbJ-"
+    },
+    {
+      "id": "art-2c8b4f91",
+      "title": "Valletta：OpenClaw架构与安全加固实战",
+      "url": "https://vallettasoftware.com/blog/post/openclaw-2026-guide",
+      "summary": "Valletta Software全面解析OpenClaw核心架构、安装配置与安全风险，记录其三个月内达到19.6万GitHub星的快速增长。文章详细梳理ClawHub技能市场恶意插件威胁，并提供Gateway端口隔离绑回环地址、凭证安全存储、供应链风险防控等完整安全加固清单，为企业在CRM管理、支持工单分类等场景中稳健部署OpenClaw提供实战参考。",
+      "category": "getting-started",
+      "tags": ["OpenClaw", "架构指南", "安全加固", "ClawHub", "企业部署"],
+      "source": "Valletta Software",
+      "datePublished": "2026-02-26",
+      "language": "en",
+      "image": "https://images.blog.vallettasoftware.com/2026/02/openclaw-setup-security-1600x900.png"
+    },
+    {
       "id": "art-3c8e1a5f",
       "title": "旭榮紡織省千工時、李長榮2.4億效益",
       "url": "https://money.udn.com/money/story/5612/9374121",
