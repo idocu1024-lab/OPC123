@@ -51,12 +51,69 @@
   ],
   "articles": [
     {
+      "id": "art-d5461aaf",
+      "title": "中国大厂争抢OpenClaw红利",
+      "url": "https://36kr.com/p/3717904404936072",
+      "summary": "36氪深度报道阿里、腾讯、字节跳动、MiniMax等中国大厂布局OpenClaw的策略与成果。MiniMax凭借OpenClaw算力调用，2月仅20天收入即超2025全年，Kimi和Zhipu等模型API调用量跻身全球前十，展示了国内AI产业围绕OpenClaw生态的真实商业价值。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国大厂",
+        "AI Agent",
+        "企业落地"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": ""
+    },
+    {
+      "id": "art-92fe7d5f",
+      "title": "OpenClaw营销两周获200万播放",
+      "url": "https://medium.com/@rithikmotupalli/how-an-openclaw-agent-automated-marketing-and-got-2-million-views-in-2-weeks-c77d6ebb5ea8",
+      "summary": "开发者使用OpenClaw搭建AI营销代理「Larry」，自动生成、调度并发布短视频内容，并根据互动数据持续优化策略。仅用5天积累50万播放量，两周内在TikTok等平台实现近200万次观看，全程无需人工干预，展示了OpenClaw在社交媒体营销场景中的落地效果。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "营销自动化",
+        "内容创作",
+        "TikTok"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-23",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-49f16dd0",
+      "title": "OpenClaw 25+真实用户案例",
+      "url": "https://www.tldl.io/blog/openclaw-use-cases-2026",
+      "summary": "TLDL对100余名活跃OpenClaw用户调研，汇总25+真实应用场景。数据显示内容创作(35%)、研究与数据(28%)和生产力提升(20%)最受欢迎；首周配置两个以上工作流的用户三个月留存率高达78%，验证了OpenClaw在多场景落地的实际效果。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用案例",
+        "内容自动化",
+        "用户调研"
+      ],
+      "source": "TLDL",
+      "datePublished": "2026-02-23",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-9d3a71bc",
       "title": "深圳政务DinTal Claw：调研从2周压缩至分钟",
       "url": "https://www.donews.com/news/detail/4/6457019.html",
       "summary": "深圳福田区部署国产OpenClaw系统DinTal Claw，实现政务AI从被动辅助向自主进化的跨越。民意调研原本耗时2周至1个月，现在数分钟内自动完成数据清洗、分类打标、原因分析与报告生成，并主动提出优化建议；公共场所卫生许可预审也实现「当日提交、当日预审」，支持7类材料多线程并发审核，成为国产OpenClaw政务服务场景落地的标杆案例。",
       "category": "team-management",
-      "tags": ["OpenClaw", "深圳政务", "DinTal Claw", "政府落地", "数字政府"],
+      "tags": [
+        "OpenClaw",
+        "深圳政务",
+        "DinTal Claw",
+        "政府落地",
+        "数字政府"
+      ],
       "source": "DoNews",
       "datePublished": "2026-03-08",
       "language": "zh",
@@ -68,7 +125,13 @@
       "url": "https://www.linuxjournal.com/content/openclaw-2026-what-it-whos-using-it-and-whether-your-business-should-adopt-it",
       "summary": "Linux Journal梳理2026年企业采用OpenClaw的真实图景：早期企业用户将OpenClaw部署于潜在客户挖掘、CRM自动化、DevOps流程和业务报表生成，从个人销售自动化到工程团队CI/CD管道均有落地案例。文章强调权限管控与人工审批门控是企业规模化落地的关键，并为技术决策者提供清晰的采购选型框架。",
       "category": "getting-started",
-      "tags": ["OpenClaw", "企业选型", "CRM自动化", "DevOps", "业务落地"],
+      "tags": [
+        "OpenClaw",
+        "企业选型",
+        "CRM自动化",
+        "DevOps",
+        "业务落地"
+      ],
       "source": "Linux Journal",
       "datePublished": "2026-04-14",
       "language": "en",
@@ -80,7 +143,13 @@
       "url": "https://vallettasoftware.com/blog/post/openclaw-2026-guide",
       "summary": "Valletta Software全面解析OpenClaw核心架构、安装配置与安全风险，记录其三个月内达到19.6万GitHub星的快速增长。文章详细梳理ClawHub技能市场恶意插件威胁，并提供Gateway端口隔离绑回环地址、凭证安全存储、供应链风险防控等完整安全加固清单，为企业在CRM管理、支持工单分类等场景中稳健部署OpenClaw提供实战参考。",
       "category": "getting-started",
-      "tags": ["OpenClaw", "架构指南", "安全加固", "ClawHub", "企业部署"],
+      "tags": [
+        "OpenClaw",
+        "架构指南",
+        "安全加固",
+        "ClawHub",
+        "企业部署"
+      ],
       "source": "Valletta Software",
       "datePublished": "2026-02-26",
       "language": "en",
