@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-4b9e7a31",
+      "title": "InfoQ OpenClaw中国行北京站企业实录",
+      "url": "https://www.infoq.cn/article/DqE30rlz0ZXXrBJjjIMf",
+      "summary": "InfoQ极客邦报道OpenClaw中国行北京站落幕，近200名开发者现场参与、3万人线上围观，56名参与者在30分钟内成功运行首个AI应用。真实落地案例涵盖：飞书团队用OpenClaw自动汇总OKR进展并提供7×24小时新员工智能答疑，迪量仪生物科技将语音转录融入AI持续学习系统，开发者FizzRead构建Markdown「灵魂文件」机制解决智能体遗忘与幻觉问题。活动同步启动12城巡回计划，标志着OpenClaw在中国从开发者圈子加速向企业级规模化落地演进。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国行",
+        "北京",
+        "企业落地",
+        "InfoQ"
+      ],
+      "source": "InfoQ极客邦",
+      "datePublished": "2026-03-17",
+      "language": "zh",
+      "image": "https://static001.infoq.cn/resource/image/56/f6/568002dce0c0eb1ecf4a3154cf14b3f6.jpeg"
+    },
+    {
+      "id": "art-d6c28f05",
+      "title": "OpenClaw进阶工作流五大实战模式",
+      "url": "https://go.lightnode.com/tech/advanced-openclaw-workflows",
+      "summary": "LightNode解析OpenClaw超越对话AI的五大进阶自动化模式：多工具编排（消息平台→数据库→API→报表）、持久知识系统、多智能体专业分工、开发流水线自动化以及内容生产发布管道。文章以AI科技新闻自动归档WordPress草稿、SRE团队5xx错误实时告警响应为真实案例，展示OpenClaw在VPS上7×24小时稳定运行的落地效果。相比单一对话型AI，OpenClaw通过工具连接与推理循环成为能驱动真实业务流程的自动化执行层。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "进阶工作流",
+        "多智能体",
+        "内容自动化",
+        "VPS部署"
+      ],
+      "source": "LightNode",
+      "datePublished": "2026-02-27",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-2e8b5f1a",
+      "title": "OpenClaw本土化：万星科技Rokid等入局",
+      "url": "https://c.m.163.com/news/a/KQ60H5VV0511A632.html",
+      "summary": "通信信息报报道OpenClaw在中国完成本土化生态布局：万星科技将10余项音视频创作能力上架ClawHub技能市场，AI眼镜品牌Rokid通过SSE协议接入实现实时智能体交互，光凡科技完成AI耳机与智能手表的深度集成。典型落地案例包括北京一名互联网技术主管借助OpenClaw在36小时内完成房产交易全流程——从搜索房源、比较中介到计算隐性费用一气呵成，展示了OpenClaw在消费级真实场景的落地可行性。文章指出OpenClaw已从小众技术工具蜕变为主流应用平台，国产硬件与创作生态的加速接入正推动「虾经济」产业圈加速形成。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "本土化",
+        "万星科技",
+        "Rokid",
+        "生态合作"
+      ],
+      "source": "通信信息报",
+      "datePublished": "2026-04-10",
+      "language": "zh",
+      "image": ""
+    },
+    {
       "id": "art-d5461aaf",
       "title": "中国大厂争抢OpenClaw红利",
       "url": "https://36kr.com/p/3717904404936072",
