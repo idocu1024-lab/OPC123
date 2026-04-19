@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-e3c9b7d5",
+      "title": "OpenClaw 2026.4.5多模态与记忆系统里程碑升级",
+      "url": "https://www.scensmart.com/news/in-depth-analysis-of-openclaw-2026-4-5/",
+      "summary": "ScenSmart智能制造平台深度解析OpenClaw 2026.4.5版本两大里程碑：多模态方面整合Sora、Google Veo等11个视频生成服务，通过自然语言指令直接产出商业级视频内容，无需手动配置API；记忆方面引入「Dreaming」三阶段仿人类睡眠记忆机制（轻睡眠摘要→深睡眠归档→REM持久用户画像），让AI助理随使用时间积累个性化认知、持续优化协作效果。企业层面新增Amazon Bedrock自动配置发现与多模型切换、ComfyUI自定义AI流水线集成，并覆盖Telegram、Discord、Slack、微信、飞书五大平台，为制造业与内容行业的OpenClaw深度落地提供完整技术升级路径。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "2026.4.5",
+        "多模态",
+        "记忆系统",
+        "智能制造"
+      ],
+      "source": "ScenSmart智能制造平台",
+      "datePublished": "2026-04-08",
+      "language": "zh",
+      "image": "https://www.scensmart.com/wp-content/uploads/2026/04/OpenClaw4.5.jpg"
+    },
+    {
+      "id": "art-a2f9c831",
+      "title": "中关村科金PowerClaw：国内首个企业级OpenClaw方案",
+      "url": "https://www.zkj.com/news-dynamic/8727.html",
+      "summary": "中关村科金发布国内首个基于OpenClaw的企业级解决方案PowerClaw，以「决策大脑+执行肢体」双层架构为核心，将AI从「内容生成」升级为「任务执行」，通过自然语言驱动跨系统、跨平台的复杂任务自动化。方案深度融合智能联络中心能力，覆盖金融、汽车、制造、零售、政务五大行业场景，支持私有化部署与多层安全沙箱，在企业现有CRM、OA等系统上无缝接入「数字员工」，实现7×24小时跨渠道自主任务执行，成为中国首批OpenClaw企业级商用落地的标杆案例。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "PowerClaw",
+        "中关村科金",
+        "企业落地",
+        "数字员工"
+      ],
+      "source": "中关村科金",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://www.zkj.com/Public/images/new_pro_img.png"
+    },
+    {
+      "id": "art-7c3d9e6b",
+      "title": "OpenClaw四种部署方式全面对比指南",
+      "url": "https://medium.com/@tahirbalarabe2/4-ways-to-deploy-openclaw-df21ba465591",
+      "summary": "作者Tahir系统对比OpenClaw的四种部署路径：本地裸机（隐私最高但维护成本大）、Docker容器（权限控制精细、安全风险更低）、VPS云服务器（7×24小时稳定运行、月费$10-20）和托管服务（零运维、月费$20-60）。文章从隐私保护、安全风险、可用时间、成本四个维度构建完整评估矩阵，核心洞察是「赋予AI代理全部权限」与「保障安全边界」之间的本质张力，帮助开发者和企业团队根据实际需求选择最适合的OpenClaw运行方案。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署指南",
+        "Docker",
+        "VPS",
+        "安全配置"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-04-02",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-4b9e7a31",
       "title": "InfoQ OpenClaw中国行北京站企业实录",
       "url": "https://www.infoq.cn/article/DqE30rlz0ZXXrBJjjIMf",
