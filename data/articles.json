@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-cea7c451",
+      "title": "OpenClaw进军零售：古茗和银泰的落地实战",
+      "url": "https://www.qbitai.com/2026/04/402965.html",
+      "summary": "古茗奶茶和银泰百货率先部署OpenClaw，员工可用自然语言跨系统查询运营数据，彻底改变了人工登录多平台的工作方式。文章同时揭示了企业落地中API成本超支、权限失控等真实挑战，为后来者提供宝贵参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "零售",
+        "古茗",
+        "运营自动化"
+      ],
+      "source": "量子位",
+      "datePublished": "2026-04-18",
+      "language": "zh",
+      "image": ""
+    },
+    {
+      "id": "art-e0fe1ea7",
+      "title": "30分钟配置33个OpenClaw自动化赚钱工作流",
+      "url": "https://medium.com/@rentierdigital/33-openclaw-automations-you-can-set-up-in-30-minutes-that-start-making-you-money-tonight-f8c3b8a402f1",
+      "summary": "作者整理了33个可在30分钟内完成配置的OpenClaw自动化方案，覆盖内容创作、竞品监控、客户开发和DevOps等场景，每个方案都附有明确的变现路径，帮助个人和中小企业用AI自动化创造被动收入。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "自动化",
+        "收益变现",
+        "AI Agent",
+        "工作流"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-01",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-6e65340c",
+      "title": "OpenClaw架构深度解析：技能、集成与企业落地场景",
+      "url": "https://medium.com/@yugank.aman/openclaw-architecture-skills-capabilities-integrations-use-cases-a-deep-dive-22ebf9d46ad5",
+      "summary": "深度剖析OpenClaw三层架构设计——基础工具层、高级能力层与53个领域技能层，详解「技能不授权限」的安全机制。文章进一步介绍了GitHub监控、合规报告等企业级落地实践，帮助团队将OpenClaw作为长期运行的自动化基础设施。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "架构设计",
+        "技能系统",
+        "企业集成",
+        "安全机制"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-07",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-e3c9b7d5",
       "title": "OpenClaw 2026.4.5多模态与记忆系统里程碑升级",
       "url": "https://www.scensmart.com/news/in-depth-analysis-of-openclaw-2026-4-5/",
