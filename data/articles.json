@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-b2a61d93",
+      "title": "OpenClaw自托管实践：2026企业自动化重塑",
+      "url": "https://medium.com/@kanerika/openclaw-how-a-self-hosted-ai-agent-changed-automation-in-2026-6ba728345d53",
+      "summary": "Kanerika团队详解OpenClaw自托管部署如何重塑企业自动化格局：覆盖邮件日历管理、网络调研、表单填写、构建发布监控及智能家居控制等高频场景，彻底消除传统工作流中的人工复制粘贴。文章同时指出安全漏洞风险，为计划落地的企业提供兼顾效率与安全的务实参考。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自托管部署",
+        "企业自动化",
+        "AI Agent"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-11",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-7c4d8f05",
+      "title": "五天实战：用OpenClaw构建自动情报流水线",
+      "url": "https://medium.com/@neonmaxima/i-spent-five-days-with-openclaw-trying-to-build-real-workflows-9d8a475aa7f2",
+      "summary": "作者历时5天逐步搭建OpenClaw自动化工作流：第1天完成基础数据抓取报告，第3天实现跨平台趋势交叉比对，第5天产出可监控Reddit产品口碑并自动推送每日摘要的生产级流水线。文章总结出「把AI指令视为协商而非命令」的核心心得，对需要构建持续情报监控系统的团队极具参考价值。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "自动化工作流",
+        "数据采集",
+        "舆情监控"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-25",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-3f9b2a1e",
+      "title": "母婴电商用OpenClaw低成本扛住双11洪峰",
+      "url": "https://cloud.tencent.com/developer/article/2636255",
+      "summary": "一家月销500万元的母婴电商将OpenClaw部署在腾讯云轻量服务器上，5分钟完成全系统上线，双11高峰期零停机并轻松处理每日2000+工单，运营人力成本直降50%。文章完整记录了从选型到上线的落地过程，为同类中小电商提供可复用的低成本AI客服模板。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "电商客服",
+        "企业落地",
+        "腾讯云",
+        "双十一"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": ""
+    },
+    {
       "id": "art-cea7c451",
       "title": "OpenClaw进军零售：古茗和银泰的落地实战",
       "url": "https://www.qbitai.com/2026/04/402965.html",
