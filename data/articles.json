@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-3494a3ed",
+      "title": "OpenClaw企业级深度解析：主动型AI代理架构与工作流",
+      "url": "https://medium.com/@chetankerhalkar/openclaw-deep-dive-2026-how-a-proactive-ai-agent-actually-works-architecture-workflows-10a8f8f0e758",
+      "summary": "深度剖析OpenClaw「主动型AI代理」架构：以Gateway为控制平面连接消息渠道、工具与代理运行时，通过调度任务、Webhook和集成让AI主动感知环境并自主执行。企业落地场景包括：DevOps简报代理自动扫描日志与部署记录、知识库构建器持续索引内部文档、仪表盘自动化提取内部指标、配置健康监控检测过期凭证。文章强调将技能视为「浏览器扩展+npm包」并提供沙箱隔离和安全审计命令，为企业团队构建可信任的主动式OpenClaw生产系统提供全面架构参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业架构",
+        "DevOps自动化",
+        "知识库",
+        "主动AI代理"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-11",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-abfe2b88",
+      "title": "7个OpenClaw真实落地案例：从原型到生产全路径",
+      "url": "https://redwerk.com/blog/openclaw-use-cases/",
+      "summary": "Redwerk整理7个真实团队将OpenClaw从原型推进至生产环境的案例：AI客服代理独立解决60-70%入站咨询，销售外联自动完成线索研究与个性化消息并对接CRM，数据提取流水线处理多源非结构化内容，AI代码审查与QA测试大幅节省重复劳动，多步骤工作流跨工具编排复杂任务。文章核心结论是「demo与产品的差距在于智能体周边的一切」——RAG管道、权限模型、错误处理与可观测性基础设施共同决定OpenClaw能否在企业生产环境中稳健运行。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产落地",
+        "客服自动化",
+        "销售自动化",
+        "企业案例"
+      ],
+      "source": "Redwerk",
+      "datePublished": "2026-04-23",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-59fafc44",
+      "title": "OpenClaw+n8n低代码打造企业级AI客服：响应8分钟→15秒",
+      "url": "https://cloud.tencent.com/developer/article/2634738",
+      "summary": "电商企业通过OpenClaw结合n8n低代码平台搭建企业级AI客服系统，将客服响应时间从8分钟压缩至15秒，自动处理82%的重复咨询，每日稳定处理200+条问询。腾讯云开发者社区详解OpenClaw与n8n 600+原生连接器的组合方案——n8n通过可视化节点处理物流追踪、知识库检索和库存查询等API集成，OpenClaw负责意图识别与多轮对话，两者协同实现从「只会聊天」到「落地执行」的跨越，是中国中小电商低成本构建企业AI客服的最佳实践模板。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "n8n",
+        "企业客服",
+        "电商自动化",
+        "低代码"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-06",
+      "language": "zh",
+      "image": ""
+    },
+    {
       "id": "art-b2a61d93",
       "title": "OpenClaw自托管实践：2026企业自动化重塑",
       "url": "https://medium.com/@kanerika/openclaw-how-a-self-hosted-ai-agent-changed-automation-in-2026-6ba728345d53",
