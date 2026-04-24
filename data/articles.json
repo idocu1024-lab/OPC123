@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-d8405dcb",
+      "title": "OpenClaw狂潮：中国科技巨头集体入局",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-11/doc-inhqqqfu2746466.shtml",
+      "summary": "新浪财经报道OpenClaw在中国科技圈引发「淘金热」，腾讯推出WorkBuddy接入企业微信、字节跳动推出云原生ArkClaw、阿里巴巴通过百宝盒平台集成，百度、美团、京东、小米、华为相继宣布部署。文章还原OpenClaw从260万GitHub星到国内大厂集体跟进的全景图：各家将其定位为人机交互新型操作系统级入口，争夺AI代理时代的生态控制权。同时安全专家指出本地权限赋予带来的数据泄露与系统访问风险，为后来者提供真实参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国科技圈",
+        "腾讯",
+        "字节跳动",
+        "企业落地"
+      ],
+      "source": "新浪财经",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": ""
+    },
+    {
+      "id": "art-b523c3a4",
+      "title": "中欧商学院深析中国OpenClaw企业浪潮",
+      "url": "https://www.ceibs.edu/new-papers-columns/28746",
+      "summary": "中欧国际工商学院（CEIBS）深度解析OpenClaw在中国的爆发轨迹：从「自动化初级员工」定位出发，探讨其如何打破云端垄断、实现本地数据主权并推动AI从被动响应转向主动执行。文章梳理中国科技生态围绕OpenClaw形成的竞争格局——腾讯QClaw预置5000+技能、各大厂争相切入微信生态、Moonshot AI和MiniMax模型API调用量跻身全球前十。来自顶级商学院的战略视角同时剖析安全漏洞与企业采用障碍，为决策者提供客观的部署参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中欧商学院",
+        "中国AI生态",
+        "企业战略",
+        "CEIBS"
+      ],
+      "source": "CEIBS中欧国际工商学院",
+      "datePublished": "2026-04-01",
+      "language": "en",
+      "image": "https://www.ceibs.edu/sites/portal.prod1.dpmgr.ceibs.edu/files/VCG211628404962.jpg"
+    },
+    {
+      "id": "art-6237f9fd",
+      "title": "OpenClaw全球企业生产力采用实测报告",
+      "url": "https://insights.reinventing.ai/articles/openclaw-real-world-productivity-adoption-2026-02-17",
+      "summary": "Reinventing AI分析OpenClaw从72小时突破6万GitHub星到企业工作流真实落地的全过程：开发团队通过隔夜编程任务释放架构决策精力，销售团队自动化跨系统周报节省5-10小时，10人团队可实现约24万美元年度效益。文章还原中国「超级应用集成」、北美「隐私优先本地部署」和欧洲「GDPR合规」三大地区差异化采用模式，并客观呈现Palo Alto Networks和Cisco发现的真实安全漏洞，帮助企业在效率与风险之间做出理性决策。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产力提升",
+        "企业采用",
+        "全球部署",
+        "实战数据"
+      ],
+      "source": "Reinventing AI",
+      "datePublished": "2026-02-17",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-3494a3ed",
       "title": "OpenClaw企业级深度解析：主动型AI代理架构与工作流",
       "url": "https://medium.com/@chetankerhalkar/openclaw-deep-dive-2026-how-a-proactive-ai-agent-actually-works-architecture-workflows-10a8f8f0e758",
