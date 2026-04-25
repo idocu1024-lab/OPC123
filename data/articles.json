@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-518440e8",
+      "title": "金融业落地OpenClaw的合规平衡术",
+      "url": "https://www.51ima.com/news/12293.html",
+      "summary": "得助智能（中关村科金）发布基于OpenClaw的企业级方案PowerClaw在金融业的落地实践：通过私有化部署保障核心数据「不出域」，内置「智能问数」等行业Skills，基于机构内部数据生成分析报表。文章还原金融机构如何在数据安全、合规审计、可解释性三者之间寻找平衡——AI严格遵循预设流程，每次决策被记录追溯，将通用执行能力转化为「懂业务、守规矩、可问责」的数字员工，已在中原银行、中电建财务公司等真实金融客户落地。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "金融业落地",
+        "PowerClaw",
+        "中关村科金",
+        "合规审计"
+      ],
+      "source": "得助智能",
+      "datePublished": "2026-03-05",
+      "language": "zh",
+      "image": "https://www.51ima.com/storage/20260305/69a9423db1845.jpg"
+    },
+    {
+      "id": "art-9c37280e",
+      "title": "国家超算OpenClaw接入飞书企业微信",
+      "url": "https://t.qianzhan.com/caijing/detail/260309-0cdf7aa0.html",
+      "summary": "前瞻网报道国家超算互联网OpenClaw服务正式接入飞书与企业微信：用户可根据任务规模灵活选择多种模型API，平台预置MinMax-M2.1、MinMax-M5.2、Qwen-235B等大模型，提供高性能低成本的推理能力。此次集成让企业用户能在熟悉的办公工具中直接调用超算资源——从内部沟通工作台一键唤起OpenClaw智能体执行复杂任务。这是OpenClaw与中国国家级算力基础设施深度融合的标志性案例，为国内企业落地提供了官方算力通道。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "国家超算互联网",
+        "飞书集成",
+        "企业微信",
+        "中国落地"
+      ],
+      "source": "前瞻网",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://img3.qianzhan.com/news/202404/11/20240411-6f79fcd27a7d4a82_760x5000.jpg"
+    },
+    {
+      "id": "art-67dcc40c",
+      "title": "组织级OpenClaw部署的免Fork之道",
+      "url": "https://c3.unu.edu/blog/from-laptop-to-organization-deploying-openclaw-at-scale-without-forking-it",
+      "summary": "联合国大学校园计算中心（UNU C3）分享将OpenClaw从笔记本部署到组织级规模的工程实践：通过Kubernetes沙箱包装OpenClaw，叠加SSO身份认证、工作区隔离、文件管理等企业能力，同时保持底层工具不被修改。该架构让组织不必维护Fork分支即可在团队间安全部署智能体——能力随用户添加API密钥渐进解锁，工作区生命周期自动管理，安全性通过自动化测试而非文档说明强制保障。约450美元/月的基础设施成本展示了真实可落地的预算参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "组织级部署",
+        "Kubernetes",
+        "SSO认证",
+        "工作区隔离"
+      ],
+      "source": "UNU C3",
+      "datePublished": "2026-04-24",
+      "language": "en",
+      "image": "https://c3.unu.edu/wp-content/uploads/2026/04/82b66a42-97ce-447f-8f03-2108b8c64c32.webp"
+    },
+    {
       "id": "art-d8405dcb",
       "title": "OpenClaw狂潮：中国科技巨头集体入局",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-11/doc-inhqqqfu2746466.shtml",
