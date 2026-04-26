@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-02d4ab77",
+      "title": "中国券商落地OpenClaw的安全实战",
+      "url": "https://www.chnfund.com/article/ARf5292692-715e-1b6d-39e0-3a1ffd8d92b0",
+      "summary": "中国基金报报道多家券商在合规框架内积极布局类OpenClaw应用：国金资管用AI Agent自动抓取可转债赎回公告、整理地缘冲突情报，每天为研究员节省0.5-1小时；国元证券自研「旗鱼」应用聚焦运维和办公自动化；广发证券在独立网段安全沙箱中启动AI Agent探索；方正、中信、东吴证券等发布专题研报介绍OpenClaw部署与金融场景应用，行业在拥抱创新的同时保持审慎，加强数据安全与合规控制。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "券商落地",
+        "国金资管",
+        "国元证券",
+        "金融合规"
+      ],
+      "source": "中国基金报",
+      "datePublished": "2026-03-14",
+      "language": "zh",
+      "image": "https://cdn.chnfund.com/upload/article/wechat/2026/03/14/fa2a8132964467179432e668aa1cdeb45dbe51a5.jpeg"
+    },
+    {
+      "id": "art-ccf08eed",
+      "title": "OpenClaw四个真实场景的深度体验",
+      "url": "https://cloud.tencent.com/developer/article/2630341",
+      "summary": "一位AI创业者记录用OpenClaw第一天的真实体验：把日程提醒、研发进度记录、每日新闻摘要生成、社媒内容自动同步四个高频场景全部交给智能体，用对话指令替代频繁的应用切换，彻底告别传统效率工具的工作流摩擦。文章用具体指令、截图和效果数据展示OpenClaw如何在个人生产力场景中真正「上岗」，对刚接触OpenClaw的用户极具参考价值。",
+      "category": "schedule-tasks",
+      "tags": [
+        "OpenClaw",
+        "真实场景",
+        "效率工具",
+        "AI创业者",
+        "对话式工作流"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-02-18",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/11806777/ce1bc468012a090a0317472d1fde9faf.webp"
+    },
+    {
+      "id": "art-9f560f7b",
+      "title": "阿里云一键部署OpenClaw保姆指南",
+      "url": "https://developer.aliyun.com/article/1716700",
+      "summary": "阿里云开发者社区发布的OpenClaw保姆级部署教程，覆盖阿里云ECS、Windows 11、macOS、Linux四种环境的完整部署步骤，并集成阿里云百炼Coding Plan免费API来激活OpenClaw的大模型能力。文章给出每一步的命令、避坑要点和实战场景应用，还附上安全运维建议，让读者在1-2小时内就能搭起一个可对外提供服务的专属AI自动化引擎。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "阿里云部署",
+        "百炼API",
+        "保姆级教程",
+        "环境配置"
+      ],
+      "source": "阿里云开发者社区",
+      "datePublished": "2026-03-14",
+      "language": "zh",
+      "image": "https://ucc.alicdn.com/pic/developer-ecology/iidbzrbfmouzu_4b1acea5d606485ab5d51e99623ecee7.png?x-oss-process=image/resize,w_1400/format,webp"
+    },
+    {
       "id": "art-518440e8",
       "title": "金融业落地OpenClaw的合规平衡术",
       "url": "https://www.51ima.com/news/12293.html",
