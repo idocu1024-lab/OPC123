@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-1d8e138e",
+      "title": "银行落地OpenClaw的合规实战指南",
+      "url": "https://gitcode.csdn.net/69cddb550a2f6a37c59c6fbe.html",
+      "summary": "面向中国商业银行的OpenClaw落地实践框架：以「数据不出域、操作可追溯、风险零容忍」三大合规底线为核心，对照JR/T 0171-2020 个人金融信息保护与 JR/T 0223-2021 金融数据安全标准，构建「人员接入—权限管控—技能供应链—全链路审计」四道防线。文章提出从非敏感场景试点、到受控执行、再到核心系统辅助的三阶段推进路径，给出私有化部署、最小权限、操作留痕等具体动作清单，是银行业团队评估OpenClaw落地路径的参考蓝图。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "银行落地",
+        "金融合规",
+        "私有化部署",
+        "最小权限"
+      ],
+      "source": "AtomGit开源社区",
+      "datePublished": "2026-04-02",
+      "language": "zh",
+      "image": "https://devpress.csdnimg.cn/8bc8dd1a2bc24184a16a142654c4a49e.png"
+    },
+    {
+      "id": "art-64561ab3",
+      "title": "亚马逊云科技企业级OpenClaw安全架构",
+      "url": "https://aws.amazon.com/cn/blogs/china/enterprise-openclaw-security-deploy-architecture-guide/",
+      "summary": "亚马逊云科技中国博客发布的企业级OpenClaw安全部署架构指南，由李阳和王旭东两位架构师撰写。文章给出七层防护模型：VPC隔离、IAM身份与权限、KMS数据加密、WAF网络边界、Bedrock Guardrails应用层防护、GuardDuty威胁检测，以及Bedrock AgentCore提供的沙箱执行、统一网关与上下文授权。围绕提示注入防御、技能供应链管控、密钥自动轮换、EKS+Kata多租户隔离、防数据外泄等真实落地难题，给出可直接套用的企业部署蓝本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "AWS",
+        "企业部署",
+        "安全架构",
+        "Bedrock AgentCore"
+      ],
+      "source": "亚马逊云科技中国博客",
+      "datePublished": "2026-04-23",
+      "language": "zh",
+      "image": "https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/04/22/enterprise-openclaw-security-deploy-architecture-guide-1.png"
+    },
+    {
+      "id": "art-540e48ec",
+      "title": "36氪盘点15个真正有效的OpenClaw场景",
+      "url": "https://www.36kr.com/p/3784402804661512",
+      "summary": "36氪转载「数据驱动智能」公众号的深度盘点：在2026年OpenClaw用户实测中，哪15类场景真正跑得通。包括清晨简报聚合日历天气与RSS、邮件智能分级与自动退订、Ollama本地处理敏感文档、SMS触发GitHub PR的开发流、Discord多智能体内容生产线、Google Calendar+Linear每日优先级、Philips Hue+可穿戴数据的智能家居联动、WHOOP健康数据交叉分析、加密货币行情与止损执行、家庭群消息自动转待办、Chrome DevTools自动登机办表、SEO关键词缺口挖掘，以及Clawe/Inky/Pixel/Scout多智能体团队协作。每个案例都标注真实工具栈与触发条件。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "应用案例",
+        "多智能体",
+        "工作流自动化",
+        "实战盘点"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-04-27",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260427/v2_7eceecaf8ea948a59843daa7317d2b55@000000_oswg258484oswg875oswg420_img_000"
+    },
+    {
       "id": "art-02d4ab77",
       "title": "中国券商落地OpenClaw的安全实战",
       "url": "https://www.chnfund.com/article/ARf5292692-715e-1b6d-39e0-3a1ffd8d92b0",
