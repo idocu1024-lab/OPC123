@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-62a6969c",
+      "title": "财联社盘点7家A股上市公司落地OpenClaw",
+      "url": "https://www.cls.cn/detail/2306947",
+      "summary": "财联社记者付静的调研报道：被业界戏称为「龙虾」的OpenClaw引爆中国科技圈，深圳龙岗区出台「OpenClaw支持十条」、单项目最高补贴200万元，腾讯云、阿里云、华为云同步提供免费部署服务。文章给出7家A股上市公司的真实落地清单——万兴科技推出10余个创意生产技能、优刻得首批提供云端部署、顺网科技把OpenClaw整合进AI云电脑、中科创达在MagicCube与AIBOX端侧落地、拓维信息完成鸿蒙生态适配、瑞芯微提供芯片级支持、北信源完成产品集成；同时援引工信部对配置漏洞的官方安全提示。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "上市公司",
+        "中国落地",
+        "龙岗区补贴",
+        "云厂商部署"
+      ],
+      "source": "财联社",
+      "datePublished": "2026-03-09",
+      "language": "zh",
+      "image": "https://www.cls.cn/favicon.ico"
+    },
+    {
+      "id": "art-9ded613e",
+      "title": "至顶AI实验室OpenClaw全网最详部署指南",
+      "url": "https://cloud.tencent.com/developer/article/2633951",
+      "summary": "数智转型架构师在腾讯云开发者社区发布的OpenClaw完整部署实战，作者亲测有效。文章覆盖Linux、macOS、Windows 11（WSL2）三平台，从Node.js 22+环境检查、npm与Git配置、OpenClaw安装，到前台与后台两种运行模式、浏览器自动化集成、钉钉与飞书企业IM对接，再到代码评审、任务管理、智能家居控制、网页自动化、邮件管理等10类应用场景；最后给出权限、SSH、端口冲突、版本不兼容等高频报错的排查方案，是国内团队搭建OpenClaw的一站式手册。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署指南",
+        "腾讯云",
+        "WSL2",
+        "飞书钉钉"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-02-05",
+      "language": "zh",
+      "image": "https://cloud.tencent.com/favicon.ico"
+    },
+    {
+      "id": "art-a2b11e89",
+      "title": "Java技术栈：OpenClaw的30个真实落地场景",
+      "url": "https://www.cnblogs.com/javastack/p/19726545",
+      "summary": "Java技术栈R哥从「Awesome OpenClaw Use Cases」开源项目中精选30个真实案例，按6大类组织：社交媒体（Reddit、YouTube、Twitter内容聚合）、创意工作流（多智能体内容生产管线、独立游戏开发）、DevOps与基础设施（流程编排、自愈系统）、生产力工具（语音助理、邮件管理、项目跟踪）、研究与学习（财务跟踪、知识库构建）、金融（行情预测、自动化交易）。每个案例都给出可直接复用的部署思路，文末同时提示了OpenClaw自动化背后的安全与隐私风险。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "落地场景",
+        "Awesome清单",
+        "多智能体",
+        "实战案例"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-16",
+      "language": "zh",
+      "image": "https://www.cnblogs.com/favicon.ico"
+    },
+    {
       "id": "art-1d8e138e",
       "title": "银行落地OpenClaw的合规实战指南",
       "url": "https://gitcode.csdn.net/69cddb550a2f6a37c59c6fbe.html",
