@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-b8bdd6eb",
+      "title": "博客园老纪：OpenClaw+6Agent半个月实战",
+      "url": "https://www.cnblogs.com/OBCE666/p/19703322",
+      "summary": "博客园「老纪的技术唠嗑局」基于OpenClaw（43万行TypeScript）落地的真实工程实践：作者用1个编排Agent「Zoe」+5个专业Agent（AI情报中枢、交易分析、宏观经济、内容策略、生活管家）在自家Mac上通过launchctl连续运转半个月。文章公开了五层分层记忆系统、三态通信协议、Context Engineering三大核心工程设计，并列出真实技术栈：GPT-5.4/K2.5/Qwen3.5+/Ollama做模型、AKShare与TuShare Pro拉行情、Playwright抓网页、Discord做通知、Task Watcher监控、52条cron与118个Skill驱动，是国内开发者把OpenClaw从「聊天玩具」推到「自主干活」的稀缺一手记录。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "多Agent",
+        "中国落地",
+        "工程实践",
+        "Context Engineering"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://assets.cnblogs.com/logo.svg"
+    },
+    {
+      "id": "art-13b27de4",
+      "title": "极道：OpenClaw自动化12种Reddit实战",
+      "url": "https://www.jdon.com/90923-openclaw-automation-12-real-world-cases.html",
+      "summary": "极道（Jdon）汇总Reddit官方OpenClaw社区12个真实落地案例：LinkedIn潜客自动挖掘、Airbnb房东客服自动化、社交媒体多平台运营、个人财务异常监控、A股与美股盯盘分析、菜谱推荐、软件开发助理、内容创作流水线等。文章给出每个案例的实现路径、API成本控制与实际商业回报，并指出OpenClaw已从「试验玩具」演进为可持续产生现金流的生产力工具，对想找具体场景上手的国内团队有直接借鉴价值。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "自动化",
+        "Reddit案例",
+        "实战合集",
+        "ROI"
+      ],
+      "source": "极道",
+      "datePublished": "2026-03-13",
+      "language": "zh",
+      "image": "https://www.jdon.com/simgs/jdon100.png"
+    },
+    {
+      "id": "art-d22c31a3",
+      "title": "GeekyGadgets：30分钟搭OpenClaw多智能体系统",
+      "url": "https://www.geeky-gadgets.com/openclaw-setup-guide-2026/",
+      "summary": "Geeky Gadgets发布的OpenClaw自主多智能体系统26分钟实操指南：从硬件选型（旧笔记本、迷你主机、VPS三档方案）讲到本地模型与云端LLM接入，再到通过Markdown文件定制每个Agent的角色、记忆边界与权限。教程同时演示Telegram与Discord通信集成、多Agent分工协作、安全最佳实践（凭据隔离、审计日志、沙箱执行），让读者能在半小时内跑出一个真正可干活的OpenClaw系统。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署教程",
+        "多智能体",
+        "Telegram",
+        "Discord"
+      ],
+      "source": "Geeky Gadgets",
+      "datePublished": "2026-04-29",
+      "language": "en",
+      "image": "https://www.geeky-gadgets.com/wp-content/uploads/2026/04/openclaw-mission-control.webp"
+    },
+    {
       "id": "art-62a6969c",
       "title": "财联社盘点7家A股上市公司落地OpenClaw",
       "url": "https://www.cls.cn/detail/2306947",
