@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-a9719991",
+      "title": "36氪：13家中国大厂抢着养OpenClaw",
+      "url": "https://36kr.com/p/3715653109200263",
+      "summary": "36氪盘点2026年3月中国13家科技大厂的OpenClaw落地动作：腾讯推出WorkBuddy与企业微信版QClaw，字节火山引擎上线云端SaaS版ArkClaw兼容豆包Seed-2.0与Kimi2.5，阿里集团版HiClaw与个人版CoPaw双线齐发，百度移动端OpenClaw联手「红指头Operator」，小米miclaw主打手机侧自动化，美团、京东、谷歌Workspace CLI等也相继跟进。文章用一张产品对照表把各家「龙虾」的发布时间、定位与差异化策略全部列清，是观察中国互联网巨头如何把OpenClaw落地到真实企业产品线最清晰的一份样本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国大厂",
+        "腾讯",
+        "字节跳动",
+        "企业落地"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://36kr.com/favicon.ico"
+    },
+    {
+      "id": "art-a2a389a6",
+      "title": "东方财富：OpenClaw八大行业落地实操全攻略",
+      "url": "https://caifuhao.eastmoney.com/news/20260304140252194347580",
+      "summary": "东方财富财富号发布的OpenClaw行业适配与落地实操指南，按落地难度由低到高梳理八大场景：内容创作与社交媒体、独立创业与自由职业、电商运营、软件开发与IT运维、行政自动化、金融与投资管理、法税咨询服务、教育培训。每个行业给出具体技能清单、Skill编排路径与常见踩坑点，并明确指出OpenClaw不适合纯线下、需要大量人工判断或情感沟通的一次性场景，对国内中小企业评估「OpenClaw能不能用、用在哪儿」非常有参考价值。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "行业落地",
+        "中国企业",
+        "实操指南",
+        "8大场景"
+      ],
+      "source": "东方财富",
+      "datePublished": "2026-03-04",
+      "language": "zh",
+      "image": "https://caifuhao.eastmoney.com/favicon.ico"
+    },
+    {
+      "id": "art-04c3eb3a",
+      "title": "AIMultiple：OpenClaw落地用例与安全实战",
+      "url": "https://aimultiple.com/moltbot",
+      "summary": "AIMultiple发布的OpenClaw（前身Moltbot/Clawdbot）2026年用例与安全实战分析：聚焦四类真实落地场景——通过Telegram/WhatsApp远程操控本地系统的文件管理与脚本执行、基于cron与心跳监控的定时自动化、邮件管理和内容发布等委派工作流、以及借助Cloudflare Workers的事件驱动无服务器部署。文章同时盘点暴露网关、提示注入、模糊命令解释等核心安全风险，并给出企业级缓解策略，是英文圈最系统的OpenClaw落地+安全双视角参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "用例",
+        "安全",
+        "Cloudflare",
+        "企业部署"
+      ],
+      "source": "AIMultiple",
+      "datePublished": "2026-04-16",
+      "language": "en",
+      "image": "https://aimultiple.com/favicon.ico"
+    },
+    {
       "id": "art-b8bdd6eb",
       "title": "博客园老纪：OpenClaw+6Agent半个月实战",
       "url": "https://www.cnblogs.com/OBCE666/p/19703322",
