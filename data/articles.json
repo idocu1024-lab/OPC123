@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-2e250cef",
+      "title": "腾讯新闻：OpenClaw超级管家8大场景测评",
+      "url": "https://news.qq.com/rain/a/20260207A02L6000",
+      "summary": "腾讯新闻发布的OpenClaw实战深度测评：在日程管理、文件整理、资讯推送、社交媒体自动发布、智能家居控制、交易投资盯盘、复盘系统、产品测试自动化8个真实应用场景中，OpenClaw均展现出可观的执行力，多数场景实现2倍以上效率提升。文章同时指出权限过高带来的潜在安全隐患，给出隔离措施与权限管控建议，是中国用户视角下OpenClaw能否真正「上岗」的一手实测样本。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "8大场景",
+        "深度测评",
+        "中国落地",
+        "效率提升"
+      ],
+      "source": "腾讯新闻",
+      "datePublished": "2026-02-07",
+      "language": "zh",
+      "image": "http://inews.gtimg.com/newsapp_ls/0/13801174710_200200/0"
+    },
+    {
+      "id": "art-040c5525",
+      "title": "博客园Johny-Zhao：OpenClaw 10案例部署教程",
+      "url": "https://www.cnblogs.com/Johny-zhao/p/19665502",
+      "summary": "博客园作者Johny_Zhao发布的OpenClaw完整部署实战教程：覆盖阿里云一键部署（约5分钟完成，适合新手）与本地部署（macOS/Windows/Linux全平台）两种路径，并通过10个真实案例演示OpenClaw的自动化能力——多浏览器编排、企业报表生成、论文综述、智能运维等。文章同时给出权限管理、日志排错与生产运维建议，是中文圈最具操作性的OpenClaw上手指南之一。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署教程",
+        "阿里云",
+        "10个案例",
+        "中国实战"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://www.cnblogs.com/favicon.ico"
+    },
+    {
+      "id": "art-0fb73c11",
+      "title": "Claw Messenger：OpenClaw 2026全栈部署指南",
+      "url": "https://www.clawmessenger.com/blog/openclaw-guide",
+      "summary": "Claw Messenger发布的OpenClaw 2026全栈实战指南，围绕247K+ Star的OpenClaw开源框架展开：覆盖npm、Docker、云厂商三种安装路径，深入讲解ClawHub技能体系与树莓派等异构硬件部署。重点拆解WhatsApp、Telegram、Discord、Signal、iMessage等消息通道的原生与第三方接入方式，并给出客户服务自动化、智能家居控制、生产力工具、开发者工作流等真实落地场景，同时强调ClawHub技能审计与Gateway安全暴露等企业级风险防范。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Docker",
+        "iMessage",
+        "ClawHub",
+        "消息通道"
+      ],
+      "source": "Claw Messenger",
+      "datePublished": "2026-04-02",
+      "language": "en",
+      "image": "https://www.clawmessenger.com/favicon.ico"
+    },
+    {
       "id": "art-a9719991",
       "title": "36氪：13家中国大厂抢着养OpenClaw",
       "url": "https://36kr.com/p/3715653109200263",
