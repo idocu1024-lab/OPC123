@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-33df0775",
+      "title": "腾讯云jack.yang：OpenClaw全景实战指南",
+      "url": "https://cloud.tencent.com/developer/article/2639687",
+      "summary": "腾讯云开发者社区作者jack.yang发布的OpenClaw企业级实战长文，系统拆解技能系统、自动化工作流与浏览器自动化原理，并以电商价格监控+自动下单、RSS改写+多平台分发、Apple Health→Google Sheets同步、工时系统自动填报等真实落地案例为线索，演示从个人日常自动化升级到企业级多租户隔离、高可用集群、分布式调度与安全审计的完整链路，是中文圈罕见同时覆盖小白与架构师的OpenClaw全景指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业级",
+        "智能体架构",
+        "浏览器自动化",
+        "中国实战"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-17",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/fe57156c041868494bee0e56993daf68.jpg"
+    },
+    {
+      "id": "art-05645c5c",
+      "title": "数商云：企业级OpenClaw GPU调度落地",
+      "url": "https://caifuhao.eastmoney.com/news/20260423134608185222830",
+      "summary": "数商云在东方财富财富号发布的企业级OpenClaw部署方案，聚焦中大型企业规模化落地的核心痛点：GPU算力调度冲突、任务并发抢占与资源利用率低。文章给出集群架构设计、调度策略与全链路性能优化的最佳实践，并基于30+中大型企业落地验证总结经验，为正在评估OpenClaw能否在生产环境承载多团队并发工作流的中国企业提供参考样本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业部署",
+        "GPU调度",
+        "性能优化",
+        "中国落地"
+      ],
+      "source": "东方财富网",
+      "datePublished": "2026-04-23",
+      "language": "zh",
+      "image": "https://gbres.dfcfw.com/Files/iimage/20260311/C66D366BFABAB144FA75D39595F81C87_w500h340.jpg"
+    },
+    {
+      "id": "art-840009e9",
+      "title": "腾讯云喵喵侠：OpenClaw打通飞书机器人",
+      "url": "https://cloud.tencent.com/developer/article/2634132",
+      "summary": "腾讯云开发者作者「喵喵侠」分享的OpenClaw全流程实战：把OpenClaw接入飞书机器人，再串联浏览器自动化能力，让AI智能体在飞书会话里直接接收指令、调用浏览器完成回复邮件、写小红书、整理并发送文件等7×24小时日常事务。教程围绕中国团队最常用的飞书协作场景给出端到端打通步骤，是OpenClaw在国内办公生态落地的典型路径示范。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "飞书机器人",
+        "浏览器自动化",
+        "办公协同",
+        "中国实战"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-04",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/992c445bc59edbb2a45ae8d75475ea50.jpg"
+    },
+    {
       "id": "art-2e250cef",
       "title": "腾讯新闻：OpenClaw超级管家8大场景测评",
       "url": "https://news.qq.com/rain/a/20260207A02L6000",
