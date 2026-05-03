@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-5beb9a97",
+      "title": "Team 400：OpenClaw生产环境运维实战课",
+      "url": "https://team400.ai/blog/2026-02-openclaw-production-enterprise",
+      "summary": "Team 400 工程团队基于多家企业 OpenClaw 部署经验总结的生产实战指南，核心结论是「Demo 跑通要 10 分钟，过安全评审要 10 周」。文章给出从安全基线、补丁策略、可观测性、技能治理到访问控制与备份恢复的完整运维清单，回答「OpenClaw 当业务关键系统跑」需要补齐的工程债。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "安全治理",
+        "企业运维",
+        "可观测性"
+      ],
+      "source": "Team 400 Blog",
+      "datePublished": "2026-02-10",
+      "language": "en",
+      "image": "https://team400.ai/assets/team400-large-b.webp"
+    },
+    {
+      "id": "art-202e7b5a",
+      "title": "七牛云：国产OpenClaw 6款全盘点 企业首选",
+      "url": "https://www.cnblogs.com/qiniushanghai/p/19725021",
+      "summary": "七牛云行业应用团队在博客园发布的 2026 国产 OpenClaw 全景盘点：覆盖月之暗面 KimiClaw、Molili Claw、腾讯 QClaw、LinClaw 等 6 款本土化 Agent 产品，对比它们在国内 IM 渠道（钉钉、飞书、企业微信）接入、国产大模型适配、私有化部署能力上的差异。文章将 LinClaw 标记为「企业首选」——支持 9 大渠道与 MIT 开源协议，对同时使用钉钉与飞书的中国企业最友好。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "国产化",
+        "企业部署",
+        "KimiClaw",
+        "中国落地"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-16",
+      "language": "zh",
+      "image": "https://img2024.cnblogs.com/blog/3674498/202603/3674498-20260316152211793-1246648396.png"
+    },
+    {
+      "id": "art-fc4b5c46",
+      "title": "腾讯云气象学家：OpenClaw撑起单兵开发团队",
+      "url": "https://cloud.tencent.com/developer/article/2646044",
+      "summary": "腾讯云开发者「气象学家」分享的 OpenClaw + Claude Code 双层架构实战：用 OpenClaw 做编排层、Claude Code 做执行层，由一名独立开发者完成单日 94 次代码提交、30 分钟内交付 7 个 PR 的真实成果，并落地到 B2B SaaS 产品的需求拆解、动态 prompt 调整、多 Agent 协作全链路。是国内中小团队把 OpenClaw 从「玩具」推到生产力工具的典型样本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "Claude Code",
+        "AI编程",
+        "单兵团队",
+        "中国实战"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-26",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/yehe-5378352/ff542bfffd6d25ed906c19b5fffa149c.jpg"
+    },
+    {
       "id": "art-33df0775",
       "title": "腾讯云jack.yang：OpenClaw全景实战指南",
       "url": "https://cloud.tencent.com/developer/article/2639687",
