@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-b2296e42",
+      "title": "陈博观察：OpenClaw发展研究报告（2026）",
+      "url": "https://www.100ec.cn/detail--6657360.html",
+      "summary": "网经社发布的《AI「养龙虾」：OpenClaw发展研究报告（2026）》系统梳理 OpenClaw 的全球生态、12 大落地场景与产业变革价值。报告披露真实国内案例：某科技公司将 OpenClaw 部署到行政办公链路后，行政效率提升 400%、人力成本降低 60%，并覆盖邮箱管家、会议安排、出行助理等企业级场景。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "中国落地",
+        "企业案例",
+        "行政自动化",
+        "研究报告"
+      ],
+      "source": "网经社 100EC",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://mp.toutiao.com/mp/agw/article_material/open_image/get?code=NTVmNzVjOGExMTQ2OTI5Yjk5M2MzY2JkYWM5YzEyNjcsMTc3MzEwNTg4NzQzMw=="
+    },
+    {
+      "id": "art-aadec4a4",
+      "title": "腾讯云：OpenClaw Docker容器化部署实战",
+      "url": "https://cloud.tencent.com/developer/article/2634688",
+      "summary": "腾讯云开发者社区发布的 OpenClaw Docker Compose 生产部署完整指南：从环境准备、目录结构、docker-compose.yml 与 config.yaml 配置，到平台启动验证与常见排错全链路覆盖。文章给出可直接复用的生产级配置文件，是国内开发者把 OpenClaw 跑到容器化生产环境的「保姆级」教程。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Docker",
+        "容器化部署",
+        "生产实战",
+        "腾讯云"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-06",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/111c3aff5ec5e7223e0debb2e64acc03.png"
+    },
+    {
+      "id": "art-72dde515",
+      "title": "Rapid Claw：OpenClaw生产部署完整指南",
+      "url": "https://rapidclaw.dev/blog/deploy-openclaw-production-guide",
+      "summary": "Rapid Claw 团队基于真实客户部署经验整理的 OpenClaw 生产环境上线指南，覆盖 VPS 选型、安全加固、Docker 编排、SSL 与域名、首个 Agent 部署等 7 大步骤，给出 60–90 分钟从零到上线的完整路径。文章同时把自托管路线与托管方案做了对比，回答中小团队「自己跑还是用托管」的关键决策点。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "VPS",
+        "自托管",
+        "运维"
+      ],
+      "source": "Rapid Claw Blog",
+      "datePublished": "2026-03-31",
+      "language": "en",
+      "image": "https://rapidclaw.dev/og-default.png"
+    },
+    {
       "id": "art-5beb9a97",
       "title": "Team 400：OpenClaw生产环境运维实战课",
       "url": "https://team400.ai/blog/2026-02-openclaw-production-enterprise",
