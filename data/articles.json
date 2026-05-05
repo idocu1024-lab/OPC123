@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-5ad4dfdf",
+      "title": "网易智企：把OpenClaw换成可靠AI员工的企业实践",
+      "url": "https://www.cnblogs.com/-1688/p/19583427",
+      "summary": "文章对比 OpenClaw 给每个人提供「数字分身」的通用范式，指出企业更需要可控可靠的 AI 员工，并用网易智企在三家中国企业的真实落地佐证：宠物用品零售商把夜间销售拉了起来，香港某保险公司搭起双 AI 客服体系，三花智控把费用报销驳回率从 23.6% 压到 9.2%。文中强调企业级 Agent 必须配套全链路风控、多 Agent 协同与行业 know-how，单纯依赖通用 OpenClaw 反而会暴露生产风险。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国落地",
+        "企业案例",
+        "三花智控",
+        "数字分身"
+      ],
+      "source": "博客园 速递信息",
+      "datePublished": "2026-02-06",
+      "language": "zh",
+      "image": "https://images.cnblogs.com/cnblogs_com/-1688/2456834/o_250206-openclaw-enterprise.jpg"
+    },
+    {
+      "id": "art-9040e368",
+      "title": "AWS中国：OpenClaw电商卖家助手SaaS化落地架构",
+      "url": "https://aws.amazon.com/cn/blogs/china/exploring-openclaw-use-cases-in-ecommerce-platforms/",
+      "summary": "亚马逊云科技中国架构师团队系统拆解 OpenClaw 在电商卖家场景的应用：通过 Markdown 技能扩展、飞书与 WebChat 多渠道嵌入、定时任务主动推送，把卖家助手从单机 PoC 演进到 SaaS 规模部署。该方案让运营人员可直接编写 curl 脚本扩展能力，把功能上线周期从工程排期压缩到分钟级，是国内电商团队评估 OpenClaw 落地的参考蓝本。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "电商",
+        "AWS",
+        "卖家助手",
+        "SaaS部署"
+      ],
+      "source": "亚马逊AWS官方博客",
+      "datePublished": "2026-03-09",
+      "language": "zh",
+      "image": "https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/02/28/exploring-openclaw-use-cases-in-ecommerce-platforms-1.png"
+    },
+    {
+      "id": "art-11db0d8d",
+      "title": "粤海科技君：OpenClaw服务器部署全路线避坑指南",
+      "url": "https://www.cnblogs.com/txycsig/p/19638267",
+      "summary": "博客园作者基于真实交付经验，整理 2026 年 OpenClaw 服务器部署的两条主流路线：腾讯云 Lighthouse 一键预装镜像和源码手动编译，逐步拆解端口 18789 配置、Node.js v22 版本卡点与 Token 注入流程。文章给出常见报错与排错清单，是国内开发者把 OpenClaw 跑到自有云服务器的实战手册。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "Lighthouse",
+        "源码编译",
+        "部署避坑"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-02-25",
+      "language": "zh",
+      "image": "https://img2024.cnblogs.com/blog/3445271/202602/3445271-20260225openclaw-deploy.png"
+    },
+    {
       "id": "art-b2296e42",
       "title": "陈博观察：OpenClaw发展研究报告（2026）",
       "url": "https://www.100ec.cn/detail--6657360.html",
