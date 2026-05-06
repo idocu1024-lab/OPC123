@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-0cf35b8a",
+      "title": "AWS中国：把OpenClaw从个人助手变成客服Agent",
+      "url": "https://aws.amazon.com/cn/blogs/china/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip/",
+      "summary": "亚马逊云科技中国博客系统拆解 OpenClaw 从个人助手转身为面向客户的客服 Agent 时的「信任模型翻转」：会话隔离、Web Widget/WhatsApp/Telegram 多渠道接入、Bedrock Guardrails 安全护栏、Bedrock Knowledge Bases 动态注入领域知识，以及多用户场景下记忆隔离的工程取舍。整套架构基于 AWS ALB+ECS 认证中间层+私有子网 Gateway 分层落地，是国内厂商把 OpenClaw 从内部工具升级到对客交付的参考蓝本。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "AWS",
+        "客服Agent",
+        "信任模型",
+        "知识库注入"
+      ],
+      "source": "亚马逊AWS官方博客",
+      "datePublished": "2026-04-17",
+      "language": "zh",
+      "image": "https://d2908q01vomqb2.cloudfront.net/472b07b9fcf2c2451e8781e944bf5f77cd8457c8/2026/04/15/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip-1.png"
+    },
+    {
+      "id": "art-2386454b",
+      "title": "东方国信：算电协同与OpenClaw双轮驱动的AI算力实践",
+      "url": "https://caifuhao.eastmoney.com/news/20260312200514312373680",
+      "summary": "东方财富财富号披露 A股上市公司东方国信（300166）以「算电协同」叠加 OpenClaw 双轮驱动战略，把自研「龙虾AI」平台部署在呼和浩特智算中心之上。文章拆解其 OpenClaw 落地路径：在面向 B 端的工业互联网与面向 C 端的具身智能场景同步上线 OpenClaw 智能体，借助自有算力把 Skill 调度时延压缩到分钟级，以全链条 AI 算力龙头身份切入金融、政务、能源行业。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "东方国信",
+        "算电协同",
+        "智算中心",
+        "中国上市公司"
+      ],
+      "source": "东方财富网 财富号",
+      "datePublished": "2026-03-12",
+      "language": "zh",
+      "image": "https://emcharts.dfcfw.com/suggest/img/300166.png"
+    },
+    {
+      "id": "art-27dfff1c",
+      "title": "飞书：OpenClaw官方插件上线打通工作数据",
+      "url": "https://www.feishu.cn/content/article/7613711414611463386",
+      "summary": "飞书官网发布 OpenClaw 官方插件上线公告，演示如何让 OpenClaw 智能体以用户身份直接读写飞书消息、文档与日历，把跨系统人工搬运的工作流压缩为对话式调度。文章给出安装、权限授权、版本更新与常见报错排查清单，是国内团队在飞书工作台里落地 OpenClaw 的官方实操指南，配套的 Skill 案例覆盖排期、文档摘要与消息回复三大高频场景。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "飞书",
+        "插件",
+        "工作流",
+        "团队协作"
+      ],
+      "source": "飞书官网",
+      "datePublished": "2026-03-05",
+      "language": "zh",
+      "image": "https://p1-hera.feishucdn.com/tos-cn-i-jbbdkfciu3/ceb596f0f93b43c2875eb82b4748b1f1.PNG~tplv-jbbdkfciu3-png:0:0.png"
+    },
+    {
       "id": "art-5ad4dfdf",
       "title": "网易智企：把OpenClaw换成可靠AI员工的企业实践",
       "url": "https://www.cnblogs.com/-1688/p/19583427",
