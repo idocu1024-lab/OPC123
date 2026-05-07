@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-d5b0a543",
+      "title": "联想百应携手美团：OpenClaw远程部署+NUC一体落地",
+      "url": "https://news.mydrivers.com/1/1108/1108041.htm",
+      "summary": "快科技报道国内首个 OpenClaw 商业化部署服务上线：联想百应与美团合作，用户在美团App搜索「龙虾安装」即可下单，由联想百应认证工程师远程完成 OpenClaw 配置，覆盖全国市场。同时推出原生适配 OpenClaw 的联想百应 NUC 终端，「软件+硬件+服务」三位一体方案支持 3 分钟本地部署，物理隔离保障数据安全，是国产巨头把 OpenClaw 推向小白用户和中小企业的标志性落地。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "联想百应",
+        "美团",
+        "NUC一体机",
+        "中国企业落地"
+      ],
+      "source": "快科技",
+      "datePublished": "2026-03-09",
+      "language": "zh",
+      "image": "https://img1.mydrivers.com/img/20260309/dc4dd6170d514983a258b5e66ae0f17a.png"
+    },
+    {
+      "id": "art-86ea8ad9",
+      "title": "腾讯云Lighthouse+1Panel：1分钱跑通OpenClaw私有化部署",
+      "url": "https://cloud.tencent.com/developer/article/2634691",
+      "summary": "腾讯云开发者社区作者 gavin1024 实测：用腾讯云 Lighthouse 轻量服务器（活动价 1 分钱）+ 1Panel 全图形界面，把 OpenClaw 私有化部署压缩到 10 分钟。教程覆盖 2 核 CPU 选型、1Panel 安装、容器端口映射（18789）、对接 DeepSeek/百度文心后端，以及依赖安装与网络故障排查清单，让没有 Linux 基础的小白也能跑通自己的 OpenClaw 实例。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "1Panel",
+        "私有化部署",
+        "Lighthouse"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-06",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/111c3aff5ec5e7223e0debb2e64acc03.png"
+    },
+    {
+      "id": "art-1e246d57",
+      "title": "OpenClaw三大企业实战：网页抓取、票据核账、竞品监控",
+      "url": "https://medium.com/@simon.elakra/openclaw-3-practical-use-cases-with-step-by-step-implementation-e9e750f1e87d",
+      "summary": "Medium 作者 SM El 用三个工程化案例拆解 OpenClaw 在真实业务里的落地方式：（1）抗 UI 漂移的 Web 抓取——自动登录并下载 PDF；（2）后台财务自动化——发票核对、ERP 审批闭环；（3）竞品情报每日监控——追踪对手定价与上新。每个用例都附带分步实施和与传统 RPA / Selenium 的对比，是把 OpenClaw 推理层用作「比 RPA 更柔性」自动化引擎的实操样板。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "RPA替代",
+        "财务自动化",
+        "竞品监控",
+        "工程实战"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-02-27",
+      "language": "en",
+      "image": "https://miro.medium.com/v2/resize:fill:64:64/1*dmbNkD5D-u45r44go_cf0g.png"
+    },
+    {
       "id": "art-0cf35b8a",
       "title": "AWS中国：把OpenClaw从个人助手变成客服Agent",
       "url": "https://aws.amazon.com/cn/blogs/china/openclaw-from-personal-assistant-to-customer-service-a-trust-model-flip/",
