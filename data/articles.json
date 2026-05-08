@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-1c21d52c",
+      "title": "数商云零售OpenClaw方案：POS+ERP全栈落地",
+      "url": "https://www.shushangyun.com/article-33601.html",
+      "summary": "数商云发布2026年零售行业 OpenClaw 搭建方案：用 Helm Chart 完成框架部署，对接零售企业 POS、ERP、WMS、CRM 四大系统，覆盖部署前环境评估（建议 8 核 CPU/32GB 内存/500GB SSD）、容器化安装、监控运维、版本回滚全流程。这是国内零售企业把 OpenClaw 当作生产级智能体平台的标杆落地——把单店收银数据、库存数据、会员标签连进同一个 Agent 闭环。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "数商云",
+        "零售部署",
+        "Helm Chart",
+        "中国企业落地"
+      ],
+      "source": "数商云",
+      "datePublished": "2026-04-22",
+      "language": "zh",
+      "image": "https://www.shushangyun.com/uploads/2026-03-10/zlD73sEivclY.jpg"
+    },
+    {
+      "id": "art-8c910d13",
+      "title": "腾讯云开发者：30个OpenClaw落地案例可直接复用",
+      "url": "https://cloud.tencent.com/developer/article/2647276",
+      "summary": "腾讯云开发者社区合集：30 个真实 OpenClaw 落地案例，分成社媒聚合、内容创作、DevOps 自动化、效率提升、研究学习、量化交易六大类——例如自动每日 Reddit 摘要、Discord 多智能体内容工厂、定时 Cron Code Review 推企微等，每个案例都附 awesome-openclaw-usecases GitHub 仓库的完整工作流文件，开发者可以直接 fork 抄作业上线。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "落地案例",
+        "工作流模板",
+        "腾讯云",
+        "实战"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-28",
+      "language": "zh",
+      "image": "https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png"
+    },
+    {
+      "id": "art-8dba33c2",
+      "title": "Skywork 2026指南：OpenClaw安全部署最佳实践",
+      "url": "https://skywork.ai/skypage/en/openclaw-best-practices-security/2051889805786714114",
+      "summary": "Skywork AI 发布的 2026 OpenClaw 终极指南，从安全视角拆解企业落地路径：详细复盘 CVE-2026-25253（CVSS 8.8）漏洞修复、Gateway loopback 绑定、SSH 隧道与 Tailscale 远程访问、RBAC 三角色权限模型，以及与 NanoClaw、ZeroClaw 的对比；并给出真实业务 ROI——内容自动化场景中实测人力下降 70%，月度成本区间 6-750 美元，1.5-5 小时即可完成完整部署。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安全部署",
+        "CVE-2026-25253",
+        "RBAC",
+        "Skywork"
+      ],
+      "source": "Skywork AI",
+      "datePublished": "2026-05-06",
+      "language": "en",
+      "image": "https://static-s3.skyworkcdn.com/fe/skywork-site-assets/images/ad_260421.jpeg"
+    },
+    {
       "id": "art-d5b0a543",
       "title": "联想百应携手美团：OpenClaw远程部署+NUC一体落地",
       "url": "https://news.mydrivers.com/1/1108/1108041.htm",
