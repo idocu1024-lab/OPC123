@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-1046ed66",
+      "title": "一步实战：OpenClaw 搭企业AI客服月省2.5万",
+      "url": "https://www.yiboot.com/article/userguide/openclaw-107.html",
+      "summary": "一步（yiboot.com）发布的 2026 年 OpenClaw 企业落地参考方案：用 Ubuntu 云服务器（¥200-400/月）+ Node.js + OpenClaw 核心 + MCP 适配器 + YibuAPI 接入 Claude/GPT，把客服与销售工作流跑在飞书侧。实测把企业客服月成本从 SaaS 客服平台的 ¥3000-30000 区间压到 ¥500-1000，约 80% 常规咨询由 OpenClaw 自动应答，销售则把精力让给高价值线索的智能体跟单。这是国内中小企业把 OpenClaw 当作客服自动化主引擎的真实成本对账。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "AI客服",
+        "飞书",
+        "企业落地",
+        "中国企业落地"
+      ],
+      "source": "一步",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://www.yiboot.com/wp-content/themes/b2/Assets/fontend/images/default-img.jpg"
+    },
+    {
+      "id": "art-5a00a25e",
+      "title": "A姐分享：OpenClaw国内版Docker一键起飞",
+      "url": "https://www.ahhhhfs.com/79324/",
+      "summary": "A姐分享（ahhhhfs.com）整理的 2026 年 OpenClaw 国内版镜像方案：用 Docker Compose 一条命令把飞书、钉钉、企业微信三家 IM 的官方适配器、Playwright、中文 TTS、持久化 /data 目录全部打包起来，对外暴露 18789/18790 两个端口，开箱即用。这是面向「甲方全家桶」场景的实战部署模板——开发者不必再各自接 SDK，直接 docker compose up 就能在三大国内 IM 群里挂上 OpenClaw 智能体跑业务。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "Docker Compose",
+        "飞书钉钉企微",
+        "国内部署",
+        "中国企业落地"
+      ],
+      "source": "A姐分享",
+      "datePublished": "2026-02-06",
+      "language": "zh",
+      "image": "https://www.ahhhhfs.com/wp-content/uploads/2026/02/%E6%90%9E%E5%AE%9A%E7%94%B2%E6%96%B9%E5%85%A8%E5%AE%B6%E6%A1%B6%EF%BC%81OpenClaw-%E5%9B%BD%E5%86%85%E7%89%88%EF%BC%9A%E9%A3%9E%E4%B9%A6-%E9%92%89%E9%92%89-%E4%BC%81%E5%BE%AE-AI-%E6%9C%BA%E5%99%A8%E4%BA%BA-Docker-%E4%B8%80%E9%94%AE%E6%A2%AD%E5%93%88-2026.jpg"
+    },
+    {
+      "id": "art-cbe3ae42",
+      "title": "Meta Intelligence全景教程：OpenClaw六大工作流",
+      "url": "https://www.meta-intelligence.tech/en/insight-openclaw-tutorial",
+      "summary": "Meta Intelligence 发布的 OpenClaw 全景教程，按 Gateway-Nodes-Channels-Skills 四层架构拆出六条可直接照搬的实战工作流：浏览器自动抓取、Cron 定时把简报推到 WhatsApp、对接 Claude Code 跑全自动开发、用 Agent Teams 做 webhook 零轮询、接 Supermemory 给智能体加长期记忆、Docker 化整套部署。这份指南把 OpenClaw 从装好能跑推进到可以替代真人 oncall + 内容运营的阶段，特别适合想在 Telegram/WhatsApp/Discord 三端复用同一个智能体的团队。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "工作流",
+        "Agent Teams",
+        "Supermemory",
+        "Docker"
+      ],
+      "source": "Meta Intelligence",
+      "datePublished": "2025-12-11",
+      "language": "en",
+      "image": "https://metaintelligence.ai/images/insight-openclaw-tutorial.webp"
+    },
+    {
       "id": "art-1c21d52c",
       "title": "数商云零售OpenClaw方案：POS+ERP全栈落地",
       "url": "https://www.shushangyun.com/article-33601.html",
