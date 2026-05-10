@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-6efa85a5",
+      "title": "ROI 实测：OpenClaw 让30人客服缩至6人",
+      "url": "https://gitcode.csdn.net/69df5bd154b52172bc6a096d.html",
+      "summary": "AtomGit 开源社区（CSDN DevPress）整理的 2026 年 4 月 OpenClaw 中国企业落地账本：某天猫/抖音品牌把 30 人客服团队压缩到 6 人，年省 172.8 万元，80% 常规咨询由 OpenClaw 自动接管；某 500 人企业 8 人行政团队缩到 2 人，年省 43.2 万元；一家中型电商首年仅投入 4.1 万元（GPT-5.4+HappyHorse API 约 2.4 万、培训 5 千、人力 8 千），换回 365.4 万元年收益，4 天回本，ROI 高达 8812%。文章还给出 2 周部署节奏与 3 个月回本周期的通用模型，可直接对照测算自家企业的 OpenClaw 替代收益。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "企业ROI",
+        "客服自动化",
+        "中国企业落地",
+        "降本增效"
+      ],
+      "source": "AtomGit开源社区",
+      "datePublished": "2026-04-15",
+      "language": "zh",
+      "image": "https://devpress.csdnimg.cn/8bc8dd1a2bc24184a16a142654c4a49e.png"
+    },
+    {
+      "id": "art-b524df06",
+      "title": "Medium诚实指南：OpenClaw实战部署与17%防御率",
+      "url": "https://medium.com/data-science-collective/355k-github-stars-in-5-months-17-defense-rate-the-complete-honest-guide-to-openclaw-28d2f59598e1",
+      "summary": "Paolo Perrone 在 Data Science Collective 发表的 OpenClaw 完整诚实指南，按 TypeScript Gateway 网关 + Tools/Skills/Plugins 三层扩展体系拆解了真实部署路径：从 Mac Mini M4 到 Raspberry Pi 5 的硬件成本对账、Docker Compose 与 npm 安装实操、markdown 配置示例，以及作者直面 17% 原生防御率、CVE 漏洞与 Skill Marketplace 供应链风险的合规建议。这份指南最有价值的部分是把「装好能跑」与「敢交给企业」之间的差距用具体数字讲清楚，适合准备把 OpenClaw 推上生产环境的团队作为对照清单。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署指南",
+        "安全加固",
+        "Docker",
+        "硬件选型"
+      ],
+      "source": "Data Science Collective",
+      "datePublished": "2026-04-18",
+      "language": "en",
+      "image": "https://miro.medium.com/v2/resize:fill:64:64/1*5Kqwkdo17C2ogGxLCJJ13Q.jpeg"
+    },
+    {
+      "id": "art-ce35514c",
+      "title": "运维有术：OpenClaw+Claude Code四层架构",
+      "url": "https://cloud.tencent.com/developer/article/2649095",
+      "summary": "腾讯云开发者社区「运维有术」（术哥）发布的 OpenClaw + Claude Code 协作实战。文章把整套 AI 开发助手拆成 persistent（长期常驻）和 oneshot（单次快跑）两种会话模式，对应任务入口层、编排层、执行层、验收层四层架构，并通过 ACP 协议把编排与执行职责分离，解决「AI 记忆不能跨天保留、团队没法共享」的痛点。文中给出会话管理、权限配置、线程绑定、故障排查的可直接照抄配置，是国内开发团队把 OpenClaw 当作长周期项目助手时的关键参考。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "Claude Code",
+        "ACP协议",
+        "团队协作",
+        "中国企业落地"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-04-01",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/yehe-10642399/5c6644948c8ad1276de09a1430ad40c1.png"
+    },
+    {
       "id": "art-1046ed66",
       "title": "一步实战：OpenClaw 搭企业AI客服月省2.5万",
       "url": "https://www.yiboot.com/article/userguide/openclaw-107.html",
