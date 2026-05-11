@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-6a4839c9",
+      "title": "钛媒体诚实拷问：OpenClaw企业落地三重门",
+      "url": "https://news.qq.com/rain/a/20260401A04SK200",
+      "summary": "钛媒体张申宇在腾讯新闻发布的 OpenClaw 企业级落地观察。文章从「全民养虾」热潮切入，揭开 OpenClaw 真正交付企业时的三重现实拷问：Skill 生态投毒与权限越界带来的安全风险、Token 长链路消耗推高的隐性成本、以及跨团队治理与审计的复杂度。文章用京东 JoyInside 把 OpenClaw 植入智能硬件、客服自动查单退换、企业内部自动报销与会议纪要等中国企业真实场景，论证「安全厂商筑防线、模型厂商降成本、互联网巨头搭生态」的三方协同才是国内落地节奏。打算把 OpenClaw 推上生产的国内团队可以把它作为风险对照表使用。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国企业落地",
+        "京东JoyInside",
+        "安全治理",
+        "Token成本"
+      ],
+      "source": "腾讯新闻·钛媒体APP",
+      "datePublished": "2026-04-01",
+      "language": "zh",
+      "image": "https://inews.gtimg.com/om_bt/OSBrVQh2lJNZWJKh-_2d66yznxmfFXZkN5s76bfizbDoAAA/1000"
+    },
+    {
+      "id": "art-55acc94b",
+      "title": "手把手实战：腾讯云+飞书部署OpenClaw",
+      "url": "https://www.cnblogs.com/whuanle/p/19558535",
+      "summary": "博客园博主「痴者工良」发布的 OpenClaw 国内部署完整实操。作者从腾讯云应用模板预置环境起步，用 `openclaw onboard` 走完 QuickStart 配置向导，按顺序选择模型提供商、对话应用、安装 Skill 依赖；接着完成公网访问（WebSocket + Web UI）配置，并把 Moonshot 与 Kimi Code 接入 OpenClaw 控制台，最后落到企业最常用的飞书机器人接入。整篇文章把「在中国云上、用国产大模型、跑在飞书里」这条最现实的路径串成一份可照抄手册，对预算有限又必须保留本土合规链路的国内中小团队非常实用。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "飞书机器人",
+        "Moonshot",
+        "中国企业落地"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-01-31",
+      "language": "zh",
+      "image": "https://img2024.cnblogs.com/blog/1315495/202601/1315495-20260131164606415-1681430355.png"
+    },
+    {
+      "id": "art-0a4e55e8",
+      "title": "零成本本地部署：10分钟跑起OpenClaw",
+      "url": "https://www.cnblogs.com/informatics/p/19623140",
+      "summary": "博客园博主 warm3snow 提供的 OpenClaw 本地部署保姆级教程。文章先对比本地与云端的取舍——本地部署零成本、数据不出本机、但不具备 24 小时常驻，再给出三条安装路径：官方脚本一键装（推荐）、npm 手动装、Docker 装；模型侧则把 DeepSeek、火山引擎豆包、本地 Ollama 三个国产或自托管选项的接入步骤逐一列清。整套流程实测 10 分钟就能在自己 Mac 或 Linux 桌面跑起一个私人 OpenClaw 助手，适合不想交云费、又特别在意数据隐私的开发者和个人用户照着走一遍。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "本地部署",
+        "DeepSeek",
+        "Ollama",
+        "数据隐私"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-02-18",
+      "language": "zh",
+      "image": "https://img2024.cnblogs.com/blog/2680909/202602/2680909-20260218145201_warm3snow.png"
+    },
+    {
       "id": "art-6efa85a5",
       "title": "ROI 实测：OpenClaw 让30人客服缩至6人",
       "url": "https://gitcode.csdn.net/69df5bd154b52172bc6a096d.html",
