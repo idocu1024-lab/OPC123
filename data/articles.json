@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-a4504ae7",
+      "title": "OpenClaw实战：12个国产场景案例",
+      "url": "https://www.cnblogs.com/gdutxiaoxu/p/19695513",
+      "summary": "博客园博主「程序员徐公」整理的 OpenClaw 12 个国产实战案例。文章把场景拆成「信息获取、新媒体运营、金融投资、办公自动化」四大块：联网搜索行业资讯、小红书爆款选题与一键发布、股票/基金调研报告、邮件分级回复与会议纪要直落到飞书机器人。每个案例都给出对应的 Skill 组合、Prompt 模板与运行截图，作者反复强调「别只收藏，跟着跑一遍」，适合刚装好 OpenClaw、不知道下一步干啥的国内开发者照单点菜式上手。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "实战案例",
+        "小红书运营",
+        "飞书机器人",
+        "中国场景"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://common.cnblogs.com/images/icon_weibo_24.png"
+    },
+    {
+      "id": "art-f7dd6d94",
+      "title": "企业级OpenClaw：架构师全景指南",
+      "url": "https://www.cnblogs.com/BlogNetSpace/p/19726312",
+      "summary": "博客园博主 JackYang 发布的 OpenClaw 企业级实战指南。文章把视角从「装好就行」拉到「上规模生产」：用网关集群-调度层-计算层-存储层四层分布式架构承接企业流量，配合多租户隔离、RBAC 权限模型与私有 Skill 市场完成治理；又给出高可用部署、灾备策略、监控告警与合规审计四件套，把 OpenClaw 真正放进中大型组织的生产红线里。对正在评估「OpenClaw 能不能扛住公司全员使用」的国内架构师来说，是一份照搬即可的对账清单。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业架构",
+        "多租户",
+        "RBAC",
+        "合规审计"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-16",
+      "language": "zh",
+      "image": "https://common.cnblogs.com/images/icon_weibo_24.png"
+    },
+    {
+      "id": "art-6f12ae47",
+      "title": "Debian VPS 10分钟跑通 OpenClaw",
+      "url": "https://dev.to/cristiantalasanchez/how-to-install-openclaw-on-a-debian-vps-2026-tutorial-45k6",
+      "summary": "Dev.to 作者 Cristian Tala 发布的 OpenClaw VPS 部署完整教程。文章选用 10–32 美元/月档位的 Debian 服务器，从系统加固、Node.js 环境、SSH 密钥到 OpenClaw 安装一步一步给命令，并接上 Telegram Bot 完成入口配置，最后通过 systemd 把服务跑成 24×7 守护进程。整套配置跑通后，作者每天只用 Telegram 对话就能让 OpenClaw 帮自己处理日程、邮件与代码任务，适合预算有限又希望 AI 助手「常驻在线」的个人开发者直接抄作业。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "VPS部署",
+        "Debian",
+        "Telegram",
+        "systemd"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-12",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=880,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png"
+    },
+    {
       "id": "art-6a4839c9",
       "title": "钛媒体诚实拷问：OpenClaw企业落地三重门",
       "url": "https://news.qq.com/rain/a/20260401A04SK200",
