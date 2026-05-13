@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-4b3019c1",
+      "title": "OpenCSG发布OPC企业智能体平台",
+      "url": "https://www.cnblogs.com/OpenCSG/p/19596260",
+      "summary": "国内开源平台公司 OpenCSG 在博客园发文宣告：把 OpenClaw 与自家 AgenticHub、CSGHub 拼成一套企业级 OPC 平台，从模型、数据到智能体一站打通。文章给出制造业排产、医疗辅诊、金融风控、城市治理四大真实落地场景，OpenClaw 负责直连 OPC/OT 工业系统和 MES/ERP/CRM 等内网，AgenticHub 负责智能体全生命周期编排、CSGHub 负责私有模型与数据治理。对正在做 AI 转型的国内中大型组织来说，是一份「OpenClaw 怎么在企业生产线上跑起来」的样板答卷。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "OpenCSG",
+        "AgenticHub",
+        "企业OPC",
+        "工业落地"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-02-09",
+      "language": "zh",
+      "image": "https://common.cnblogs.com/images/icon_weibo_24.png"
+    },
+    {
+      "id": "art-9f810385",
+      "title": "亚马逊云：OpenClaw四场景实战",
+      "url": "https://www.cnblogs.com/AmazonwebService/p/19740609",
+      "summary": "亚马逊云开发者团队在博客园分享了基于 OpenClaw + Amazon Bedrock 打造的企业级 AI 代理架构。文章用四个真实国内客户场景串起整套实践：RAG 智能客服替代人工坐席、跨平台内容自动分发、自然语言数据分析引擎，以及第四个生产级业务编排场景。配套给出微服务分层架构、可观测体系、容错重试、端到端加密与 DynamoDB 状态管理等代码级实现，是一份把 OpenClaw 从「个人助手」推进到「企业生产环境」的硬核技术解决方案。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "AWS Bedrock",
+        "企业架构",
+        "智能客服",
+        "数据分析"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-19",
+      "language": "zh",
+      "image": "https://common.cnblogs.com/images/icon_weibo_24.png"
+    },
+    {
+      "id": "art-50214b6b",
+      "title": "企业自托管OpenClaw现状盘点2026",
+      "url": "https://www.bighatgroup.com/blog/state-of-openclaw-2026-enterprise-self-hosted-ai-agent/",
+      "summary": "Big Hat Group 顾问 Kevin Kaminski 发布的 OpenClaw 企业自托管现状报告。文章以 Anthropic 收紧订阅边界、用户「成本暴涨 50 倍」、约 13.5 万个 OpenClaw 实例正在跑为切入点，给出微软生态组织的标准部署蓝图：Windows 365 Cloud PC 承载 OpenClaw 运行时、Intune 做合规策略、Entra ID 锚定身份、Azure Key Vault 接管密钥，并用 Tailscale ACL 把 Control UI 锁回 localhost。文末附 90 天企业落地路线图，是 IT 团队评估 OpenClaw 正式上生产前的对账清单。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业自托管",
+        "Windows 365",
+        "Intune",
+        "Entra ID"
+      ],
+      "source": "Big Hat Group",
+      "datePublished": "2026-05-04",
+      "language": "en",
+      "image": "https://www.bighatgroup.com/favicon.ico"
+    },
+    {
       "id": "art-a4504ae7",
       "title": "OpenClaw实战：12个国产场景案例",
       "url": "https://www.cnblogs.com/gdutxiaoxu/p/19695513",
