@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-53fa3503",
+      "title": "阿里云一键部署OpenClaw超速指南",
+      "url": "https://openeuler.csdn.net/69f81eaf54b52172bc71ba99.html",
+      "summary": "openEuler 社区联合 CSDN DevPress 在 2026 年 5 月发布的国内云上落地实操指南。文章瞄准阿里云轻量服务器与本地 Windows 11/macOS/Linux 全栈环境，给出从拉镜像、开 Skills、配阿里云百炼 Coding Plan API、再到接免费大模型的完整步骤，配套故障排查清单和 Skills 安装顺序。文末把这套方案打包成「零基础 10 分钟落地」交付件，是 2026 年国内中小团队把 OpenClaw 跑在阿里云上的标准答卷。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "阿里云",
+        "百炼Coding Plan",
+        "openEuler",
+        "国内部署"
+      ],
+      "source": "CSDN openEuler 社区",
+      "datePublished": "2026-05-04",
+      "language": "zh",
+      "image": "https://www.csdn.net/favicon.ico"
+    },
+    {
+      "id": "art-d7a41aa5",
+      "title": "OpenClaw接入飞书的本地部署实操",
+      "url": "https://juejin.cn/post/7611477522031624238",
+      "summary": "稀土掘金上的 OpenClaw + 飞书国产化集成完整指南。作者把 OpenClaw 本地跑在 macOS/Linux/Windows，三端给出 Node.js 与 Git 前置环境、通过 WebUI 或终端接入免费 Qwen 模型，再演示如何在飞书开放平台建应用、申请群消息权限、扫码配对授权，把 OpenClaw 当成飞书机器人挂进工作群。是国内团队避开公网模型、把 OpenClaw 拉进飞书私域 IM 的一份照搬即用脚本。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "飞书",
+        "本地部署",
+        "Qwen",
+        "机器人"
+      ],
+      "source": "稀土掘金",
+      "datePublished": "2026-02-28",
+      "language": "zh",
+      "image": "https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "id": "art-01ea9909",
+      "title": "Lyzr:企业级OpenClaw身份安全警钟",
+      "url": "https://www.lyzr.ai/blog/open-claw-for-enterprise/",
+      "summary": "Lyzr 团队把 OpenClaw 定义为 2026 年企业身份治理的第一记警钟。文章盘点 OpenClaw 在企业落地撞上的四道坎：CVE-2026-25253 远程代码执行可窃取令牌、被曝光的数据库泄露 150 万个 API Key、ClawHub 仓库混进 341 个恶意扩展、Prompt 注入触发越权交易。核心论点直指人机权限不对称——「权限给人是限定的，给智能体却是继承的」。配套给出可执行的 Agent 访问边界、可配置行为约束等加固思路，是企业 CISO 评估 OpenClaw 上生产前的对账清单。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业身份安全",
+        "CVE-2026-25253",
+        "ClawHub",
+        "Agent治理"
+      ],
+      "source": "Lyzr",
+      "datePublished": "2026-03-03",
+      "language": "en",
+      "image": "https://www.lyzr.ai/wp-content/uploads/2026/03/Open-Claw-for-enterprises.webp"
+    },
+    {
       "id": "art-4b3019c1",
       "title": "OpenCSG发布OPC企业智能体平台",
       "url": "https://www.cnblogs.com/OpenCSG/p/19596260",
