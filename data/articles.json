@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-87a4d0ee",
+      "title": "OpenClaw六Agent团队记忆实战",
+      "url": "https://juejin.cn/post/7619137437068984361",
+      "summary": "Wesley AI 日记在掘金分享了「一人公司」用 OpenClaw 搭建 6 个 Agent 团队的 19 天踩坑记。作者直击 OpenClaw 多 Agent 协作的命门——记忆缺失：智能体反复犯同一个错、知识散落不收敛、任务状态不可靠。最终演进出 v2.0 记忆架构：冷热温分层存储、WAL 写前日志、分级检索、自动清理与健康监控，把 OpenClaw Agent 从「金鱼记忆的临时工」改造成可托付长期任务的「正式员工」，是 2026 年国内一人公司用 OpenClaw 跑多智能体的硬核工程实录。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "多Agent",
+        "记忆架构",
+        "一人公司",
+        "掘金"
+      ],
+      "source": "稀土掘金",
+      "datePublished": "2026-03-20",
+      "language": "zh",
+      "image": "https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "id": "art-54034b89",
+      "title": "OpenClaw三省六部制协作架构",
+      "url": "https://www.cnblogs.com/mingtingspring/p/19799198/ji-yuopenclaw-de-zhi-du-huaai-xie-zuo-san-sheng-li",
+      "summary": "博客园作者「颜究僧」把 OpenClaw 多智能体协作搬上了中国古代三省六部制的治理框架，开源 edict 项目把无序的 Agent 对话改造成有制度的决策流。文章给出可落地的角色分层与决策路径，把响应跳数从 5 跳压到 4 跳、系统 Agent 从 9 个收敛到 8 个，可扩展性与可审计性同时提升。是 2026 年国内开发者用 OpenClaw 解决多 Agent 协作混乱的一份制度化架构样板。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "多Agent协作",
+        "三省六部制",
+        "edict",
+        "架构实践"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-31",
+      "language": "zh",
+      "image": "https://assets.cnblogs.com/logo.svg"
+    },
+    {
+      "id": "art-0a3469d6",
+      "title": "OpenClaw 24/7生产级Agent实录",
+      "url": "https://dev.to/siraj_raval_5a941300a2725/building-a-247-ai-agent-with-openclaw-architecture-deep-dive-38d4",
+      "summary": "Siraj Raval 在 DEV Community 公开了一套已连续 6 个月不间断运行的 OpenClaw 生产代理架构，自主托管邮件、日历与个人财务事务。整套方案以 Node.js 常驻进程为骨架，搭配 Claude Opus 4 推理、Markdown 日志与 ChromaDB 语义检索，配合心跳调度器、权限分层、重试逻辑与全量日志五项 24/7 设计。文章把六个月的真实运维教训沉淀成内存系统、工具集成、主动执行、安全边界、韧性模式五段拆解，是 2026 年把 OpenClaw 放进生产环境的开发者必读样本。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产部署",
+        "24/7代理",
+        "ChromaDB",
+        "DEV社区"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-13",
+      "language": "en",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+    },
+    {
       "id": "art-53fa3503",
       "title": "阿里云一键部署OpenClaw超速指南",
       "url": "https://openeuler.csdn.net/69f81eaf54b52172bc71ba99.html",
