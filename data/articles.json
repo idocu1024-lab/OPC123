@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-a728b334",
+      "title": "OpenClaw核心团队谈中国大公司落地",
+      "url": "https://www.53ai.com/news/Openclaw/2026051416948.html",
+      "summary": "53AI 知识库刊出 OpenClaw 核心团队成员 Josh 与 Vincent Koc 的专访，重点谈到中国市场的独特落地姿态：「在中国，是很多大公司把业务直接跑在 OpenClaw 上，这是其他地方不常见的」。文章列举了深圳市政府帮助市民部署 OpenClaw、国内一线企业把 OpenClaw 跑进核心业务流的真实趋势，也回应了多 Agent 协作、合规与本土生态等关键命题，是 2026 年观察中国企业 OpenClaw 规模化落地的一手对话。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "中国大公司",
+        "企业落地",
+        "深圳政府",
+        "核心团队访谈"
+      ],
+      "source": "53AI 知识库",
+      "datePublished": "2026-05-14",
+      "language": "zh",
+      "image": "https://static.53ai.com/uploads/20240311/eb21a9e0409ab946254c64427055a5fa.png"
+    },
+    {
+      "id": "art-ac76a7b2",
+      "title": "OAuth关停后OpenClaw安装实战",
+      "url": "https://www.shareuhack.com/en/posts/openclaw-setup-tutorial-2026",
+      "summary": "Shareuhack 给出 2026 年 OAuth 关停之后 OpenClaw 的完整安装路径，覆盖环境检查、API Key 接入、三种安装方式与安装后安全加固。文章用具体代码示例讲清 Canvas Host 绑定漏洞修复与 ClawHub 技能市场 13%-20% 漏洞率的应对策略，并把每月 3 至 1000 美元的 API 成本拆给开发者与非技术用户，是把 OpenClaw 装进自己机器并守住安全边界的实战指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安装指南",
+        "OAuth",
+        "API Key",
+        "安全加固"
+      ],
+      "source": "Shareuhack",
+      "datePublished": "2026-02-26",
+      "language": "en",
+      "image": "https://www.shareuhack.com/assets/posts/openclaw-setup-tutorial-2026/cover.jpg"
+    },
+    {
+      "id": "art-81e98590",
+      "title": "OpenClaw七大场景打造数字助手",
+      "url": "https://damodev.csdn.net/69902c280a2f6a37c591b2f8.html",
+      "summary": "CSDN DAMO 开发者矩阵盘点了 OpenClaw 在七个真实场景里的进阶玩法，包括语音转录、多媒体内容分析、群聊辅助、个人知识中枢、跨工具调度等。文章用「从想法到流程」的工作流，把 OpenClaw 从对话式 AI 一步步改造成可执行的「数字助手中枢」，给出可直接复用的提示词、技能编排与落地步骤，是个人和小团队把 OpenClaw 跑成日常生产力工具的实操合集。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "实用场景",
+        "数字助手",
+        "效率提升",
+        "CSDN"
+      ],
+      "source": "CSDN DAMO 开发者矩阵",
+      "datePublished": "2026-02-14",
+      "language": "zh",
+      "image": "https://i-blog.csdnimg.cn/devpress/blog/9f55d92f98764971a5989e18b75fa042.png"
+    },
+    {
       "id": "art-87a4d0ee",
       "title": "OpenClaw六Agent团队记忆实战",
       "url": "https://juejin.cn/post/7619137437068984361",
