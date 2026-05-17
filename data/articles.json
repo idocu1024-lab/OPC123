@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-d14c29af",
+      "title": "OpenClaw30个落地案例直接抄作业",
+      "url": "https://cloud.tencent.com/developer/article/2652911",
+      "summary": "腾讯云开发者社区把 GitHub 上的 awesome-openclaw-usecases 项目搬到中文世界，整理出 30 多个可以「直接抄作业」的 OpenClaw 真实落地案例。文章按社交媒体聚合、内容创意工厂、DevOps 自愈、生产力提升、知识研究和金融交易六大场景分类，给出每个案例的提示词、技能编排与最终效果，比如「自动生成 Reddit 精选摘要」「Discord 多智能体内容工厂」「自愈型家庭服务器」，是个人开发者和小团队挑选 OpenClaw 第一个落地场景的速查清单。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "落地案例",
+        "应用场景",
+        "腾讯云",
+        "awesome-openclaw"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-04-10",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/yehe-6490225/d7ce3df1f46b5e8fa73926e8765eaf33.png"
+    },
+    {
+      "id": "art-e4d52251",
+      "title": "OpenClaw如何变成能干活数字员工",
+      "url": "https://36kr.com/p/3706443833487493",
+      "summary": "36 氪深度复盘 OpenClaw 在 GitHub 两周冲到 15 万星之后，如何从对话工具升级成「能干活的数字员工」。文章拆解了 OpenClaw 的四层架构：前台对话、大脑推理、双手执行、档案柜记忆，并指出腾讯云、阿里云已经把一键部署方案接进自家平台，让中国企业用最短路径把 OpenClaw 接进内部业务流。这是观察 OpenClaw 在中国从「极客玩具」走向「企业级数字员工」的一篇关键稿件。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "数字员工",
+        "中国企业",
+        "腾讯云",
+        "阿里云"
+      ],
+      "source": "36氪",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://img.36krcdn.com/hsossms/20260303/v2_d1f9c9b5d83a45a8b6c5d2e8a8b7f5e2.jpg"
+    },
+    {
+      "id": "art-6e5ca2ac",
+      "title": "OpenClaw企业部署完整指南",
+      "url": "https://voxturrlabs.com/blog/openclaw-enterprise-setup-guide/",
+      "summary": "VoxturrLabs 把 OpenClaw 在企业环境中的落地拆成可执行的工程清单：基础设施选型、防火墙加固、Docker 容器化、API Key 管理、合规治理与分阶段灰度上线。文章把 OpenClaw 定位为「对话优先的 AI Agent」，并用具体配置示例讲清楚如何在公司内网安全跑起来，是企业 IT 团队第一次把 OpenClaw 引入生产环境时可以直接照做的部署手册。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业部署",
+        "Docker",
+        "安全加固",
+        "VoxturrLabs"
+      ],
+      "source": "VoxturrLabs",
+      "datePublished": "2026-02-10",
+      "language": "en",
+      "image": "https://api.voxturrlabs.com/media/banner_images/openclaw-enterprise-setup-guide.png"
+    },
+    {
       "id": "art-a728b334",
       "title": "OpenClaw核心团队谈中国大公司落地",
       "url": "https://www.53ai.com/news/Openclaw/2026051416948.html",
