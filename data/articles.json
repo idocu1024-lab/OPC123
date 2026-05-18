@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-b0ae6087",
+      "title": "OpenClaw进B端打开营销局",
+      "url": "https://www.51ima.com/news/12338.html",
+      "summary": "得助智能从 OpenClaw 在 B2B 企业落地的真实路径切入，认为「营销服务」是 OpenClaw 进入中国企业的第一道门。文章列出六个落地场景——营销投放、销售线索、客户培育、交易撮合、售后服务和会员留存，并基于自家 PowerClaw 平台给出企业级 OpenClaw 在 CRM、ERP、客服系统之间编排工作流的具体做法，是一线 SaaS 厂商首次系统阐述 OpenClaw 在中国 B 端营销链路的应用蓝图。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "B端企业",
+        "营销自动化",
+        "PowerClaw",
+        "得助智能"
+      ],
+      "source": "得助智能",
+      "datePublished": "2026-03-17",
+      "language": "zh",
+      "image": "https://www.51ima.com/storage/20250717/6878719b183dc.jpg"
+    },
+    {
+      "id": "art-0be9b0e6",
+      "title": "华为云一键起OpenClaw",
+      "url": "https://support.huaweicloud.com/bestpractice-flexusl/flexusl_bp_0001.html",
+      "summary": "华为云官方在 Flexus 应用服务器 L 实例上发布 OpenClaw 最佳实践合集，提供飞书、QQ、企业微信、钉钉四大主流办公渠道的一键接入指南，并集成 20+ 场景案例：智能客服、内容管理、代码自动化、多智能体工作流。文档同时给出企业级安全建议与常见问题解答，是中国云厂商首次把 OpenClaw 部署「产品化」的官方落地教程。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "华为云",
+        "Flexus",
+        "企业部署",
+        "飞书"
+      ],
+      "source": "华为云",
+      "datePublished": "2026-04-29",
+      "language": "zh",
+      "image": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/wangxue/header/logo.svg"
+    },
+    {
+      "id": "art-ec8995c7",
+      "title": "OpenClaw六场景自动化指南",
+      "url": "https://www.digitalapplied.com/blog/openclaw-enterprise-automation-business-use-cases-guide",
+      "summary": "DigitalApplied 把 OpenClaw 在企业自动化里的六大典型场景做成了带量化数据的实战指南——邮件分拣从每天 2 小时压到 25 分钟，客户开户从 3-4 小时压到 15 分钟，KPI 周报从 4-6 小时压到 5 分钟。文章还讲清楚 OpenClaw 自托管架构如何在合规行业里把数据留在内网，以及为什么「无厂商 lock-in」让它适合作为企业的第一个 AI Agent 项目。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业自动化",
+        "效率提升",
+        "ROI",
+        "自托管"
+      ],
+      "source": "DigitalApplied",
+      "datePublished": "2026-02-08",
+      "language": "en",
+      "image": "https://www.digitalapplied.com/logo-black.svg"
+    },
+    {
       "id": "art-d14c29af",
       "title": "OpenClaw30个落地案例直接抄作业",
       "url": "https://cloud.tencent.com/developer/article/2652911",
