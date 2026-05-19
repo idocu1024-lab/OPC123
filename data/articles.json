@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-2350e9b3",
+      "title": "OpenClaw 1小时搞定197页SEO",
+      "url": "https://juejin.cn/post/7622590276742447104",
+      "summary": "梨儿超分享 AI 团队用 OpenClaw 把两个网站共 197 个页面的 SEO 做完的真实战例：57 个实验页和 140 个工具页的 title、meta description、关键词、sitemap 与 robots.txt，三条工作流并行只用了 1 小时。文章拆解了团队角色分工和 OpenClaw 多 Agent 任务编排的具体配置，是中国开发者把 OpenClaw 当成 SEO 流水线的一次量化交付。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "SEO",
+        "多Agent",
+        "实战案例",
+        "稀土掘金"
+      ],
+      "source": "稀土掘金",
+      "datePublished": "2026-03-31",
+      "language": "zh",
+      "image": "https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "id": "art-e0c53fdb",
+      "title": "OpenClaw 3小时跑出AI写稿流水线",
+      "url": "https://juejin.cn/post/7615469576893857835",
+      "summary": "一名国内独立开发者用 OpenClaw 搭出一条端到端的 AI 写稿与自动发布流水线：HackerNews 与掘金的热门趋势监控、DeepSeek 生成稿件、跨平台一键发布、Telegram 通知告警，全套搭建只用 3 小时。系统跑了 30 天后产出 45 篇文章、累计 5 万+ 阅读和 800+ 关注，月成本压在 5 元以内，做出了「无限 ROI」的 OpenClaw 中国本地化案例。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "内容自动化",
+        "DeepSeek",
+        "独立开发者",
+        "ROI"
+      ],
+      "source": "稀土掘金",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "id": "art-4074c6fe",
+      "title": "腾讯云OpenClaw部署路线图官宣",
+      "url": "https://www.tencentcloud.com/techpedia/140007",
+      "summary": "腾讯云在 Techpedia 上发布 2026 版 OpenClaw 服务端部署路线图，覆盖 Lighthouse 一键模板与源码编译两条路径，明确给出 make build、`./bin/openclaw serve` 启动命令以及健康检查、工具调用验证、日志 trace id 的上线 checklist。文章把「持久化状态、密钥治理、可观测性」放在 prompt 工程之前，提出渠道适配层 - Agent 核心 - 监控基座的三层架构，并给出隔离嘈杂渠道、写操作二次校验、版本固定与回滚的运维策略。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "Lighthouse",
+        "部署",
+        "运维"
+      ],
+      "source": "Tencent Cloud",
+      "datePublished": "2026-04-27",
+      "language": "en",
+      "image": "https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/gateway/shareicons/cloud.png"
+    },
+    {
       "id": "art-b0ae6087",
       "title": "OpenClaw进B端打开营销局",
       "url": "https://www.51ima.com/news/12338.html",
