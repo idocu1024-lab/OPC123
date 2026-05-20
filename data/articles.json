@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-6300d3b3",
+      "title": "高德Skill接入OpenClaw官宣落地",
+      "url": "https://cloud.tencent.com/developer/article/2637005",
+      "summary": "高德地图开放平台正式发布两个 Skill 包接入 OpenClaw 智能体平台：用户用自然语言一句话就能调用地点搜索、跨城行程规划与热力图可视化能力。文章给出 Skill 安装、密钥申请与 ClawHub 配置的完整步骤，是高德把开放平台 API 与 OpenClaw 工具协议打通的中国本地大厂集成案例，让 OpenClaw 在国内出行、本地生活与城市数据可视化场景里第一次直接「懂地图」。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "高德地图",
+        "Skill",
+        "腾讯云",
+        "中国大厂"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/11638767/d8331c7a2eff9300f3ce240eee86d189.webp"
+    },
+    {
+      "id": "art-d892627b",
+      "title": "OpenClaw普通人变现5案例",
+      "url": "https://juejin.cn/post/7615816589225656383",
+      "summary": "掘金作者整理了 5 个真实的 OpenClaw 变现案例：小红书内容自动化博主月入 8000、热点监测器帮程序员卖课月入 10 万、跨境卖家用价格监控提升 15% 利润、自媒体 5 账号矩阵月入 15000、量化交易自动化实现月收益 8%。每个案例都给出 Skill 编排、工作流配置与 Token 成本估算，给 OpenClaw 在中国独立开发者圈装上了完整的 ROI 标尺。",
+      "category": "marketing",
+      "tags": [
+        "OpenClaw",
+        "独立开发者",
+        "AI变现",
+        "实战案例",
+        "稀土掘金"
+      ],
+      "source": "稀土掘金",
+      "datePublished": "2026-03-11",
+      "language": "zh",
+      "image": "https://lf-web-assets.juejin.cn/obj/juejin-web/xitu_juejin_web/static/favicons/apple-touch-icon.png"
+    },
+    {
+      "id": "art-35ef2b84",
+      "title": "腾讯云阿里云抢滩OpenClaw部署",
+      "url": "https://eu.36kr.com/en/p/3711014550663684",
+      "summary": "36氪 EU 版独家报道，2026 年 1 月底腾讯云与阿里云相继上线 OpenClaw 一键部署模板，数百名开发者排队参加云上动手活动，让 AI 智能体从「精英玩具」走向大众工具。文章把两家大厂从「产品独占」转向「基础设施供给」的姿态变化，定性为中国 AI Agent 市场的结构性拐点，并给出从 2024 年 51 亿美元到 2027 年 800 亿美元的全球规模预测。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "阿里云",
+        "一键部署",
+        "36氪"
+      ],
+      "source": "36Kr Global",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://img.36krcdn.com/hsossms/20260306/v2_e1f9c9b5d83a45a8b6c5d2e8a8b7f5e2.jpg"
+    },
+    {
       "id": "art-2350e9b3",
       "title": "OpenClaw 1小时搞定197页SEO",
       "url": "https://juejin.cn/post/7622590276742447104",
