@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-1f4cf0b5",
+      "title": "OpenClaw让产品经理变养虾人",
+      "url": "https://www.woshipm.com/ai/6349105.html",
+      "summary": "「人人都是产品经理」上噜噜猫的中国 PM 实操记录：把 OpenClaw 从本地部署到云端一键配置一条龙跑通，再分别做成四个数字员工——「首席用户监听官」自动抓取小红书/微博/App Store 用户反馈、「需求履约监理」实时对照 PRD 检查研发进度、「7×24 小时蹭热点机器」自动产出营销内容、还有商业化支付链路的自动化对账。文章配了 3 个可复制的实操案例，是中国 PM 圈把 OpenClaw 真正用进日常工作的样板。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "产品经理",
+        "数字员工",
+        "实操案例",
+        "人人都是产品经理"
+      ],
+      "source": "人人都是产品经理",
+      "datePublished": "2026-03-07",
+      "language": "zh",
+      "image": "https://image.woshipm.com/2026/03/06/e24a9532-1945-11f1-8d80-00163e09d72f.png"
+    },
+    {
+      "id": "art-4530350a",
+      "title": "KDnuggets盘点OpenClaw七大实战",
+      "url": "https://www.kdnuggets.com/7-practical-openclaw-use-cases-you-should-know",
+      "summary": "KDnuggets 数据科学专栏作者 Abid Ali Awan 把 OpenClaw 在 finance、dev、research、business 四大领域里「真在跑」的 7 个场景一次梳理：行情情绪机器人推送到聊天工具、手机远程跑代码改文件、每日 briefing 与提醒、个人 second-brain 记忆库、研究知识管线、多 Agent 分工系统、销售线索与会议纪要业务自动化。文章强调 OpenClaw 把消息工具、记忆和自动化串成一条流，是英文圈对 OpenClaw 落地形态最简洁的一份教科书式目录。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "使用场景",
+        "AI Agent",
+        "KDnuggets",
+        "实战案例"
+      ],
+      "source": "KDnuggets",
+      "datePublished": "2026-04-24",
+      "language": "en",
+      "image": "https://www.kdnuggets.com/wp-content/uploads/awan_7_practical_openclaw_cases_know_1.png"
+    },
+    {
+      "id": "art-ab3237ac",
+      "title": "Fluence详解OpenClaw 17个真实场景",
+      "url": "https://www.fluence.network/blog/openclaw-use-cases-2/",
+      "summary": "Fluence Network 在 2026 年 5 月最新整理的 OpenClaw 应用合集，覆盖个人效率、研发、内容、金融与企业自动化五个领域共 17 个真实跑通的场景。文章特别强调企业级用法的「安全分层」——先从只读任务跑起、再加沙盒环境、再走人审批闸门，绝不允许 OpenClaw 直接自治执行敏感动作，是一份兼顾「用起来」和「不出事」的英文落地指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "实战案例",
+        "企业自动化",
+        "Fluence",
+        "AI Agent"
+      ],
+      "source": "Fluence Network",
+      "datePublished": "2026-05-13",
+      "language": "en",
+      "image": "https://www.fluence.network/blog/wp-content/uploads/2026/05/Fluence-Network-OpenClaw-Use-Cases-1.png"
+    },
+    {
       "id": "art-75c36088",
       "title": "OpenClaw阿里云部署实战避坑",
       "url": "https://cloud.tencent.com/developer/article/2634684",
