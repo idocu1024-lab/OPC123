@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-c1edeaec",
+      "title": "腾讯云ClawPro企业版10分钟全员落地",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtcnfx9411568.shtml",
+      "summary": "新浪财经报道腾讯云在 2026 年 4 月 2 日正式推出企业版 OpenClaw——ClawPro 公测版，主打「企业无需组建复杂技术团队，最快 10 分钟完成全员专属 AI 助手上线」。文章实锤了中国头部云厂商把 OpenClaw 框架包装成企业 SaaS 的真实落地路径：从开源个人工具变成可批量配发到全员工的私有化 AI 助手，是国内云厂商「OpenClaw 企业化」赛道最关键的一份官宣案例。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "腾讯云",
+        "ClawPro",
+        "企业版",
+        "中国落地"
+      ],
+      "source": "新浪财经",
+      "datePublished": "2026-04-02",
+      "language": "zh",
+      "image": "https://n.sinaimg.cn/spider20260402/71/w1080h591/20260402/433e-c5d833b5eb2c3ebfdd72f6408ef0dfec.png"
+    },
+    {
+      "id": "art-9206b38b",
+      "title": "Mac mini M4 跑本地 OpenClaw 实战",
+      "url": "https://medium.com/@yi.cheng/mac-mini-fully-local-openclaw-secure-deployment-guide-2026-f4a935325727",
+      "summary": "Medium 作者 OffByOne 用一台 16GB Mac mini M4 走完了「完全本地化」的 OpenClaw 部署流程：Ollama 跑 Qwen3 8B 量化模型当大脑，OpenClaw 当手脚，配合独立用户账户做安全隔离，整套 10 步配置下来零云端依赖、零数据外发。文章实测验证了 OpenClaw 的工具调用与推理链可在消费级 Apple Silicon 上稳定跑通，是「想私有部署但没服务器」用户最划算的一份落地样板。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Mac mini M4",
+        "本地部署",
+        "Ollama",
+        "Qwen3"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-14",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-384bb9ae",
+      "title": "Arsanjani详解OpenClaw安全治理五步法",
+      "url": "https://dr-arsanjani.medium.com/more-secure-openclaw-deployment-and-governance-a1148cd8dde0",
+      "summary": "前 Google Cloud AI 首席科学家 Ali Arsanjani 把 OpenClaw 当成「基础设施级风险」来治理：因为它同时握着 shell 权限、网络连接和不受信输入。文章给出五步落地方案——环境隔离、安全安装、零信任三层防御、v2.8+ 自加固、ClawHub 第三方技能审计，并强调网关绑定 localhost、凭据走环境变量、敏感硬件加黑名单等细节，是英文圈最系统的一份 OpenClaw 企业治理实战指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "安全治理",
+        "零信任",
+        "企业部署",
+        "Arsanjani"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-22",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-1f4cf0b5",
       "title": "OpenClaw让产品经理变养虾人",
       "url": "https://www.woshipm.com/ai/6349105.html",
