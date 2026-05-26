@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-5598be90",
+      "title": "powerclaw：中关村科金的OpenClaw企业版",
+      "url": "https://www.51ima.com/news/12292.html",
+      "summary": "中关村科金「得助智能」基于 OpenClaw 推出企业级 AI 生产力平台 powerclaw，不是简单换皮而是从架构层面做了系统性重构：多层沙箱、细粒度权限、完整审计三件套补齐 OpenClaw 的开放权限短板；依托服务 2000+ 企业的经验提供开箱即用的行业技能；Gateway+Agent 分层架构打通 CRM、ERP、OA 多通道。这是国内厂商把 OpenClaw 从「会聊天的助手」改造成「7×24 数字员工」的一份真实落地样板。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "powerclaw",
+        "中关村科金",
+        "企业版",
+        "中国落地"
+      ],
+      "source": "得助智能",
+      "datePublished": "2026-03-05",
+      "language": "zh",
+      "image": "https://www.51ima.com/storage/20260305/69a92cf64603d.jpg"
+    },
+    {
+      "id": "art-8bc95975",
+      "title": "实测国内首个中文版OpenClaw「Molili」",
+      "url": "https://www.53ai.com/news/Openclaw/2026032405832.html",
+      "summary": "53AI 创始人杨芳贤实测 Molili——国内第一个中文版 OpenClaw。亮点是把 OpenClaw 的开放权限按风险等级做了分类管理，原生打通微信、钉钉、飞书三大办公平台，一键部署支持 DeepSeek、Qwen、Kimi 等国产模型，技能市场已有 5000+ 经过安全审核的技能。文章还演示了「龙虾朝堂」可视化系统给 AI 配置人格的玩法，是中文 OpenClaw 生态本地化最值得看的一份产品落地评测。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Molili",
+        "中文版",
+        "国产模型",
+        "可视化"
+      ],
+      "source": "53AI",
+      "datePublished": "2026-03-24",
+      "language": "zh",
+      "image": "https://static.53ai.com/static/53ai/img/logo.png"
+    },
+    {
+      "id": "art-39fdccbc",
+      "title": "OpenClaw火了但企业先别All In",
+      "url": "https://c.m.163.com/news/a/KMIF5BUP055694X8.html",
+      "summary": "前互联网产品经理、现企业 AI 转型顾问申悦给出一份冷静的企业落地清单：OpenClaw 的本地数据主权、技能复用、IM 原生集成确实是真的企业价值，但恶意技能代码、权限边界失控、版本迭代过快、ROI 不清晰这四大坑同样真实。作者建议先做隔离式安全试点，并同步建设权限范围管理、技能审计机制、内部定制能力这三件「企业筋骨」，而不是一上来就全员铺开。是 2026 年最务实的一份中国视角 OpenClaw 企业采纳指南。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业采纳",
+        "安全试点",
+        "权限管理",
+        "中国视角"
+      ],
+      "source": "网易新闻",
+      "datePublished": "2026-02-24",
+      "language": "zh",
+      "image": "https://mobilepics.ws.126.net/2024_08_28_17_13_30RsuGg0l31prpab.png"
+    },
+    {
       "id": "art-c1edeaec",
       "title": "腾讯云ClawPro企业版10分钟全员落地",
       "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtcnfx9411568.shtml",
