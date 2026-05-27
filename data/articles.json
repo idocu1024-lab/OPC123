@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-e7d54210",
+      "title": "摩尔线程MTT AIBOOK部署OpenClaw实战",
+      "url": "https://news.mydrivers.com/1/1108/1108949.htm",
+      "summary": "国产GPU厂商摩尔线程把自家MTT AIBOOK AI算力本与OpenClaw做了首次端侧整机适配——整本预装一键部署脚本，开机即可把OpenClaw跑在本地国产GPU上，模型权重、技能数据、聊天记录全部留在机器里不出端。文章给出的真实落地链路是：本地LLM接入OpenClaw后，AI可以直接操作本机文件、执行命令，再原生回灌到QQ、飞书、钉钉三大办公IM，是一个把「国产算力+开源智能体+办公IM」三件套打通的中国硬件厂商样板案例。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "摩尔线程",
+        "MTT AIBOOK",
+        "国产GPU",
+        "端侧部署"
+      ],
+      "source": "快科技",
+      "datePublished": "2026-03-13",
+      "language": "zh",
+      "image": "https://img1.kkeji.com/img/2005/20260521/154957329.gif"
+    },
+    {
+      "id": "art-05881048",
+      "title": "1分钱部署OpenClaw 10分钟跑通",
+      "url": "https://www.qbitai.com/2026/02/378183.html",
+      "summary": "量子位实测百度智能云轻量服务器版OpenClaw方案：首月服务器1分钱、全程图形化界面、4步10分钟跑通，对零代码用户彻底友好。方案预置6个官方Skill——网页搜索、学术检索、AI绘本、PPT生成等开箱即用，并原生打通钉钉、飞书、QQ、企业微信四大IM。是把OpenClaw从「开发者玩具」拉到「普通员工和中小企业都能用」这一台阶的低门槛中国落地范本。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "百度智能云",
+        "轻量部署",
+        "图形化",
+        "中国落地"
+      ],
+      "source": "量子位",
+      "datePublished": "2026-02-09",
+      "language": "zh",
+      "image": "https://i.qbitai.com/wp-content/uploads/2026/02/6bcb05966d8edad6044b0a10db1bf4ba.webp"
+    },
+    {
+      "id": "art-93433f26",
+      "title": "JS Mastery OpenClaw 自建AI Agent全流程",
+      "url": "https://jsmastery.com/blogs/how-to-deploy-your-own-ai-agent-the-complete-openclaw-setup-guide",
+      "summary": "JS Mastery 这份教程把 OpenClaw 当作「让大模型真正能动手的编排层」来讲：用 Hostinger 一键 VPS 模板省掉 Docker/Nginx 折腾，再用 SOUL.md 文件给智能体配置人格和边界。最有价值的是给出了 5 个端到端落地工作流——代码部署、邮件管理、研究自动化、知识沉淀、自定义技能开发，对想把 OpenClaw 从「跑起来」推到「真用起来」的开发者来说是一份完整的实战脚手架。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Hostinger",
+        "VPS部署",
+        "Telegram",
+        "工作流"
+      ],
+      "source": "JS Mastery Pro",
+      "datePublished": "2026-04-10",
+      "language": "en",
+      "image": "https://javascript-mastery.s3.us-east-1.amazonaws.com/general_assets/Thumbnail+(1).jpg"
+    },
+    {
       "id": "art-5598be90",
       "title": "powerclaw：中关村科金的OpenClaw企业版",
       "url": "https://www.51ima.com/news/12292.html",
