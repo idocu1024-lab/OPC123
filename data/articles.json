@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-ce3e5d14",
+      "title": "中关村科金PowerClaw落地OpenClaw",
+      "url": "https://www.jiemian.com/article/14062412.html",
+      "summary": "界面新闻报道：中关村科金正式发布国内首个基于OpenClaw的企业级解决方案PowerClaw，以企业级大模型为「决策大脑」、OpenClaw框架为「执行小脑」，一站式接入企业微信、飞书、APP、官网、电商等客户触点。方案支持私有化部署、多层级安全沙箱与细粒度权限审计，覆盖营销、销售、客服、复购全旅程，是中国大企业把OpenClaw落进核心业务的第一份确定性方案。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "PowerClaw",
+        "中关村科金",
+        "企业落地",
+        "私有化部署"
+      ],
+      "source": "界面新闻",
+      "datePublished": "2026-03-03",
+      "language": "zh",
+      "image": "https://img.jiemian.com/101/original/20260303/import_1772519761660620250010.png"
+    },
+    {
+      "id": "art-da230863",
+      "title": "OpenClaw进企业:从实验室到生产",
+      "url": "https://www.spotech.online/en/openclaw-in-the-enterprise-2026-how-far-from-lab-to-production/",
+      "summary": "SpoTech对比2026年OpenClaw中美企业落地路径：中国走超级APP+政府补贴的激进部署，西方先建治理框架再扩张。文章列出全球23万+暴露实例、82个已披露漏洞，给出CTO三段落地路线——先盘点影子AI、再为智能体建独立身份与审计、最后选治理平台（Airia、Lyzr、NemoClaw）落到Docker零信任与白名单出站。是一份给西方CTO看的OpenClaw从PoC走进生产的实战清单。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业部署",
+        "治理",
+        "中美对比",
+        "生产环境"
+      ],
+      "source": "SPOTech",
+      "datePublished": "2026-04-14",
+      "language": "en",
+      "image": "https://www.spotech.online/wp-content/uploads/2026/04/openclaw-enterprise-2026-hero-3.png"
+    },
+    {
+      "id": "art-e13474a7",
+      "title": "OpenClaw各厂商对比与选型指南",
+      "url": "https://cloud.tencent.com/developer/article/2648389",
+      "summary": "腾讯云开发者社区盘点全网OpenClaw生态版本：从原版OpenClaw到各大厂商的MaxClaw、KimiClaw、CoPaw、中关村科金PowerClaw与LobsterAI社区分支。给出按角色的落地建议——小白选MaxClaw或LobsterAI、研究者选KimiClaw吃长上下文、企业选CoPaw或PowerClaw走私有化与合规、极客直接用原版OpenClaw深度改造，是中国OpenClaw版本最全的选型路线图。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "版本对比",
+        "选型",
+        "PowerClaw",
+        "MaxClaw"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-13",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/04370316ba79f6eff6a6b993c34ca0a4.jpg"
+    },
+    {
       "id": "art-e7d54210",
       "title": "摩尔线程MTT AIBOOK部署OpenClaw实战",
       "url": "https://news.mydrivers.com/1/1108/1108949.htm",
