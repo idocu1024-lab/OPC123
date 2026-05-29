@@ -51,6 +51,58 @@
   ],
   "articles": [
     {
+      "id": "art-c14f24fc",
+      "url": "https://cloud.tencent.com/developer/article/2636077",
+      "title": "OpenClaw搭企业级AI客服销售系统",
+      "summary": "腾讯云开发者社区实战教程：作者用OpenClaw在腾讯云上以Docker容器化部署，结合RAG知识库与销售话术，分五步搭建企业级AI客服与自动化销售系统。系统可7×24小时承接客户咨询，同时充当自动化初级销售团队完成线索筛选与培育转化，是一份面向中国中小企业的OpenClaw低成本落地方案。",
+      "category": "customer-sales",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "AI客服",
+        "销售自动化",
+        "私有化部署"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-10",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/111c3aff5ec5e7223e0debb2e64acc03.png"
+    },
+    {
+      "id": "art-947b1d02",
+      "url": "https://dev.to/deployhq/how-to-deploy-and-configure-openclaw-on-a-vps-4377",
+      "title": "OpenClaw在VPS上的安全部署实战",
+      "summary": "DEV Community九步实战指南：手把手教你在Ubuntu VPS上部署OpenClaw，覆盖服务器加固、防火墙配置、Node.js安装，并用Nginx反向代理加TLS证书保护网关。文章强调把网关绑定到localhost、通过DeployHQ做Git化自动部署，并附API成本、隐私与多用户配置的排错问答，是一份可直接照做的生产级部署手册。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "VPS部署",
+        "Nginx",
+        "安全加固"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-03-06",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+    },
+    {
+      "id": "art-fc8cab6f",
+      "url": "https://dev.to/yogeshm76/openclaw-in-production-the-reality-behind-347k-github-stars-163m",
+      "title": "OpenClaw生产环境实测真相",
+      "summary": "DEV Community作者花40多个小时把OpenClaw与16款竞品逐一对比，记录其469个未解安全问题与实际部署难点。结论是OpenClaw最适合独立开发者自动化重复性技术任务（每周省6到12小时），但对非技术用户、需要协作的团队和受监管行业并不合适，这些场景作者建议改用托管型替代方案。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "生产环境",
+        "安全",
+        "实测对比"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-04-26",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fblh92h3a0aetvzq4owwx.png"
+    },
+    {
       "id": "art-ce3e5d14",
       "title": "中关村科金PowerClaw落地OpenClaw",
       "url": "https://www.jiemian.com/article/14062412.html",
