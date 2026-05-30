@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-9322b558",
+      "url": "https://www.cnblogs.com/jzssuanfa/p/19724036",
+      "title": "OpenClaw飞书全天候运维助手",
+      "summary": "博客园作者jzssuanfa分享真实落地实践：用OpenClaw网关对接飞书，搭建一个7×24小时在线的智能运维机器人。运维人员在飞书里用自然语言即可查询服务状态、看日志、监控资源和重启服务，OpenClaw通过命令白名单与WebSocket长连接安全调用Shell，让团队彻底摆脱SSH终端，随时随地掌控Kubernetes与Docker宿主机。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "飞书",
+        "智能运维",
+        "Kubernetes"
+      ],
+      "source": "博客园",
+      "datePublished": "2026-03-16",
+      "language": "zh",
+      "image": "https://i-blog.csdnimg.cn/direct/fe6baac69fdf4ed69e1f6b887616b312.png"
+    },
+    {
+      "id": "art-32f48ce1",
+      "url": "https://cloud.tencent.com/developer/article/2639089",
+      "title": "OpenClaw接入WhatsApp实战部署",
+      "summary": "腾讯云开发者社区作者jack.yang的从零部署实战：用Node.js加pnpm加Docker环境跑通OpenClaw核心服务，再通过Baileys扫码免Twilio接入WhatsApp，并手写一个天气查询自定义Skill。文章完整演示了从Web UI下指令、Docker沙箱执行到审批落地的链路，号称30分钟即可拥有一个可对话、可执行、可扩展的AI助手。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "部署实战",
+        "WhatsApp",
+        "自定义Skill",
+        "Docker"
+      ],
+      "source": "腾讯云开发者社区",
+      "datePublished": "2026-03-15",
+      "language": "zh",
+      "image": "https://developer.qcloudimg.com/http-save/10011/fe57156c041868494bee0e56993daf68.jpg"
+    },
+    {
+      "id": "art-3957ec6b",
+      "url": "https://dev.to/aws/deploy-openclaw-on-aws-choose-the-right-options-for-your-ai-workload-297f",
+      "title": "OpenClaw的AWS四种部署方案",
+      "summary": "AWS官方作者Channy Yun给出OpenClaw在AWS上的四条落地路径：Lightsail一键蓝图面向个人开发者、EC2搭配Graviton省成本、Bedrock AgentCore无服务器化、EKS用Kata容器做虚拟机级隔离实现企业多租户。文章针对金融与医疗等需硬件级隔离的真实场景，给出架构模式与动手实验，是一份生产级的OpenClaw企业部署选型指南。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "企业落地",
+        "AWS",
+        "EKS",
+        "私有化部署"
+      ],
+      "source": "DEV Community",
+      "datePublished": "2026-04-14",
+      "language": "en",
+      "image": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9en7vcktkug7rdj7rf6u.jpg"
+    },
+    {
       "id": "art-c14f24fc",
       "url": "https://cloud.tencent.com/developer/article/2636077",
       "title": "OpenClaw搭企业级AI客服销售系统",
