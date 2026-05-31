@@ -51,6 +51,60 @@
   ],
   "articles": [
     {
+      "id": "art-ef85b264",
+      "title": "京东云龙虾天团落地OpenClaw",
+      "url": "https://www.guancha.cn/economy/2026_03_25_811369.shtml",
+      "summary": "观察者网报道：京东于2026年3月开源自研基础大模型JoyAI-LLM Flash指令版，并基于它推出适配OpenClaw框架的全系产品矩阵「龙虾天团」——云端虾、企业虾、实体虾、安全虾一应俱全，还有OpenClaw一体机做到算力本地化、数据不出域、3分钟即可上岗。京东用FiberPO强化学习把智能体的Token消耗压到主流模型的四分之一到五分之一、推理提速1.8倍，直击企业落地OpenClaw时部署难、合规难、成本高三大痛点，是中国头部企业把OpenClaw做成企业级产品矩阵的真实落地样板。",
+      "category": "team-management",
+      "tags": [
+        "OpenClaw",
+        "京东云",
+        "龙虾天团",
+        "企业落地",
+        "私有化部署"
+      ],
+      "source": "观察者网",
+      "datePublished": "2026-03-25",
+      "language": "zh",
+      "image": "https://i.guancha.cn/media/2023/04/11/20230411165735692.jpg"
+    },
+    {
+      "id": "art-7fff0796",
+      "title": "OpenClaw搭homelab运维仪表盘",
+      "url": "https://medium.com/@mike.mcgonagle/using-openclaw-to-build-an-ai-powered-homelab-operations-dashboard-5d9e98707055",
+      "summary": "Medium作者Mike McGonagle用OpenClaw给自己的homelab搭了一套AI运维仪表盘：Node.js加Vue 3前后端，配上五个并行的OpenClaw技能（Jetson指标、Proxmox指标、Docker状态、日志扫描、GitHub提交）每60秒采集一次数据，再由编排技能汇总成统一快照，并内嵌一个能SSH登机排障的聊天面板。上线第一个小时就揪出一台CI虚机磁盘占用98%和容器报错等隐患。文章演示了「确定性代码做采集、AI只做调查与决策」的分工，既省API成本又把基础设施可见性拉满，是一份可照做的个人运维落地案例。",
+      "category": "data-analysis",
+      "tags": [
+        "OpenClaw",
+        "homelab",
+        "运维监控",
+        "Proxmox",
+        "实战案例"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-04-02",
+      "language": "en",
+      "image": ""
+    },
+    {
+      "id": "art-13214e2f",
+      "title": "OpenClaw打通网络AD与vSphere",
+      "url": "https://medium.com/@jackchow30/running-openclaw-in-a-homelab-a-hands-on-exploration-across-network-ad-and-vsphere-22983502623f",
+      "summary": "Medium作者Jack Chow在隔离实验环境里让OpenClaw（接GPT-5.1-codex）横跨三大基础设施层实操：在网络层登录路由器枚举防火墙规则并新建一条封禁某设备SSH的规则；在Active Directory里认证域控、建安全组、批量创建三个用户并下发密码策略GPO；在vSphere里连上ESXi主机枚举数据存储、核验已上传的ISO。AI代理「Sprocket」全程展示了上下文感知、凭据管理与任务追踪，遇到API限流还能自动调整流程。作者也强调必须配套严格护栏，是一份把OpenClaw当系统管理员延伸来跑企业IT基础设施的硬核实操记录。",
+      "category": "getting-started",
+      "tags": [
+        "OpenClaw",
+        "Active Directory",
+        "vSphere",
+        "基础设施自动化",
+        "实操案例"
+      ],
+      "source": "Medium",
+      "datePublished": "2026-03-01",
+      "language": "en",
+      "image": ""
+    },
+    {
       "id": "art-9322b558",
       "url": "https://www.cnblogs.com/jzssuanfa/p/19724036",
       "title": "OpenClaw飞书全天候运维助手",
